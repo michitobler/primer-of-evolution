@@ -1,2 +1,1 @@
-# primer
-Primer of Evolution
+A Primer of Evolution is an open educational resource designed for upper-level college students. It provides a succinct introduction to evolutionary thought revolving around theory, evidence, and practice. For more background information, visit https://sulfide-life.info/a-primer-of-evolution/
