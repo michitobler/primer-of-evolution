@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Adaptation and Phenotypic Plasticity | A Primer of Evolution</title>
+  <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Adaptation and Phenotypic Plasticity | A Primer of Evolution" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Adaptation and Phenotypic Plasticity | A Primer of Evolution" />
+  
+  <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+<meta name="author" content="Michi Tobler" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="the-evolution-of-quantitative-traits.html"/>
+<link rel="next" href="social-behavior-and-sexual-selection.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F33BYJVTN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F33BYJVTN7');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCY5ZWLVNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NCY5ZWLVNZ');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#in-the-light-of-evolution"><i class="fa fa-check"></i>In the Light of Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#beyond-understanding-biodiversity"><i class="fa fa-check"></i>Beyond Understanding Biodiversity</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#an-overview-of-the-semester"><i class="fa fa-check"></i>An Overview of the Semester</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-1-the-basics"><i class="fa fa-check"></i>Part 1: The Basics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-2-a-genetic-perspective-on-evolution"><i class="fa fa-check"></i>Part 2: A Genetic Perspective on Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-3-evolutionary-outcomes-in-the-real-world"><i class="fa fa-check"></i>Part 3: Evolutionary Outcomes in the Real World</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-4-applied-evolutionary-biology"><i class="fa fa-check"></i>Part 4: Applied Evolutionary Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to Use This Book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html"><i class="fa fa-check"></i>Front Matters</a>
+<ul>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#copyright"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+</ul></li>
+<li class="part"><span><b>I Basic Concepts</b></span></li>
+<li class="chapter" data-level="1" data-path="what-evolution-is.html"><a href="what-evolution-is.html"><i class="fa fa-check"></i><b>1</b> What Evolution Is</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#darwin-and-the-conception-of-a-new-idea"><i class="fa fa-check"></i><b>1.1</b> Darwin and the Conception of a New Idea</a></li>
+<li class="chapter" data-level="1.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#two-fundamental-insights"><i class="fa fa-check"></i><b>1.2</b> Two Fundamental Insights</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#predictions"><i class="fa fa-check"></i><b>1.2.1</b> The Pattern: Evolution is Descent with Modification</a></li>
+<li class="chapter" data-level="1.2.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#the-process-natural-selection-is-a-mechanism-of-evolution"><i class="fa fa-check"></i><b>1.2.2</b> The Process: Natural Selection is a Mechanism of Evolution</a></li>
+<li class="chapter" data-level="1.2.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#distinguishing-between-pattern-and-process"><i class="fa fa-check"></i><b>1.2.3</b> Distinguishing between Pattern and Process</a></li>
+<li class="chapter" data-level="1.2.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#population-thinking"><i class="fa fa-check"></i><b>1.2.4</b> Population Thinking</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#practical-skills-getting-started-with-r"><i class="fa fa-check"></i><b>1.3</b> Practical Skills: Getting Started with R</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#what-are-r-and-rstudio"><i class="fa fa-check"></i><b>1.3.1</b> What are R and RStudio?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-r"><i class="fa fa-check"></i><b>1.3.2</b> Installing R</a></li>
+<li class="chapter" data-level="1.3.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.3</b> Installing RStudio</a></li>
+<li class="chapter" data-level="1.3.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#checking-the-successful-installation"><i class="fa fa-check"></i><b>1.3.4</b> Checking the Successful Installation</a></li>
+<li class="chapter" data-level="1.3.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#some-r-and-rstudio-basics"><i class="fa fa-check"></i><b>1.3.5</b> Some R and RStudio Basics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#additional-resources"><i class="fa fa-check"></i><b>1.4</b> Additional Resources</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#alternative-evolution-textbooks"><i class="fa fa-check"></i><b>1.4.1</b> Alternative Evolution Textbooks</a></li>
+<li class="chapter" data-level="1.4.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#evolution-in-the-primary-literature-and-the-news"><i class="fa fa-check"></i><b>1.4.2</b> Evolution in the Primary Literature and the News</a></li>
+<li class="chapter" data-level="1.4.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#r-and-rstudio-resources"><i class="fa fa-check"></i><b>1.4.3</b> R and RStudio Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#reflection-questions"><i class="fa fa-check"></i><b>1.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="1.6" data-path="what-evolution-is.html"><a href="what-evolution-is.html#references-1"><i class="fa fa-check"></i><b>1.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html"><i class="fa fa-check"></i><b>2</b> Evidence for Evolution</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#microevolution"><i class="fa fa-check"></i><b>2.1</b> Microevolution</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#the-case-of-threespine-stickleback"><i class="fa fa-check"></i><b>2.1.1</b> The Case of Threespine Stickleback</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#speciation"><i class="fa fa-check"></i><b>2.2</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#ring-species"><i class="fa fa-check"></i><b>2.2.1</b> Ring Species</a></li>
+<li class="chapter" data-level="2.2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#catching-speciation-in-action"><i class="fa fa-check"></i><b>2.2.2</b> Catching Speciation in Action</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#macroevolution"><i class="fa fa-check"></i><b>2.3</b> Macroevolution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#geographic-and-temporal-patterns-of-succession"><i class="fa fa-check"></i><b>2.3.1</b> Geographic and Temporal Patterns of Succession</a></li>
+<li class="chapter" data-level="2.3.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#transitional-fossils"><i class="fa fa-check"></i><b>2.3.2</b> Transitional Fossils</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#common-ancestry-and-homology"><i class="fa fa-check"></i><b>2.4</b> Common Ancestry and Homology</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#shared-flaws"><i class="fa fa-check"></i><b>2.4.1</b> Shared Flaws</a></li>
+<li class="chapter" data-level="2.4.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#why-homologies-matter"><i class="fa fa-check"></i><b>2.4.2</b> Why Homologies Matter</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#deep-time"><i class="fa fa-check"></i><b>2.5</b> Deep Time</a></li>
+<li class="chapter" data-level="2.6" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#tiktaalik"><i class="fa fa-check"></i><b>2.6</b> Correspondence of Different Lines of Evidence</a></li>
+<li class="chapter" data-level="2.7" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#absence-of-evidence"><i class="fa fa-check"></i><b>2.7</b> Absence of Evidence…</a></li>
+<li class="chapter" data-level="2.8" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#case-study-darwins-finches"><i class="fa fa-check"></i><b>2.8</b> Case Study: Darwin’s Finches</a></li>
+<li class="chapter" data-level="2.9" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#practical-skills-r-notebooks-and-plotting-with-ggplot"><i class="fa fa-check"></i><b>2.9</b> Practical Skills: R Notebooks and Plotting with ggplot</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#r-notebooks"><i class="fa fa-check"></i><b>2.9.1</b> R Notebooks</a></li>
+<li class="chapter" data-level="2.9.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#libraries"><i class="fa fa-check"></i><b>2.9.2</b> Using Libraries</a></li>
+<li class="chapter" data-level="2.9.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#import-data"><i class="fa fa-check"></i><b>2.9.3</b> Importing Data</a></li>
+<li class="chapter" data-level="2.9.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#graphing-data"><i class="fa fa-check"></i><b>2.9.4</b> Graphing Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#reflection-questions-1"><i class="fa fa-check"></i><b>2.10</b> Reflection Questions</a></li>
+<li class="chapter" data-level="2.11" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#references-2"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html"><i class="fa fa-check"></i><b>3</b> A Mechanism for Change</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#darwins-logic"><i class="fa fa-check"></i><b>3.1</b> Darwin’s Logic</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#variation"><i class="fa fa-check"></i><b>3.1.1</b> Variation</a></li>
+<li class="chapter" data-level="3.1.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#heritability"><i class="fa fa-check"></i><b>3.1.2</b> Heritability</a></li>
+<li class="chapter" data-level="3.1.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-struggle-for-existence"><i class="fa fa-check"></i><b>3.1.3</b> The Struggle for Existence</a></li>
+<li class="chapter" data-level="3.1.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#non-random-survival-and-reproduction"><i class="fa fa-check"></i><b>3.1.4</b> Non-Random Survival and Reproduction</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#putting-darwins-logic-to-the-test"><i class="fa fa-check"></i><b>3.2</b> Putting Darwin’s Logic to the Test</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-variation-in-beak-size"><i class="fa fa-check"></i><b>3.2.1</b> Is there Variation in Beak Size?</a></li>
+<li class="chapter" data-level="3.2.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-variation-in-beak-size-heritable"><i class="fa fa-check"></i><b>3.2.2</b> Is Variation in Beak Size Heritable?</a></li>
+<li class="chapter" data-level="3.2.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-a-struggle-for-existence"><i class="fa fa-check"></i><b>3.2.3</b> Is there a Struggle for Existence?</a></li>
+<li class="chapter" data-level="3.2.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-survival-non-random"><i class="fa fa-check"></i><b>3.2.4</b> Is Survival Non-Random?</a></li>
+<li class="chapter" data-level="3.2.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#did-non-random-survival-lead-to-evolution"><i class="fa fa-check"></i><b>3.2.5</b> Did Non-Random Survival Lead to Evolution?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#case-study-exploring-among-population-variation"><i class="fa fa-check"></i><b>3.3</b> Case Study: Exploring Among-Population Variation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-cave-molly-and-its-ancestors"><i class="fa fa-check"></i><b>3.3.1</b> The Cave Molly and its Ancestors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#practical-skills-number-sequences-allometry-and-histograms"><i class="fa fa-check"></i><b>3.4</b> Practical Skills: Number Sequences, Allometry, and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#number-sequences"><i class="fa fa-check"></i><b>3.4.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="3.4.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#allometry-residuals"><i class="fa fa-check"></i><b>3.4.2</b> Allometry &amp; Residuals</a></li>
+<li class="chapter" data-level="3.4.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#histograms-and-density-functions"><i class="fa fa-check"></i><b>3.4.3</b> Histograms and Density Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#reflection-questions-2"><i class="fa fa-check"></i><b>3.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="3.6" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#references-3"><i class="fa fa-check"></i><b>3.6</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>II A Genetic Perspective on Evolution</b></span></li>
+<li class="chapter" data-level="4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html"><i class="fa fa-check"></i><b>4</b> The Raw Materials for Evolution</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#the-genotype-phenotype-gap"><i class="fa fa-check"></i><b>4.1</b> The Genotype-Phenotype Gap</a></li>
+<li class="chapter" data-level="4.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-the-fundamental-source-of-novelty"><i class="fa fa-check"></i><b>4.2</b> Mutation: The Fundamental Source of Novelty</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#point-mutations"><i class="fa fa-check"></i><b>4.2.1</b> Point Mutations</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#inversions"><i class="fa fa-check"></i><b>4.2.2</b> Inversions</a></li>
+<li class="chapter" data-level="4.2.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#gene-duplication"><i class="fa fa-check"></i><b>4.2.3</b> Gene Duplication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#genome-duplication"><i class="fa fa-check"></i><b>4.2.4</b> Genome Duplication</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-rates"><i class="fa fa-check"></i><b>4.3</b> Mutation Rates</a></li>
+<li class="chapter" data-level="4.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#quantifying-genetic-variation"><i class="fa fa-check"></i><b>4.4</b> Quantifying Genetic Variation</a></li>
+<li class="chapter" data-level="4.5" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#a-null-model-for-evolution"><i class="fa fa-check"></i><b>4.5</b> A Null Model for Evolution</a></li>
+<li class="chapter" data-level="4.6" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#case-study-hardy-weinberg-equilirbium"><i class="fa fa-check"></i><b>4.6</b> Case Study: Hardy-Weinberg Equilirbium</a></li>
+<li class="chapter" data-level="4.7" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#practical-skills-number-sequences-2.0-and-complex-graphs"><i class="fa fa-check"></i><b>4.7</b> Practical Skills: Number Sequences 2.0 and Complex Graphs</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#number-sequences-1"><i class="fa fa-check"></i><b>4.7.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="4.7.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#layering-data-sets"><i class="fa fa-check"></i><b>4.7.2</b> Layering Data Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#reflection-questions-3"><i class="fa fa-check"></i><b>4.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="4.9" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#references-4"><i class="fa fa-check"></i><b>4.9</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html"><i class="fa fa-check"></i><b>5</b> Evolutionary Mechanisms I: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#the-effects-of-selection"><i class="fa fa-check"></i><b>5.1</b> The Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection"><i class="fa fa-check"></i><b>5.1.1</b> Frequency-Dependent Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-the-effects-of-selection"><i class="fa fa-check"></i><b>5.2</b> Modeling the Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#relative-fitness"><i class="fa fa-check"></i><b>5.2.1</b> Relative Fitness</a></li>
+<li class="chapter" data-level="5.2.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#calculating-allele-frequency-changes"><i class="fa fa-check"></i><b>5.2.2</b> Calculating Allele Frequency Changes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#case-study-modeling-selection"><i class="fa fa-check"></i><b>5.3</b> Case Study: Modeling Selection</a></li>
+<li class="chapter" data-level="5.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#practical-skills"><i class="fa fa-check"></i><b>5.4</b> Practical Skills: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-selection"><i class="fa fa-check"></i><b>5.4.1</b> Modeling Selection</a></li>
+<li class="chapter" data-level="5.4.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#running-multiple-selection-models"><i class="fa fa-check"></i><b>5.4.2</b> Running Multiple Selection Models</a></li>
+<li class="chapter" data-level="5.4.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection-1"><i class="fa fa-check"></i><b>5.4.3</b> Frequency-Dependent Selection</a></li>
+<li class="chapter" data-level="5.4.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#understanding-equilibria"><i class="fa fa-check"></i><b>5.4.4</b> Understanding Equilibria</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#reflection-questions-4"><i class="fa fa-check"></i><b>5.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="5.6" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#references-5"><i class="fa fa-check"></i><b>5.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><i class="fa fa-check"></i><b>6</b> Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#mutation-the-force-creating-novelty"><i class="fa fa-check"></i><b>6.1</b> Mutation: The Force Creating Novelty</a></li>
+<li class="chapter" data-level="6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force"><i class="fa fa-check"></i><b>6.2</b> Genetic Drift: The Random Force</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-drift-and-selection"><i class="fa fa-check"></i><b>6.2.1</b> Interactions Between Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#migration-the-homogenizing-force"><i class="fa fa-check"></i><b>6.3</b> Migration: The Homogenizing Force</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-migration-and-selection"><i class="fa fa-check"></i><b>6.3.1</b> Interactions Between Migration and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#non-random-mating-not-much-of-a-force"><i class="fa fa-check"></i><b>6.4</b> Non-Random Mating: Not Much of a Force</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-inbreeding-and-selection"><i class="fa fa-check"></i><b>6.4.1</b> Interactions between Inbreeding and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#case-study-background-beyond-selection"><i class="fa fa-check"></i><b>6.5</b> Case Study Background: Beyond Selection</a></li>
+<li class="chapter" data-level="6.6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#practical-skills-modeling-mutation-drift-and-selection"><i class="fa fa-check"></i><b>6.6</b> Practical Skills: Modeling Mutation, Drift, and Selection</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-mutation-and-selection"><i class="fa fa-check"></i><b>6.6.1</b> Modeling Mutation and Selection</a></li>
+<li class="chapter" data-level="6.6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift"><i class="fa fa-check"></i><b>6.6.2</b> Modeling Genetic Drift</a></li>
+<li class="chapter" data-level="6.6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift-and-selection"><i class="fa fa-check"></i><b>6.6.3</b> Modeling Genetic Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions-5"><i class="fa fa-check"></i><b>6.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="6.8" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#references-6"><i class="fa fa-check"></i><b>6.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html"><i class="fa fa-check"></i><b>7</b> Evolution of DNA Sequences</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#dna-alignment-and-genome-assembly"><i class="fa fa-check"></i><b>7.1</b> DNA Alignment and Genome Assembly</a></li>
+<li class="chapter" data-level="7.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reconstructing-history-phylogenetic-trees"><i class="fa fa-check"></i><b>7.2</b> Reconstructing History: Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies"><i class="fa fa-check"></i><b>7.2.1</b> Molecular Phylogenies</a></li>
+<li class="chapter" data-level="7.2.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies-in-real-life"><i class="fa fa-check"></i><b>7.2.2</b> Molecular Phylogenies in Real Life</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-neutral-theory"><i class="fa fa-check"></i><b>7.3</b> The Neutral Theory</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-clocks"><i class="fa fa-check"></i><b>7.3.1</b> Molecular Clocks</a></li>
+<li class="chapter" data-level="7.3.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#detecting-signatures-of-selection"><i class="fa fa-check"></i><b>7.3.2</b> Detecting Signatures of Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#case-study-sars-cov-2"><i class="fa fa-check"></i><b>7.4</b> Case Study: SARS-CoV-2</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#host-pathogen-coevolution"><i class="fa fa-check"></i><b>7.4.1</b> Host-Pathogen Coevolution</a></li>
+<li class="chapter" data-level="7.4.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-evolution-of-the-seasonal-flu"><i class="fa fa-check"></i><b>7.4.2</b> The Evolution of the Seasonal Flu</a></li>
+<li class="chapter" data-level="7.4.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#high-virulence-flu-strains"><i class="fa fa-check"></i><b>7.4.3</b> High-Virulence Flu Strains</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#practical-skills-working-with-phylogenetic-trees"><i class="fa fa-check"></i><b>7.5</b> Practical Skills: Working with Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#installing-dependencies"><i class="fa fa-check"></i><b>7.5.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="7.5.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-pipe-operator"><i class="fa fa-check"></i><b>7.5.2</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="7.5.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#importing-a-tree"><i class="fa fa-check"></i><b>7.5.3</b> Importing a Tree</a></li>
+<li class="chapter" data-level="7.5.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#plotting-a-tree"><i class="fa fa-check"></i><b>7.5.4</b> Plotting a Tree</a></li>
+<li class="chapter" data-level="7.5.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#annotating-a-tree"><i class="fa fa-check"></i><b>7.5.5</b> Annotating a Tree</a></li>
+<li class="chapter" data-level="7.5.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#calculating-the-distance-to-root"><i class="fa fa-check"></i><b>7.5.6</b> Calculating the Distance to Root</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reflection-questions-6"><i class="fa fa-check"></i><b>7.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="7.7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#references-7"><i class="fa fa-check"></i><b>7.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html"><i class="fa fa-check"></i><b>8</b> The Evolution of Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qualitative-traits-and-epistasis"><i class="fa fa-check"></i><b>8.1</b> Qualitative Traits and Epistasis</a></li>
+<li class="chapter" data-level="8.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment"><i class="fa fa-check"></i><b>8.2</b> Quantitative Traits: a Product of Genes and Environment</a></li>
+<li class="chapter" data-level="8.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-trait-evolution"><i class="fa fa-check"></i><b>8.3</b> Quantitative Trait Evolution</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability"><i class="fa fa-check"></i><b>8.3.1</b> Quantifying Trait Heritability</a></li>
+<li class="chapter" data-level="8.3.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-the-strength-of-selection"><i class="fa fa-check"></i><b>8.3.2</b> Quantifying the Strength of Selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#calculating-the-response-to-selection"><i class="fa fa-check"></i><b>8.3.3</b> Calculating the Response to Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#modes-of-selection-on-quantitative-traits"><i class="fa fa-check"></i><b>8.4</b> Modes of Selection on Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#directional-selection"><i class="fa fa-check"></i><b>8.4.1</b> Directional Selection</a></li>
+<li class="chapter" data-level="8.4.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#stabilizing-selection"><i class="fa fa-check"></i><b>8.4.2</b> Stabilizing Selection</a></li>
+<li class="chapter" data-level="8.4.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#disruptive-selection"><i class="fa fa-check"></i><b>8.4.3</b> Disruptive Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#identifying-genes-underlying-quantitative-traits"><i class="fa fa-check"></i><b>8.5</b> Identifying Genes Underlying Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-mapping"><i class="fa fa-check"></i><b>8.5.1</b> QTL Mapping</a></li>
+<li class="chapter" data-level="8.5.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#gwas"><i class="fa fa-check"></i><b>8.5.2</b> GWAS</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#case-study-quantitative-genetics"><i class="fa fa-check"></i><b>8.6</b> Case Study: Quantitative Genetics</a></li>
+<li class="chapter" data-level="8.7" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#practical-skills-qtl-mapping"><i class="fa fa-check"></i><b>8.7</b> Practical Skills: QTL Mapping</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#installing-dependencies-1"><i class="fa fa-check"></i><b>8.7.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="8.7.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#read-qtl-data"><i class="fa fa-check"></i><b>8.7.2</b> Read QTL Data</a></li>
+<li class="chapter" data-level="8.7.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-genotypes-loci-linkage-map"><i class="fa fa-check"></i><b>8.7.3</b> Explore the Data: Genotypes, Loci &amp; Linkage Map</a></li>
+<li class="chapter" data-level="8.7.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-phenotypes"><i class="fa fa-check"></i><b>8.7.4</b> Explore the Data: Phenotypes</a></li>
+<li class="chapter" data-level="8.7.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-scan"><i class="fa fa-check"></i><b>8.7.5</b> QTL Scan</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#reflection-questions-7"><i class="fa fa-check"></i><b>8.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="8.9" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#references-8"><i class="fa fa-check"></i><b>8.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>III Evolution in the Real World</b></span></li>
+<li class="chapter" data-level="9" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html"><i class="fa fa-check"></i><b>9</b> Adaptation and Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#inferring-adaptation"><i class="fa fa-check"></i><b>9.1</b> Inferring Adaptation</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#interspecific-comparisons"><i class="fa fa-check"></i><b>9.1.1</b> Interspecific Comparisons</a></li>
+<li class="chapter" data-level="9.1.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#intraspecific-studies"><i class="fa fa-check"></i><b>9.1.2</b> Intraspecific Studies</a></li>
+<li class="chapter" data-level="9.1.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#local-adaptation-within-species"><i class="fa fa-check"></i><b>9.1.3</b> Local Adaptation within Species</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2</b> Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#types-of-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.1</b> Types of Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.2.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reaction-norms-and-the-evolution-of-plasticity"><i class="fa fa-check"></i><b>9.2.2</b> Reaction Norms and the Evolution of Plasticity</a></li>
+<li class="chapter" data-level="9.2.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#adaptive-and-maladaptive-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.3</b> Adaptive and Maladaptive Phenotypic Plasticity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#case-study-local-adaptation-and-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.3</b> Case Study: Local Adaptation and Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.4" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#practical-skills-more-variables-more-graphs"><i class="fa fa-check"></i><b>9.4</b> Practical Skills: More Variables, More Graphs</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-1-many-independent-variables"><i class="fa fa-check"></i><b>9.4.1</b> Example 1: Many Independent Variables</a></li>
+<li class="chapter" data-level="9.4.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-2-many-dependent-variables"><i class="fa fa-check"></i><b>9.4.2</b> Example 2: Many Dependent Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reflection-questions-8"><i class="fa fa-check"></i><b>9.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="9.6" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#references-9"><i class="fa fa-check"></i><b>9.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html"><i class="fa fa-check"></i><b>10</b> Social Behavior and Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#social-behavior"><i class="fa fa-check"></i><b>10.1</b> Social Behavior</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#kin-selection"><i class="fa fa-check"></i><b>10.1.1</b> Kin Selection</a></li>
+<li class="chapter" data-level="10.1.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reciprocal-altruism"><i class="fa fa-check"></i><b>10.1.2</b> Reciprocal Altruism</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-selection"><i class="fa fa-check"></i><b>10.2</b> Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#causes-of-sexual-selection"><i class="fa fa-check"></i><b>10.2.1</b> Causes of Sexual Selection</a></li>
+<li class="chapter" data-level="10.2.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intrasexual-selection-male-male-competition"><i class="fa fa-check"></i><b>10.2.2</b> Intrasexual Selection: Male-Male Competition</a></li>
+<li class="chapter" data-level="10.2.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-conflict"><i class="fa fa-check"></i><b>10.2.3</b> Sexual Conflict</a></li>
+<li class="chapter" data-level="10.2.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intersexual-selection-female-mate-choice"><i class="fa fa-check"></i><b>10.2.4</b> Intersexual Selection: Female Mate Choice</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#case-study-altruism-and-sexual-selection"><i class="fa fa-check"></i><b>10.3</b> Case Study: Altruism and Sexual Selection</a></li>
+<li class="chapter" data-level="10.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reflection-questions-9"><i class="fa fa-check"></i><b>10.4</b> Reflection Questions</a></li>
+<li class="chapter" data-level="10.5" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#references-10"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="speciation-1.html"><a href="speciation-1.html"><i class="fa fa-check"></i><b>11</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="speciation-1.html"><a href="speciation-1.html#species-and-species-concepts"><i class="fa fa-check"></i><b>11.1</b> Species and Species Concepts</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="speciation-1.html"><a href="speciation-1.html#the-biological-species-concept"><i class="fa fa-check"></i><b>11.1.1</b> The Biological Species Concept</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="speciation-1.html"><a href="speciation-1.html#speciation-as-a-gradual-process"><i class="fa fa-check"></i><b>11.2</b> Speciation as a Gradual Process</a></li>
+<li class="chapter" data-level="11.3" data-path="speciation-1.html"><a href="speciation-1.html#mechanisms-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.3</b> Mechanisms of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="speciation-1.html"><a href="speciation-1.html#pre-mating-isolation"><i class="fa fa-check"></i><b>11.3.1</b> Pre-Mating Isolation</a></li>
+<li class="chapter" data-level="11.3.2" data-path="speciation-1.html"><a href="speciation-1.html#post-mating-pre-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.2</b> Post-Mating, Pre-zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.3" data-path="speciation-1.html"><a href="speciation-1.html#post-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.3</b> Post-Zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.4" data-path="speciation-1.html"><a href="speciation-1.html#reproductive-isolation-as-a-complex-trait"><i class="fa fa-check"></i><b>11.3.4</b> Reproductive Isolation as a Complex Trait</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="speciation-1.html"><a href="speciation-1.html#the-evolution-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.4</b> The Evolution of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="speciation-1.html"><a href="speciation-1.html#polyploidization-and-instantaneous-speciation"><i class="fa fa-check"></i><b>11.4.1</b> Polyploidization and Instantaneous Speciation</a></li>
+<li class="chapter" data-level="11.4.2" data-path="speciation-1.html"><a href="speciation-1.html#allopatric-speciation-and-hybridization"><i class="fa fa-check"></i><b>11.4.2</b> Allopatric Speciation and Hybridization</a></li>
+<li class="chapter" data-level="11.4.3" data-path="speciation-1.html"><a href="speciation-1.html#ecological-speciation"><i class="fa fa-check"></i><b>11.4.3</b> Ecological Speciation</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="speciation-1.html"><a href="speciation-1.html#adaptive-radiation"><i class="fa fa-check"></i><b>11.5</b> Adaptive Radiation</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="speciation-1.html"><a href="speciation-1.html#african-cichlid-fishes"><i class="fa fa-check"></i><b>11.5.1</b> African Cichlid Fishes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="speciation-1.html"><a href="speciation-1.html#case-study-speciation"><i class="fa fa-check"></i><b>11.6</b> Case Study: Speciation</a></li>
+<li class="chapter" data-level="11.7" data-path="speciation-1.html"><a href="speciation-1.html#practical-skills-interpreting-structure-plots"><i class="fa fa-check"></i><b>11.7</b> Practical Skills: Interpreting Structure Plots</a></li>
+<li class="chapter" data-level="11.8" data-path="speciation-1.html"><a href="speciation-1.html#reflection-questions-10"><i class="fa fa-check"></i><b>11.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="11.9" data-path="speciation-1.html"><a href="speciation-1.html#references-11"><i class="fa fa-check"></i><b>11.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>IV Applied Evolutionary Biology</b></span></li>
+<li class="chapter" data-level="12" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><i class="fa fa-check"></i><b>12</b> Evolutionary Medicine I: Aging and Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#darwinian-medicine"><i class="fa fa-check"></i><b>12.1</b> Darwinian Medicine</a></li>
+<li class="chapter" data-level="12.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#diseases-of-civilization"><i class="fa fa-check"></i><b>12.2</b> Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#modern-hunter-gatherers-and-urbanites"><i class="fa fa-check"></i><b>12.2.1</b> Modern Hunter-Gatherers and Urbanites</a></li>
+<li class="chapter" data-level="12.2.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#old-adaptations-in-a-modern-world"><i class="fa fa-check"></i><b>12.2.2</b> Old Adaptations in a Modern World</a></li>
+<li class="chapter" data-level="12.2.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#an-example-breast-cancer"><i class="fa fa-check"></i><b>12.2.3</b> An Example: Breast Cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#why-we-age-and-die"><i class="fa fa-check"></i><b>12.3</b> Why We Age… and Die</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#rate-of-living-hypothesis"><i class="fa fa-check"></i><b>12.3.1</b> Rate of Living Hypothesis</a></li>
+<li class="chapter" data-level="12.3.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#evolutionary-theories-of-aging"><i class="fa fa-check"></i><b>12.3.2</b> Evolutionary Theories of Aging</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#case-study-evolution-of-aging"><i class="fa fa-check"></i><b>12.4</b> Case Study: Evolution of Aging</a></li>
+<li class="chapter" data-level="12.5" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#practical-skills-life-table-analysis"><i class="fa fa-check"></i><b>12.5</b> Practical Skills: Life Table Analysis</a></li>
+<li class="chapter" data-level="12.6" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#reflection-questions-11"><i class="fa fa-check"></i><b>12.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="12.7" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#references-12"><i class="fa fa-check"></i><b>12.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html"><i class="fa fa-check"></i><b>13</b> Evolutionary Medicine II: Evolving Pathogens</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#epidemiology-and-pathogen-fitness"><i class="fa fa-check"></i><b>13.1</b> Epidemiology and Pathogen Fitness</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#a-basic-epidemiological-model"><i class="fa fa-check"></i><b>13.1.1</b> A Basic Epidemiological model</a></li>
+<li class="chapter" data-level="13.1.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#r0-a-measure-of-pathogen-fitness"><i class="fa fa-check"></i><b>13.1.2</b> <em>R</em><sub>0</sub>: A Measure of Pathogen Fitness</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#the-evolution-of-virulence"><i class="fa fa-check"></i><b>13.2</b> The Evolution of Virulence</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#trade-offs-and-modes-of-transmission"><i class="fa fa-check"></i><b>13.2.1</b> Trade-Offs and Modes of Transmission</a></li>
+<li class="chapter" data-level="13.2.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#short-sighted-and-coincidental-evolution-hypotheses"><i class="fa fa-check"></i><b>13.2.2</b> Short-Sighted and Coincidental Evolution Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cultural-practices-disease-spread-and-evolution"><i class="fa fa-check"></i><b>13.3</b> Cultural Practices, Disease Spread, and Evolution</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#disrupting-pathogen-transmission"><i class="fa fa-check"></i><b>13.3.1</b> Disrupting Pathogen Transmission</a></li>
+<li class="chapter" data-level="13.3.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#vaccination-and-herd-immunity"><i class="fa fa-check"></i><b>13.3.2</b> Vaccination and Herd Immunity</a></li>
+<li class="chapter" data-level="13.3.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#pathogen-responses"><i class="fa fa-check"></i><b>13.3.3</b> Pathogen Responses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#antibiotic-resistance"><i class="fa fa-check"></i><b>13.4</b> Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.5" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#case-study-covid-19-epidemiology-and-the-cost-of-antibiotic-resistance"><i class="fa fa-check"></i><b>13.5</b> Case Study: COVID-19 Epidemiology and the Cost of Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.6" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#practical-skills-data-wrangling-and-log-scales"><i class="fa fa-check"></i><b>13.6</b> Practical Skills: Data Wrangling and Log-Scales</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#data-wrangling"><i class="fa fa-check"></i><b>13.6.1</b> Data Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#reflection-questions-12"><i class="fa fa-check"></i><b>13.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="13.8" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#references-13"><i class="fa fa-check"></i><b>13.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="human-evolution.html"><a href="human-evolution.html"><i class="fa fa-check"></i><b>14</b> Human Evolution</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="human-evolution.html"><a href="human-evolution.html#phylogenetic-position"><i class="fa fa-check"></i><b>14.1</b> Phylogenetic Position</a></li>
+<li class="chapter" data-level="14.2" data-path="human-evolution.html"><a href="human-evolution.html#what-the-fossils-say"><i class="fa fa-check"></i><b>14.2</b> What the Fossils Say</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="human-evolution.html"><a href="human-evolution.html#an-abridged-timeline"><i class="fa fa-check"></i><b>14.2.1</b> An Abridged Timeline</a></li>
+<li class="chapter" data-level="14.2.2" data-path="human-evolution.html"><a href="human-evolution.html#evolutionary-trends"><i class="fa fa-check"></i><b>14.2.2</b> Evolutionary Trends</a></li>
+<li class="chapter" data-level="14.2.3" data-path="human-evolution.html"><a href="human-evolution.html#a-lone-survivor-of-an-extinct-radiation"><i class="fa fa-check"></i><b>14.2.3</b> A Lone Survivor of an Extinct Radiation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="human-evolution.html"><a href="human-evolution.html#modern-human-origins"><i class="fa fa-check"></i><b>14.3</b> Modern Human Origins</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="human-evolution.html"><a href="human-evolution.html#hypotheses"><i class="fa fa-check"></i><b>14.3.1</b> Hypotheses</a></li>
+<li class="chapter" data-level="14.3.2" data-path="human-evolution.html"><a href="human-evolution.html#multiregional-evolution-vs.-out-of-africa"><i class="fa fa-check"></i><b>14.3.2</b> Multiregional Evolution <em>vs</em>. Out-Of-Africa</a></li>
+<li class="chapter" data-level="14.3.3" data-path="human-evolution.html"><a href="human-evolution.html#out-of-africa-vs.-hybridization-and-assimilation"><i class="fa fa-check"></i><b>14.3.3</b> Out-of-Africa <em>vs</em>. Hybridization-and-Assimilation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="human-evolution.html"><a href="human-evolution.html#what-makes-us-human"><i class="fa fa-check"></i><b>14.4</b> What Makes Us Human?</a></li>
+<li class="chapter" data-level="14.5" data-path="human-evolution.html"><a href="human-evolution.html#case-study-modern-human-origins"><i class="fa fa-check"></i><b>14.5</b> Case Study: Modern Human Origins</a></li>
+<li class="chapter" data-level="14.6" data-path="human-evolution.html"><a href="human-evolution.html#reflection-questions-13"><i class="fa fa-check"></i><b>14.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="14.7" data-path="human-evolution.html"><a href="human-evolution.html#references-14"><i class="fa fa-check"></i><b>14.7</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix I</b></span></li>
+<li class="chapter" data-level="A" data-path="graph-library.html"><a href="graph-library.html"><i class="fa fa-check"></i><b>A</b> Graph Library</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="graph-library.html"><a href="graph-library.html#sample-data"><i class="fa fa-check"></i><b>A.1</b> Sample Data</a></li>
+<li class="chapter" data-level="A.2" data-path="graph-library.html"><a href="graph-library.html#loading-dependencies"><i class="fa fa-check"></i><b>A.2</b> Loading Dependencies</a></li>
+<li class="chapter" data-level="A.3" data-path="graph-library.html"><a href="graph-library.html#one-variable-continuous"><i class="fa fa-check"></i><b>A.3</b> One Variable: Continuous</a>
+<ul>
+<li class="chapter" data-level="A.3.1" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram"><i class="fa fa-check"></i><b>A.3.1</b> Frequency Histogram</a></li>
+<li class="chapter" data-level="A.3.2" data-path="graph-library.html"><a href="graph-library.html#density-plot"><i class="fa fa-check"></i><b>A.3.2</b> Density Plot</a></li>
+<li class="chapter" data-level="A.3.3" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram-with-density"><i class="fa fa-check"></i><b>A.3.3</b> Frequency Histogram with Density</a></li>
+<li class="chapter" data-level="A.3.4" data-path="graph-library.html"><a href="graph-library.html#adding-a-discrete-variable"><i class="fa fa-check"></i><b>A.3.4</b> Adding a Discrete Variable</a></li>
+</ul></li>
+<li class="chapter" data-level="A.4" data-path="graph-library.html"><a href="graph-library.html#two-variables-continuous-x-and-y"><i class="fa fa-check"></i><b>A.4</b> Two Variables: Continuous X and Y</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="graph-library.html"><a href="graph-library.html#scatter-plot"><i class="fa fa-check"></i><b>A.4.1</b> Scatter Plot</a></li>
+<li class="chapter" data-level="A.4.2" data-path="graph-library.html"><a href="graph-library.html#regression-line"><i class="fa fa-check"></i><b>A.4.2</b> Regression Line</a></li>
+<li class="chapter" data-level="A.4.3" data-path="graph-library.html"><a href="graph-library.html#scatter-plot-with-regression"><i class="fa fa-check"></i><b>A.4.3</b> Scatter Plot with Regression</a></li>
+<li class="chapter" data-level="A.4.4" data-path="graph-library.html"><a href="graph-library.html#adding-discrete-variables"><i class="fa fa-check"></i><b>A.4.4</b> Adding Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="A.5" data-path="graph-library.html"><a href="graph-library.html#two-variables-discrete-x-continuous-y"><i class="fa fa-check"></i><b>A.5</b> Two Variables: Discrete X, Continuous Y</a>
+<ul>
+<li class="chapter" data-level="A.5.1" data-path="graph-library.html"><a href="graph-library.html#box-plot"><i class="fa fa-check"></i><b>A.5.1</b> Box Plot</a></li>
+<li class="chapter" data-level="A.5.2" data-path="graph-library.html"><a href="graph-library.html#dot-plot"><i class="fa fa-check"></i><b>A.5.2</b> Dot Plot</a></li>
+<li class="chapter" data-level="A.5.3" data-path="graph-library.html"><a href="graph-library.html#violin-plot"><i class="fa fa-check"></i><b>A.5.3</b> Violin Plot</a></li>
+<li class="chapter" data-level="A.5.4" data-path="graph-library.html"><a href="graph-library.html#adding-raw-data"><i class="fa fa-check"></i><b>A.5.4</b> Adding Raw data</a></li>
+<li class="chapter" data-level="A.5.5" data-path="graph-library.html"><a href="graph-library.html#adding-additional-discrete-variables"><i class="fa fa-check"></i><b>A.5.5</b> Adding Additional Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="A.6" data-path="graph-library.html"><a href="graph-library.html#aggregate-data"><i class="fa fa-check"></i><b>A.6</b> Aggregate Data</a>
+<ul>
+<li class="chapter" data-level="A.6.1" data-path="graph-library.html"><a href="graph-library.html#calculating-mean-and-standard-deviation"><i class="fa fa-check"></i><b>A.6.1</b> Calculating Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="A.6.2" data-path="graph-library.html"><a href="graph-library.html#visualizing-means-and-variation"><i class="fa fa-check"></i><b>A.6.2</b> Visualizing Means and Variation</a></li>
+</ul></li>
+<li class="chapter" data-level="A.7" data-path="graph-library.html"><a href="graph-library.html#combining-multiple-plots"><i class="fa fa-check"></i><b>A.7</b> Combining Multiple plots</a></li>
+<li class="chapter" data-level="A.8" data-path="graph-library.html"><a href="graph-library.html#working-with-color-palettes"><i class="fa fa-check"></i><b>A.8</b> Working with Color Palettes</a>
+<ul>
+<li class="chapter" data-level="A.8.1" data-path="graph-library.html"><a href="graph-library.html#color-palettes-in-rcolorbrewer"><i class="fa fa-check"></i><b>A.8.1</b> Color Palettes in RColorBrewer</a></li>
+<li class="chapter" data-level="A.8.2" data-path="graph-library.html"><a href="graph-library.html#combining-rcolorbrewer-palettes-with-ggplot"><i class="fa fa-check"></i><b>A.8.2</b> Combining RColorBrewer Palettes with ggplot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="r-exercises.html"><a href="r-exercises.html"><i class="fa fa-check"></i><b>B</b> R Exercises</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Primer of Evolution</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="adaptation-and-phenotypic-plasticity" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Adaptation and Phenotypic Plasticity<a href="adaptation-and-phenotypic-plasticity.html#adaptation-and-phenotypic-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>By now, you have developed a basic understanding of how mutation, selection, genetic drift, and migration influence evolutionary change—from the sequence of DNA molecules to complex traits shaped by many genes at once. Natural selection continuously nudges populations toward optimal trait expression by counter-selecting traits and trait combinations that lead to inferior performance in any given environment. Yet, despite this continuous nudging, most populations elude perfect adaptation to their environment. The constant input of maladaptive alleles through mutation and migration, and the inescapable effects of genetic drift, move populations away from phenotypic optima. Furthermore, there are fundamental constraints and trade-offs that limit adaptive evolution. Optimal solutions to an ecological problem may be out of reach because there is simply no genetic variation in traits upon which selection may act. Furthermore, evolutionary outcomes invariably represent a compromise reflecting the diverse needs and functions of organisms. It may be impossible to optimize two traits even if they appear unrelated, either because they are linked through antagonistic pleiotropy, or due to trade-offs in the allocation of energy and nutrients. There might even be functional trade-offs, where the same trait is used for multiple functions and all cannot be optimized at once. For example, think of the trade-offs associated with rapid acceleration and endurance.</p>
+<p>Clearly, not every trait of an organism, and every use of a trait, is adaptive. So how do we recognize adaptations in natural systems? How do we determine if organisms are well-adapted to their environment, and what traits are important in mediating adaptation? People—even some of the most rigorous scientists—are quick to come up with plausible narratives about trait evolution and function. But in many cases, these narratives are merely “just-so-stories”; ideas that, while plausible, have little scientific merit because they do not lead to testable hypotheses. Plausibility, it turns out, is not evidence—or as Yvan Audouard said more poetically: “Plausibility is a trap for the truth laid by lies.”</p>
+<p>Consider, for example, the giraffe (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:giraffe">9.1</a>). Ask anyone why this peculiar species of ungulate has such a long neck, and most will come to the same conclusion as Lamarck did over 200 years ago: it must be to reach leaves high up in the trees, where they can evade competition with other browsers foraging at lower heights. However, observational studies indicate that giraffes most frequently pick leaves at shoulder height, where other species can reach them as well. There is instead evidence that neck size plays a role in sexual selection, both when it comes to territorial disputes between males and female mating preferences. Thus, the notion that long necks currently serve an adaptive function for foraging and competitive exclusion rests on thin evidence. Does that mean that selection on foraging success did not play a role in the elongation of the giraffe’s neck? No! We have to be cognizant of the fact that the functions of a trait may change through time; we cannot necessarily make inferences about the origin of a trait based on its current use. Elongated necks may very well have started as an adaptation to reach food high up—but current data holds more evidence for the impact of neck-size variation on giraffe mating success than evidence for its impact on foraging success.</p>
+<p>In this chapter, we will take a closer look at the identification and study of adaptation in organisms living in their natural habitats. After discussing some general approaches used to infer adaptation at different phylogenetic scales, we will explore phenotypic plasticity. This phenomenon has the potential to obscure patterns of adaptive evolution and can actually be a product of adaptation itself.</p>
+<div class="figure"><span style="display:block;" id="fig:giraffe"></span>
+<img src="images/giraffe.jpg" alt="Giraffe in Tsavo. Photo: Anna Langova, [CC0](https://creativecommons.org/publicdomain/zero/1.0/)." width="100%" />
+<p class="caption">
+Figure 9.1: Giraffe in Tsavo. Photo: Anna Langova, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+</p>
+</div>
+<div id="inferring-adaptation" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Inferring Adaptation<a href="adaptation-and-phenotypic-plasticity.html#inferring-adaptation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are many ways to infer adaptation in natural systems, and there is no one-size-fits-all approach. The nature of selection, the natural history of the focal organisms, and the resources available to and logistical constraints imposed on the research team all impact what kind of data is feasible to collect. Here, I want to introduce some general approaches to study adaptation: comparative analyses among species, observational and experimental studies on individual species, and comparative studies among populations of the same species.</p>
+<div id="interspecific-comparisons" class="section level3 hasAnchor" number="9.1.1">
+<h3><span class="header-section-number">9.1.1</span> Interspecific Comparisons<a href="adaptation-and-phenotypic-plasticity.html#interspecific-comparisons" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Convergent evolution—where evolutionarily-independent lineages evolve similar traits to adapt to similar ecological niches—is frequently invoked as evidence for adaptation. For example, the convergent modification of forelimbs to form wings in bats, birds, and pterosaurs all evolved as an adaptation to flying. The inference of convergence is not always so trivial, though—especially when focal species are more closely related, and the evolutionary independence of species is not necessarily evident.</p>
+<p>Consider Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:phylpseurepl">9.2</a> as an example. In both scenarios (A and B), three species are associated with a novel habitat (habitat 2, in green) and exhibit divergence in a phenotypic trait. In the first scenario (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:phylpseurepl">9.2</a>A), the species in the novel habitat form a monophyletic group, suggesting that all three of them have inherited the novel habitat affiliation and the phenotypic trait modification from their shared ancestor. In other words, there has been a single evolutionary transition in habitat affiliation, and a single evolutionary transition in the phenotypic trait, which deflates the evidence for correlated evolution between habitat and trait as a consequence of adaptive evolution. After all, that same correlation may be spurious, having arisen by chance. This scenario is known as phylogenetic pseudoreplication; if we treat each species as an independent replicate, we gloss over the fact that there has only been a single evolutionary transition.</p>
+<p>In the second scenario, the situation is different; the colonization of the novel environment and the associated change in phenotypic trait have independently occurred three times, as evidenced by the fact that all three species in habitat 2 (green) have a sister species in habitat 1 (blue; Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:phylpseurepl">9.2</a>B). The fact that the same correlated changes happened independently multiple times provides more robust evidence for the effects of selection, as we would not expect the same habitat-trait association to evolve repeatedly by chance. As any good experiment designed by researchers, the quality of natural experiments also relies on adequate replication; it is the number of independent evolutionary shifts, and not the number of species, that is the unit of replication.</p>
+<div class="figure"><span style="display:block;" id="fig:phylpseurepl"></span>
+<img src="Primer-to-Evolution_files/figure-html/phylpseurepl-1.png" alt="Two hypothetical scenarios of how the same pattern of association between habitat type and phenotype might arise. A. In the first scenario, habitat 2 (green) was invaded once by the shared ancestor of species 6, 7, and 8, representing a single evolutionary transition. This is an example of phylogenetic pseudoreplication. B. In the second scenario, species 1, 4, and 6 have independently colonized habitat 2 (green). Each of the species is sister to a species occuring in the ancestral habitat 1 (blue)." width="100%" />
+<p class="caption">
+Figure 9.2: Two hypothetical scenarios of how the same pattern of association between habitat type and phenotype might arise. A. In the first scenario, habitat 2 (green) was invaded once by the shared ancestor of species 6, 7, and 8, representing a single evolutionary transition. This is an example of phylogenetic pseudoreplication. B. In the second scenario, species 1, 4, and 6 have independently colonized habitat 2 (green). Each of the species is sister to a species occuring in the ancestral habitat 1 (blue).
+</p>
+</div>
+<p>In reality, the phylogenetic distribution of traits does not neatly follow either scenario outlined in Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:phylpseurepl">9.2</a>. Consider the evolution of piscivory, and the associated evolutionary change in gape width, in the fish family Centrarchidae—which includes black basses, sunfishes, and crappies (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:sunfishes">9.3</a>). Naively, we could just compare the gape width of piscivorous and non-piscivorous species. But as you can glean from the from the phylogeny, the evolution of piscivory is more complicated. There are two independent transitions towards piscivory in the genus <em>Lepomis</em>, but multiple piscivorous species are derived from a single piscivorous ancestor in other clades (<em>Micropterus</em> and the clade with <em>Ambloplites</em>, <em>Archolites</em>, and <em>Pomoxis</em>).</p>
+<p>Multi-species comparative analyses consequently must account for the fact that species are related to each other to varying degrees. Comparing species of <em>Lepomis</em> is not the same as comparing species of <em>Lepomis</em> and <em>Micropterus</em>. More closely related species tend to be more similar than more distantly related ones, and comparative analyses need to account for that. In practice, we use phylogenetic comparative analyses (PCA) that explicitly include information about evolutionary relationships to test hypotheses about trait evolution. The use of well-resolved phylogenies in PCA allows us to statistically account for potential phylogenetic pseudoreplication in comparative analyses. Among the most commonly used methods in PCA are phylogenetically independent contrasts and phylogenetic generalized least squares, which are used to test associations among response variables while controlling for the non-independence of species.</p>
+<div class="figure"><span style="display:block;" id="fig:sunfishes"></span>
+<img src="Primer-to-Evolution_files/figure-html/sunfishes-1.png" alt="Gape width variation of centrarchid fishes as a function of their dietary habits. Species with higher than average gape with have positive scores, species with lower than average gaoe width have negative scores. The phylogenetic tree in the left panel indicates that piscivory has evolved independently multiple times within the family. [Phylogeny](data/9_centrarchidae.tre) from Near et al. (2005); [gape width data](data/9_centrarchidae.csv) from Collar et al. (2009)." width="768" />
+<p class="caption">
+Figure 9.3: Gape width variation of centrarchid fishes as a function of their dietary habits. Species with higher than average gape with have positive scores, species with lower than average gaoe width have negative scores. The phylogenetic tree in the left panel indicates that piscivory has evolved independently multiple times within the family. <a href="data/9_centrarchidae.tre">Phylogeny</a> from Near et al. (2005); <a href="data/9_centrarchidae.csv">gape width data</a> from Collar et al. (2009).
+</p>
+</div>
+<div class="alert alert-block alert-info">
+<p><b>Explore More</b></p>
+<p>If you are interested in learning more about phylogenetic comparative methods, I recommend Luke Harmon’s book “<a href="https://lukejharmon.github.io/pcm/">Phylogenetic Comparative Methods: Learning from Trees</a>”, which is available for free online.</p>
+</div>
+</div>
+<div id="intraspecific-studies" class="section level3 hasAnchor" number="9.1.2">
+<h3><span class="header-section-number">9.1.2</span> Intraspecific Studies<a href="adaptation-and-phenotypic-plasticity.html#intraspecific-studies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Studies of adaptation often focus on single species. Single species studies either use observational approaches, examining organisms in their natural environment, or experimental approaches that manipulate a single, well-defined factor while other variables are held constant. Observational studies promote a better understanding of organisms in their natural environment, but they often cannot control for all confounding variables. Hence, observational studies are typically correlational and do not establish causation between traits, function, and fitness. In contrast, experimental manipulations allow us to establish causal relationship between variables, but sometimes lack the nuanced context of natural situations. There may be a causal link between variation in a trait and fitness under experimental conditions, but the results can be misleading if the experimental conditions are not representative of the natural context. The most powerful studies of adaptation consequently combine observational and experimental data. Here, I provide some illustrative examples of observational and experimental studies that focus on understanding the adaptive nature of animal behavior.</p>
+<div id="observation" class="section level4 unnumbered hasAnchor">
+<h4>Observation<a href="adaptation-and-phenotypic-plasticity.html#observation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Habitat use is one of the most fundamental aspects of animal behavior. In ectotherms, habitat use is governed by a number of potential factors, including resource availability, predation risk, and a need for thermoregulation. But with competing needs, which factors determine where an individual chooses to spend its time? Huey and Kingsolver (1989) used thermal performance data of desert iguanas (<em>Dipsosaurus dorsalis</em>) to make predictions about habitat use in nature. Assessment of multiple aspects of temperature-dependent physiological performance (burst speed, digestive efficiency, endurance, and hearing efficiency; Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:thermreg">9.4</a>A) indicated that the lizards’ optimal body temperature is between 35.4 and 40.6 °C (average: 38.7 °C). Above or below that range, physiological performance starts to decline. Huey and Kingsolver wanted to know if lizards in natural habitats choose their environment so as to optimize their physiological performance. Monitoring body temperature in free-ranging lizards indeed indicated that individuals choose their microhabitats to maintain a relatively narrow temperature range that coincides with the physiological performance optima. This adaptive behavior is called behavioral thermoregulation. The fact that lizard habitat choice is primarily driven by behavioral thermoregulation suggests that other factors—such as resource availability and predation—are not likely to limit the lizards’ ability to find microhabitats with suitable temperatures (or perhaps considering resource distribution and the presence of predators could explain why some lizards exhibited slightly higher or lower body temperatures than expected).</p>
+<div class="figure"><span style="display:block;" id="fig:thermreg"></span>
+<img src="Primer-to-Evolution_files/figure-html/thermreg-1.png" alt="A. Thermal performance curves for different performance metrics of desert iguanas. B. Frequency distribution of body temperatures of active lizards in nature. In both panels, the zone of optimal performance is indicated by gray shading, the average optimum by the red vertical line. [Physiological performance](data/9_thermoregulation1.csv) and [body temperature](data/9_thermoregulation2.csv) data from Huey &amp; Kingsolver (1989)." width="864" />
+<p class="caption">
+Figure 9.4: A. Thermal performance curves for different performance metrics of desert iguanas. B. Frequency distribution of body temperatures of active lizards in nature. In both panels, the zone of optimal performance is indicated by gray shading, the average optimum by the red vertical line. <a href="data/9_thermoregulation1.csv">Physiological performance</a> and <a href="data/9_thermoregulation2.csv">body temperature</a> data from Huey &amp; Kingsolver (1989).
+</p>
+</div>
+<p>In some instances, optimization of one behavior may be prevented by other competing needs. This is illustrated by the interaction between predator avoidance and foraging behaviors in stickleback fish (<em>Gasterosteus aculeatus</em>). In the absence of predators, stickleback preferentially feed at higher prey densities to maximize energy acquisition rates (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:stiba">9.5</a>). In contrast, when a predator (a kingfisher) is present, stickleback preferentially feed at lower densities. This shift in behavior reflects the competing sensory and cognitive resources required to navigate feeding while also paying attention to potential threats from predators. The results also highlight how observational studies can lead to conflicting results when the effects of confounding variables are not properly accounted for. Good observational studies quantify a wide variety of auxiliary data that allows researchers to exclude alternative hypotheses post hoc. Despite all the limitations, collecting observational data is often the only way to address evolutionary hypotheses in natural systems, simply because experimentation with elephants, colonies of army ants, or rainforest giants is just not feasible.</p>
+<div class="figure"><span style="display:block;" id="fig:stiba"></span>
+<img src="Primer-to-Evolution_files/figure-html/stiba-1.png" alt="Preferences of stickleback fish for diffferent prey densities in presence and absence of a predator (kingfisher). [Data](data/9_stickleback.csv) from Milinski &amp; Heller (1978)." width="672" />
+<p class="caption">
+Figure 9.5: Preferences of stickleback fish for diffferent prey densities in presence and absence of a predator (kingfisher). <a href="data/9_stickleback.csv">Data</a> from Milinski &amp; Heller (1978).
+</p>
+</div>
+</div>
+<div id="experimentation" class="section level4 unnumbered hasAnchor">
+<h4>Experimentation<a href="adaptation-and-phenotypic-plasticity.html#experimentation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Experimentation is among the most powerful tools in science, because the meticulous manipulation of specific variables—while holding all others constant—allows for the inference of causal relationships. Experimentation is particularly strong when motivated by solid observational data, which grounds experiments in biological realities, or by theoretical considerations. For example, theoretical considerations shaped the development of testable hypotheses and experiments in studies of optimal foraging. Optimal foraging theory investigates whether organisms behave in a manner that maximizes energy acquisition rates or efficiency, and it is grounded in a simple yet powerful mathematical framework.</p>
+<p>To explore this in more detail, let’s imagine an organism—a bird for example—that forages in discrete habitat patches. An individual needs to travel to a particular patch and then start searching for prey items. As prey items are consumed, the rate at which they are encountered declines; hence, the the cumulative number of prey items found in a particular habitat patch is a decelerating curve, and the slope of the curve eventually approximates zero when all prey items in a patch are consumed (this is known as the law of diminishing returns). The big question is, at what point should the bird stop looking for prey items and instead travel to the next habitat patch where food is still abundant? It turns out that the optimal search time depends on the travel time between habitat patches and the shape of the curve describing the prey acquisition rate. The actual solution of the problem is most easily derived graphically, where the maximum rate of energy gain is defined by the slope of the tangent line of the prey acquisition curve that goes through the point defining the travel time on the x-axis (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:optfor1">9.6</a>A). If the individual spends less than the optimal feeding time in a patch, the slope of the line declines, reducing the energy gain per unit time. If the individual spends more than the optimal feeding time in a patch, the the slope of the line, and consequently the rate of energy gain, declines as well.</p>
+<p>This basic model of optimal foraging allows us to make very clear theoretical predictions about how variation in travel time should affect the optimal amount of time spent in any given foraging patch. If the travel time between patches is relatively short, individuals should spend less time in a particular foraging patch (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:optfor1">9.6</a>B). In contrast, if travel times between patches are longer, the energy acquisition rate is maximized when search times are longer as well. But do organisms actually behave optimally? Has natural selection led to organisms making economical decisions?</p>
+<div class="figure"><span style="display:block;" id="fig:optfor1"></span>
+<img src="Primer-to-Evolution_files/figure-html/optfor1-1.png" alt="The marginal value theorem applied to optimal foraging. A. For any travel time (plotted in blue along the negative portion of the x-axis), the maximum rate of energy acquisition can be determined as the slope of the tangent line of the prey acquisition curve that goes through the point defining the travel time on the x-axis. Accordingly, the optimal search time and the optimal prey number are given by the x and y coordinates of the tangent point. B. Varyint the travel time from shory (brown) to long (pink) changes the optimal food searching time from short to long. " width="100%" />
+<p class="caption">
+Figure 9.6: The marginal value theorem applied to optimal foraging. A. For any travel time (plotted in blue along the negative portion of the x-axis), the maximum rate of energy acquisition can be determined as the slope of the tangent line of the prey acquisition curve that goes through the point defining the travel time on the x-axis. Accordingly, the optimal search time and the optimal prey number are given by the x and y coordinates of the tangent point. B. Varyint the travel time from shory (brown) to long (pink) changes the optimal food searching time from short to long.
+</p>
+</div>
+<p>The optimal foraging model makes clear predictions that can be tested experimentally. To do so, Kacelnik (1984) trained free-living starlings (<em>Sturnus vulgaris</em>) to provision their young with mealworms from artificial feeding stations. Manipulating the interval at which mealworms were released, Kacelnic was able to precisely control the shape of the resource acquisition curve; ever-longer intervals between individual prey items mimicked a diminishing return rate assumed in a patch-foraging model. After training, Kacelnik positioned the feeding stations at varying distances (8–600 meters) from the starlings’ nests to simulate variation in travel time between food patches, and he then quantified how many mealworms each starling brought back to the nest after each foraging trip. The prediction was clear: the farther away the feeding station was placed, the more prey items the starlings should bring back with every trip. And, this is exactly what Kacelnik found (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:optfor3">9.7</a>). In fact, the observed number of prey items closely followed the theoretical predictions made by the model.</p>
+<div class="figure"><span style="display:block;" id="fig:optfor3"></span>
+<img src="Primer-to-Evolution_files/figure-html/optfor3-1.png" alt="Number of prey items collected by starlings as a function of travel time between food patches. The black like represents the theoretical prediction derived from the marginal value theorem in Figure 9.6. [Data](data/9_opt_foraging.csv) from Kacelnik (1984)." width="100%" />
+<p class="caption">
+Figure 9.7: Number of prey items collected by starlings as a function of travel time between food patches. The black like represents the theoretical prediction derived from the marginal value theorem in Figure 9.6. <a href="data/9_opt_foraging.csv">Data</a> from Kacelnik (1984).
+</p>
+</div>
+<p>The few exemplar studies on adaptation discussed here illustrate the complementary insights that can be gained from observational studies grounded in ecological realities, experimental studies that control for confounding variables and help to identify causal relationships, and theoretical models that establish clear predictions based on first principles. While not all approaches are feasible in all study systems, addressing the same problem from different angles and looking for consistencies in the emerging solutions is critical to avoid premature conclusions about adaptation. Conflicting evidence on a given topic does not necessarily invalidate somebody’s work and conclusions; rather, it is just an indication that the context and intricacies of a particular trait (or its uses) are not yet fully understood and require additional investigation.</p>
+</div>
+</div>
+<div id="local-adaptation-within-species" class="section level3 hasAnchor" number="9.1.3">
+<h3><span class="header-section-number">9.1.3</span> Local Adaptation within Species<a href="adaptation-and-phenotypic-plasticity.html#local-adaptation-within-species" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Phenotypic variation is, of course, not only evident between species; there can be an extraordinary amount of phenotypic variation within and among populations of the same species as well. Just consider the staggering color variation among different populations of the stawberry poison-dart frog (<em>Oophaga pumillio</em>; Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:intraspecvar">9.8</a>). Throughout its range, which spans from Nicaragua south to Panama, isolated populations exhibit completely different colors and patterns, even across very small geographic distances. While among-population variation is common in many species, the core question is why? What phenotypic differences reflect adaptation to local environmental conditions?</p>
+<div class="figure"><span style="display:block;" id="fig:intraspecvar"></span>
+<img src="images/dartfrog.png" alt="Intraspecific variation observed in the poison dart frog *Oophaga pumillio* across islands of the Bocas del Toro Archipelago Panama. Note that *Allobates talamancae* is a nontoxic frog species that coexists with the other species. Photo: Mann and Cummings (2012), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)." width="100%" />
+<p class="caption">
+Figure 9.8: Intraspecific variation observed in the poison dart frog <em>Oophaga pumillio</em> across islands of the Bocas del Toro Archipelago Panama. Note that <em>Allobates talamancae</em> is a nontoxic frog species that coexists with the other species. Photo: Mann and Cummings (2012), <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>.
+</p>
+</div>
+<p>Patterns of local adaptation can be uncovered through trait-environment correlations. Such correlations are often evident across vast geographic scales. For example, consistent with the predictions of Bergmann’s rule, many species exhibit a latitudinal gradient in body size. Populations of <em>Drosophila subobscura</em>, which is naturally distributed across Europe, exhibit a relatively small body size in southern portions of the species range around the Mediterranean Sea, while they get progressively larger toward the northern edge of the distribution in Germany and Denmark (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:droslat">9.9</a>A). Interestingly, a parallel cline in body shape has evolved in <em>D. subobscura</em> populations of North America, where the species was introduced in the early 1980s (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:droslat">9.9</a>A). As for comparative analyses among species, replication of trait-environment correlations can be evidence for the role of natural selection in the evolution of phenotypic gradients.</p>
+<p>Trait-environment correlations alone, however, are not sufficient to infer adaptation—even when similar phenotypic clines have repeatedly emerged along replicated environmental gradients. This is because natural selection is just one mechanisms by which such clines can emerge. Alternatively, the clinal expression of phenotypes can be a product of phenotypic plasticity, where individuals differ between populations simply due to exposure to distinct environmental conditions—and not because of differentiation at genetic loci controlling the expression of a trait. Consequently, common-garden experiments are necessary to disentangle the relative contributions of environmental and genetic variation to the phenotypic variation observed among populations. In common garden experiments, populations from different parts of a species’ range are exposed to the exact same environmental conditions to test whether traits differences observed in nature are retained under experimental conditions. Such common garden experiments in <em>Drosophila melanogaster</em> have shown that among-population variation in body size persists in the laboratory, although the slope of the regression line is reduced, suggesting that genetic differentiation and phenotypic plasticity both contribute to the observed phenotypic differences in nature (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:droslat">9.9</a>B).</p>
+<p>It is also important to note that trait-environment correlations must not always occur over vast geographic distances, nor is phenotypic differentiation always gradual. For example, local adaptation of many plant species to different soil conditions can occur at very small spatial scales that are better measured in meters than kilometers, and yet they include discrete ecotypes that correspond to different soil types. Whether local adaptation leads to continuous gradients or discrete ecotypes depends on the strength, nature, and spatial distribution of natural selection, the genetic architecture underlying the focal traits, and the connectedness of populations through gene flow.</p>
+<div class="figure"><span style="display:block;" id="fig:droslat"></span>
+<img src="Primer-to-Evolution_files/figure-html/droslat-1.png" alt="A. Body size variation in *Drosophila subobscura* along a latitudinal gradient in its native European range and its introduced North American range. [Data](data/9_drosophila_bs_lat2.csv) from Huey et al. (2000). B. Body size variation of *Drosophila melanogaster* along a latitudinal gradient for wild-caught individuals and common-garden-reared individuals from the same populations. [Data](data/9_drosophila_bs_lat1.csv) from Imasheva et al. (1994)." width="100%" />
+<p class="caption">
+Figure 9.9: A. Body size variation in <em>Drosophila subobscura</em> along a latitudinal gradient in its native European range and its introduced North American range. <a href="data/9_drosophila_bs_lat2.csv">Data</a> from Huey et al. (2000). B. Body size variation of <em>Drosophila melanogaster</em> along a latitudinal gradient for wild-caught individuals and common-garden-reared individuals from the same populations. <a href="data/9_drosophila_bs_lat1.csv">Data</a> from Imasheva et al. (1994).
+</p>
+</div>
+<p>A complementary approach to detecting local adaptation is the use of translocation or transplant experiments, where the performance of different phenotypes is compared under different environmental conditions. Such experiments allow us to determine how a particular phenotype performs in different habitats relative to its original home habitat, and they allow us to compare the performance of local phenotypes to foreign phenotypes from other habitats. Most clearly, evidence for local adaptation is uncovered when different phenotypes perform best in their home habitat, and if they simultaneously outperform any foreign phenotypes (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:locada">9.10</a>A). However, a particular phenotype does not need to perform best in its home environment as long as it is able to perform better than all other phenotypes (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:locada">9.10</a>B). This frequently happens in populations adapted to extreme environmental conditions. Specific adaptations allow them to tolerate adverse conditions and outcompete nonadapted individuals, but even so they still have a higher fitness in the absence of the stressor that they are uniquely adapted to. Conversely, superior performance of a phenotype in its home habitat does not make it locally adapted if it is outcompeted by other phenotypes (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:locada">9.10</a>C).</p>
+<div class="figure"><span style="display:block;" id="fig:locada"></span>
+<img src="Primer-to-Evolution_files/figure-html/locada-1.png" alt="Possible outcomes of translocation experiments. Red indicates the performance of inviduals from habitat A, green the performance of individuals from habitat B. In scenarios (A) and (B), local phenotypes outperform foreign phenotypes in their own habitat. In scenarios (A) and (C), phenotyoes perform better in their home habitat than in an away habitat. Note that only scenarios (A) and (B) are examples of local adaptation. Adopted from Kawecki &amp; Ebert (2004)." width="768" />
+<p class="caption">
+Figure 9.10: Possible outcomes of translocation experiments. Red indicates the performance of inviduals from habitat A, green the performance of individuals from habitat B. In scenarios (A) and (B), local phenotypes outperform foreign phenotypes in their own habitat. In scenarios (A) and (C), phenotyoes perform better in their home habitat than in an away habitat. Note that only scenarios (A) and (B) are examples of local adaptation. Adopted from Kawecki &amp; Ebert (2004).
+</p>
+</div>
+<p>A classic system for the study of local adaptation to diverse environmental conditions is the mummichog (<em>Fundulus heteroclitus</em>), a small coastal fish species that can be found in both fresh and brackish waters. This distribution across a major ecotone naturally raises questions about whether these fish are locally adapted to different salinities, or if they can flexibly modify their physiology and perform equally well in either environment. Reid Brennan and his colleagues (2016) collected fish from fresh and brackish water populations and acclimated half of the individuals from each habitat to either fresh or brackish water in the laboratory. If mummichog are locally adapted, we would expect the brackish water fish to outperform freshwater fish in brackish water—irrespective of acclimation conditions—and vice versa. This exactly what the researchers found when they compared the endurance of fish swimming under different environmental conditions (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:fundperf">9.11</a>A). While the endurance of freshwater individuals was not significantly different across environments, the performance of brackish water fish differed dramatically depending on water type; they outperformed freshwater fish under high salinity conditions, and they were outperformed under low salinity conditions. Interestingly, another aspect of organismal performance—metabolic scope, which is a measure of energy organisms can mobilize after accounting for the minimum energy required to sustain life—showed a very different pattern (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:fundperf">9.11</a>B). Fish from both populations performed better in brackish than freshwater, and the fact that there were no population differences in this trait indicates that variation is induced by plasticity.</p>
+<p>Such conflicting evidence is not unusual when we attempt to infer local adaptation by measuring organismal performance across different environmental conditions with different metrics. After all, among-population variation in one trait may be shaped primarily by genetic differentiation, while variation in another trait may be entirely plastic; after all, different traits likely have different genetic and developmental architectures. This complication highlights the importance of thinking critically about how we actually measure organismal performance and, ultimately, fitness. In natural systems, it is nearly impossible to directly measure fitness because of the complexity of phenotyes and selective regimes. Researchers often measure other aspects of organismal performance (growth, survival, endurance, etc.) as fitness proxies, which requires a careful examination of the assumptions we make about the relationships of different fitness proxies and actual fitness.</p>
+<div class="figure"><span style="display:block;" id="fig:fundperf"></span>
+<img src="Primer-to-Evolution_files/figure-html/fundperf-1.png" alt="A. Swimming endurance and B. metabolic scope of *Fundulus heteroclitus* from fresh and brackish water populations under fresh and brackish water conditions. [Data](data/9_fundulus_performance.csv) from Brennan et al. (2016)." width="100%" />
+<p class="caption">
+Figure 9.11: A. Swimming endurance and B. metabolic scope of <em>Fundulus heteroclitus</em> from fresh and brackish water populations under fresh and brackish water conditions. <a href="data/9_fundulus_performance.csv">Data</a> from Brennan et al. (2016).
+</p>
+</div>
+</div>
+</div>
+<div id="phenotypic-plasticity" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Phenotypic Plasticity<a href="adaptation-and-phenotypic-plasticity.html#phenotypic-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Phenotypic plasticity is the developmental response of a genotype to environmental cues. It introduces environmentally-induced phenotypic variation into populations (<em>V</em><sub>E</sub>/<em>V</em><sub>P</sub>; see <a href="https://www.k-state.edu/biology/p2e/the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment">Chapter 8</a>). So far, we have primarily thought of plasticity as a complicating factor when we try to infer adaptation; populations in different environments may exhibit different phenotypes not because of genetic differentiation, but simply because of exposure to different environmental conditions. This is not an example of local adaptation, because plastic traits are not heritable, and adaptations are the product of evolution by natural selection, which requires trait heritability. Still, the ability to modify phenotypic expression in response to environmental cues may itself be considered an adaptation.</p>
+<p>Consider water fleas (<em>Daphnia</em> sp.) as an example. Many <em>Daphnia</em> species are able to plastically modify the size of defensive structures (<em>e.g.</em>, tail and head spines) depending on whether they are sensing potential predators in their environment. In absence of predators, defensive structures are small to save the energy and nutrients required for their growth. In the presence of predators, however, the same clone of these asexually reproducing crustaceans will produce substantially longer spines, and the spiny appendages provide a fitness benefit despite of the resource costs, because they reduce the likelihood that an individual is preyed upon. In this case, it is not the actual size of the spine that is the adaptation (short in low-predation and long in high-predation environments). Instead, it is the ability to change spine size depending on the presence or absence of predators that is adaptive.</p>
+<div class="figure"><span style="display:block;" id="fig:daph"></span>
+<img src="images/daphnia.jpg" alt="*Daphnia magna* is a small planktonic crustacean. In this specimen, the tail spine is only weakly developed, and the head spine is missing. Photo: [Per Harald Olsen](https://www.flickr.com/photos/92416586@N05/14004524707), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)." width="100%" />
+<p class="caption">
+Figure 9.12: <em>Daphnia magna</em> is a small planktonic crustacean. In this specimen, the tail spine is only weakly developed, and the head spine is missing. Photo: <a href="https://www.flickr.com/photos/92416586@N05/14004524707">Per Harald Olsen</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+</p>
+</div>
+<div id="types-of-phenotypic-plasticity" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Types of Phenotypic Plasticity<a href="adaptation-and-phenotypic-plasticity.html#types-of-phenotypic-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In general, we distinguish three types of phenotypic plasticity. All of these types of plasticity are the same in that they lead to alternative trait expression by the same genotype when exposed to different environmental conditions.</p>
+<div id="developmental-plasticity" class="section level4 unnumbered hasAnchor">
+<h4>Developmental Plasticity<a href="adaptation-and-phenotypic-plasticity.html#developmental-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Developmental plasticity occurs when an environmental cue during a critical period—usually early during ontogeny—alters the developmental trajectory of an individual, leading to alternative phenotypic morphs in adults. The modification of phenotypes through developmental plasticity is non-reversible, and the traits of an individual remain fixed after the critical period has passed. Classical examples of developmental plasticity include the predator-dependent expression of defensive structures in <em>Daphnia</em>, the diet-dependent expression of omnivorous and carnivorous tadpoles in spadefoot toads, and the development of different casts in ants and other social insects.</p>
+</div>
+<div id="acclimation" class="section level4 unnumbered hasAnchor">
+<h4>Acclimation<a href="adaptation-and-phenotypic-plasticity.html#acclimation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Acclimation is a form of phenotypic plasticity that involves physiological or behavioral changes within the lifetime of an individual, and allows organisms to respond to short-term environmental changes. Unlike developmental plasticity, acclimation is reversible, and traits can be adjusted continuously throughout an individual’s life. A wide variety of physiological tolerances are subject to acclimation in plants and animals alike, including tolerance to extremes in temperature, salinity, or oxygen availability. Similarly, gastrointestinal tract morphology and physiology in many animals can change in response to variation in diet. Plants can also modify leaf shape and size depending on the availability of light or the presence of herbivores.</p>
+</div>
+<div id="seasonal-plasticity" class="section level4 unnumbered hasAnchor">
+<h4>Seasonal Plasticity<a href="adaptation-and-phenotypic-plasticity.html#seasonal-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Seasonal plasticity includes predictable phenotypic changes individuals experience over the course of the year, often leading to cyclical phenotypic changes over the course of an individual’s lifespan. Examples for seasonal plasticity includes coat color changes in snowshoe hares and Arctic foxes (brown in the summer, white in the winter), wet and dry-season color morphs observed in some African butterflies, and the seasonal growth and shedding of antlers in many ungulates.</p>
+</div>
+</div>
+<div id="reaction-norms-and-the-evolution-of-plasticity" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> Reaction Norms and the Evolution of Plasticity<a href="adaptation-and-phenotypic-plasticity.html#reaction-norms-and-the-evolution-of-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If phenotypic plasticity can be an adaptation, it must be the product of natural selection; hence, there must be heritable variation in plasticity within a population for plasticity to evolve. To quantitatively describe a genotype’s ability to plastically modify its phenotype in response to a particular environmental cue, we measure so-called reaction norms. A reaction norm describes the pattern of phenotypic expression of a single genotype as a function of an environmental variable. Reaction norms can have any shape (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactnorm">9.13</a>), and the exact nature of reaction norms can be determined empirically by rearing the same genotype in different environments and measuring phenotypic expression.</p>
+<div class="figure"><span style="display:block;" id="fig:reactnorm"></span>
+<img src="Primer-to-Evolution_files/figure-html/reactnorm-1.png" alt="A reaction norm describes how the phenotype of a particular genotype changes across different environments. In theory, reaction norms can have any shape; they can be close to linear (blue line) or completely non-linear." width="672" />
+<p class="caption">
+Figure 9.13: A reaction norm describes how the phenotype of a particular genotype changes across different environments. In theory, reaction norms can have any shape; they can be close to linear (blue line) or completely non-linear.
+</p>
+</div>
+<p>Importantly, reaction norms are quantitative traits. But before we can apply quantitative genetic approaches to understand the evolution of phenotypic plasticity, we need to amend the conceptual framework that we established in <a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability">Chapter 9</a>. For simplicity, let’s assume that we can describe phenotypic variation in a population with linear graphs, where differences in slopes reflect variation in plasticity and differences in intercepts indicate variation among genotypes . If phenotypic variation in a population is completely determined by genetic variation (<em>V</em><sub>P</sub>=<em>V</em><sub>G</sub>), the reaction norms for all genotypes in a population are flat (slope = 0), but with different y-intercepts (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>A). In this case, it does not matter what the environment is; the phenotype is solely dependent on the genotype. In contrast, if phenotypic variation in a population is completely determined by environmental variation (<em>V</em><sub>P</sub>=<em>V</em><sub>E</sub>), all genotypes will have the same reaction norm (same slope and same intercept; Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>A). In this case, it does not matter what genotype an individual belongs to; phenotypic expression is solely dependent on the environment. If both genetic and environmental variation shape phenotypic variation in a population (<em>V</em><sub>P</sub>=<em>V</em><sub>G</sub>+<em>V</em><sub>E</sub>), the shape (slope) of the plastic response is identical for all genotypes, but their intercepts vary (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>C). What all three scenarios have in common is that none of them actually allow for the evolution of phenotypic plasticity. The evolution of the ability to plastically modify the expression of a trait is contingent on there being variation in that ability. <em>I.e.</em>, there needs to be variation in plasticity, and all three scenarios we have discussed so far either have no plasticity in the population at all (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>A), or all genotypes respond to different environments in the exact same way (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>B–C).</p>
+<p>To account for variation in reaction norms that allows for the evolution of phenotypic plasticity, we need to add another term our model: phenotypic variation that is the consequence of genotype-specific responses to environmental variation, also know as gene-by-environment interactions (<em>V</em><sub>G⨉E</sub>). Hence, <em>V</em><sub>P</sub>=<em>V</em><sub>G</sub>+<em>V</em><sub>E</sub>+<em>V</em><sub>G⨉E</sub>. Gene-by-environment interactions are characterized by different genotypes having different slopes in their plastic responses (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:reactionnorms">9.14</a>D). Only when different genotypes have different reaction norms can natural selection act on that variation to optimize plastic responses in a way that maximizes fitness. In some contexts, that means that plasticity may be favored—for example when environmental conditions are fluctuating or unpredictable. When environments are stable, however, plasticity may be selected against.</p>
+<div class="figure"><span style="display:block;" id="fig:reactionnorms"></span>
+<img src="Primer-to-Evolution_files/figure-html/reactionnorms-1.png" alt="Components of variation of a phenotypic trait: A. If V&lt;sub&gt;P&lt;/sub&gt;=V&lt;sub&gt;G&lt;/sub&gt;, there is no phenotypic plasticity in a population. B. If V&lt;sub&gt;P&lt;/sub&gt;=V&lt;sub&gt;E&lt;/sub&gt;, phenotypic variation is solely shaped by plasticity. C. If V&lt;sub&gt;P&lt;/sub&gt;=V&lt;sub&gt;G&lt;/sub&gt;+V&lt;sub&gt;E&lt;/sub&gt;, genetic variation and phenotypic plasticity contribute to trait variation on a population, but all genotype respond to environmental cues in exactly the same way. D. If V&lt;sub&gt;P&lt;/sub&gt;=V&lt;sub&gt;G&lt;/sub&gt;+V&lt;sub&gt;E&lt;/sub&gt;+V&lt;sub&gt;G⨉E&lt;/sub&gt;, there are genotype-specific responses to environmental cues. This is the only scenario in which phenotypic plasticity can actually evolve." width="768" />
+<p class="caption">
+Figure 9.14: Components of variation of a phenotypic trait: A. If V<sub>P</sub>=V<sub>G</sub>, there is no phenotypic plasticity in a population. B. If V<sub>P</sub>=V<sub>E</sub>, phenotypic variation is solely shaped by plasticity. C. If V<sub>P</sub>=V<sub>G</sub>+V<sub>E</sub>, genetic variation and phenotypic plasticity contribute to trait variation on a population, but all genotype respond to environmental cues in exactly the same way. D. If V<sub>P</sub>=V<sub>G</sub>+V<sub>E</sub>+V<sub>G⨉E</sub>, there are genotype-specific responses to environmental cues. This is the only scenario in which phenotypic plasticity can actually evolve.
+</p>
+</div>
+</div>
+<div id="adaptive-and-maladaptive-phenotypic-plasticity" class="section level3 hasAnchor" number="9.2.3">
+<h3><span class="header-section-number">9.2.3</span> Adaptive and Maladaptive Phenotypic Plasticity<a href="adaptation-and-phenotypic-plasticity.html#adaptive-and-maladaptive-phenotypic-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Phenotypic plasticity can evolve when there is heritable variation in plasticity within populations. However, it would be premature to assume that all instances of plasticity are actually adaptive. Like all other traits, plasticity is not only shaped by natural selection, but also by other evolutionary forces. And like all other traits, plasticity is subject to pleiotropic interactions, constraints, and trade-offs that cause deviation from optimal phenotypes.</p>
+<p>Phenotypic plasticity is adaptive if it allows individuals to adjust their phenotype in a way that increases their fitness under the environmental conditions they encounter. Recognizing adaptive phenotypic plasticity, however, is not trivial in natural systems. Doughty and Reznick (2004) proposed six key questions that must be addressed to determine the adaptive value of plasticity: (1) What are the plastic responses to different environmental conditions? (2) How do environmental conditions that impact phenotypic expression vary in nature? This is important because conditions that can induce plasticity in the laboratory may actually be rare or non-existent in natural habitats. (3) Is there a reversal in relative fitness of the alternative phenotypes in different environments? (4) Do organisms respond to reliable environmental cues that predict future selective environments? (5) Is there genetic variation for plasticity and does it evolve in response to selection? (6) Is there comparative evidence that plasticity is correlated with environmental heterogeneity? Needless to say, rigorously ruling out alternative, non-adaptive explanations for adaptive plasticity is a tall order.</p>
+<p>One of the best-studied cases of adaptive phenotypic plasticity comes from egg size variation in seed beetles (<em>Stator limatus</em>). These beetles lay their eggs on the seeds of different host plants, including cat-claw acacia (<em>Acacia greggi</em>) and blue paloverde (<em>Cercidium floridum</em>), which vary in their availability to different beetle populations. Acacia seeds provide a high-quality resource, and seed beetles can maximize their fitness by laying many small eggs. In contrast, the seeds of paloverde are of poor quality for the developing offspring, and fitness is maximized by laying a few large eggs (Fox &amp; Mousseau 1996). As in many other instances where traits (eggs size and number in this case) and environments (host plants) vary among populations, correlations between the two variable can arise through local adaptation (<em>i.e.</em>, genetic differentiation) or through phenotypic plasticity. To distinguish between these alternative hypotheses, Fox et al. (1997) first raised seed beetles on the preferred acacia seeds for multiple generations, to minimize potential maternal effects. They then let individual females lay their eggs on either acacia or paloverde seeds and measured the size of deposited eggs. As observed in nature, eggs laid on acacia seed were small, and those laid on paloverde were large (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:seedbeet">9.15</a>A). Even more so, females were actually able to adjust their eggs size within just a few days when the researchers switched them across experimental treatments (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:seedbeet">9.15</a>B). This combination of field and laboratory experiments not only revealed that beetles adjust their phenotypic trait in response to an environmental cue (question 1), but also that the relevant environmental factor varies in nature (differences in host plants among populations; question 2), and that the different phenotypes maximize fitness in their respective environment (question 3). Subsequent quantitative genetic studies also revealed genetic variation for plasticity within the seed beetle population (question 5; Fox et al. 1999).</p>
+<div class="figure"><span style="display:block;" id="fig:seedbeet"></span>
+<img src="Primer-to-Evolution_files/figure-html/seedbeet-1.png" alt="A. Egg size variation of seed beetles on different host plants (*Acacia* and *Cercidium*) B. Individual seed beetles are able to adjust eggs size rapidly when switched between the two hosts. [Egg size](data/9_seed_eggsize.csv) and [experimental](data/9_seed_experiment.csv) data from Fox et al. 1997." width="100%" />
+<p class="caption">
+Figure 9.15: A. Egg size variation of seed beetles on different host plants (<em>Acacia</em> and <em>Cercidium</em>) B. Individual seed beetles are able to adjust eggs size rapidly when switched between the two hosts. <a href="data/9_seed_eggsize.csv">Egg size</a> and <a href="data/9_seed_experiment.csv">experimental</a> data from Fox et al. 1997.
+</p>
+</div>
+<p>Another example illustrates how the adaptive value of phenotypic plasticity can be context-dependent. Many freshwater snails exhibit phenotypic plasticity in their shell growth depending on whether predators are present or absent. <em>Physella virgata</em>, for example, grows large and elongated shells in absence of predators and smaller and more rotund shells in the presence of fish. Smaller and rotund shells are harder to crush, providing added protection. On the other hand, they also constrain a snail’s body size, and along with that the size of the gonads and ultimately lifetime reproductive output. Interestingly, <em>Physella virgata</em> changes its shell morphology when it senses an actual threat in the environment (molluscivorous sunfish) and also when it senses fish that do not actually eat snails (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:snails">9.16</a>). While the plastic response may constitute an adaptation in an environment with molluscivorous fish, the lack of specificity in the environmental cue (see question 4 above) renders the same response maladaptive in other environmental contexts.</p>
+<div class="figure"><span style="display:block;" id="fig:snails"></span>
+<img src="Primer-to-Evolution_files/figure-html/snails-1.png" alt="Shell size of the snail *Physella virgata* under fishless control conditions and in the presence of different fish species that vary in their propensity to consume snails as prey. [Data](data/9_snails.csv) from Langerhans &amp; DeWitt (2002)." width="100%" />
+<p class="caption">
+Figure 9.16: Shell size of the snail <em>Physella virgata</em> under fishless control conditions and in the presence of different fish species that vary in their propensity to consume snails as prey. <a href="data/9_snails.csv">Data</a> from Langerhans &amp; DeWitt (2002).
+</p>
+</div>
+</div>
+</div>
+<div id="case-study-local-adaptation-and-phenotypic-plasticity" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Case Study: Local Adaptation and Phenotypic Plasticity<a href="adaptation-and-phenotypic-plasticity.html#case-study-local-adaptation-and-phenotypic-plasticity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="exercises/BIOL520-ex8.zip">case study associated with this chapter</a> has two components. The first one focuses on variation in flower morphology of a dainty South African plant, <em>Nerine humilis</em> (Figure <a href="adaptation-and-phenotypic-plasticity.html#fig:nerine">9.17</a>). You will analyze observational and experimental data on the interactions of different flower morphs and pollinators to address questions about the evolution for among-population differences in flower traits. The second component focuses on exploring the mechanisms underlying life-history differences among populations of small live-bearing fish, the guppy (<em>Poecilia reticulata</em>), that live in habitats with different predation regimes. Analyzing the results of a common garden experiment, you will try to disentangle the effects of genetic variation and phenotypic plasticity on phenotypic trait variation.</p>
+<div class="figure"><span style="display:block;" id="fig:nerine"></span>
+<img src="images/Nerine.jpg" alt="*Nerine humilis*, flowers; Kirstenbosch National Botanical Garden, Cape Town, Western Cape, South Africa. Photo: SAplants, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons." width="100%" />
+<p class="caption">
+Figure 9.17: <em>Nerine humilis</em>, flowers; Kirstenbosch National Botanical Garden, Cape Town, Western Cape, South Africa. Photo: SAplants, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.
+</p>
+</div>
+</div>
+<div id="practical-skills-more-variables-more-graphs" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Practical Skills: More Variables, More Graphs<a href="adaptation-and-phenotypic-plasticity.html#practical-skills-more-variables-more-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In data sets you have worked with so far, you explored the relationship between one dependent and one or two independent variables. In many cases, however, data sets may include more than two independent variables and even a whole list of dependent variables. Plotting all the data at once can lead to confusing graphs, and it is often preferable to breakout down such complex data sets into subsets plotted separately. To do that, you could first <a href="https://www.statmethods.net/management/subset.html">subset your data manually</a> and then create individual plots for each subset. Alternatively, you can use the<code>facet_grid()</code> and <code>facet_wrap()</code> functions from the <code>ggplot2</code> package to create plots for different subsets of data automatically. I am providing two examples on how to use these functions here.</p>
+<div id="example-1-many-independent-variables" class="section level3 hasAnchor" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Example 1: Many Independent Variables<a href="adaptation-and-phenotypic-plasticity.html#example-1-many-independent-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The first example deals with a case where a dependent variable is associated with more than two independent variables that we might want to consider. Imagine for example that we wanted to explore the effects of an environmental toxicant on variation in plant biomass. To do so, we conducted a common garden experiment, where we sampled plants from populations in the polluted and unpolluted habitat, and we planted individuals from each population in both polluted and unpolluted soils. In addition, we did this for two species, and because both species are dioecious and exhibit sexual dimorphism, we need to analyze data for each sex separately. I know… it’s lot… but just check out the <a href="data/9_complex1.csv">data set</a>: you have one dependent variable (mass) and four independent variables (population, soil type, species, and sex):</p>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="adaptation-and-phenotypic-plasticity.html#cb127-1" tabindex="-1"></a>ex1 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/9_complex1.csv&quot;</span>)</span>
+<span id="cb127-2"><a href="adaptation-and-phenotypic-plasticity.html#cb127-2" tabindex="-1"></a><span class="fu">head</span>(ex1)</span></code></pre></div>
+<pre><code>##   population soil.type  sex   species mass
+## 1   Polluted  Polluted Male Species 1 12.3
+## 2   Polluted  Polluted Male Species 1 10.6
+## 3   Polluted  Polluted Male Species 1 16.5
+## 4   Polluted  Polluted Male Species 1 10.3
+## 5   Polluted  Polluted Male Species 1 19.1
+## 6   Polluted  Polluted Male Species 1 16.8</code></pre>
+<p>The main question we want to address is how different populations (polluted and unpolluted) grow in different soils (polluted and unpolluted). So, the base plot is a boxplot, as you have made them multiple times before:</p>
+<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="adaptation-and-phenotypic-plasticity.html#cb129-1" tabindex="-1"></a><span class="fu">ggplot</span>(ex1, <span class="fu">aes</span>(<span class="at">x=</span>soil.type, <span class="at">y=</span>mass, <span class="at">fill=</span>population))<span class="sc">+</span></span>
+<span id="cb129-2"><a href="adaptation-and-phenotypic-plasticity.html#cb129-2" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>()<span class="sc">+</span></span>
+<span id="cb129-3"><a href="adaptation-and-phenotypic-plasticity.html#cb129-3" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Soil type&quot;</span>, <span class="at">y=</span><span class="st">&quot;Biomass&quot;</span>, <span class="at">fill=</span><span class="st">&quot;Population&quot;</span>)<span class="sc">+</span></span>
+<span id="cb129-4"><a href="adaptation-and-phenotypic-plasticity.html#cb129-4" tabindex="-1"></a>    <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb129-5"><a href="adaptation-and-phenotypic-plasticity.html#cb129-5" tabindex="-1"></a>    <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-26-1.png" width="100%" /></p>
+<p>This graph is misleading because it lumps together data from the different species and the different sexes. However, we can split the data into different panels of the same graph using the <code>facet_grid()</code> function, with the additional variables (sex and species) as arguments. Note that the variable before the tilde (<code>~</code>) is plotted in different rows; the variable after the tilde is plotted in different columns:</p>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="adaptation-and-phenotypic-plasticity.html#cb130-1" tabindex="-1"></a><span class="fu">ggplot</span>(ex1, <span class="fu">aes</span>(<span class="at">x=</span>soil.type, <span class="at">y=</span>mass, <span class="at">fill=</span>population))<span class="sc">+</span></span>
+<span id="cb130-2"><a href="adaptation-and-phenotypic-plasticity.html#cb130-2" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>()<span class="sc">+</span></span>
+<span id="cb130-3"><a href="adaptation-and-phenotypic-plasticity.html#cb130-3" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Soil type&quot;</span>, <span class="at">y=</span><span class="st">&quot;Mass&quot;</span>, <span class="at">fill=</span><span class="st">&quot;Population&quot;</span>)<span class="sc">+</span></span>
+<span id="cb130-4"><a href="adaptation-and-phenotypic-plasticity.html#cb130-4" tabindex="-1"></a>    <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb130-5"><a href="adaptation-and-phenotypic-plasticity.html#cb130-5" tabindex="-1"></a>    <span class="fu">facet_grid</span>(sex <span class="sc">~</span> species)<span class="sc">+</span> <span class="co">#Creating separate panels for additional independent variables</span></span>
+<span id="cb130-6"><a href="adaptation-and-phenotypic-plasticity.html#cb130-6" tabindex="-1"></a>    <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-27-1.png" width="100%" /></p>
+<p>Plotting the different subsets of data in different panels with the same x- and y-axes scales allows for a direct comparison of responses between the sexes and across the species.</p>
+</div>
+<div id="example-2-many-dependent-variables" class="section level3 hasAnchor" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Example 2: Many Dependent Variables<a href="adaptation-and-phenotypic-plasticity.html#example-2-many-dependent-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A similar problem presents itself when a relatively simple experiment measures many variables at the same time. Imagine, for example, that we were interested in understanding how different levels of pollution impact the expression of different genes. In this case we may have only one independent variable (level of pollution) but many independent variables (expression data for different genes):</p>
+<div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="adaptation-and-phenotypic-plasticity.html#cb131-1" tabindex="-1"></a>ex2 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/9_complex2.csv&quot;</span>)</span>
+<span id="cb131-2"><a href="adaptation-and-phenotypic-plasticity.html#cb131-2" tabindex="-1"></a><span class="fu">head</span>(ex2)</span></code></pre></div>
+<pre><code>##   concentration   gene expression.level
+## 1      32.23695 Gene 1        120.34504
+## 2      25.12419 Gene 1         94.06826
+## 3      32.93474 Gene 1        119.95127
+## 4      20.94971 Gene 1         86.84319
+## 5      35.00914 Gene 1        127.36943
+## 6      24.43666 Gene 1         94.38677</code></pre>
+<p>Again, we could plot these data all in a single graph using a scatter plots, with different genes plotted in different colors:</p>
+<div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="adaptation-and-phenotypic-plasticity.html#cb133-1" tabindex="-1"></a><span class="fu">ggplot</span>(ex2, <span class="fu">aes</span>(<span class="at">x=</span>concentration, <span class="at">y=</span>expression.level, <span class="at">color=</span>gene))<span class="sc">+</span></span>
+<span id="cb133-2"><a href="adaptation-and-phenotypic-plasticity.html#cb133-2" tabindex="-1"></a>    <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb133-3"><a href="adaptation-and-phenotypic-plasticity.html#cb133-3" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>, <span class="at">se=</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
+<span id="cb133-4"><a href="adaptation-and-phenotypic-plasticity.html#cb133-4" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Concentration&quot;</span>, <span class="at">y=</span><span class="st">&quot;Gene expression&quot;</span>, <span class="at">color=</span><span class="st">&quot;Gene&quot;</span>)<span class="sc">+</span></span>
+<span id="cb133-5"><a href="adaptation-and-phenotypic-plasticity.html#cb133-5" tabindex="-1"></a>    <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb133-6"><a href="adaptation-and-phenotypic-plasticity.html#cb133-6" tabindex="-1"></a>    <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-29-1.png" width="100%" /></p>
+<p>This graph, however, is very messy and confusing. Since different genes are expressed at different base levels, it is difficult to discern how the expression of different genes relates to the level of pollution. Using the facet_wrap() function, we can automatically plot the data for each gene in a separate panel. We simply use gene as an argument (after a tilde). In addition, <code>scale="free"</code> allows each panel to have its own y-axis limits, and <code>ncol=3</code> arranges the panels into three columns:</p>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="adaptation-and-phenotypic-plasticity.html#cb134-1" tabindex="-1"></a><span class="fu">ggplot</span>(ex2, <span class="fu">aes</span>(<span class="at">x=</span>concentration, <span class="at">y=</span>expression.level))<span class="sc">+</span></span>
+<span id="cb134-2"><a href="adaptation-and-phenotypic-plasticity.html#cb134-2" tabindex="-1"></a>    <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb134-3"><a href="adaptation-and-phenotypic-plasticity.html#cb134-3" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>, <span class="at">se=</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
+<span id="cb134-4"><a href="adaptation-and-phenotypic-plasticity.html#cb134-4" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Level of pollution&quot;</span>, <span class="at">y=</span><span class="st">&quot;Gene expression level&quot;</span>, <span class="at">color=</span><span class="st">&quot;Gene&quot;</span>)<span class="sc">+</span></span>
+<span id="cb134-5"><a href="adaptation-and-phenotypic-plasticity.html#cb134-5" tabindex="-1"></a>    <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb134-6"><a href="adaptation-and-phenotypic-plasticity.html#cb134-6" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span> gene, <span class="at">scale=</span><span class="st">&quot;free&quot;</span>, <span class="at">ncol=</span><span class="dv">3</span>) <span class="co">#Creating a separate panel for each gene</span></span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-30-1.png" width="100%" /></p>
+<p>Plotting the data separately for each gene at an appropriate scale allows us to readily discern different gene expression patterns in response to different levels of pollution.</p>
+</div>
+</div>
+<div id="reflection-questions-8" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> Reflection Questions<a href="adaptation-and-phenotypic-plasticity.html#reflection-questions-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>The world is full of many amazing traits organisms have evolved to adapt to their environment. One of my favorite traits is the weird hump we can observe in some Chinese cavefishes. Its adaptive significance remains a mystery so far, although I do have a bunch of hypotheses I’d like to test one day. Look at this! It’s pretty wild, right?</p>
+<div class="figure"><span style="display:block;" id="fig:sinocyclocheilus"></span>
+<img src="images/sinocyclocheilus.jpg" alt="*Sinocyclocheilus furcodorsalis*. Photo: Jörg Freyhof." width="100%" />
+<p class="caption">
+Figure 9.18: <em>Sinocyclocheilus furcodorsalis</em>. Photo: Jörg Freyhof.
+</p>
+</div>
+<p>What organism has always fascinated you? What adaptations does it have? How have scientists tested adaptive hypotheses? And if you cannot find any information, how might you go about exploring the adaptive function of that trait?</p></li>
+<li><p>How would you attempt to identify genes underlying phenotypic plasticity in a particular trait?</p></li>
+<li><p>A big open question in evolutionary biology is how phenotypic plasticity impacts evolutionary change. Some argue that plasticity slows down evolution, while others think plasticity might potentiate evolution. Can you explain under what circumstances phenotypic plasticity might slow down or event prevent evolutionary change? Can you explain under what circumstances phenotypic plasticity might potentiate evolutionary change?</p></li>
+</ol>
+</div>
+<div id="references-9" class="section level2 hasAnchor" number="9.6">
+<h2><span class="header-section-number">9.6</span> References<a href="adaptation-and-phenotypic-plasticity.html#references-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Brennan RS, R Hwang, M Tse, NA Fangue, A Whitehead (2016). <a href="https://www.sciencedirect.com/science/article/pii/S1095643316300356">Local adaptation to osmotic environment in killifish, <em>Fundulus heteroclitus</em>, is supported by divergence in swimming performance but not by differences in excess post-exercise oxygen consumption or aerobic scope</a>. <em>Comparative Biochemistry and Physiology A</em> 196, 11–19.</p></li>
+<li><p>Collar DC, BC O’Meara, PC Wainwright, TJ Near (2009). <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2009.00626.x">Piscivory limits diversification of feeding morphology in centrarchid fishes</a>. <em>Evolution</em> 63, 1557–1573.</p></li>
+<li><p>Doughty P, DN Reznick (2004). Patterns and analysis of adaptive phenotypic plasticity in animals. In: TJ DeWitt, SM Scheiner (eds), <em>Phenotypic Plasticity: Functional and Conceptual Approaches</em>. London, England: Oxford University Press. pp 126-150.</p></li>
+<li><p>Fox CW, TA Mousseau (1996). <a href="https://link.springer.com/article/10.1007%2FBF00333946">Larval host plant affects fitness consequences of egg size variation in the seed beetle <em>Stator limbatus</em></a>. <em>Oecologia</em> 107, 541–548.</p></li>
+<li><p>Fox CW, MS Thakar, TA Mousseau (1997). <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/285983">Egg size plasticity in a seed beetle: an adaptive maternal effect</a>. <em>American Naturalist</em> 149, 149–163.</p></li>
+<li><p>Fox CW, ME Czesak, TA Mousseau, DA Roff (1999). <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.1999.tb03790.x">The evolutionary genetics of an adaptive maternal effects: eggs size plasticity in a seed beetle</a>. <em>Evolution</em> 53, 552–560.</p></li>
+<li><p>Huey RB, JG Kingsolver (1989). <a href="https://www.sciencedirect.com/science/article/abs/pii/0169534789902115">Evolution of thermal sensitivity of ectotherm performance</a>. <em>Trends in Ecology &amp; Evolution</em> 4, 131–135.</p></li>
+<li><p>Huey RB, GW Gilchrist, ML Carlson, D Berrigan, L Serra (2000). <a href="https://science.sciencemag.org/content/287/5451/308">Rapid evolution of a geographic cline in size in an introduced fly</a>. <em>Science</em> 287, 308–309.</p></li>
+<li><p>Imasheva AG, OA Bubli, OE Lazebny (1994). <a href="https://www.nature.com/articles/hdy199468">Variation in wing length in Eurasian natural populations of <em>Drosophila melanogaster</em></a>. <em>Heredity</em> 72, 508–514.</p></li>
+<li><p>Kacelnik A (1984). <a href="https://www.jstor.org/stable/4357?origin=crossref&amp;seq=1#metadata_info_tab_contents">Central place foraging in starlings (<em>Sturnus vulgaris</em>): I. Patch residence time</a>. <em>Journal of Animal Ecology</em> 53, 283–299.</p></li>
+<li><p>Kawecki TJ, D Ebert (2004). <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1461-0248.2004.00684.x">Conceptual issues in local adaptation</a>. <em>Ecology Letters</em> 7, 1225–1241.</p></li>
+<li><p>Langerhans, R. B., &amp; DeWitt, T. J. (2002). <a href="https://www.evolutionary-ecology.com/abstracts/v04/1422.html">Plasticity constrained: over-generalized induction cues cause maladaptive phenotypes</a>. <em>Evolutionary Ecology</em> 4: 857-870.</p></li>
+<li><p>Maan ME, ME Cummings (2012). <a href="https://www.journals.uchicago.edu/doi/10.1086/663197">Poison frog colors are honest signals of toxicity, particularly for bird predators</a>. <em>American Naturalist</em> 179, E1–E14.</p></li>
+<li><p>Milinski M, R Heller (1978). <a href="https://www.nature.com/articles/275642a0">Influence of a predator on the optimal foraging behaviour of sticklebacks (<em>Gasterosteus aculeatus</em> L.)</a>. <em>Nature</em> 275, 642–644.</p></li>
+<li><p>Near TJ, DI Bolnick, PC Wainwright (2005). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0014-3820.2005.tb01825.x">Fossil calibrations and molecular divergence time estimates in centrarchid fishes (Teleostei: Centrarchidae)</a>. <em>Evolution</em> 59, 1768–1782.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-evolution-of-quantitative-traits.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="social-behavior-and-sexual-selection.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": "nullnull",
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

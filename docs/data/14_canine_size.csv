@@ -1,0 +1,13 @@
+﻿species,jaw,canine.height,sd,se,n
+Gorilla gorilla,Mandible,20.89,5.47,0.773574819,50
+Pongo pygmaeus,Mandible,19.52,4.18,1.045,16
+Pan troglodytes,Mandible,17.63,3.52,0.642661134,30
+Homo sapiens,Mandible,9.99,1.23,0.205,36
+Australopithecus afarensis,Mandible,13.12,2.22,0.906311205,6
+Australopithecus anamensis,Mandible,13.27,2.94,1.697409791,3
+Gorilla gorilla,Maxillary,22.08,7.44,1.05217489,50
+Pongo pygmaeus,Maxillary,20.15,6.15,1.5375,16
+Pan troglodytes,Maxillary,18.05,4.03,0.735773969,30
+Homo sapiens,Maxillary,9.28,1.23,0.205,36
+Australopithecus afarensis,Maxillary,12.35,2.18,0.889981273,6
+Australopithecus anamensis,Maxillary,14.4,2.12,1.223982571,3

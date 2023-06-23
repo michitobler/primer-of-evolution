@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Evolution of DNA Sequences | A Primer of Evolution</title>
+  <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Evolution of DNA Sequences | A Primer of Evolution" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Evolution of DNA Sequences | A Primer of Evolution" />
+  
+  <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+<meta name="author" content="Michi Tobler" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"/>
+<link rel="next" href="the-evolution-of-quantitative-traits.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F33BYJVTN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F33BYJVTN7');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCY5ZWLVNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NCY5ZWLVNZ');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#in-the-light-of-evolution"><i class="fa fa-check"></i>In the Light of Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#beyond-understanding-biodiversity"><i class="fa fa-check"></i>Beyond Understanding Biodiversity</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#an-overview-of-the-semester"><i class="fa fa-check"></i>An Overview of the Semester</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-1-the-basics"><i class="fa fa-check"></i>Part 1: The Basics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-2-a-genetic-perspective-on-evolution"><i class="fa fa-check"></i>Part 2: A Genetic Perspective on Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-3-evolutionary-outcomes-in-the-real-world"><i class="fa fa-check"></i>Part 3: Evolutionary Outcomes in the Real World</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-4-applied-evolutionary-biology"><i class="fa fa-check"></i>Part 4: Applied Evolutionary Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to Use This Book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html"><i class="fa fa-check"></i>Front Matters</a>
+<ul>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#copyright"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+</ul></li>
+<li class="part"><span><b>I Basic Concepts</b></span></li>
+<li class="chapter" data-level="1" data-path="what-evolution-is.html"><a href="what-evolution-is.html"><i class="fa fa-check"></i><b>1</b> What Evolution Is</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#darwin-and-the-conception-of-a-new-idea"><i class="fa fa-check"></i><b>1.1</b> Darwin and the Conception of a New Idea</a></li>
+<li class="chapter" data-level="1.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#two-fundamental-insights"><i class="fa fa-check"></i><b>1.2</b> Two Fundamental Insights</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#predictions"><i class="fa fa-check"></i><b>1.2.1</b> The Pattern: Evolution is Descent with Modification</a></li>
+<li class="chapter" data-level="1.2.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#the-process-natural-selection-is-a-mechanism-of-evolution"><i class="fa fa-check"></i><b>1.2.2</b> The Process: Natural Selection is a Mechanism of Evolution</a></li>
+<li class="chapter" data-level="1.2.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#distinguishing-between-pattern-and-process"><i class="fa fa-check"></i><b>1.2.3</b> Distinguishing between Pattern and Process</a></li>
+<li class="chapter" data-level="1.2.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#population-thinking"><i class="fa fa-check"></i><b>1.2.4</b> Population Thinking</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#practical-skills-getting-started-with-r"><i class="fa fa-check"></i><b>1.3</b> Practical Skills: Getting Started with R</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#what-are-r-and-rstudio"><i class="fa fa-check"></i><b>1.3.1</b> What are R and RStudio?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-r"><i class="fa fa-check"></i><b>1.3.2</b> Installing R</a></li>
+<li class="chapter" data-level="1.3.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.3</b> Installing RStudio</a></li>
+<li class="chapter" data-level="1.3.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#checking-the-successful-installation"><i class="fa fa-check"></i><b>1.3.4</b> Checking the Successful Installation</a></li>
+<li class="chapter" data-level="1.3.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#some-r-and-rstudio-basics"><i class="fa fa-check"></i><b>1.3.5</b> Some R and RStudio Basics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#additional-resources"><i class="fa fa-check"></i><b>1.4</b> Additional Resources</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#alternative-evolution-textbooks"><i class="fa fa-check"></i><b>1.4.1</b> Alternative Evolution Textbooks</a></li>
+<li class="chapter" data-level="1.4.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#evolution-in-the-primary-literature-and-the-news"><i class="fa fa-check"></i><b>1.4.2</b> Evolution in the Primary Literature and the News</a></li>
+<li class="chapter" data-level="1.4.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#r-and-rstudio-resources"><i class="fa fa-check"></i><b>1.4.3</b> R and RStudio Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#reflection-questions"><i class="fa fa-check"></i><b>1.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="1.6" data-path="what-evolution-is.html"><a href="what-evolution-is.html#references-1"><i class="fa fa-check"></i><b>1.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html"><i class="fa fa-check"></i><b>2</b> Evidence for Evolution</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#microevolution"><i class="fa fa-check"></i><b>2.1</b> Microevolution</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#the-case-of-threespine-stickleback"><i class="fa fa-check"></i><b>2.1.1</b> The Case of Threespine Stickleback</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#speciation"><i class="fa fa-check"></i><b>2.2</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#ring-species"><i class="fa fa-check"></i><b>2.2.1</b> Ring Species</a></li>
+<li class="chapter" data-level="2.2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#catching-speciation-in-action"><i class="fa fa-check"></i><b>2.2.2</b> Catching Speciation in Action</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#macroevolution"><i class="fa fa-check"></i><b>2.3</b> Macroevolution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#geographic-and-temporal-patterns-of-succession"><i class="fa fa-check"></i><b>2.3.1</b> Geographic and Temporal Patterns of Succession</a></li>
+<li class="chapter" data-level="2.3.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#transitional-fossils"><i class="fa fa-check"></i><b>2.3.2</b> Transitional Fossils</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#common-ancestry-and-homology"><i class="fa fa-check"></i><b>2.4</b> Common Ancestry and Homology</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#shared-flaws"><i class="fa fa-check"></i><b>2.4.1</b> Shared Flaws</a></li>
+<li class="chapter" data-level="2.4.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#why-homologies-matter"><i class="fa fa-check"></i><b>2.4.2</b> Why Homologies Matter</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#deep-time"><i class="fa fa-check"></i><b>2.5</b> Deep Time</a></li>
+<li class="chapter" data-level="2.6" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#tiktaalik"><i class="fa fa-check"></i><b>2.6</b> Correspondence of Different Lines of Evidence</a></li>
+<li class="chapter" data-level="2.7" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#absence-of-evidence"><i class="fa fa-check"></i><b>2.7</b> Absence of Evidence…</a></li>
+<li class="chapter" data-level="2.8" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#case-study-darwins-finches"><i class="fa fa-check"></i><b>2.8</b> Case Study: Darwin’s Finches</a></li>
+<li class="chapter" data-level="2.9" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#practical-skills-r-notebooks-and-plotting-with-ggplot"><i class="fa fa-check"></i><b>2.9</b> Practical Skills: R Notebooks and Plotting with ggplot</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#r-notebooks"><i class="fa fa-check"></i><b>2.9.1</b> R Notebooks</a></li>
+<li class="chapter" data-level="2.9.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#libraries"><i class="fa fa-check"></i><b>2.9.2</b> Using Libraries</a></li>
+<li class="chapter" data-level="2.9.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#import-data"><i class="fa fa-check"></i><b>2.9.3</b> Importing Data</a></li>
+<li class="chapter" data-level="2.9.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#graphing-data"><i class="fa fa-check"></i><b>2.9.4</b> Graphing Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#reflection-questions-1"><i class="fa fa-check"></i><b>2.10</b> Reflection Questions</a></li>
+<li class="chapter" data-level="2.11" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#references-2"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html"><i class="fa fa-check"></i><b>3</b> A Mechanism for Change</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#darwins-logic"><i class="fa fa-check"></i><b>3.1</b> Darwin’s Logic</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#variation"><i class="fa fa-check"></i><b>3.1.1</b> Variation</a></li>
+<li class="chapter" data-level="3.1.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#heritability"><i class="fa fa-check"></i><b>3.1.2</b> Heritability</a></li>
+<li class="chapter" data-level="3.1.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-struggle-for-existence"><i class="fa fa-check"></i><b>3.1.3</b> The Struggle for Existence</a></li>
+<li class="chapter" data-level="3.1.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#non-random-survival-and-reproduction"><i class="fa fa-check"></i><b>3.1.4</b> Non-Random Survival and Reproduction</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#putting-darwins-logic-to-the-test"><i class="fa fa-check"></i><b>3.2</b> Putting Darwin’s Logic to the Test</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-variation-in-beak-size"><i class="fa fa-check"></i><b>3.2.1</b> Is there Variation in Beak Size?</a></li>
+<li class="chapter" data-level="3.2.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-variation-in-beak-size-heritable"><i class="fa fa-check"></i><b>3.2.2</b> Is Variation in Beak Size Heritable?</a></li>
+<li class="chapter" data-level="3.2.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-a-struggle-for-existence"><i class="fa fa-check"></i><b>3.2.3</b> Is there a Struggle for Existence?</a></li>
+<li class="chapter" data-level="3.2.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-survival-non-random"><i class="fa fa-check"></i><b>3.2.4</b> Is Survival Non-Random?</a></li>
+<li class="chapter" data-level="3.2.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#did-non-random-survival-lead-to-evolution"><i class="fa fa-check"></i><b>3.2.5</b> Did Non-Random Survival Lead to Evolution?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#case-study-exploring-among-population-variation"><i class="fa fa-check"></i><b>3.3</b> Case Study: Exploring Among-Population Variation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-cave-molly-and-its-ancestors"><i class="fa fa-check"></i><b>3.3.1</b> The Cave Molly and its Ancestors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#practical-skills-number-sequences-allometry-and-histograms"><i class="fa fa-check"></i><b>3.4</b> Practical Skills: Number Sequences, Allometry, and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#number-sequences"><i class="fa fa-check"></i><b>3.4.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="3.4.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#allometry-residuals"><i class="fa fa-check"></i><b>3.4.2</b> Allometry &amp; Residuals</a></li>
+<li class="chapter" data-level="3.4.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#histograms-and-density-functions"><i class="fa fa-check"></i><b>3.4.3</b> Histograms and Density Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#reflection-questions-2"><i class="fa fa-check"></i><b>3.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="3.6" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#references-3"><i class="fa fa-check"></i><b>3.6</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>II A Genetic Perspective on Evolution</b></span></li>
+<li class="chapter" data-level="4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html"><i class="fa fa-check"></i><b>4</b> The Raw Materials for Evolution</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#the-genotype-phenotype-gap"><i class="fa fa-check"></i><b>4.1</b> The Genotype-Phenotype Gap</a></li>
+<li class="chapter" data-level="4.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-the-fundamental-source-of-novelty"><i class="fa fa-check"></i><b>4.2</b> Mutation: The Fundamental Source of Novelty</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#point-mutations"><i class="fa fa-check"></i><b>4.2.1</b> Point Mutations</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#inversions"><i class="fa fa-check"></i><b>4.2.2</b> Inversions</a></li>
+<li class="chapter" data-level="4.2.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#gene-duplication"><i class="fa fa-check"></i><b>4.2.3</b> Gene Duplication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#genome-duplication"><i class="fa fa-check"></i><b>4.2.4</b> Genome Duplication</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-rates"><i class="fa fa-check"></i><b>4.3</b> Mutation Rates</a></li>
+<li class="chapter" data-level="4.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#quantifying-genetic-variation"><i class="fa fa-check"></i><b>4.4</b> Quantifying Genetic Variation</a></li>
+<li class="chapter" data-level="4.5" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#a-null-model-for-evolution"><i class="fa fa-check"></i><b>4.5</b> A Null Model for Evolution</a></li>
+<li class="chapter" data-level="4.6" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#case-study-hardy-weinberg-equilirbium"><i class="fa fa-check"></i><b>4.6</b> Case Study: Hardy-Weinberg Equilirbium</a></li>
+<li class="chapter" data-level="4.7" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#practical-skills-number-sequences-2.0-and-complex-graphs"><i class="fa fa-check"></i><b>4.7</b> Practical Skills: Number Sequences 2.0 and Complex Graphs</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#number-sequences-1"><i class="fa fa-check"></i><b>4.7.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="4.7.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#layering-data-sets"><i class="fa fa-check"></i><b>4.7.2</b> Layering Data Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#reflection-questions-3"><i class="fa fa-check"></i><b>4.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="4.9" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#references-4"><i class="fa fa-check"></i><b>4.9</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html"><i class="fa fa-check"></i><b>5</b> Evolutionary Mechanisms I: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#the-effects-of-selection"><i class="fa fa-check"></i><b>5.1</b> The Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection"><i class="fa fa-check"></i><b>5.1.1</b> Frequency-Dependent Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-the-effects-of-selection"><i class="fa fa-check"></i><b>5.2</b> Modeling the Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#relative-fitness"><i class="fa fa-check"></i><b>5.2.1</b> Relative Fitness</a></li>
+<li class="chapter" data-level="5.2.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#calculating-allele-frequency-changes"><i class="fa fa-check"></i><b>5.2.2</b> Calculating Allele Frequency Changes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#case-study-modeling-selection"><i class="fa fa-check"></i><b>5.3</b> Case Study: Modeling Selection</a></li>
+<li class="chapter" data-level="5.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#practical-skills"><i class="fa fa-check"></i><b>5.4</b> Practical Skills: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-selection"><i class="fa fa-check"></i><b>5.4.1</b> Modeling Selection</a></li>
+<li class="chapter" data-level="5.4.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#running-multiple-selection-models"><i class="fa fa-check"></i><b>5.4.2</b> Running Multiple Selection Models</a></li>
+<li class="chapter" data-level="5.4.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection-1"><i class="fa fa-check"></i><b>5.4.3</b> Frequency-Dependent Selection</a></li>
+<li class="chapter" data-level="5.4.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#understanding-equilibria"><i class="fa fa-check"></i><b>5.4.4</b> Understanding Equilibria</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#reflection-questions-4"><i class="fa fa-check"></i><b>5.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="5.6" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#references-5"><i class="fa fa-check"></i><b>5.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><i class="fa fa-check"></i><b>6</b> Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#mutation-the-force-creating-novelty"><i class="fa fa-check"></i><b>6.1</b> Mutation: The Force Creating Novelty</a></li>
+<li class="chapter" data-level="6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force"><i class="fa fa-check"></i><b>6.2</b> Genetic Drift: The Random Force</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-drift-and-selection"><i class="fa fa-check"></i><b>6.2.1</b> Interactions Between Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#migration-the-homogenizing-force"><i class="fa fa-check"></i><b>6.3</b> Migration: The Homogenizing Force</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-migration-and-selection"><i class="fa fa-check"></i><b>6.3.1</b> Interactions Between Migration and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#non-random-mating-not-much-of-a-force"><i class="fa fa-check"></i><b>6.4</b> Non-Random Mating: Not Much of a Force</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-inbreeding-and-selection"><i class="fa fa-check"></i><b>6.4.1</b> Interactions between Inbreeding and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#case-study-background-beyond-selection"><i class="fa fa-check"></i><b>6.5</b> Case Study Background: Beyond Selection</a></li>
+<li class="chapter" data-level="6.6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#practical-skills-modeling-mutation-drift-and-selection"><i class="fa fa-check"></i><b>6.6</b> Practical Skills: Modeling Mutation, Drift, and Selection</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-mutation-and-selection"><i class="fa fa-check"></i><b>6.6.1</b> Modeling Mutation and Selection</a></li>
+<li class="chapter" data-level="6.6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift"><i class="fa fa-check"></i><b>6.6.2</b> Modeling Genetic Drift</a></li>
+<li class="chapter" data-level="6.6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift-and-selection"><i class="fa fa-check"></i><b>6.6.3</b> Modeling Genetic Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions-5"><i class="fa fa-check"></i><b>6.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="6.8" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#references-6"><i class="fa fa-check"></i><b>6.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html"><i class="fa fa-check"></i><b>7</b> Evolution of DNA Sequences</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#dna-alignment-and-genome-assembly"><i class="fa fa-check"></i><b>7.1</b> DNA Alignment and Genome Assembly</a></li>
+<li class="chapter" data-level="7.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reconstructing-history-phylogenetic-trees"><i class="fa fa-check"></i><b>7.2</b> Reconstructing History: Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies"><i class="fa fa-check"></i><b>7.2.1</b> Molecular Phylogenies</a></li>
+<li class="chapter" data-level="7.2.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies-in-real-life"><i class="fa fa-check"></i><b>7.2.2</b> Molecular Phylogenies in Real Life</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-neutral-theory"><i class="fa fa-check"></i><b>7.3</b> The Neutral Theory</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-clocks"><i class="fa fa-check"></i><b>7.3.1</b> Molecular Clocks</a></li>
+<li class="chapter" data-level="7.3.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#detecting-signatures-of-selection"><i class="fa fa-check"></i><b>7.3.2</b> Detecting Signatures of Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#case-study-sars-cov-2"><i class="fa fa-check"></i><b>7.4</b> Case Study: SARS-CoV-2</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#host-pathogen-coevolution"><i class="fa fa-check"></i><b>7.4.1</b> Host-Pathogen Coevolution</a></li>
+<li class="chapter" data-level="7.4.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-evolution-of-the-seasonal-flu"><i class="fa fa-check"></i><b>7.4.2</b> The Evolution of the Seasonal Flu</a></li>
+<li class="chapter" data-level="7.4.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#high-virulence-flu-strains"><i class="fa fa-check"></i><b>7.4.3</b> High-Virulence Flu Strains</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#practical-skills-working-with-phylogenetic-trees"><i class="fa fa-check"></i><b>7.5</b> Practical Skills: Working with Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#installing-dependencies"><i class="fa fa-check"></i><b>7.5.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="7.5.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-pipe-operator"><i class="fa fa-check"></i><b>7.5.2</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="7.5.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#importing-a-tree"><i class="fa fa-check"></i><b>7.5.3</b> Importing a Tree</a></li>
+<li class="chapter" data-level="7.5.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#plotting-a-tree"><i class="fa fa-check"></i><b>7.5.4</b> Plotting a Tree</a></li>
+<li class="chapter" data-level="7.5.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#annotating-a-tree"><i class="fa fa-check"></i><b>7.5.5</b> Annotating a Tree</a></li>
+<li class="chapter" data-level="7.5.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#calculating-the-distance-to-root"><i class="fa fa-check"></i><b>7.5.6</b> Calculating the Distance to Root</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reflection-questions-6"><i class="fa fa-check"></i><b>7.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="7.7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#references-7"><i class="fa fa-check"></i><b>7.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html"><i class="fa fa-check"></i><b>8</b> The Evolution of Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qualitative-traits-and-epistasis"><i class="fa fa-check"></i><b>8.1</b> Qualitative Traits and Epistasis</a></li>
+<li class="chapter" data-level="8.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment"><i class="fa fa-check"></i><b>8.2</b> Quantitative Traits: a Product of Genes and Environment</a></li>
+<li class="chapter" data-level="8.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-trait-evolution"><i class="fa fa-check"></i><b>8.3</b> Quantitative Trait Evolution</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability"><i class="fa fa-check"></i><b>8.3.1</b> Quantifying Trait Heritability</a></li>
+<li class="chapter" data-level="8.3.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-the-strength-of-selection"><i class="fa fa-check"></i><b>8.3.2</b> Quantifying the Strength of Selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#calculating-the-response-to-selection"><i class="fa fa-check"></i><b>8.3.3</b> Calculating the Response to Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#modes-of-selection-on-quantitative-traits"><i class="fa fa-check"></i><b>8.4</b> Modes of Selection on Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#directional-selection"><i class="fa fa-check"></i><b>8.4.1</b> Directional Selection</a></li>
+<li class="chapter" data-level="8.4.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#stabilizing-selection"><i class="fa fa-check"></i><b>8.4.2</b> Stabilizing Selection</a></li>
+<li class="chapter" data-level="8.4.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#disruptive-selection"><i class="fa fa-check"></i><b>8.4.3</b> Disruptive Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#identifying-genes-underlying-quantitative-traits"><i class="fa fa-check"></i><b>8.5</b> Identifying Genes Underlying Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-mapping"><i class="fa fa-check"></i><b>8.5.1</b> QTL Mapping</a></li>
+<li class="chapter" data-level="8.5.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#gwas"><i class="fa fa-check"></i><b>8.5.2</b> GWAS</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#case-study-quantitative-genetics"><i class="fa fa-check"></i><b>8.6</b> Case Study: Quantitative Genetics</a></li>
+<li class="chapter" data-level="8.7" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#practical-skills-qtl-mapping"><i class="fa fa-check"></i><b>8.7</b> Practical Skills: QTL Mapping</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#installing-dependencies-1"><i class="fa fa-check"></i><b>8.7.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="8.7.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#read-qtl-data"><i class="fa fa-check"></i><b>8.7.2</b> Read QTL Data</a></li>
+<li class="chapter" data-level="8.7.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-genotypes-loci-linkage-map"><i class="fa fa-check"></i><b>8.7.3</b> Explore the Data: Genotypes, Loci &amp; Linkage Map</a></li>
+<li class="chapter" data-level="8.7.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-phenotypes"><i class="fa fa-check"></i><b>8.7.4</b> Explore the Data: Phenotypes</a></li>
+<li class="chapter" data-level="8.7.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-scan"><i class="fa fa-check"></i><b>8.7.5</b> QTL Scan</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#reflection-questions-7"><i class="fa fa-check"></i><b>8.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="8.9" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#references-8"><i class="fa fa-check"></i><b>8.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>III Evolution in the Real World</b></span></li>
+<li class="chapter" data-level="9" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html"><i class="fa fa-check"></i><b>9</b> Adaptation and Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#inferring-adaptation"><i class="fa fa-check"></i><b>9.1</b> Inferring Adaptation</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#interspecific-comparisons"><i class="fa fa-check"></i><b>9.1.1</b> Interspecific Comparisons</a></li>
+<li class="chapter" data-level="9.1.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#intraspecific-studies"><i class="fa fa-check"></i><b>9.1.2</b> Intraspecific Studies</a></li>
+<li class="chapter" data-level="9.1.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#local-adaptation-within-species"><i class="fa fa-check"></i><b>9.1.3</b> Local Adaptation within Species</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2</b> Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#types-of-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.1</b> Types of Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.2.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reaction-norms-and-the-evolution-of-plasticity"><i class="fa fa-check"></i><b>9.2.2</b> Reaction Norms and the Evolution of Plasticity</a></li>
+<li class="chapter" data-level="9.2.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#adaptive-and-maladaptive-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.3</b> Adaptive and Maladaptive Phenotypic Plasticity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#case-study-local-adaptation-and-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.3</b> Case Study: Local Adaptation and Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.4" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#practical-skills-more-variables-more-graphs"><i class="fa fa-check"></i><b>9.4</b> Practical Skills: More Variables, More Graphs</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-1-many-independent-variables"><i class="fa fa-check"></i><b>9.4.1</b> Example 1: Many Independent Variables</a></li>
+<li class="chapter" data-level="9.4.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-2-many-dependent-variables"><i class="fa fa-check"></i><b>9.4.2</b> Example 2: Many Dependent Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reflection-questions-8"><i class="fa fa-check"></i><b>9.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="9.6" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#references-9"><i class="fa fa-check"></i><b>9.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html"><i class="fa fa-check"></i><b>10</b> Social Behavior and Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#social-behavior"><i class="fa fa-check"></i><b>10.1</b> Social Behavior</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#kin-selection"><i class="fa fa-check"></i><b>10.1.1</b> Kin Selection</a></li>
+<li class="chapter" data-level="10.1.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reciprocal-altruism"><i class="fa fa-check"></i><b>10.1.2</b> Reciprocal Altruism</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-selection"><i class="fa fa-check"></i><b>10.2</b> Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#causes-of-sexual-selection"><i class="fa fa-check"></i><b>10.2.1</b> Causes of Sexual Selection</a></li>
+<li class="chapter" data-level="10.2.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intrasexual-selection-male-male-competition"><i class="fa fa-check"></i><b>10.2.2</b> Intrasexual Selection: Male-Male Competition</a></li>
+<li class="chapter" data-level="10.2.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-conflict"><i class="fa fa-check"></i><b>10.2.3</b> Sexual Conflict</a></li>
+<li class="chapter" data-level="10.2.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intersexual-selection-female-mate-choice"><i class="fa fa-check"></i><b>10.2.4</b> Intersexual Selection: Female Mate Choice</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#case-study-altruism-and-sexual-selection"><i class="fa fa-check"></i><b>10.3</b> Case Study: Altruism and Sexual Selection</a></li>
+<li class="chapter" data-level="10.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reflection-questions-9"><i class="fa fa-check"></i><b>10.4</b> Reflection Questions</a></li>
+<li class="chapter" data-level="10.5" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#references-10"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="speciation-1.html"><a href="speciation-1.html"><i class="fa fa-check"></i><b>11</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="speciation-1.html"><a href="speciation-1.html#species-and-species-concepts"><i class="fa fa-check"></i><b>11.1</b> Species and Species Concepts</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="speciation-1.html"><a href="speciation-1.html#the-biological-species-concept"><i class="fa fa-check"></i><b>11.1.1</b> The Biological Species Concept</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="speciation-1.html"><a href="speciation-1.html#speciation-as-a-gradual-process"><i class="fa fa-check"></i><b>11.2</b> Speciation as a Gradual Process</a></li>
+<li class="chapter" data-level="11.3" data-path="speciation-1.html"><a href="speciation-1.html#mechanisms-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.3</b> Mechanisms of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="speciation-1.html"><a href="speciation-1.html#pre-mating-isolation"><i class="fa fa-check"></i><b>11.3.1</b> Pre-Mating Isolation</a></li>
+<li class="chapter" data-level="11.3.2" data-path="speciation-1.html"><a href="speciation-1.html#post-mating-pre-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.2</b> Post-Mating, Pre-zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.3" data-path="speciation-1.html"><a href="speciation-1.html#post-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.3</b> Post-Zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.4" data-path="speciation-1.html"><a href="speciation-1.html#reproductive-isolation-as-a-complex-trait"><i class="fa fa-check"></i><b>11.3.4</b> Reproductive Isolation as a Complex Trait</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="speciation-1.html"><a href="speciation-1.html#the-evolution-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.4</b> The Evolution of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="speciation-1.html"><a href="speciation-1.html#polyploidization-and-instantaneous-speciation"><i class="fa fa-check"></i><b>11.4.1</b> Polyploidization and Instantaneous Speciation</a></li>
+<li class="chapter" data-level="11.4.2" data-path="speciation-1.html"><a href="speciation-1.html#allopatric-speciation-and-hybridization"><i class="fa fa-check"></i><b>11.4.2</b> Allopatric Speciation and Hybridization</a></li>
+<li class="chapter" data-level="11.4.3" data-path="speciation-1.html"><a href="speciation-1.html#ecological-speciation"><i class="fa fa-check"></i><b>11.4.3</b> Ecological Speciation</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="speciation-1.html"><a href="speciation-1.html#adaptive-radiation"><i class="fa fa-check"></i><b>11.5</b> Adaptive Radiation</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="speciation-1.html"><a href="speciation-1.html#african-cichlid-fishes"><i class="fa fa-check"></i><b>11.5.1</b> African Cichlid Fishes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="speciation-1.html"><a href="speciation-1.html#case-study-speciation"><i class="fa fa-check"></i><b>11.6</b> Case Study: Speciation</a></li>
+<li class="chapter" data-level="11.7" data-path="speciation-1.html"><a href="speciation-1.html#practical-skills-interpreting-structure-plots"><i class="fa fa-check"></i><b>11.7</b> Practical Skills: Interpreting Structure Plots</a></li>
+<li class="chapter" data-level="11.8" data-path="speciation-1.html"><a href="speciation-1.html#reflection-questions-10"><i class="fa fa-check"></i><b>11.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="11.9" data-path="speciation-1.html"><a href="speciation-1.html#references-11"><i class="fa fa-check"></i><b>11.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>IV Applied Evolutionary Biology</b></span></li>
+<li class="chapter" data-level="12" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><i class="fa fa-check"></i><b>12</b> Evolutionary Medicine I: Aging and Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#darwinian-medicine"><i class="fa fa-check"></i><b>12.1</b> Darwinian Medicine</a></li>
+<li class="chapter" data-level="12.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#diseases-of-civilization"><i class="fa fa-check"></i><b>12.2</b> Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#modern-hunter-gatherers-and-urbanites"><i class="fa fa-check"></i><b>12.2.1</b> Modern Hunter-Gatherers and Urbanites</a></li>
+<li class="chapter" data-level="12.2.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#old-adaptations-in-a-modern-world"><i class="fa fa-check"></i><b>12.2.2</b> Old Adaptations in a Modern World</a></li>
+<li class="chapter" data-level="12.2.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#an-example-breast-cancer"><i class="fa fa-check"></i><b>12.2.3</b> An Example: Breast Cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#why-we-age-and-die"><i class="fa fa-check"></i><b>12.3</b> Why We Age… and Die</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#rate-of-living-hypothesis"><i class="fa fa-check"></i><b>12.3.1</b> Rate of Living Hypothesis</a></li>
+<li class="chapter" data-level="12.3.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#evolutionary-theories-of-aging"><i class="fa fa-check"></i><b>12.3.2</b> Evolutionary Theories of Aging</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#case-study-evolution-of-aging"><i class="fa fa-check"></i><b>12.4</b> Case Study: Evolution of Aging</a></li>
+<li class="chapter" data-level="12.5" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#practical-skills-life-table-analysis"><i class="fa fa-check"></i><b>12.5</b> Practical Skills: Life Table Analysis</a></li>
+<li class="chapter" data-level="12.6" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#reflection-questions-11"><i class="fa fa-check"></i><b>12.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="12.7" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#references-12"><i class="fa fa-check"></i><b>12.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html"><i class="fa fa-check"></i><b>13</b> Evolutionary Medicine II: Evolving Pathogens</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#epidemiology-and-pathogen-fitness"><i class="fa fa-check"></i><b>13.1</b> Epidemiology and Pathogen Fitness</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#a-basic-epidemiological-model"><i class="fa fa-check"></i><b>13.1.1</b> A Basic Epidemiological model</a></li>
+<li class="chapter" data-level="13.1.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#r0-a-measure-of-pathogen-fitness"><i class="fa fa-check"></i><b>13.1.2</b> <em>R</em><sub>0</sub>: A Measure of Pathogen Fitness</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#the-evolution-of-virulence"><i class="fa fa-check"></i><b>13.2</b> The Evolution of Virulence</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#trade-offs-and-modes-of-transmission"><i class="fa fa-check"></i><b>13.2.1</b> Trade-Offs and Modes of Transmission</a></li>
+<li class="chapter" data-level="13.2.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#short-sighted-and-coincidental-evolution-hypotheses"><i class="fa fa-check"></i><b>13.2.2</b> Short-Sighted and Coincidental Evolution Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cultural-practices-disease-spread-and-evolution"><i class="fa fa-check"></i><b>13.3</b> Cultural Practices, Disease Spread, and Evolution</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#disrupting-pathogen-transmission"><i class="fa fa-check"></i><b>13.3.1</b> Disrupting Pathogen Transmission</a></li>
+<li class="chapter" data-level="13.3.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#vaccination-and-herd-immunity"><i class="fa fa-check"></i><b>13.3.2</b> Vaccination and Herd Immunity</a></li>
+<li class="chapter" data-level="13.3.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#pathogen-responses"><i class="fa fa-check"></i><b>13.3.3</b> Pathogen Responses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#antibiotic-resistance"><i class="fa fa-check"></i><b>13.4</b> Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.5" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#case-study-covid-19-epidemiology-and-the-cost-of-antibiotic-resistance"><i class="fa fa-check"></i><b>13.5</b> Case Study: COVID-19 Epidemiology and the Cost of Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.6" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#practical-skills-data-wrangling-and-log-scales"><i class="fa fa-check"></i><b>13.6</b> Practical Skills: Data Wrangling and Log-Scales</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#data-wrangling"><i class="fa fa-check"></i><b>13.6.1</b> Data Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#reflection-questions-12"><i class="fa fa-check"></i><b>13.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="13.8" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#references-13"><i class="fa fa-check"></i><b>13.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="human-evolution.html"><a href="human-evolution.html"><i class="fa fa-check"></i><b>14</b> Human Evolution</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="human-evolution.html"><a href="human-evolution.html#phylogenetic-position"><i class="fa fa-check"></i><b>14.1</b> Phylogenetic Position</a></li>
+<li class="chapter" data-level="14.2" data-path="human-evolution.html"><a href="human-evolution.html#what-the-fossils-say"><i class="fa fa-check"></i><b>14.2</b> What the Fossils Say</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="human-evolution.html"><a href="human-evolution.html#an-abridged-timeline"><i class="fa fa-check"></i><b>14.2.1</b> An Abridged Timeline</a></li>
+<li class="chapter" data-level="14.2.2" data-path="human-evolution.html"><a href="human-evolution.html#evolutionary-trends"><i class="fa fa-check"></i><b>14.2.2</b> Evolutionary Trends</a></li>
+<li class="chapter" data-level="14.2.3" data-path="human-evolution.html"><a href="human-evolution.html#a-lone-survivor-of-an-extinct-radiation"><i class="fa fa-check"></i><b>14.2.3</b> A Lone Survivor of an Extinct Radiation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="human-evolution.html"><a href="human-evolution.html#modern-human-origins"><i class="fa fa-check"></i><b>14.3</b> Modern Human Origins</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="human-evolution.html"><a href="human-evolution.html#hypotheses"><i class="fa fa-check"></i><b>14.3.1</b> Hypotheses</a></li>
+<li class="chapter" data-level="14.3.2" data-path="human-evolution.html"><a href="human-evolution.html#multiregional-evolution-vs.-out-of-africa"><i class="fa fa-check"></i><b>14.3.2</b> Multiregional Evolution <em>vs</em>. Out-Of-Africa</a></li>
+<li class="chapter" data-level="14.3.3" data-path="human-evolution.html"><a href="human-evolution.html#out-of-africa-vs.-hybridization-and-assimilation"><i class="fa fa-check"></i><b>14.3.3</b> Out-of-Africa <em>vs</em>. Hybridization-and-Assimilation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="human-evolution.html"><a href="human-evolution.html#what-makes-us-human"><i class="fa fa-check"></i><b>14.4</b> What Makes Us Human?</a></li>
+<li class="chapter" data-level="14.5" data-path="human-evolution.html"><a href="human-evolution.html#case-study-modern-human-origins"><i class="fa fa-check"></i><b>14.5</b> Case Study: Modern Human Origins</a></li>
+<li class="chapter" data-level="14.6" data-path="human-evolution.html"><a href="human-evolution.html#reflection-questions-13"><i class="fa fa-check"></i><b>14.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="14.7" data-path="human-evolution.html"><a href="human-evolution.html#references-14"><i class="fa fa-check"></i><b>14.7</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix I</b></span></li>
+<li class="chapter" data-level="A" data-path="graph-library.html"><a href="graph-library.html"><i class="fa fa-check"></i><b>A</b> Graph Library</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="graph-library.html"><a href="graph-library.html#sample-data"><i class="fa fa-check"></i><b>A.1</b> Sample Data</a></li>
+<li class="chapter" data-level="A.2" data-path="graph-library.html"><a href="graph-library.html#loading-dependencies"><i class="fa fa-check"></i><b>A.2</b> Loading Dependencies</a></li>
+<li class="chapter" data-level="A.3" data-path="graph-library.html"><a href="graph-library.html#one-variable-continuous"><i class="fa fa-check"></i><b>A.3</b> One Variable: Continuous</a>
+<ul>
+<li class="chapter" data-level="A.3.1" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram"><i class="fa fa-check"></i><b>A.3.1</b> Frequency Histogram</a></li>
+<li class="chapter" data-level="A.3.2" data-path="graph-library.html"><a href="graph-library.html#density-plot"><i class="fa fa-check"></i><b>A.3.2</b> Density Plot</a></li>
+<li class="chapter" data-level="A.3.3" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram-with-density"><i class="fa fa-check"></i><b>A.3.3</b> Frequency Histogram with Density</a></li>
+<li class="chapter" data-level="A.3.4" data-path="graph-library.html"><a href="graph-library.html#adding-a-discrete-variable"><i class="fa fa-check"></i><b>A.3.4</b> Adding a Discrete Variable</a></li>
+</ul></li>
+<li class="chapter" data-level="A.4" data-path="graph-library.html"><a href="graph-library.html#two-variables-continuous-x-and-y"><i class="fa fa-check"></i><b>A.4</b> Two Variables: Continuous X and Y</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="graph-library.html"><a href="graph-library.html#scatter-plot"><i class="fa fa-check"></i><b>A.4.1</b> Scatter Plot</a></li>
+<li class="chapter" data-level="A.4.2" data-path="graph-library.html"><a href="graph-library.html#regression-line"><i class="fa fa-check"></i><b>A.4.2</b> Regression Line</a></li>
+<li class="chapter" data-level="A.4.3" data-path="graph-library.html"><a href="graph-library.html#scatter-plot-with-regression"><i class="fa fa-check"></i><b>A.4.3</b> Scatter Plot with Regression</a></li>
+<li class="chapter" data-level="A.4.4" data-path="graph-library.html"><a href="graph-library.html#adding-discrete-variables"><i class="fa fa-check"></i><b>A.4.4</b> Adding Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="A.5" data-path="graph-library.html"><a href="graph-library.html#two-variables-discrete-x-continuous-y"><i class="fa fa-check"></i><b>A.5</b> Two Variables: Discrete X, Continuous Y</a>
+<ul>
+<li class="chapter" data-level="A.5.1" data-path="graph-library.html"><a href="graph-library.html#box-plot"><i class="fa fa-check"></i><b>A.5.1</b> Box Plot</a></li>
+<li class="chapter" data-level="A.5.2" data-path="graph-library.html"><a href="graph-library.html#dot-plot"><i class="fa fa-check"></i><b>A.5.2</b> Dot Plot</a></li>
+<li class="chapter" data-level="A.5.3" data-path="graph-library.html"><a href="graph-library.html#violin-plot"><i class="fa fa-check"></i><b>A.5.3</b> Violin Plot</a></li>
+<li class="chapter" data-level="A.5.4" data-path="graph-library.html"><a href="graph-library.html#adding-raw-data"><i class="fa fa-check"></i><b>A.5.4</b> Adding Raw data</a></li>
+<li class="chapter" data-level="A.5.5" data-path="graph-library.html"><a href="graph-library.html#adding-additional-discrete-variables"><i class="fa fa-check"></i><b>A.5.5</b> Adding Additional Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="A.6" data-path="graph-library.html"><a href="graph-library.html#aggregate-data"><i class="fa fa-check"></i><b>A.6</b> Aggregate Data</a>
+<ul>
+<li class="chapter" data-level="A.6.1" data-path="graph-library.html"><a href="graph-library.html#calculating-mean-and-standard-deviation"><i class="fa fa-check"></i><b>A.6.1</b> Calculating Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="A.6.2" data-path="graph-library.html"><a href="graph-library.html#visualizing-means-and-variation"><i class="fa fa-check"></i><b>A.6.2</b> Visualizing Means and Variation</a></li>
+</ul></li>
+<li class="chapter" data-level="A.7" data-path="graph-library.html"><a href="graph-library.html#combining-multiple-plots"><i class="fa fa-check"></i><b>A.7</b> Combining Multiple plots</a></li>
+<li class="chapter" data-level="A.8" data-path="graph-library.html"><a href="graph-library.html#working-with-color-palettes"><i class="fa fa-check"></i><b>A.8</b> Working with Color Palettes</a>
+<ul>
+<li class="chapter" data-level="A.8.1" data-path="graph-library.html"><a href="graph-library.html#color-palettes-in-rcolorbrewer"><i class="fa fa-check"></i><b>A.8.1</b> Color Palettes in RColorBrewer</a></li>
+<li class="chapter" data-level="A.8.2" data-path="graph-library.html"><a href="graph-library.html#combining-rcolorbrewer-palettes-with-ggplot"><i class="fa fa-check"></i><b>A.8.2</b> Combining RColorBrewer Palettes with ggplot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="r-exercises.html"><a href="r-exercises.html"><i class="fa fa-check"></i><b>B</b> R Exercises</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Primer of Evolution</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="evolution-of-dna-sequences" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Evolution of DNA Sequences<a href="evolution-of-dna-sequences.html#evolution-of-dna-sequences" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>So far, we have explored evolutionary principles primarily through classical genetics. We have abstracted DNA sequence variation as alleles at loci, which is a powerful approach for studying evolution. DNA, however, is famously composed of four letter-coded nucleotides—A (adenine), T (thymine), G (guanine), and C (cytosine)—and we can learn a great deal by studying DNA sequences directly.</p>
+<p>At the advent of molecular genetics, DNA sequence variation had to be inferred indirectly by studying variation in proteins. Evolutionary biologists relied on allozymes—variant forms of an enzyme derived from different alleles—which exhibit differences in their structure. Allozymes for a particular locus can be detected using gel electrophoresis, because different structural variants move through an electric field at different speeds and thus separate on a gel (Figure <a href="evolution-of-dna-sequences.html#fig:allozyme">7.1</a>). Because not all mutations necessarily lead to detectable structural changes at the protein level, much genetic variation was lost in translation by focusing on proteins. Even so, the analyses of allozymes revealed an extraordinary amount of genetic variation; much more, in fact, than anticipated by theoreticians.</p>
+<div class="figure"><span style="display:block;" id="fig:allozyme"></span>
+<img src="images/allozyme.jpg" alt="Example of a gel used to separate different allozymes encoded by the same locus. Each column represents an indidivudal sample. Bands that align horizontally correspond to the same allozyme (allele), and this particular locus exhibits four distinct allozymes. Note that heterozygous individuals exhibit two bands (samples 1-3, 7, 9, and 14)." width="100%" />
+<p class="caption">
+Figure 7.1: Example of a gel used to separate different allozymes encoded by the same locus. Each column represents an indidivudal sample. Bands that align horizontally correspond to the same allozyme (allele), and this particular locus exhibits four distinct allozymes. Note that heterozygous individuals exhibit two bands (samples 1-3, 7, 9, and 14).
+</p>
+</div>
+<p>We have been able to quantify genetic variation directly for several decades, first through <a href="https://en.wikipedia.org/wiki/Restriction_fragment_length_polymorphism">restriction fragment length polymorphism (RFLP)</a> and <a href="https://en.wikipedia.org/wiki/Sanger_sequencing">Sanger sequencing</a>—which were relatively slow—and now through a variety of next-generation, high-throughput sequencing methods that allow the sequencing of whole genomes in a matter of hours. In this chapter, we will focus on what we can uncover about historical processes through analyzing organisms’ DNA. We will also explore the molecular signatures of evolution, what they reveal about the different forces shaping DNA sequence changes across generations, and the culprits behind the large amount of genetic variation present in natural populations.</p>
+<div id="dna-alignment-and-genome-assembly" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> DNA Alignment and Genome Assembly<a href="evolution-of-dna-sequences.html#dna-alignment-and-genome-assembly" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The output of any DNA-sequencing method is the actual order of As, Ts, Gs, and Cs of the DNA in a particular sample. Some sequencing methods, like Sanger sequencing, target very specific regions of the genome (typically a gene of interest). Resulting sequences can then be directly aligned for analysis. Sequence alignment arranges DNA fragments by similarity, matching up homologous nucleotides across samples. Aligned sequences are arranged in a matrix, where sequences from different samples are organized in rows and homologous nucleotides in columns (Figure <a href="evolution-of-dna-sequences.html#fig:alignment">7.2</a>). Once aligned, DNA sequences can be used to quantify similarities among different samples, or to identify single nucleotide polymorphisms (SNPs; <a href="https://www.k-state.edu/biology/p2e/the-raw-materials-for-evolution.html#quantifying-genetic-variation">Chapter 4</a>) that underlie many population genetic analyses.</p>
+<div class="figure"><span style="display:block;" id="fig:alignment"></span>
+<img src="Primer-to-Evolution_files/figure-html/alignment-1.png" alt="An example of a nucleotide alignment, where sequences from different samples are organized in rows and homologous nucleotides are organized in columns. Visual inspection of the alignment reveals regions that are relatively conserved across samples (*e.g.*, positions 18-25) as well as highly variable regions (*e.g.*, poistions 42-50)." width="768" />
+<p class="caption">
+Figure 7.2: An example of a nucleotide alignment, where sequences from different samples are organized in rows and homologous nucleotides are organized in columns. Visual inspection of the alignment reveals regions that are relatively conserved across samples (<em>e.g.</em>, positions 18-25) as well as highly variable regions (<em>e.g.</em>, poistions 42-50).
+</p>
+</div>
+<p>Many next-generation sequencing methods operate differently from Sanger sequencing in that they yield relatively short reads (a few hundred base pairs) from random segments of the genome. Millions—even billions—of reads are generated in every sequencing run. But before any meaningful comparisons can be made across samples, individual reads need to be aligned and merged to reconstruct the original DNA sequence. To do so, reads can be aligned to a known reference sequence (<em>e.g.</em>, an assembled reference genome) that facilitates the identification of homologous sequences (Figure <a href="evolution-of-dna-sequences.html#fig:assembly">7.3</a>). In absence of a reference and provided enough reads are available, overlap between individual reads can also be used to infer the original sequence, just like the contour of puzzle pieces provide clues for what pieces fit together. Once individual fragments are aligned, the consensus sequence across all reads can be inferred for a given sample, and sequences of different samples can then be aligned as described above.</p>
+<div class="figure"><span style="display:block;" id="fig:assembly"></span>
+<img src="images/assembly.png" alt="Most next-generation sequencing methods yield many short fragments of DNA sequences that were randomly amplified throughout the genome. To reconstruct the full DNA sequence, fragments can be mapped to a known reference sequence. If a reference is not available, overlap between individual fragments can be used to infer the DNA sequence of larger segments of the genome." width="100%" />
+<p class="caption">
+Figure 7.3: Most next-generation sequencing methods yield many short fragments of DNA sequences that were randomly amplified throughout the genome. To reconstruct the full DNA sequence, fragments can be mapped to a known reference sequence. If a reference is not available, overlap between individual fragments can be used to infer the DNA sequence of larger segments of the genome.
+</p>
+</div>
+<p>Aligned DNA sequences form the base of many analyses used to infer evolutionary patterns and processes. Within species, we can use this information to quantify the degree of population differentiation, migration rates among populations, and even the demographic history of populations. Between species, we can reconstruct historical patterns of speciation and diversification as visualized by phylogenetic trees. DNA sequences also hold clues as to the role of selection and genetic drift in evolutionary change.</p>
+</div>
+<div id="reconstructing-history-phylogenetic-trees" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Reconstructing History: Phylogenetic Trees<a href="evolution-of-dna-sequences.html#reconstructing-history-phylogenetic-trees" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Phylogenetics is a branch of evolution concerned with uncovering the evolutionary relationships among organisms. Phylogenetic analyses evaluate organismal characteristics to generate hypotheses about the historical branching patterns of populations, species, and higher taxonomic groups, which are then depicted as phylogenetic trees. The tips of a phylogeny represent observable taxa (extant or extinct), and the internal nodes represent inferred common ancestors. Phylogenetic trees are the basis of modern systematics, which organizes and classifies biodiversity according to evolutionary history, and they are also critical for evolutionary analyses that involve multiple taxa (phylogenetic comparative analyses).</p>
+<div id="molecular-phylogenies" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Molecular Phylogenies<a href="evolution-of-dna-sequences.html#molecular-phylogenies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Phylogenies have historically been inferred by analyzing morphological character matrices using <a href="https://en.wikipedia.org/wiki/Maximum_parsimony_(phylogenetics)">maximum parsimony</a> (the principle of parsimony states that the best phylogeny explains an observed character set with the fewest evolutionary changes). Today, however, the majority of phylogenetic analyses are based on DNA sequence data, because they provide a large number of informative characters. When an alignment varies among taxa, every altered base pair potentially holds useful information about relatedness, and it is much easier to assemble the large data sets needed for phylogenetic inference with DNA sequencing as opposed to the analysis of morphological or other phenotypic traits.</p>
+<p>Generally speaking, molecular phylogenies group species based on genetic similarity, with similar species clustering closely together on a phylogenetic tree and dissimilar species being separated by longer branches. In phylogenetics, the degree of genetic similarity is often called phylogenetic distance, which is the number of nucleotide (or amino acid) differences between two species. To infer phylogenetic trees, pair-wise phylogenetic distances are first calculated among all species in a data set, yielding a phylogenetic distance matrix. The distance matrix can then be converted into a bifurcating tree with various algorithms. Note that the actual math behind these algorithms goes beyond the scope of this text, but if you are interested, you can check out the Wikipedia entries for different approaches (<a href="https://en.wikipedia.org/wiki/Neighbor_joining">neighbor-joining methods</a>, <a href="https://en.wikipedia.org/wiki/UPGMA">UPGMA</a>, and <a href="https://en.wikipedia.org/wiki/WPGMA">WPGMA</a>). There are variety of software packages available to infer both the topology of phylogenetic trees and branch lengths, with <a href="https://evolution.genetics.washington.edu/phylip.html">PHYLIP</a> being most commonly used.</p>
+<div class="alert alert-block alert-info">
+<p><b>A Practical Example in R</b></p>
+<p>Simple phylogenetic trees can be inferred in R, and I want to provide a practical example of the different steps involved to illustrate the general process. This pipeline uses the R packages <code>Biostrings</code> (for importing data), <code>msa</code> (for aligning sequences), <code>ggmsa</code> (for plotting the alignment), <code>seqinr</code> (for calculating the distance matrix), and <code>ape</code> (for the generation of the tree).</p>
+<p>First, we read in a set of nucleotide or amino acid sequences and align them for further analysis. The example here includes amino acid sequences of the hemoglobin ⍺1 gene for 17 species of vertebrates, including humans:</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="evolution-of-dna-sequences.html#cb98-1" tabindex="-1"></a><span class="co">#Read in sequences</span></span>
+<span id="cb98-2"><a href="evolution-of-dna-sequences.html#cb98-2" tabindex="-1"></a>hemoSeq <span class="ot">&lt;-</span> Biostrings<span class="sc">::</span><span class="fu">readAAStringSet</span>(<span class="fu">system.file</span>(<span class="st">&quot;examples/HemoglobinAA.fasta&quot;</span>, <span class="at">package=</span><span class="st">&quot;msa&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="evolution-of-dna-sequences.html#cb99-1" tabindex="-1"></a><span class="co">#Align sequences</span></span>
+<span id="cb99-2"><a href="evolution-of-dna-sequences.html#cb99-2" tabindex="-1"></a>hemoAln <span class="ot">&lt;-</span> msa<span class="sc">::</span><span class="fu">msa</span>(hemoSeq)</span>
+<span id="cb99-3"><a href="evolution-of-dna-sequences.html#cb99-3" tabindex="-1"></a>hemoAln2 <span class="ot">&lt;-</span> msa<span class="sc">::</span><span class="fu">msaConvert</span>(hemoAln, <span class="at">type=</span><span class="st">&quot;seqinr::alignment&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="evolution-of-dna-sequences.html#cb100-1" tabindex="-1"></a><span class="co">#Visualize the alignment for codons positions 50-100</span></span>
+<span id="cb100-2"><a href="evolution-of-dna-sequences.html#cb100-2" tabindex="-1"></a>ggmsa<span class="sc">::</span><span class="fu">ggmsa</span>(hemoSeq, <span class="dv">50</span>, <span class="dv">100</span>, <span class="at">color =</span> <span class="st">&quot;Clustal&quot;</span>, <span class="at">font =</span> <span class="st">&quot;DroidSansMono&quot;</span>, <span class="at">char_width =</span> <span class="fl">0.5</span>, <span class="at">seq_name =</span> T )</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:hemealig"></span>
+<img src="Primer-to-Evolution_files/figure-html/hemealig-1.png" alt="Alignment of hemoglobin alpha-1 amino acid sequences from different species. Note that only positions 50-100 are shown in the example." width="768" />
+<p class="caption">
+Figure 7.4: Alignment of hemoglobin alpha-1 amino acid sequences from different species. Note that only positions 50-100 are shown in the example.
+</p>
+</div>
+<p>Second, we calculate the phylogenetic distance matrix, which contains pair-wise distances between all taxa in the data set. Note that the diagonal cells of the matrix are all zero (distance to self), and the matrix is symmetrical (<em>i.e.</em>, the distance between taxon 1 and taxon 2 is the same as the distance between taxon 2 and taxon 1). As you can deduce from the table, closely related species have a low phylogenetic distance [<em>e.g.</em>, the distance between humans (<em>Homo sapiens</em>) and chimps (<em>Pan troglodytes</em>) is zero, because the amino acid sequences of their hemoglobin ⍺1 are exactly the same]. In contrast, distantly related species have larger phylogenetic distances [e.g., humans and zebrafish (<em>Danio rerio</em>)].</p>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="evolution-of-dna-sequences.html#cb101-1" tabindex="-1"></a><span class="co">#Calculate phylogenetic distance matrix</span></span>
+<span id="cb101-2"><a href="evolution-of-dna-sequences.html#cb101-2" tabindex="-1"></a>d <span class="ot">&lt;-</span> seqinr<span class="sc">::</span><span class="fu">dist.alignment</span>(hemoAln2, <span class="st">&quot;identity&quot;</span>)</span></code></pre></div>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table table table-striped" style="font-size: 9px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-5">Table 7.1: </span>Phylogenetic distance matrix showing pair-wise differences in hemoglobin hemoglobin ⍺1 sequences between all samples in the data set.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+HBA1_Homo_sapiens
+</th>
+<th style="text-align:right;">
+HBA1_Pan_troglodytes
+</th>
+<th style="text-align:right;">
+HBA1_Macaca_mulatta
+</th>
+<th style="text-align:right;">
+HBA1_Bos_taurus
+</th>
+<th style="text-align:right;">
+HBA1_Tursiops_truncatus
+</th>
+<th style="text-align:right;">
+HBA1_Mus_musculus
+</th>
+<th style="text-align:right;">
+HBA1_Rattus_norvegicus
+</th>
+<th style="text-align:right;">
+HBA1_Erinaceus_europaeus
+</th>
+<th style="text-align:right;">
+HBA1_Felis_silvestris_catus
+</th>
+<th style="text-align:right;">
+HBA1_Chrysocyon_brachyurus
+</th>
+<th style="text-align:right;">
+HBA1_Loxodonta_africana
+</th>
+<th style="text-align:right;">
+HBA1_Monodelphis_domestica
+</th>
+<th style="text-align:right;">
+HBA1_Ornithorhynchus_anatinus
+</th>
+<th style="text-align:right;">
+HBA1_Gallus_gallus
+</th>
+<th style="text-align:right;">
+HBA1_Xenopus_tropicalis
+</th>
+<th style="text-align:right;">
+HBA1_Microcephalophis_gracilis
+</th>
+<th style="text-align:right;">
+HBA1_Danio_rerio
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+HBA1_Homo_sapiens
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.168
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Pan_troglodytes
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.168
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.467
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Macaca_mulatta
+</td>
+<td style="text-align:right;">
+0.168
+</td>
+<td style="text-align:right;">
+0.168
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.337
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.512
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Bos_taurus
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.337
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.367
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.454
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Tursiops_truncatus
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.404
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.491
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.674
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Mus_musculus
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.347
+</td>
+<td style="text-align:right;">
+0.367
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.395
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.533
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Rattus_norvegicus
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.467
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.491
+</td>
+<td style="text-align:right;">
+0.395
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.595
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.700
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Erinaceus_europaeus
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.512
+</td>
+<td style="text-align:right;">
+0.583
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.630
+</td>
+<td style="text-align:right;">
+0.674
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Felis_silvestris_catus
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.386
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.668
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Chrysocyon_brachyurus
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.413
+</td>
+<td style="text-align:right;">
+0.421
+</td>
+<td style="text-align:right;">
+0.454
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.377
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.454
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.577
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Loxodonta_africana
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.429
+</td>
+<td style="text-align:right;">
+0.438
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.512
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.454
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.583
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.663
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Monodelphis_domestica
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.583
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.583
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.700
+</td>
+<td style="text-align:right;">
+0.705
+</td>
+<td style="text-align:right;">
+0.724
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Ornithorhynchus_anatinus
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.526
+</td>
+<td style="text-align:right;">
+0.512
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.533
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.552
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Gallus_gallus
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.546
+</td>
+<td style="text-align:right;">
+0.539
+</td>
+<td style="text-align:right;">
+0.595
+</td>
+<td style="text-align:right;">
+0.559
+</td>
+<td style="text-align:right;">
+0.565
+</td>
+<td style="text-align:right;">
+0.577
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.590
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.647
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Xenopus_tropicalis
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.674
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.700
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.647
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+<td style="text-align:right;">
+0.753
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Microcephalophis_gracilis
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.641
+</td>
+<td style="text-align:right;">
+0.652
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.630
+</td>
+<td style="text-align:right;">
+0.668
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.663
+</td>
+<td style="text-align:right;">
+0.705
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.734
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HBA1_Danio_rerio
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.700
+</td>
+<td style="text-align:right;">
+0.674
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.689
+</td>
+<td style="text-align:right;">
+0.684
+</td>
+<td style="text-align:right;">
+0.724
+</td>
+<td style="text-align:right;">
+0.715
+</td>
+<td style="text-align:right;">
+0.679
+</td>
+<td style="text-align:right;">
+0.753
+</td>
+<td style="text-align:right;">
+0.734
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Finally, we can infer a phylogenetic tree based on the phylogenetic distance matrix using a <a href="https://en.wikipedia.org/wiki/Neighbor_joining">neighbor-joining algorithm</a>:</p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="evolution-of-dna-sequences.html#cb102-1" tabindex="-1"></a><span class="co">#Calculate neighbor-joining tree</span></span>
+<span id="cb102-2"><a href="evolution-of-dna-sequences.html#cb102-2" tabindex="-1"></a>hemoTree <span class="ot">&lt;-</span> ape<span class="sc">::</span><span class="fu">nj</span>(d)</span>
+<span id="cb102-3"><a href="evolution-of-dna-sequences.html#cb102-3" tabindex="-1"></a><span class="co">#Designate an outgroup to root the tree</span></span>
+<span id="cb102-4"><a href="evolution-of-dna-sequences.html#cb102-4" tabindex="-1"></a>hemoTree<span class="ot">&lt;-</span><span class="fu">root</span>(hemoTree, <span class="st">&quot;HBA1_Danio_rerio&quot;</span>)</span>
+<span id="cb102-5"><a href="evolution-of-dna-sequences.html#cb102-5" tabindex="-1"></a><span class="co">#Plot the tree</span></span>
+<span id="cb102-6"><a href="evolution-of-dna-sequences.html#cb102-6" tabindex="-1"></a><span class="fu">ggtree</span>(hemoTree) <span class="sc">+</span> <span class="fu">geom_tiplab</span>() <span class="sc">+</span><span class="fu">xlim</span>(<span class="dv">0</span>,<span class="fl">0.6</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-6-1.png" alt="Neighbor-joining tree of different vertebrates based on hemoglobin ⍺1 sequences." width="100%" />
+<p class="caption">
+Figure 7.5: Neighbor-joining tree of different vertebrates based on hemoglobin ⍺1 sequences.
+</p>
+</div>
+</div>
+<p>While phylogenetic trees inferred from distance matrices are relatively simple to calculate, this approach is not without flaws. First and foremost, distance-based approaches completely ignore evolutionary processes. The key assumption underlying these analyses is that sequence similarities among taxa are caused by homology, even though such similarities can also arise through convergent evolution. In addition, distance-based approaches do not account for the fact that different evolutionary lineages may evolve at different rates, which can cause species to cluster by evolutionary speed rather then relatedness. Alternative methods—such as maximum likelihood and Bayesian inference methods—address some of these shortcomings and use explicit models of character evolution to infer phylogenetic relationships. These approaches are mathematically much more involved and beyond the scope of this text.</p>
+<div class="alert alert-block alert-info">
+<p><b>Learn More: Reconstructing Phylogenies</b></p>
+<p>If you are interested in learning more about reconstructing phylogenies, I recommend “<em>Phylogenetic Inference</em>” by Mark Holder, Chapter 12 in the <a href="https://k-state.primo.exlibrisgroup.com/permalink/01KSU_INST/1177os2/alma9942417312002401"><em>Princeton Guide to Evolution</em></a> that you can access for free through the K-State Library. The chapter briefly introduces parsimony, likelihood-based approaches, and Bayesian inference in more detail.</p>
+</div>
+</div>
+<div id="molecular-phylogenies-in-real-life" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Molecular Phylogenies in Real Life<a href="evolution-of-dna-sequences.html#molecular-phylogenies-in-real-life" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>While basic approaches for inferring phylogenies are conceptually and computationally straightforward, modern phylogenetic analyses based on explicit statistical models (maximum likelihood or Bayesian) are complex and computationally intensive. This is in part because the statistical evaluation of phylogenetic trees has to consider a large number of alternative hypotheses (<em>i.e.</em>, alternative tree configurations). The number of possible phylogenetic trees grows unimaginably large for even moderately sized data sets. For a data set with <em>n</em> taxa, the total number of possible (unrooted) trees is:</p>
+<span class="math display" id="eq:37">\[\begin{align}
+\prod_{i=1}^{n}(2i-5) \tag{7.1}
+\end{align}\]</span>
+<p>Thus, for just 20 taxa, there are more possible tree configurations than human cells (that is, all cells from all humans). The number of possible trees eclipses the number of atoms in the universe at just over 50 taxa (Figure <a href="evolution-of-dna-sequences.html#fig:numtree">7.6</a>).Today phylogenetic analyses routinely include hundreds and sometimes thousands of taxa in our effort to build a comprehensive tree of life; this requires extensive computational infrastructure and ever more refined algorithms.</p>
+<div class="figure"><span style="display:block;" id="fig:numtree"></span>
+<img src="Primer-to-Evolution_files/figure-html/numtree-1.png" alt="Number of possible tree configurations as a function of the number of taxa in a data set, as clacylated by Equation (7.1)." width="672" />
+<p class="caption">
+Figure 7.6: Number of possible tree configurations as a function of the number of taxa in a data set, as clacylated by Equation (7.1).
+</p>
+</div>
+<p>It is also important to note that inferred phylogenies for a set of taxa can vary depending on the data used for phylogenetic reconstruction. This is because gene trees—phylogenies that are inferred from a single locus—do not necessarily reflect the historical patterns of lineage-splitting and speciation (represented by species trees). Discrepancies between gene and species trees arise from gene duplication, horizontal gene transfer, and incomplete lineage sorting (the retention of ancestral polymorphisms across species). Hence, species trees are inferred by finding the consensus among many gene trees in an attempt to minimize the effects of outlier genes.</p>
+<p>In summary, reconstructing phylogenetic trees is not trivial, and it is important to remember that phylogenies represent hypotheses. For many taxonomic groups, we have many alternative hypotheses about their evolutionary history; none of those hypotheses are necessarily wrong, and more data is typically needed to weigh the support for or against a particular phylogenetic tree. Conflicting phylogenetic trees can cause major controversies among systematists and evolutionary biologists. Most of these debates are held among taxonomic specialists, but others have significant implications for our broader understanding of the evolution of life on our planet. For example, sponges (Porifera) have long been considered the sister group to all other metazoans, but recent molecular phylogenetic analyses have suggested that comb jellies (Ctenophora) are in fact sister to the rest of Metazoa. The relative positioning of the two groups has major implications for our understanding of the evolution of animal body plans. The debate has been ongoing, and some Zoology textbooks—depending on the edition—have flip-flopped back and forth, presenting one or the other hypothesis depending on the most recent findings. It would probably be more accurate to present the two phylogenies as alternative hypotheses—at least until further evidence is available to settle the issue.</p>
+</div>
+</div>
+<div id="the-neutral-theory" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> The Neutral Theory<a href="evolution-of-dna-sequences.html#the-neutral-theory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>DNA sequences not only allow us to reconstruct the phylogenetic history of life, but they also allow us to make inferences about how selection and genetic drift have shaped the evolution of genomes. Selection has clearly shaped the evolution of phenotypic traits, mediating organismal adaptation to diverse environmental conditions. But as we learned in <a href="the-raw-materials-for-evolution.html">Chapter 4</a>, many mutations have no or a negligible impact on the expression of phenotypes, and accordingly, on individual fitness. It was Motoo Kimura, a Japanese population geneticist famous for his innovative use of mathematics to advance evolutionary theory, who first proposed that evolution at a molecular level is primarily governed by genetic drift—not by natural selection. While selection eliminates deleterious alleles, Kimura established that neutral mutations are fixed at a constant rate (1/2<em>N</em><sub>e</sub>) due to chance (<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force">Chapter 6</a>). Accordingly, different species are predicted to accumulate their own sets of neutral mutations over time, and the number of mutations between two species should be proportional to the time of divergence between them.</p>
+<p>Comparing two methods for estimating divergence time, Charles Langley and Walter Fitch put this idea to the test in 1974 by quantifying the number of nucleotide substitutions in the cytochrome c gene between different species of mammals and estimating their divergence time based on the fossil record. As predicted by Kimura’s neutral theory, there is a clear correlation between the divergence time of two species and the number of substitutions in their cytochrome c gene (Figure <a href="evolution-of-dna-sequences.html#fig:molc">7.7</a>). Theory and empirical evidence consequently suggest that neutral mutations accumulate in genomes in a clock-like fashion, although the rate at which mutations accumulate varies among genomic regions. The molecular rate of evolution is highest in pseudogenes and other non-functional genomic regions, because every possible mutation is selectively neutral. The rate of molecular evolution is slowest at non-synonymous sites, because many mutations have fitness consequences and thus behave non-neutrally.</p>
+<div class="figure"><span style="display:block;" id="fig:molc"></span>
+<img src="Primer-to-Evolution_files/figure-html/molc-1.png" alt="The number of substitutions in the cytochrome c gene for different species pairs as a function of their divergence time. [Data](data/7_molclock.csv) from Langley and Fitch (1974)." width="672" />
+<p class="caption">
+Figure 7.7: The number of substitutions in the cytochrome c gene for different species pairs as a function of their divergence time. <a href="data/7_molclock.csv">Data</a> from Langley and Fitch (1974).
+</p>
+</div>
+<div id="molecular-clocks" class="section level3 hasAnchor" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Molecular Clocks<a href="evolution-of-dna-sequences.html#molecular-clocks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Because mutations accumulate at roughly constant rates, we can infer the timing of evolutionary events by quantifying the number of nucleotide substitutions. This approach to dating evolutionary events is also know as the “molecular clock”. Before applying a molecular clock in practice, fixation rates must be aligned to actual time (in generations or years) and account for potential effects of population size, which determines the likelihood of fixation for a neutral allele (1/2<em>N</em>). Regions of the genome with slow substitution rates are typically used to date events in deep time and calibrated by linking patterns of nucleotide substitutions to evolutionary events observed in the fossil record. This is particularly useful to time branching points in phylogenetic hypotheses, leading to time-calibrated phylogenetic trees. In contrast, regions of the genome with rapid substitution rates are used to estimate the timing of more recent evolutionary events. In some instances, fast molecular clocks can be calibrated based on repeated sampling of genotypes within a population.</p>
+<p>An example of molecular clock application is the investigation into the evolutionary origins of HIV (human immunodeficiency virus). AIDS—the disease associated with an HIV infection—was first described in a clinical setting in the early 1980s and then spread rapidly through the human populations, at first regionally (e.g., portions of Africa, Haiti, and New York) and soon worldwide. Early evolutionary studies showed that HIV arose as a zoonotic disease, when SIV (simian immunodeficiency virus) was transmitted from chimpanzees to humans in western Africa, likely as a consequence of bushmeat consumption. However, the timing of the zoonotic transmission was unclear. Was this a disease that had been circulating in human populations unrecognized for some time, or was it a recent transmission across species boundaries? To get at this question, Korber et al. (2000) sequenced a large number of HIV samples that were collected between 1983 and 1997. They estimated the rate of HIV evolution based on sequence variation in their samples and the age of the virus isolates. Extrapolating that evolutionary rate indicated that the common ancestor of HIV strains present in their sample likely dated back to the 1930s (Figure <a href="evolution-of-dna-sequences.html#fig:hiv">7.8</a>) and had been transmitted within the human population for several decades. The subsequent discovery of HIV in a tissue sample collected from the Democratic Republic of Congo in 1959 allowed for an independent test of that molecular clock. Analyzing the DNA sequence of the new isolate and plotting it along the other data indicated a genetic similarity consistent with the inferred molecular clock (Rambaut et al. 2004); in fact, the historical sample landed almost perfectly on the extrapolation line (red sample in Figure <a href="evolution-of-dna-sequences.html#fig:hiv">7.8</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:hiv"></span>
+<img src="Primer-to-Evolution_files/figure-html/hiv-1.png" alt="The application of a molecular clock used to date the orgin of HIV-1 group M (the principal pandemic group). Based on DNA sequence variation in isolates collected between 1983 and 1997, the shared common ancestor of HIV likely existed in the 1930s. The red dot represents the earliest known HIV sample, which corroborates the molecular clock estimate. [Data](data/7_hiv.csv) from Korber et al. (2000)." width="672" />
+<p class="caption">
+Figure 7.8: The application of a molecular clock used to date the orgin of HIV-1 group M (the principal pandemic group). Based on DNA sequence variation in isolates collected between 1983 and 1997, the shared common ancestor of HIV likely existed in the 1930s. The red dot represents the earliest known HIV sample, which corroborates the molecular clock estimate. <a href="data/7_hiv.csv">Data</a> from Korber et al. (2000).
+</p>
+</div>
+</div>
+<div id="detecting-signatures-of-selection" class="section level3 hasAnchor" number="7.3.2">
+<h3><span class="header-section-number">7.3.2</span> Detecting Signatures of Selection<a href="evolution-of-dna-sequences.html#detecting-signatures-of-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The neutral theory also provides a powerful null model to test for historical signatures of selection in the genome. If neutral alleles become fixed in a population at regular rates, deviations from that rate must indicate non-neutrality (<em>i.e.</em>, selection). One way to detect selection is to analyze the rate of non-synonymous (<em>d</em><sub>N</sub>) to synonymous (<em>d</em><sub>S</sub>) substitutions in the genome. This ratio is also known as ⍵=<em>d</em><sub>N</sub>/<em>d</em><sub>S</sub>. If you imagine a pseudogene, the likelihood that a non-synonymous mutation is fixed is equal to the likelihood that a synonymous substitution gets fixed, because—in a pseudogene—both types of mutations are selectively neutral. Hence, under strict neutrality, the ratio between <em>d</em><sub>N</sub> and <em>d</em><sub>S</sub> is 1. In most protein-coding genes, non-synonymous mutations can impact the structure and function of the translated protein, and these functional changes can come with fitness benefits or costs. If the non-synonymous substitution provides a fitness benefit, selection causes the mutation to spread and become fixed in a population at a higher rate than expected by chance alone (also see Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>). Thus, <em>d</em><sub>N</sub> will be higher than <em>d</em><sub>S</sub>, such that the ratio between the two rates is greater than 1. In contrast, if a non-synonymous substitution imposes a fitness cost, selection eliminates the mutation from a population, drastically reducing the likelihood of fixation (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>). In this case, the ratio between <em>d</em><sub>N</sub> and <em>d</em><sub>S</sub> is smaller than 1.</p>
+<p>In practice, we can analyze rates of nucleotide substitution in individual protein-coding genes across the branches of a phylogeny. If the rate of <em>d</em><sub>N</sub>/<em>d</em><sub>S</sub> is around 1, the analyzed gene evolved neutrally (Figure <a href="evolution-of-dna-sequences.html#fig:dnds">7.9</a>A). If <em>d</em><sub>N</sub>/<em>d</em><sub>S</sub> is &gt;1, the gene was under positive (or divergent) selection, which means new variants were brought to high frequency by natural selection (Figure <a href="evolution-of-dna-sequences.html#fig:dnds">7.9</a>B). Genes under positive selection likely play an important role in adaptation. In contrast, if <em>d</em><sub>N</sub>/<em>d</em><sub>S</sub> is &lt;1, the gene was under negative (or purifying) selection (Figure <a href="evolution-of-dna-sequences.html#fig:dnds">7.9</a>C). This represents the selective removal of deleterious alleles and can lead to conserved regions of the genome.</p>
+<div class="figure"><span style="display:block;" id="fig:dnds"></span>
+<img src="images/dnds.png" alt="Neutral (gray) and non-neutral (different shades of color) mutations plotted on hypothetical phylogenies. A. Under the assumptions of the neutral theory, the rate of non-synonymous to synonynous substitutions should be equal (d&lt;sub&gt;N&lt;/sub&gt;/d&lt;sub&gt;S&lt;/sub&gt;=1). B. If a locus is under positive (or divergent) selection, non-synonymous mutations are expected to be driven to fixation rapidly, leading to an underrepresentation of synonymous mutations  (d&lt;sub&gt;N&lt;/sub&gt;/d&lt;sub&gt;S&lt;/sub&gt;&gt;1). C. If a locus is under negative (or purifying) selection, non-synonymous mutations are expected to be eliminated rapidly, leading to an overrepresentation of synonymous mutations (d&lt;sub&gt;N&lt;/sub&gt;/d&lt;sub&gt;S&lt;/sub&gt;&lt;1)." width="100%" />
+<p class="caption">
+Figure 7.9: Neutral (gray) and non-neutral (different shades of color) mutations plotted on hypothetical phylogenies. A. Under the assumptions of the neutral theory, the rate of non-synonymous to synonynous substitutions should be equal (d<sub>N</sub>/d<sub>S</sub>=1). B. If a locus is under positive (or divergent) selection, non-synonymous mutations are expected to be driven to fixation rapidly, leading to an underrepresentation of synonymous mutations (d<sub>N</sub>/d<sub>S</sub>&gt;1). C. If a locus is under negative (or purifying) selection, non-synonymous mutations are expected to be eliminated rapidly, leading to an overrepresentation of synonymous mutations (d<sub>N</sub>/d<sub>S</sub>&lt;1).
+</p>
+</div>
+</div>
+</div>
+<div id="case-study-sars-cov-2" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Case Study: SARS-CoV-2<a href="evolution-of-dna-sequences.html#case-study-sars-cov-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="exercises/BIOL520-ex6.zip">This chapter’s case study</a> explores the application of phylogenetics and molecular evolution through the lens of SARS-CoV-2, the coronavirus behind the current COVID-19 pandemic. First, you will plot a phylogeny of coronaviruses to address questions about the evolutionary history of the virus, then you will establish a molecular clock for the virus, and finally, you will explore the distribution of genetic variation throughout the coronavirus genome to make inferences about the potential forces shaping molecular evolution. Before diving into the problems, I want to provide you with some background on host-pathogen evolution using the flu (influenza A) as an example.</p>
+<div id="host-pathogen-coevolution" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Host-Pathogen Coevolution<a href="evolution-of-dna-sequences.html#host-pathogen-coevolution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In 1858, French chemist Louis Pasteur was the first to recognize that contagious diseases are caused by pathogens—just a year prior to Darwin’s publication of <em>The Origin of Species</em>. Pathogens, of course, represent evolvable populations that are shaped by evolutionary forces, just like all other living things. Central to understanding pathogen evolution is recognizing the conflict between pathogens and their hosts, which have diametrically opposed interests. Pathogens want to overcome a host’s defense mechanisms and use its body to self-replicate and then jump to other hosts. In contrast, hosts want to avoid incurring fitness costs associated with the energetic demands of pathogens and other damage they can inflict. Hence, hosts are selected to evolve strategies that exclude and combat pathogens, while pathogens are selected to evade the hosts’ defense mechanisms.</p>
+<p>This evolutionary tit-for-tat is known as coevolution, where the adaptation of each actor (<em>e.g.</em>, a new defense strategy in a host) exerts selection on the other actor (the pathogen that now needs to overcome the new line of defense). Coevolution leads to continuous cycles of adaptation and counteradaptation, and the coevolutionary relationship between hosts and pathogens has been likened to a coevolutionary arms race. Since pathogens typically have large populations, short generation times, and high mutation rates compared to their hosts, they generally have the upper hand and lead the arms race.</p>
+<div class="alert alert-block alert-info">
+<p><b>Definition: Coevolution</b></p>
+<p>Coevolution is the process of reciprocal evolutionary change that occurs between interacting species.</p>
+</div>
+<p>The acquired immune system of vertebrates is one of the most exquisite adaptations to pathogens. It allows hosts to recognize foreign intruders to the body and generate antibodies that act specifically to combat the intruder, using both humoral and cell-mediated responses. These specific responses also create immunological memory, which leads to an enhanced response and even immunity during secondary infections of the same pathogen or pathogen strain. Hence, immune hosts are not suitable for pathogens, unless pathogens have evolved sufficiently that the host immune system does not recognize them anymore.</p>
+</div>
+<div id="the-evolution-of-the-seasonal-flu" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> The Evolution of the Seasonal Flu<a href="evolution-of-dna-sequences.html#the-evolution-of-the-seasonal-flu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Influenza A and B cause the seasonal flu in humans. The influenza A genome consists of 8 RNA strands that encode for 11 proteins. One protein of particular evolutionary interest is hemagglutinin. Hemagglutinin is expressed at the surface of the virus and involved in the initiation of an infection of a new host cell. Some parts of the protein—the antigenic sites—also represent the primary target sites that the host immune system responds to. Thus, hemagglutinin is critical for the interaction between host and pathogen. To persist in a population, influenza A needs to find a naive host whose immune system has never been exposed to the virus and therefore cannot recognize its antigenic sites. Alternatively, the virus needs to exhibit mutations at antigenic sites that are sufficiently different from the antigenic sites of previous infections to overcome the host’s immunity. This raises interesting questions about the evolution of the hemagglutinin gene through time.</p>
+<p>The sequencing of influenza A strains over almost 20 years revealed a steady accumulation of nucleotide substitutions in the hemagglutinin gene (Figure <a href="evolution-of-dna-sequences.html#fig:flu">7.10</a>). Older strains of the flu consistently disappear, while new strains emerge through mutation and spread. Over time, this leads to flu variants that are substantially different from the original sample. This finding is consistent with the neutral theory; mutations are accumulating through time in a clock-wise fashion. The question is, however, what allowed the persisting strains to endure when others went extinct? It turns out that persisting lineages exhibit a disproportionate amount of mutations at antigenic sites compared to the most prevalent strains present at any given time. In other words, rare strains that are most dissimilar at sites recognized by the host immune system are the most successful at infecting new hosts and spreading in a population. Until, of course, they become common, and another dissimilar variant starts to have the same selective advantage (this is negative frequency-dependent selection in action). The consequence is that the accumulation of mutations is not equal throughout the gene, and there is clear evidence for positive selection on 18 codons that all lie within the antigenic sites of hemagglutinin. So while nucleotide substitutions accumulate steadily through time, non-synonymous substitution accumulate disproportionately (<em>i.e.</em>, ⍵&gt;1) where is really matters: the attack sites of the host immune system. These results show how the host immune system can drive pathogen evolution, and these general evolutionary principles are used to predict the dominant variants of the seasonal flu every year, which is used to produce flu vaccines well before flu season actually starts.</p>
+<div class="figure"><span style="display:block;" id="fig:flu"></span>
+<img src="Primer-to-Evolution_files/figure-html/flu-1.png" alt="Accumulation of nucleotide substitutions in the hemagglutinin gene of the influenza A virus from 1968-1987. This time period is equivalent to about 20 million years of mammalian evolution. [Data](data/7_influenza.csv) from Fitch et al. (1991)." width="672" />
+<p class="caption">
+Figure 7.10: Accumulation of nucleotide substitutions in the hemagglutinin gene of the influenza A virus from 1968-1987. This time period is equivalent to about 20 million years of mammalian evolution. <a href="data/7_influenza.csv">Data</a> from Fitch et al. (1991).
+</p>
+</div>
+</div>
+<div id="high-virulence-flu-strains" class="section level3 hasAnchor" number="7.4.3">
+<h3><span class="header-section-number">7.4.3</span> High-Virulence Flu Strains<a href="evolution-of-dna-sequences.html#high-virulence-flu-strains" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Besides the seasonal flu, which ravages across the planet in annual cycles, there are also high-virulence flu strains that emerge periodically. High-virulence flu strains induce high mortality and—in some instances— have spread rapidly in human populations, causing pandemics. Among the most well-known high-virulence flu strains were the Spanish flu (1918 influenza pandemic) and the 2009 swine flu, which were both caused by the H1N1 influenza A virus. In addition, smaller high-virulence flu outbreaks associated with bird and swine flus have been documented repeatedly over the past decades. High-virulence flu strains can induce high mortality because they have vastly different antigenic sites compared to the seasonal flu, making it much harder for our immune system to recognize and combat the virus.</p>
+<p>Where do these radically different antigenic sites come from? Humans are not the only organisms that can contract the influenza A viruses; they also infect other vertebrates (especially other mammals and birds). Due to long coevolutionary histories, different host groups exhibit different flu strains, with reciprocal adaptations in the hosts and pathogens. However, cross-infections can occur, especially when humans work in close contact with animals (<em>e.g.</em>, on pig or poultry farms). In most instances, cases of cross-infection are evolutionary dead ends because the viruses—poorly adapted to the novel host—cannot be transmitted from human to human. However, if a cross-infection occurs in a host that is already infected with a human influenza A strain, genetic segments from the different strains can mix to produce a novel third strain. This process is called viral reassortment, and the resulting strain can inherit the capability to transmit from human to human, while simultaneously exhibiting drastically different surface proteins that cause severe courses of disease.</p>
+</div>
+</div>
+<div id="practical-skills-working-with-phylogenetic-trees" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> Practical Skills: Working with Phylogenetic Trees<a href="evolution-of-dna-sequences.html#practical-skills-working-with-phylogenetic-trees" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The exercise associated with this chapter will primarily focus on visualizing phylogenetic trees and associated metadata and interpreting data from molecular evolution analyses. To do so, you will use some new R functions from packages you have not previously used. Note that you will not have to write the more complex code associated with this exercise from scratch; some information in this section just provides additional context if you want to dig deeper.</p>
+<div id="installing-dependencies" class="section level3 hasAnchor" number="7.5.1">
+<h3><span class="header-section-number">7.5.1</span> Installing Dependencies<a href="evolution-of-dna-sequences.html#installing-dependencies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To work through this week’s exercise, you will need to install four new R packages. Three of these packages (<code>ape</code>, <code>dplyr</code>, <code>phytools</code>, and <code>tidyr</code>) are available through <a href="https://cran.r-project.org/">CRAN</a> (the network providing R) and can be installed the same way as previous packages (<em>i.e.</em>, use the <code>install.packages()</code> function or click Tools&gt;Install Packages…).</p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb103-1"><a href="evolution-of-dna-sequences.html#cb103-1" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;ape&quot;</span>)</span>
+<span id="cb103-2"><a href="evolution-of-dna-sequences.html#cb103-2" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span>
+<span id="cb103-3"><a href="evolution-of-dna-sequences.html#cb103-3" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;phytools&quot;</span>)</span>
+<span id="cb103-4"><a href="evolution-of-dna-sequences.html#cb103-4" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;tidyr&quot;</span>)</span></code></pre></div>
+<p>The fourth package (<code>ggtree</code>) is not available from CRAN and needs to be retrieved from a different repository, called <a href="https://bioconductor.org/">Bioconductor</a>. Bioconductor is specialized in providing tools for the analysis of a wide variety of high-throughput biological data (including phylogenetics, genomics, and transcriptomics). To install packages from Bioconductor, you first need to install an auxiliary package (<code>BiocManager</code>). Once installed, Bioconductor packages can be installed using the <code>BiocManager::install()</code> function. So, to install <code>ggtree</code>, you will have to execute the following code.</p>
+<div class="sourceCode" id="cb104"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb104-1"><a href="evolution-of-dna-sequences.html#cb104-1" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb104-2"><a href="evolution-of-dna-sequences.html#cb104-2" tabindex="-1"></a><span class="dt">BiocManager</span><span class="kw">::</span><span class="at">install</span>(<span class="st">&quot;ggtree&quot;</span>)</span></code></pre></div>
+<p>After installation, make sure to either delete the installation code or silence the code with hashtags to avoid problems with knitting the document to an *.html file.</p>
+<div class="alert alert-block alert-warning">
+<p><img src="images/important.png" width="20" /> <strong>Important Note</strong></p>
+<p>If you are having trouble installing <code>ggtree</code>, please make sure that your computer fulfills the system requirements. Some Bioconductor packages are notorious for not playing well with Google Chromebooks, outdated versions of Mac OS, and some antivirus programs on PCs.</p>
+</div>
+</div>
+<div id="the-pipe-operator" class="section level3 hasAnchor" number="7.5.2">
+<h3><span class="header-section-number">7.5.2</span> The Pipe Operator<a href="evolution-of-dna-sequences.html#the-pipe-operator" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this exercise, you will see the use of the so-called pipe operator, <code>%&gt;%</code>, which is part of the <code>dplyr</code> package. The pipe operator is used to pass the results of the function on the left hand side as an argument to the function on the right hand side. It allows us to skip the definition of intermediate variables and chain together multiple functions in a series. The pipe operator is widely used to simplify code, both in terms of readability and execution.</p>
+<p>To give you a practical example: the way we have used R before, it takes four lines of code to define a vector (<code>a</code>), take its square-root (<code>b</code>), calculate the mean of the square-root transformed vector (<code>c</code>), and then display the result:</p>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="evolution-of-dna-sequences.html#cb105-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>, <span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb105-2"><a href="evolution-of-dna-sequences.html#cb105-2" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(a)</span>
+<span id="cb105-3"><a href="evolution-of-dna-sequences.html#cb105-3" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">mean</span>(b)</span>
+<span id="cb105-4"><a href="evolution-of-dna-sequences.html#cb105-4" tabindex="-1"></a><span class="fu">print</span>(c)</span></code></pre></div>
+<pre><code>## [1] 2.042571</code></pre>
+<p>Using the pipe operator, we can link together the four functions directly into a pipeline to obtain the same result:</p>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="evolution-of-dna-sequences.html#cb107-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>, <span class="at">by=</span><span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="fu">sqrt</span>() <span class="sc">%&gt;%</span> <span class="fu">mean</span>() <span class="sc">%&gt;%</span> <span class="fu">print</span>()</span></code></pre></div>
+<pre><code>## [1] 2.042571</code></pre>
+<p>You are not required to use the pipe operator in your coding. However, some of the pre-written code in this week’s exercise makes use of this function.</p>
+</div>
+<div id="importing-a-tree" class="section level3 hasAnchor" number="7.5.3">
+<h3><span class="header-section-number">7.5.3</span> Importing a Tree<a href="evolution-of-dna-sequences.html#importing-a-tree" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Phylogenetic trees are encoded in a variety of file formats that can all be imported into R. We will be working with trees in the <a href="https://en.wikipedia.org/wiki/Newick_format">Newick format</a> (*.nwk), which is commonly used in many phylogenetics applications. To import a *.nwk-file, you can use the <code>read.tree()</code> function from the <code>ape</code> package. The example used here is based on a sample tree you can download <a href="data/7_test_tree.nwk">here</a> (and yes… this is a phylogeny of all the fish species in my fish room🤓).</p>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="evolution-of-dna-sequences.html#cb109-1" tabindex="-1"></a><span class="co">#Import a phylogenetic tree in the Newick format</span></span>
+<span id="cb109-2"><a href="evolution-of-dna-sequences.html#cb109-2" tabindex="-1"></a>test.tree <span class="ot">&lt;-</span> phytools<span class="sc">::</span><span class="fu">read.newick</span>(<span class="st">&quot;data/7_test_tree.nwk&quot;</span>)</span></code></pre></div>
+<p>As always when you import data into R, successfully executing this code should generate an object called “test.tree” in your work space (top right panel in RStudio).</p>
+</div>
+<div id="plotting-a-tree" class="section level3 hasAnchor" number="7.5.4">
+<h3><span class="header-section-number">7.5.4</span> Plotting a Tree<a href="evolution-of-dna-sequences.html#plotting-a-tree" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To plot phylogenetic trees, we will use the <code>ggtree()</code> function of the <code>ggtree</code> package, because it is based on the <code>ggplot2</code> functionalities that you are already familiar with. Note that other R packages (<code>ape</code>, <code>phytools</code>) also allow for the visualization of phylogenetic trees, although we will not be using those.</p>
+<p>To plot a tree, you can simply execute the <code>ggtree()</code> function using the imported tree object as an argument. Note that a number of additional arguments allow for the modification of the base plot, which you can explore <a href="https://yulab-smu.top/treedata-book/chapter4.html">here</a> if you are interested.</p>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="evolution-of-dna-sequences.html#cb110-1" tabindex="-1"></a>tree <span class="ot">&lt;-</span> <span class="fu">ggtree</span>(test.tree)</span>
+<span id="cb110-2"><a href="evolution-of-dna-sequences.html#cb110-2" tabindex="-1"></a>tree</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-10-1.png" width="576" /></p>
+</div>
+<div id="annotating-a-tree" class="section level3 hasAnchor" number="7.5.5">
+<h3><span class="header-section-number">7.5.5</span> Annotating a Tree<a href="evolution-of-dna-sequences.html#annotating-a-tree" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The structure of a tree alone is rarely sufficient to address evolutionary hypotheses; it is the annotation of trees with additional information that makes them useful.</p>
+<div id="tip-labels" class="section level4 unnumbered hasAnchor">
+<h4>Tip Labels<a href="evolution-of-dna-sequences.html#tip-labels" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Tip labels can be added to a tree using the <code>geom_tiplab()</code> function. Note that depending on the length of labels, the canvas of the plot has to be adjusted with <code>xlim()</code>.</p>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="evolution-of-dna-sequences.html#cb111-1" tabindex="-1"></a>tree <span class="sc">+</span> </span>
+<span id="cb111-2"><a href="evolution-of-dna-sequences.html#cb111-2" tabindex="-1"></a>  <span class="fu">geom_tiplab</span>() <span class="sc">+</span> <span class="co">#Add tip labels</span></span>
+<span id="cb111-3"><a href="evolution-of-dna-sequences.html#cb111-3" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="cn">NA</span>,<span class="dv">500</span>) <span class="co">#Make some extra space so tip labels are not cut off</span></span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-11-1.png" width="768" /></p>
+</div>
+<div id="working-with-metadata" class="section level4 unnumbered hasAnchor">
+<h4>Working with Metadata<a href="evolution-of-dna-sequences.html#working-with-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Metadata is a set of data that gives additional information about other data. For phylogenies, metadata typically provides additional information about the taxa in a tree. Note that each metadataset needs to have a column called <code>label</code>, in which individual entries match the tip labels in the phylogenetic tree.</p>
+<p>The <a href="data/7_metadata.csv">metadata for the example</a> tree used here can be imported using the <code>read.csv()</code> function that you are already familiar with. As you can see below, it provides information about the geographic distribution and dietary habits of each species in the phylogeny.</p>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="evolution-of-dna-sequences.html#cb112-1" tabindex="-1"></a>meta.data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/7_metadata.csv&quot;</span>)</span>
+<span id="cb112-2"><a href="evolution-of-dna-sequences.html#cb112-2" tabindex="-1"></a><span class="fu">head</span>(meta.data)</span></code></pre></div>
+<pre><code>##                           label         origin      diet
+## 1          Ancistrus_ranunculus  South America herbivore
+## 2 Carinotetraodon_travancoricus          India carnivore
+## 3      Chromobotia_macracanthus Southeast Asia  omnivore
+## 4              Corydoras_aeneus  South America  omnivore
+## 5               Corydoras_julii  South America  omnivore
+## 6            Corydoras_paleatus  South America  omnivore</code></pre>
+<p>We can now use a version of the pipe operator called left-join (<code>%&lt;+%</code>) to annotate the base tree generated above with information from the metadata. To do so, we add the base tree on the left side of the operator and the metadata with the additional geoms on the right side of the operator. For example, we can replace the original tip labels to display the dietary habit of each species instead:</p>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="evolution-of-dna-sequences.html#cb114-1" tabindex="-1"></a>tree  <span class="sc">%&lt;+%</span> meta.data <span class="sc">+</span> <span class="fu">geom_tiplab</span>(<span class="fu">aes</span>(<span class="at">label=</span>diet), <span class="at">offset=</span><span class="dv">0</span>) <span class="sc">+</span> ggtree<span class="sc">::</span><span class="fu">xlim</span>(<span class="cn">NA</span>,<span class="dv">500</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-13-1.png" width="768" /></p>
+<p>Alternatively, we can plot the original tip labels in addition to the dietary habits. In this case, the <code>offset</code> argument is required to make sure labels are not printed on to of each other:</p>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="evolution-of-dna-sequences.html#cb115-1" tabindex="-1"></a>tree  <span class="sc">%&lt;+%</span> meta.data <span class="sc">+</span> <span class="fu">geom_tiplab</span>() <span class="sc">+</span> <span class="fu">geom_tiplab</span>(<span class="fu">aes</span>(<span class="at">label=</span>diet), <span class="at">offset=</span><span class="dv">240</span>) <span class="sc">+</span> ggtree<span class="sc">::</span><span class="fu">xlim</span>(<span class="cn">NA</span>,<span class="dv">750</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-14-1.png" width="768" /></p>
+<p>Finally, we can also color code the tips of the phylogeny based on an input variable using <code>geom_tippoint()</code>:</p>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="evolution-of-dna-sequences.html#cb116-1" tabindex="-1"></a>tree  <span class="sc">%&lt;+%</span> meta.data <span class="sc">+</span> <span class="fu">geom_tiplab</span>(<span class="at">offset=</span><span class="dv">20</span>) <span class="sc">+</span> <span class="fu">geom_tiplab</span>(<span class="fu">aes</span>(<span class="at">label=</span>diet), <span class="at">offset=</span><span class="dv">370</span>) <span class="sc">+</span> ggtree<span class="sc">::</span><span class="fu">xlim</span>(<span class="cn">NA</span>,<span class="dv">900</span>) <span class="sc">+</span> <span class="fu">geom_tippoint</span>(<span class="fu">aes</span>(<span class="at">color=</span>origin), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p><img src="Primer-to-Evolution_files/figure-html/unnamed-chunk-15-1.png" width="768" /></p>
+<p>If you are interested in learning more about phylogenetic tree annotation using <code>ggtree</code>, I recommend Part II in Guangchuang Yu’s book “<a href="https://yulab-smu.top/treedata-book/index.html">Data Integration, Manipulation and Visualization of Phylogenetic Trees</a>”.</p>
+</div>
+</div>
+<div id="calculating-the-distance-to-root" class="section level3 hasAnchor" number="7.5.6">
+<h3><span class="header-section-number">7.5.6</span> Calculating the Distance to Root<a href="evolution-of-dna-sequences.html#calculating-the-distance-to-root" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To establish a molecular clock for samples collected across a range of time, we need to enumerate the number of nucleotide substitutions for a given sample, relative to the common ancestor of all samples in the data set. Naturally, that common ancestor itself may not actually be in the data set; in fact, there is no expectation that it would be. However, phylogenetics allows us to side-step that problem, because phylogenies infer the pattern of shared ancestry across all samples in the data set, with the common ancestor of all samples representing the root of the tree. In a tree where branch lengths are proportional to the genetic similarity between nodes, we can consequently calculate the distance between the root and any given tip as a metric of genetic divergence. This can be accomplished by the <code>distRoot()</code> function from the <code>adephylo</code> package. Note that this function requires some significant computational time, especially for larger phylogenies. Rather than having you to run this in the exercise, we are simply providing you with the output of the <code>distRoot()</code> function that you can import as a *.csv file.</p>
+</div>
+</div>
+<div id="reflection-questions-6" class="section level2 hasAnchor" number="7.6">
+<h2><span class="header-section-number">7.6</span> Reflection Questions<a href="evolution-of-dna-sequences.html#reflection-questions-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Can you describe how Kimura’s theory of neutral evolution is different from the theory of evolution by natural selection? How are they the same? Are the two perspectives compatible or do they represent alternative hypotheses to describe the evolutionary process?</li>
+<li>What are the differences and similarities between a gene tree and a species tree?</li>
+<li>What confounding variables need to be accounted for when applying a molecular clock to date a phylogeny?</li>
+</ol>
+</div>
+<div id="references-7" class="section level2 hasAnchor" number="7.7">
+<h2><span class="header-section-number">7.7</span> References<a href="evolution-of-dna-sequences.html#references-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Fitch WM, JM Leiter, XQ Li, P Palese (1991). <a href="https://www.pnas.org/content/88/10/4270">Positive Darwinian evolution in human influenza A viruses</a>. <em>Proceedings of the National Academy of Sciences USA</em> 88, 4270–4274.</li>
+<li>Korber B, M Muldoon,J Theiler, F Gao, R Gupta, A Lapedes … T Bhattacharya (2000). <a href="https://science.sciencemag.org/content/288/5472/1789">Timing the ancestor of the HIV-1 pandemic strains</a>. <em>Science</em> 288, 1789–1796.</li>
+<li>Langley CH, WM Fitch (1974). <a href="https://link.springer.com/article/10.1007/BF01797451">An examination of the constancy of the rate of molecular evolution</a>. <em>Journal of Molecular Evolution</em> 3, 161–177.</li>
+<li>Rambaut A, D Posada, KA Crandall, EC Holmes (2004). <a href="https://www.nature.com/articles/nrg1246">The causes and consequences of HIV evolution</a>. <em>Nature Reviews Genetics</em> 5, 52–61.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-evolution-of-quantitative-traits.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": "nullnull",
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

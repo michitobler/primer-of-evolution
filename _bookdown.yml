@@ -1,4 +1,5 @@
-book_filename: "Primer2Evolution"
+book_filename: "Primer to Evolution"
+output_dir: "docs"
 delete_merged_file: true
 language:
   ui:

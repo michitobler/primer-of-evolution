@@ -1,0 +1,9 @@
+type,deaths,frequency
+Vector-borne,<0.1%,32.81596452
+Vector-borne,0.1-1.0%,21.64079823
+Vector-borne,1-10%,27.13968958
+Vector-borne,>10%,15.6097561
+Directly transmitted,<0.1%,75.21064302
+Directly transmitted,0.1-1.0%,8.514412417
+Directly transmitted,1-10%,6.031042129
+Directly transmitted,>10%,6.031042129
