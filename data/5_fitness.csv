@@ -1,0 +1,4 @@
+﻿genotype,sel.dom,sel.rec,sel.add,sel.het.ad1,sel.het.ad2,sel.het.dis1,sel.het.dis2
+AA,1,0.6,1,0.6,0.8,1,1
+Aa,1,0.6,0.8,1,1,0.6,0.6
+aa,0.6,1,0.6,0.6,0.6,1,0.8

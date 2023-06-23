@@ -1,0 +1,22 @@
+﻿model,genotype,freq
+One locus,0,0.25
+One locus,1,0.5
+One locus,2,0.25
+Two loci,0,0.06
+Two loci,1,0.25
+Two loci,2,0.38
+Two loci,3,0.25
+Two loci,4,0.06
+Six loci,0,0.005521433
+Six loci,1,0.009389077
+Six loci,2,0.016074655
+Six loci,3,0.053959961
+Six loci,4,0.121140333
+Six loci,5,0.193996184
+Six loci,6,0.226206012
+Six loci,7,0.193996184
+Six loci,8,0.121140333
+Six loci,9,0.053959961
+Six loci,10,0.016074655
+Six loci,11,0.009389077
+Six loci,12,0.005521433

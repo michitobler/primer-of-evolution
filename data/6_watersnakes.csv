@@ -1,0 +1,21 @@
+location,morph,frequency
+Ontario,D,0
+Ontario,C,0
+Ontario,B,0
+Ontario,A,1
+Peninsular mainland,D,0.05
+Peninsular mainland,C,0.03
+Peninsular mainland,B,0.09
+Peninsular mainland,A,0.83
+Kelleys Is.,D,0.11
+Kelleys Is.,C,0.31
+Kelleys Is.,B,0.47
+Kelleys Is.,A,0.11
+Bass complex Is.,D,0.38
+Bass complex Is.,C,0.39
+Bass complex Is.,B,0.18
+Bass complex Is.,A,0.05
+Middle & Pelee Is.,D,0.63
+Middle & Pelee Is.,C,0.2
+Middle & Pelee Is.,B,0.12
+Middle & Pelee Is.,A,0.05
