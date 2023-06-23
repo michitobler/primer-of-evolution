@@ -1,0 +1,554 @@
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(ggplot2)
+library(ggpubr)
+library(tidyr)
+library(knitr)
+library(kableExtra)
+library(magick)
+library(grid)
+library(imager)
+library(dplyr)
+library(ggrepel)
+library(RColorBrewer)
+```
+
+# (PART) Applied Evolutionary Biology {.unnumbered}
+
+# Evolutionary Medicine I: Aging and Diseases of Civilization
+
+The study of evolutionary biology is frequently seen as a purely academic exercise, albeit one that allows us to better understand---and perhaps appreciate---the living world around us. Over recent decades, however, evolutionary biology has matured from the basic science of understanding the origins and complexity of biological systems to an applied science for solving practical problems faced by humanity. Evolutionary principles are now routinely applied when developing strategies to address issues associated with human and environmental health in a time of rapid change. So, in the final section of this book, we will turn our attention to how we can apply evolutionary principles to better understand who we are, where we came from, and how we can address some of the major challenges faced by our society, especially in the context of human health and medicine.
+
+The analytical tools used by evolutionary biologists to study the form and function of other organisms can, of course, be applied to the study of human form and function---though appropriate caution is always needed when interpreting such research findings. The added level of caution is not necessary because humans are in some way special or different from other organisms; rather, the study of humans bears unique constraints in terms of study design and the modes of inference we have at our disposal. It is simply not ethical to conduct certain experiments with human subjects. As such, we sometimes lack one of the critical scientific tools---the experiment with tightly controlled conditions---that allows for the establishment of causation. Hence, caution is required particularly because we often cannot rule out alternative hypotheses of observable phenomena.
+
+## Darwinian Medicine
+
+Despite the limitations of applying evolutionary approaches to understand human nature, incorporation of evolutionary principles into our understanding of human health and disease has lead to important breakthroughs, with implications for the prevention and treatment of both individual and public health issues. While classic biomedical research has focused on understanding the molecular and physiological underpinnings of diseases, Darwinian medicine (or evolutionary medicine) is also concerned with how evolutionary history and evolutionary processes have impacted our propensity to contract diseases. Such approaches have lead to important insights about the biology of cancers, autoimmune diseases, and evolving pathogens. Table 12.1 lists some core principles of evolutionary medicine based on recommendation of The Association of American Medical Colleges and the Howard Hughes Medical Institute (Grunspan et al. 2018). While some medical schools have been slow to adopt the inclusion of evolutionary principles into their curricula, rigorous evolution education is now commonplace among healthcare professionals.
+
+| Topic                  | Core principle                                                                                                                                                                                 |
+|:-------------|:---------------------------------------------------------|
+| Types of explanation   | Both proximate (mechanistic) and ultimate (evolutionary) explanations are needed to provide a full biological understanding of traits, including those that increase vulnerability to disease. |
+| Evolutionary processes | All evolutionary processes, including natural selection, genetic drift, mutation, migration and non-random mating, are important for understanding traits and disease.                         |
+| Reproductive success   | Natural selection maximizes reproductive success, sometimes at the expense of health and longevity.                                                                                            |
+| Sexual selection       | Sexual selection shapes traits that result in different health risks between sexes.                                                                                                            |
+| Constraints            | Several constraints inhibit the capacity of natural selection to shape traits that are hypothetically optimal for health.                                                                      |
+| Trade-off              | Evolutionary changes in one trait that improves fitness can be linked to changes in other traits that decrease fitness.                                                                        |
+| Life history           | Life history traits, such as age at first reproduction, reproductive lifespan and rate of senescence, are shaped by evolution and have implications for health and disease.                    |
+| Levels of selection    | Vulnerabilities to disease can result when selection has opposing effects at different levels (*e.g.,* genetic elements, cells, organisms, kin and other levels).                              |
+| Phylogeny              | Tracing phylogenetic relationships for species, populations, traits or pathogens can provide insights into health and disease.                                                                 |
+| Coevolution            | Coevolution among species can influence health and disease (*e.g.*, evolutionary arms races and mutualistic relationships such as those seen in the microbiome).                               |
+| Plasticity             | Environmental factors can shift developmental trajectories in ways that influence health, and the plasticity of these trajectories can be the product of evolved adaptive mechanisms.          |
+| Defenses               | Many signs and symptoms of disease (*e.g.*, fever) are useful defenses, which can be pathological if dysregulated.                                                                             |
+| Mismatch               | Disease risks can be altered for organisms living in environments that differ from those in which their ancestors evolved.                                                                     |
+| Cultural practices     | Cultural practices can influence the evolution of humans and other species (including pathogens), in ways that can affect health and disease (*e.g.*, anti-biotic use, birth practices, diet). |
+
+: Table 12.1:Core principles of evolutionary medicine based on Grunspan et al. (2018)
+
+We have already covered a wide range of topics associated with core concepts in evolutionary medicine, albeit not always in the explicit context of human health and disease. In this and the next chapter, we will explore select topics in more depth. First, we will examine how mismatches between modern environments and those of our ancestors impact our susceptibility to non--communicable diseases, and explore why we age and die. In the next chapter, we will discuss how evolutionary principles inform our understanding of pathogen spread and evolution, and how we can use cultural practices to impact disease dynamics in our population.
+
+## Diseases of Civilization
+
+Human populations have undoubtedly evolved a wide variety of adaptations to local environmental conditions and lifestyles. Recent research has not only identified a number of phenotypic traits associated with adaptations to different diets, pathogens, oxygen levels, cold resistance, and exposure to very high or very low levels of UV (Table 12.2), but in many cases also found candidate genes that underlie adaptive trait variation in specific populations (Rees et al 2020). In all of these cases, local adaptation has evolved in response to very specific sources of selection, often over time periods spanning thousands of years. For example, evolution of lactase persistence was associated with the domestication of cattle and other dairy animals about 10,000 years ago, leading to an increase in lactase persistence alleles over the past 5,000 years, until they reached present-day levels (see [Chapter 5](evolutionary-mechanisms-i-modeling-selection.html#fig:lactase)). Similarly, human populations that traditionally eat a high-starch diet exhibit a high copy number of amylase genes (AMY1) compared to populations that traditionally eat a low-starch diet (Figure \@ref(fig:amylase)A). AMY1 genes encode the enzyme amylase, which is responsible for catalyzing the hydrolysis of complex cabrohydrates to simple sugars during digestion, and copy number variation is directly correlated with the amount of amylase produced in the saliva (Figure \@ref(fig:amylase)B). The surge of lactase persistence alleles in populations consuming diary and the high amylase copy numbers in populations eating a lot of starchy foods exemplify how evolution has shaped traits associated with digestion in response to cultural practices (*i.e.*, regional food preferences).
+
+| Adaptation                                                 | Population with adaptations       |
+|:--------------------------------------------|:--------------------------|
+| [*Diet*]{.underline}                                       |                                   |
+| Lactase persistence                                        | Eurasians and Africans            |
+| Fatty diets                                                | Greenlandic Inuit                 |
+| Starchy diets                                              | Across different populations      |
+| Low selenium levels                                        | Chinese                           |
+| Low iron levels                                            | Europeans                         |
+| Low calcium levels                                         | Non-Africans                      |
+| Frequent starvation                                        | Samoans                           |
+| [*Pathogens*]{.underline}                                  |                                   |
+| Malaria resistance                                         | Sub-Saharan Africans              |
+| African sleeping sickness                                  | Western Africans                  |
+| Hepatitis C                                                | Europeans                         |
+| [*Oxidative stress*]{.underline}                           |                                   |
+| High altitude                                              | Tibetans, Andeans, and Ethiopians |
+| Breath-holding diving                                      | Bajau (Indonesia)                 |
+| [*Cold resistance*]{.underline}                            |                                   |
+| Cold perception                                            | Eurasians                         |
+| Energy regulation, metabolism, and cardiovascular function | Siberians                         |
+| Differentiation of brown and brite adipocytes              | Greenlandic Inuit                 |
+| [*UV exposure*]{.underline}                                |                                   |
+| Pigmentation changes                                       | Across different populations      |
+| Low vitamin D levels                                       | Northern Europeans                |
+
+: Table 12.2: Examples of local adaptation in human populations based on Rees et al. (2020).
+
+```{r amylase, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8, out.width='100%', fig.cap="A. AMY1 gene copy number in human populations with a high starch diet and populations with a low starch diet. Triangles indicate median copy numbers. [Data](data/12_amylase1.csv) from Perry et al. (2007). B. Copy number variation of AMY1 is directly correlated with the amount amylase protein present in the saliva of individuals, indicating that copy number variation likely impacts function. [Data](data/12_amylase2.csv) from Perry et al. (2007)."}
+amy1 <- read.csv("data/12_amylase1.csv")
+amy1$diet <- factor(amy1$diet, levels = c("Low starch", "High starch"))
+amy2 <- read.csv("data/12_amylase2.csv")
+
+amy.p1 <- ggplot(amy1, aes(x=copy.number, y=proportion))+
+    geom_bar(stat = "identity", position = "dodge", aes(fill=diet))+
+    labs(x="AMY1 gene copy number", y="Proportion", fill="Diet")+
+    theme_classic()+
+    geom_point(aes(7,-0.01), shape=17, size=2, color="#F8766D")+
+    geom_point(aes(5,-0.01), shape=17, size=2, color="#00BFC4")+
+    xlim(2,15)+
+    theme(legend.position = c(0.8,0.88))+
+    scale_fill_brewer(palette = "Set2")
+
+amy.p2 <- ggplot(amy2, aes(x=copy.number, y=protein))+
+    geom_smooth(method = "lm", se=FALSE, color="gray")+
+    geom_point()+
+    labs(x="AMY1 gene copy number", y="Amount of AMY protein in saliva")+
+    theme_classic()
+
+ggarrange(amy.p1, amy.p2, labels = c("A", "B"), nrow=1)
+```
+
+The onset of agriculture 10,000 years ago was not the last time that human lifestyles have changed dramatically. Perhaps the most important change in recent human evolution was the the industrial revolution, which occurred between 1760 and 1840. This time period was marked by a transition in manufacturing processes, initially in Europe and the United States, where goods previously made by hand were now produced with machines powered by steam and, later, electricity. The industrial revolution led to unprecedented human population growth and population connectivity associated with increased globalization. During this time, almost every aspect of daily life changed. Humans changed the ways they moved around, transitioning from walking to using transportation. The structure of social interactions changed both at larger scales (aggregation of people into growing urban centers) and at smaller scales (changes in family structures and the social roles of men and women). Humans had increasing access to medical treatments, but also increasing exposure to environmental pollutants. And perhaps most significantly, humans completely changed what they ate; today most foods are industrially processed products made from cereal grains, refined sugars, and an excess of trans and saturated fats. In many ways, our modern life bears little resemblance to that of our ancestors.
+
+### Modern Hunter-Gatherers and Urbanites
+
+The profound changes to our environment and our lifestyles over the past 10,000 years---really, mostly over the past 250 years---are illustrated by comparing modern urbanites and modern hunter-gatherers. Modern hunter-gatherers still obtain the majority of their food by foraging and hunting, similar to most humans prior to the sedentary agricultural societies that arose 10,000 years ago. Modern hunter-gatherers include the Inuit and Iñupiat peoples from Arctic regions in North America and Greenland, the Huaorani and Yąnomamö peoples in South America, the Orang Patek peoples of Palawan, the Pila Nguru of Australia, as well as the Bayaka and San peoples of sub-Saharan Africa, among many others (Figure \@ref(fig:hgdiet)A). While modern urbanites walk an average of 2.5 km per day and burn energy at a rate of about 1.18 times the resting metabolic rate, hunter-gatherers of the !Kung in the Kalahari desert and the Aché in Paraguay walk between 14.9 and 19.2 km per day and burn energy at a rate of 1.71-2.15 times the resting metabolic rate (Cordain et al. 1997). At the same time, hunter-gatherers have a lower caloric intake (\~3,000 kcal/day vs. 3,600 kcal/day in an average American), and their diet primarily consists of lean game, fish and shellfish, eggs, fruits, vegetables, and other plant products (although there are staggering geographic and cultural differences; Figure \@ref(fig:hgdiet)B). Hunter-gatherer diets are also exceedingly nutritious, providing vitamins, minerals, and dietary fibers at rates that far exceed the recommended daily allowances set by the U.S. Food and Nutrition Board (Eaton and Konner 1997).
+
+```{r hgdiet, echo=FALSE, message=FALSE, warning=FALSE, fig.height=2.66667, fig.width=8, out.width='100%', fig.cap="A. The San peoples or Bushmen are indiginous hunter-gatherer cultures that are the first cultures of Southern Africa. Photo: [Aino Tuominen](https://ainotuominen.myportfolio.com/projects) (CC0). B. Diet composition of four hunter-gatherer communities, the Inuit of the high Arctic in Canada, the Hiwi of South America, the !Kung of southern Africa, and the Hadza of eastern Africa. [Data](data/12_diet.csv) from Leonard (2002)."}
+san.pic <- rasterGrob(load.image("images/bushman.jpg"))
+diet <- read.csv("data/12_diet.csv")
+diet2 <- gather(diet, "category", "percentage", 2:6)
+diet2$people <- factor(diet$people, levels = c("Inuit", "Hiwi", "!Kung", "Hadza"))
+diet2$category2 <- recode_factor(diet2$category, 
+                                 Fruits.and.vegetables="Fruits, vegetables", 
+                                 Meat.and.fish="Meat, fish", 
+                                 Milk.and.cornmeal="Dairy", 
+                                 Roots="Roots", 
+                                 Seeds.and.nuts="Seeds, nuts")
+
+diet2$category2 <- factor(diet2$category2, c("Fruits, vegetables", "Roots", "Seeds, nuts", "Dairy", "Meat, fish"))
+
+hgdiet.p1 <- ggplot(diet2, aes(x=people, y=percentage, fill=category2))+
+    geom_bar(position="fill", stat="identity")+
+    theme_classic()+
+    labs(x="People", y="Proportion", fill="Diet category")+
+    scale_fill_brewer(palette = "Set2")
+
+ggarrange(san.pic, hgdiet.p1, labels = c("A", "B"), nrow=1, widths = c(1.1,1))
+```
+
+Not surprisingly, our sedentary lifestyles and splurges rich in sugar, fat, and alcohol have been associated with a wide variety of health issues. Average Americans exhibit higher blood cholesterol levels (204 mg/dl vs. 121 in !Kung and 141 in Inuit) and higher body mass indices (\>29 in 2018 vs. 19 in !Kung and 24 in Inuit; Leonard 2002). More over, our modern lifestyles and diets have been associated with a wide variety of health conditions that are comparatively rare or even absent in hunter-gatherer communities: cardiovascular diseases like heart attacks and strokes; cancer in a variety of forms; autoimmune diseases like diabetes, celiac disease, and multiple sclerosis; neurodegenerative diseases like Alzheimer's and Parkinson's disease; and mental health issues like depression, anxiety, and substance abuse. Due to the rarity of these diseases in hunter-gatherer communities and the documented links to lifestyle and eating habits, these diseases are also know as "diseases of civilization" or "lifestyle diseases". The impacts of diseases of civilization are profound. While over 60 % of deaths in the U.S. in 1900 were caused by infectious diseases, by 1940 the majority of deaths were associated with with heart disease, cancers, and non-communicable diseases. Today, 7 out of the 10 leading causes of death in the U.S. are non-communicable and have significant risk factors associated with modern life.
+
+### Old Adaptations in a Modern World
+
+Human populations---with their large census sizes and accordingly large pools of standing genetic variation---are undoubtedly able to respond to selection and adapt to changing environmental conditions. As explained above, we know how the increase in dairy and starchy foods during the advent of agriculture exerted selection on a variety of digestive enzymes, leading to high frequencies of lactose persistence alleles ([Chapter 5](evolutionary-mechanisms-i-modeling-selection.html#fig:lactase)) and high copy numbers of amylase genes (Figure \@ref(fig:amylase)). Evolutionary change in humans is thus certainly responsive to the cultural practices that vary among populations. Still, evolution obviously takes time, and many of the drastic changes in diet and lifestyle only date back a handful of generations. Change in cultural practices---which has happened in just a few generations---has consequently outpaced evolutionary change by natural selection.
+
+As we study adaptive trait variation in humans, we consequently need to ask ourselves what environments humans are actually adapted to. The environments experienced by modern urbanites---and even those of our ancestors within the past few millenia, since the start of recorded history (\~5,000 years ago)---bear little resemblance to the environments humans experienced for the vast majority of their evolutionary history. Considering that anatomically modern *Homo sapiens* emerged around 300,000 years ago, even the advent of agriculture only reaches back into about 3 % of our species' history. Many of the traits that make us human evolved during the Stone Age, when humans lived predominantly as nomadic hunter-gatherers.
+
+Diseases of civilization may therefore be a consequence of mismatch between traits evolved in another environmental context and the environment we are currently experiencing. Traits that were previously adaptive or selectively neutral may suddenly have a negative impact on health and, ultimately, fitness. For example, an apatite for fatty and sugary foods and alcohol may have been adaptive or selectively neutral when these resources were scarce and periodic starvation was common. However, in an age where these goods are perpetually available---thanks to cooperate lobbying and governmental regulation, often at a lower prices than healthier options---excessive intake can lead to obesity, diabetes, and substance abuse, with all of their associated health issues.
+
+In other cases, diseases of civilization may be a consequence of hidden phenotypic variation, uncovered when development is impacted by novel environmental conditions or habits (*i.e.*, phenotypic plasticity in response to novel environmental cues not present before). For example, myopia (nearsightedness) is rare in hunter-gatherer communities, but 22 % of humans worldwide are myopic to a degree that they require glasses. The incidence of myopia has been drastically increasing since World War I (Figure \@ref(fig:myopia)A) and coincided with the introduction for formalized schooling in many countries. Comparison of the frequency of myopia across countries with different education systems still reveals substantial differences in the prevalence of myopia today (Figure \@ref(fig:myopia)B).
+
+It turns out that the increase in myopia prevalence was an inadvertent consequence of school work that emphasizes near-field visual work, like reading books and working on computer monitors. The visual experience during development influences the growth of the eye, and extensive near-field work ultimately impacts far-field vision. It is important to note that there is also a heritable component to myopia, and people vary in the degree to which they are susceptible to development of myopia (*i.e.*, there is genetic variation for plasticity in this trait). Essentially, the alleles that control the propensity of an individual to develop myopia in response to near-field visual work were selectively neutral in the past, when such work was comparatively rare. With the change of schooling and workplace practices, however, that hidden propensity to change eye growth in response to an environmental cue became not only visible, but led to suboptimal trait expression that was not previously tested by natural selection. The availability of mitigating measures (glasses, contact lenses, laser surgeries) indicate that alleles increasing susceptibility to myopia will likely remain in human populations at a high frequency.
+
+```{r myopia, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8, out.width='100%', fig.cap="A. Prevalence of myopia from 1938 to 2013 for four Asian countries. [Data](data/12_myopia.csv) from Morgan et al. (2018). A. Prevalence of myopia for countries with different education systems. [Data](data/12_myopia.csv) from Morgan et al. (2018)."}
+myo <- read.csv("data/12_myopia.csv")
+myo2 <- read.csv("data/12_myopia2.csv")
+myo2$education <- factor(myo2$education, levels = c("No formal education", "Limited formal education", "Modern western education", "Modern East Asian education"))
+
+myo.p1 <- ggplot(myo, aes(x=year, y=prevalence, color=country))+
+    geom_point()+
+    geom_line()+
+    labs(x="Birth year (+20)", y="Prevalence of myopia", color="Country")+
+    theme_classic()+
+    theme(legend.position= c(0.25, 0.8))+
+    scale_color_brewer(palette = "Set2")
+
+myo.p2 <- ggplot(myo2, aes(x=reorder(country,-prevalence), y=prevalence, fill=education))+
+    geom_col()+
+    theme_classic()+
+    labs(x="Country", y="Prevalence of myopia", fill="Education system")+
+    coord_flip()+
+    theme(legend.position= c(0.7, 0.8))+
+    scale_fill_brewer(palette = "Set2")
+
+ggarrange(myo.p1, myo.p2, labels = c("A", "B"), nrow=1, widths = c(1,1.4))
+```
+
+Diseases of civilization may be prevalent in modern societies because not enough time has passed to match our bodies to our novel lifestyles. In other words, diseases of civilization are a symptom of a lack of adaptation; as a population, we have not yet evolved the defenses necessary to fend off many perils of modern life (*e.g.*, sedentary lifestyles and high-calorie diets). Studying diseases of civilization from an evolutionary perspective allows us to better understand why their prevalence is so high. While these insights may not be as important for developing treatments for such diseases (that is explored by biomedical research, which illuminates the proximate causes of disease), understanding the ultimate causes behind disease development is critical for disease prevention. Understanding how our traits from ancient times respond to the novel environmental conditions that we have created for ourselves is key to preventative healthcare that evaluates how environmental factors and lifestyle choices affect disease risk.
+
+### An Example: Breast Cancer
+
+One of the most common types of cancer is breast cancer. In the U.S. alone, there are over 284,000 new cases and over 44,000 deaths every single year, primarily in women. I want to use breast cancer as a case study to explore how evolutionary perspectives might inform our understanding and the prevention of a disease, as breast cancer has a number of risk factors that relate to evolutionary genetics and diseases of civilization.
+
+Research has indicated that genetic predisposition plays a role in the development of some breast cancers. Particularly, mutations in the *BRCA1* and *BRCA2* genes---two tumor suppressor genes---have been associated with an elevated risk for breast cancer in women. While only 5-10 % of breast cancers are associated with BRCA mutations, 40-65 % of women with a BRCA mutations are treated for breast cancer within their lifetime. As a consequence, only 59 % of women with a *BRCA1* mutation and 71 % of women with a *BRCA2* mutation reach an age of 70 (compared 84 % of women without this mutation). Hence, selection against mutations in BRAC genes should be strong, and deleterious alleles should be accordingly rare. Population genetic analyses, however, have indicated that 1 in 381 women (0.26%) carries a *BRAC1* mutation and 1 in 277 (0.36%) a *BRAC* 2 mutation, and these allele frequencies are much higher than expected considering the high incidence of disease. Interestingly, at least *BRAC1* appears to be under positive selection in humans and chimpanzees, suggesting that natural selection acts to promote alternative genetic variants at that locus rather than removing them (Huttley et al. 2000). Cochran and colleagues (2006) proposed that mutations in *BRAC1* stimulate neural growth and might be linked to higher cognitive abilities, providing fitness benefits that balance costs associated with cancer development. However, rigorous tests of this hypothesis are still lacking.
+
+Besides genetic factors, environmental and lifestyle factors also affect breast cancer risk. Early work attempting to explain the high frequency of breast cancer focused on the hypothesis that this type of cancer was caused by a pathogen. In mice, tumors in the mammary glands are frequently associated with a viral infection (mouse mammary tumor virus, MMTV), and researchers have hypothesized that MMTV or MMTV-like viruses could also be responsible for causing tumors in women. This hypothesis was supported by two primary findings: (1) Some cells isolated from human breast cancers indeed exhibited DNA sequences which resembled MMTV. (2) Breast cancer rates in Europe appeared to be correlated with the presence of different species of mice, *Mus domesticus*, which occurs in western Europe, and *M. musculus*, which occurs in eastern Europe. MMTV frequencies differ significantly between the two species and are much higher in *M. domesticus*. Intriguingly, breast cancer rates in women are higher in countries with *M. domesticus* than in countries with *M. musculus*, with countries in the hybrid zone between the two species being intermediate (Figure \@ref(fig:bcancer)A). Some researchers have taken this as evidence for a causal link between MMTV and human breast cancers, even though no MMTV particles have ever been found in human cancer samples. Correlation, in this case, may consequently not be causation. If you consider the distributional border that separates the two species (it runs through Germany, south through the Balkans), it does not take a whole lot of detective work to come up with a tangible list of confounding variables that might also impact breast cancer risk. The distribution of the two mouse species is actually paralleled by major socioeconomic differences between countries in western and eastern Europe, which arose as a consequence of the Iron Curtain that separated the Soviet block from the West and its allied states. For over 50 years, lifestyles across the divided Europe were drastically different.
+
+The question then becomes: what are the lifestyle changes that potentially impact breast cancer risks? Besides obesity and substance abuse, changes in family planning and reproductive medicine have been associated with the development of breast cancers. Women in the western world, on average, have relatively few children, and many use hormonal birth control that strictly manages menstrual cycling. Most women in our society have 9-12 menstrual cycles per year until they reach menopause. This high rate of cycling, however, seems to be a relatively new phenomenon. In more traditional societies, where women bear more children and contraceptives are less common, menstrual cycles are much more irregular throughout women's life. For example, pre-menopausal Dogon women from Mali on average have only three menstrual cycles over a period of two years (Figure \@ref(fig:bcancer)B), which is about 85 % less than women in our society. The reduced number of menstrual cycles in Dogon women is not associated with a later onset of menarche or an early onset of menopause, but with a lower frequency of cycles---especially in women aged 20-34 (Figure \@ref(fig:bcancer)C). Women of that age have a reduced number of cycles because they are either pregnant or are going through amenorrhea associated with lactation.
+
+So, what might be the causal relationship between menstrual cycling and breast cancer? Pulses of estrogen and progesterone in the post-ovulatory phase of the menstrual cycle stimulate the proliferation of breast tissues, leading to the cyclical changes in breast size and shape experienced by many women. Signals for cell proliferation, however, are not only received by healthy breast cells, but also cells that exhibit somatic mutations and are potential precursors to tumors. Hence, the higher frequency of menstrual cycles increases the number of growth signals potential cancer cells receive over the course of a woman's life, and thus, the likelihood that malignant tumors eventually develop. The link between menstrual cycling and breast cancer risk is not only supported by comparisons of menstruation rates between cultures, but also within our own society. For example, late onset menarche and early onset menopause that reduce the number of lifetime menstrual cycles are also correlated with breast cancer risk (Figure \@ref(fig:bcancer)D). Finally, breast cancer risk is not only associated with the number of hormone surges that coincide with menstrual cycling, but also with the strength of the hormone peak. For example, women in industrialized nations that have a comparatively high energy intake also exhibit higher progesterone concentrations during the post-ovulatory phase, which in turn are correlated with the incidence of breast cancers across countries (Figure \@ref(fig:bcancer)E).
+
+The high rate of breast cancer in our society is therefore at least in part a consequence of changed habits in reproduction and family planning. An inadvertent consequence of a reduced number of pregnancies and hormonal birth control is the increase in growth stimuli received by cancer precursors after every ovulation. Pharmaceutical research has consequently started to develop methods of hormonal birth control that reduce the number cycles each year to 1-4 (*e.g.*, Seaonale, Quartette, and Amethyst). Ironically, these drugs were---and still are---catching on slowly, because monthly menstrual cycling is perceived as natural and reduced cycling as artificial, and thus, perhaps unhealthy. As a consequence, extended-use birth control drugs are typically advertised for the convenience they provide and not for the potential health benefits.
+
+```{r  bcancer, echo=FALSE, message=FALSE, warning=FALSE, fig.height=7.5, fig.width=10, out.width='100%', fig.cap="A. Incidence of breast cancer in women from different countries that overlap with the distribiution of *M. domesticus* (western Europe), *M. musculus* (eastern Europe), or the hybrid zone between the two species. [Data](data/12_bc1.csv) from Stewart et al. (2000). B. The number of menstrual cycles Dogon women exhibit over a two year period. On average, adult, pre-menopausal women in that society only have 3 cycles over that period. [Data](data/12_bc2.csv) from Strassman (1999). C. The number of menstural cycles over a two year period in Dogon women as a function of age. Menstrual cycling dips in 20-34-year old as a consequence of pregnancy and amenorrhea. [Data](data/12_bc3.csv) from Strassman (1999). D. Breast cancer risk as a function of the onset of menarche and menopause. Having a late onset of menarche or an early onset of menopause reduces breast cancer risk. [Data](data/12_bc4.csv) from Collaborative Group on Hormonal Factors in Breast Cancer (2012). E. xxx. [Data](data/12_bc5.csv) from Jasieńska and Thune (2001)."}
+bc1 <- read.csv("data/12_bc1.csv")
+bc1$group <- factor(bc1$group, c("M. domesticus", "Hybrid zone", "M. musculus"))
+bc2 <- read.csv("data/12_bc2.csv")
+bc2$meses <- factor(bc2$meses, levels = c("0-1", "2-3", "4-5", "6-7", "8-9", "10-11", "12-13"))
+bc3 <- read.csv("data/12_bc3.csv")
+bc3$age <- factor(bc3$ag, levels = c("15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45+"))
+bc4 <- read.csv("data/12_bc4.csv")
+bc5 <- read.csv("data/12_bc5.csv")
+
+bc.p1 <- ggplot(bc1 , aes(x=group, y=hbc.incidence))+
+    geom_boxplot()+
+    labs(x="Geographic region", y="Human breast cancer incidence")+
+    theme_classic()
+
+bc.p2 <- ggplot(bc2 , aes(x=meses, y=women))+
+    geom_col()+
+    labs(x="Number of menstrual cycles", y="Number of women")+
+    theme_classic()
+
+bc.p3 <- ggplot(bc3 , aes(x=age, y=menses))+
+    geom_point()+
+    geom_errorbar(aes(ymin = menses-se, ymax = menses+se), width = 0)+
+    labs(x="Age group", y="Number of menstrual cycles")+
+    theme_classic()
+
+bc.p4 <- ggplot(bc4 , aes(x=rel.age, y=rr, color=event, group=event))+
+    geom_line()+
+    geom_point()+
+    geom_errorbar(aes(ymin = rr-se, ymax = rr+se), width = 0)+
+    labs(x="Standardized age", y="Relative breast cancer risk", color="Group")+
+    theme_classic()+
+    theme(legend.position = c(0.88,0.14))+
+    scale_color_brewer(palette = "Set2")
+
+bc.p5 <- ggplot(bc5 , aes(x=progesterone, y=breast.cancer, label=country))+
+    geom_smooth(method = "lm", se=FALSE, color="gray")+
+    geom_point()+
+    labs(x="Mid-luteal progesterone concentration (pmol/l)", y="Breast cancer incidence")+
+    geom_text_repel()+
+    theme_classic()
+
+bc.p6 <- ggarrange(bc.p1, bc.p2, bc.p3, labels = c("A", "B", "C"), nrow=1)
+bc.p7 <- ggarrange(bc.p4, bc.p5, labels = c("D", "E"), nrow=1)
+ggarrange(bc.p6, bc.p7, nrow=2)
+```
+
+## Why We Age... and Die
+
+The inevitability of aging and death is an intriguing biological paradox that warrants closer examination from an evolutionary perspective. Both scientists and science fiction writers have been obsessed with the fountain of youth and the secret to eternal life---without much success. So why is it that we age and ultimately die? Why hasn't natural selection favored alleles that prolong survival extensively---or even eternally---to allow for many bouts of reproduction? After all, it seems like an immortal variant would have a fitness advantage over any variant that succumbs to an early death. When pondering why we age and die, Nobel laureate Francis Jacob said it most elegantly in 1982 :
+
+> "It is truly amazing that a complex organism, formed through an extraordinarily intricate process of morphogenesis, should be unable to perform the much simpler task of merely maintaining what already exists."
+>
+> Francis Jacob, 1982
+
+The inability of organisms to maintain their bodies is the ultimate cause of aging (also known as senescence): a decline in survivability and reproductive capacity with increasing age. Aging is almost universal in multicellular organisms and even present in some microbes, where asymmetric cell divisions leave behind larger mother cells with reduced viability. Only a few organisms that appear to defy age-related deterioration have been found so far, and they include some flatworms (Platyhelminthes) and small cnidarians (*Hydra*) with asexual reproduction.
+
+### Rate of Living Hypothesis
+
+One hypothesis as to why natural selection has not favored alleles for longer lifespans (or even eternal life) is that it simply can't. Perhaps natural selection has already pushed the lifespan to the maximum , such that the maximum lifespans observed in different species today are bound by intrinsic constraints that are impossible for natural selection to overcome. The rate of living hypothesis posits that ageing is an inadvertent byproduct of metabolic activity. As cells live and proliferate, they continue to accrue irreparable damage to the point that sustaining proper function is impossible.
+
+The rate of living hypothesis makes two testable predictions: (1) The rate of aging in different species should be correlated with the pace of life. Organisms that have a very fast mass-specific metabolism (*e.g.*, bats and hummingbirds) should age comparatively fast and accordingly have short lifespans, while aging in those with slow mass-specific metabolism (*e.g.*, sloths and some deep-sea animals) should age much slower and have longer lifespans. (2) Because organisms have already been selected to resist and repair damage at their maximum capacity and lifespan is constrained by other factors, species should not be able to evolve longer lifespans.
+
+#### Prediction 1: Metabolism and Aging {.unnumbered}
+
+If aging was an inadvertent consequence of metabolic activity, we would expect clear correlations between mass-specific energy expenditure (*i.e.*, metabolic rate) and lifespan. Some organisms should live fast and die young, while others live more slowly and die old. A wide variety of approaches have been used to test this prediction. For example, if the rate of living theory were true, all organisms should have roughly the same lifetime energy expenditure---but it turns out lifetime energy expenditure varies drastically, even among species of mammals. More direct tests have looked at correlations between metabolic rate and lifespan, and again support for the hypothesis is mixed at best. While there is a negative correlation between energy expenditure and lifespan among mammals, the same correlation is absent among birds (Figure \@ref(fig:ltee)A-B). More over, intraspecific variation in metabolism of mice was positively correlated with lifespan; mice with higher metabolic activity actually lived longer than those with lower metabolic activity (Figure \@ref(fig:ltee)C), a pattern opposite of that predicted by the rate of living hypothesis. Consequently, neither patterns of lifetime energy expenditure nor correlations between energy expenditure and lifespan support the idea that there are internal constrains associated with metabolism to explain why organisms age.
+
+```{r ltee, echo=FALSE, message=FALSE, warning=FALSE, fig.height=2.66667, fig.width=8, out.width='100%', fig.cap="A. Relationship between daily energy expenditure and life span across different species of birds. The two variables are not significantly correlated. [Data](data/12_metabolism_birds.csv) from Speakman (2005). B. Relationship between daily energy expenditure and life span across different species of mammals There is a weak negative correlation between the two variables. [Data](data/12_metabolism_mammals.csv) from Speakman (2005). C. Intraspecific variation of metabolic intensity in laboratory mice is positively correlated with lifespan, opposite of what is predicted by the rate of living hypothesis. [Data](data/12_metabolism_mice.csv) from Speakman et al. (2002)."}
+ltee.b <- read.csv("data/12_metabolism_birds.csv")
+ltee.m <- read.csv("data/12_metabolism_mammals.csv")
+ltee.i <- read.csv("data/12_metabolism_mice.csv")
+
+ltee.p1 <- ggplot(ltee.b, aes(x=energy.exp, y=lifespan))+
+    geom_point()+
+    labs(x="Daily energy expenditure", y="Lifespan")+
+    theme_classic()
+
+ltee.p2 <- ggplot(ltee.m, aes(x=energy.exp, y=lifespan))+
+    geom_smooth(method="lm", se=FALSE, color = "gray")+
+    geom_point()+
+    labs(x="Daily energy expenditure", y="Lifespan")+
+    theme_classic()
+
+ltee.p3 <- ggplot(ltee.i, aes(x=energy.exp, y=lifespan))+
+    geom_smooth(method="lm", se=FALSE, color = "gray")+
+    geom_point()+
+    labs(x="Metabolic intensity", y="Lifespan")+
+    theme_classic()
+
+ggarrange(ltee.p1, ltee.p2, ltee.p3, labels = c("A", "B", "C"), nrow=1)
+```
+
+#### Prediction 2: Selection on Life Span {.unnumbered}
+
+If intrinsic constraints prevented natural selection from favoring longer lifespan, selection on lifespan should have no evolutionary effects. To test this hypothesis, researchers have used a number of selection experiments where they control when organisms reproduce. For example, selection experiments using *Drosophila melanogaster* continuously propagated offspring that were produced by young adults (early reproducing) or by older individuals that were towards the maximum lifespan (late reproducing). Contrary to the prediction of the rate of living hypothesis, the longevity of flies in the late-reproducing selection lines increased substantially from around 35 to almost 70 days, a 100 % increase, in just 20 generations (Figure \@ref(fig:sellong)A). Reversal of selection in generation 19 also lead to a decrease of longevity, indicating that lifespan can evolve rapidly in either direction (gray line in Figure \@ref(fig:sellong)A). The evolution of longer lifespans would be consistent with the rate of living hypothesis if flies that evolved a longer lifespan also evolved lower metabolic rates. While flies with postponed senescence indeed have a lower metabolic rate compared to control flies in the first two weeks of their lives, these differences disappear later in life (Figure \@ref(fig:sellong)B), and the overall magnitude of difference in metabolic rate is not sufficient to explain observed differences in longevity.
+
+```{r  sellong, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8, out.width='100%', fig.cap="A. Evolution of lifespan in selection lines that either reproduce early or late in life. Not the increase in lifespan especially in late-reproducing flies and the decrease in lifespan once selection in reversed. [Data](data/12_selection_longevity.csv) form Luckinbill and Clare (1985). B. The evolution of increased lifespan leads to a decrease of metabolic rates, but only in the first two weeks of a fly's life. [Data](data/12_old-mr.csv) form Service (1987)."}
+sellong <- read.csv("data/12_selection_longevity.csv")
+oldmr <- read.csv("data/12_old-mr.csv")
+
+sellong2 <- sellong[ which(sellong$reversal=='No'), ]
+sellong3 <- sellong[ which(sellong$reversal=='Reversal'), ]
+
+sellong.p1 <- ggplot(sellong2, aes(x=generation, y=longevity, color=treatment, group=line))+
+    geom_point(data=sellong3, aes(x=generation, y=longevity), position=position_dodge(width = .5), color="gray")+
+    geom_errorbar(data=sellong3, aes(ymin=longevity-se, ymax=longevity+se), width=0, position=position_dodge(width = .5), na.rm = TRUE, color="gray")+
+    geom_segment(aes(x = 19, xend = 24, y = 68.3, yend = 61.14), colour = "gray")+
+    geom_segment(aes(x = 19, xend = 24, y = 68.3, yend = 60.12), colour = "gray")+
+    annotate("text", x =24.5, y = 60.5, label = "Selection \nreversed", colour = "gray", hjust = 0) +
+    labs(x="Generations", y="Lifespan (days)", color="Treatment")+
+    geom_point(position=position_dodge(width = .5))+
+    geom_line(position=position_dodge(width = .5))+
+    geom_errorbar(aes(ymin=longevity-se, ymax=longevity+se), width=0, position=position_dodge(width = .5), na.rm = TRUE)+
+    theme_classic()+
+    theme(legend.position = c(.24,.9))+
+    scale_color_brewer(palette = "Set2")
+
+sellong.p2 <- ggplot(oldmr, aes(x=age, y=respiration, color=line, group=line))+
+    labs(x="Age", y="Metabolic rate", color="Selection line")+
+    geom_point(position=position_dodge(width = .5))+
+    geom_line(position=position_dodge(width = .5))+
+    geom_errorbar(aes(ymin=respiration-se, ymax=respiration+se), width=0, position=position_dodge(width = .5), na.rm = TRUE)+
+    theme_classic()+
+    theme(legend.position = c(.75,.9))+
+    scale_color_brewer(palette = "Set2")
+
+
+ggarrange(sellong.p1, sellong.p2, labels = c("A", "B"), nrow=1)
+```
+
+While the rate of living hypothesis and related ideas (*e.g.*, genomic instability, telomere attrition, and epigenetic alterations) have stimulated diverse research projects about why we age and uncovered important proximate mechanisms of aging, the central premises of these ideas do not hold up to scrutiny. There does not appear to be a universal intrinsic constraint that limits how long cells or organisms can live, and lifespan can clearly evolve in either direction when selection is applied. So, if longer lifespans are technically possible, why is it that they do not evolve?
+
+### Evolutionary Theories of Aging
+
+Evolutionary explanations for aging focus less on the inability of organisms to repair damage that accrues from metabolic activity, and more on the costs and benefits associated with a failure to repair damage as it arises. As in the rate of living hypothesis, aging from an evolutionary perspective is a consequence of gradual decay---but early death does not necessarily translate to lower fitness. To examine the relationship between aging and fitness, we will focus on two non-mutually exclusive hypotheses: (1) The mutation accumulation hypothesis posits that the costs associated with a failure to repair damage and the resulting aging are minimal. (2) The antagonistic pleitropy hypothesis proposes that there may even be benefits associated with with a failure to repair damage and the resulting aging.
+
+#### Mutation-Accumulation Hypothesis {.unnumbered}
+
+The mutation-accumulation hypothesis explains aging through a decline in the effectiveness of selection as organisms age. The older an individual is, the lower its chances are to produce future offspring (this future reproductive potential is also called the residual reproductive value). Hence, the residual reproductive value declines as a function of age. If a deleterious mutation arises that causes a loss of function early in life, the mutation is strongly selected against, because the residual reproductive value for young individuals is high and the fitness consequences of an early-acting loss of function mutation are accordingly high. However, if a deleterious mutation causes a similar loss of function much later in life, the fitness costs are much lower because the residual reproductive value is also lower. In other words, if a deleterious mutation unfolds its effects late it life, that mutation will already have been passed on to the next generation before the carrier ever experiences the detrimental effects. The detrimental effects are simply not visible to natural selection until it is too late and the deleterious alleles have already been inherited by individuals of the next generation. Consequently, deleterious mutations that unfold their effects late in life can accumulate in a population over time because selection against those mutations is weak.
+
+Experiments have shown that deleterious mutations behind aging can indeed accumulate in populations. For example, Reed and Bryant (2000) studied large and small populations of houseflies (*Musca domestica*). Normally, male houseflies live for about 28 days and females for about 36 days, but the researchers only allowed the flies to reproduce for four or five days after they reached sexual maturity. Hence, any deleterious mutations that unfolded their effects after day five of a fly's adult life had suddenly become selectively neutral. After 24 generations of reproduction limited to early adults, the lifespan of flies significantly declined to just 25 days (13 % decline) in males and about 30 days (18 % decline) in females---irrespective of population size (Figure \@ref(fig:delmu)A). This decline in lifespan is a direct consequence of selection's inability to remove deleterious mutations with late-acting fitness effects from the population. Hence, more rapid aging, in this case, has evolved simply because there were no substantial fitness costs to dying early.
+
+Evidence for mutation accumulation as a cause for aging also comes from natural systems. For example, annual killifish (Nothobranchidae) live in temporary waters associated with African savannas. In this ecosystem, pools fill up during the rainy season but dry out rapidly once the rains stop. Annual killifish are able to survive in these habitats because they have desiccation-resistant eggs that remain dormant during the dry season. Once the rainy season starts, the offspring hatch, rapidly grow to adulthood, spawn to produce the eggs for the next generation, and then die as the water evaporates around them. As a consequence of the temporally limited availability of their habitat, annual killifishes have evolved some of the shortest lifespans of any vertebrates; even under ideal laboratory conditions, these fish only live for 3-12 months, which is much shorter than related species of killifish that live in permanent water bodies. A recent study compared the evolution of genomes in two clades of annual killifishes (genera *Callopanchax* and *Nothobranchius*) as well as sister genera of non-annual killifish that live in permanent waters of western Africa (*Scriptaphyosemion* and *Aphyosemion*) (Cui et al. 2019). The researchers were particularly interested in whether they might be able to detect evidence for relaxed selection in annual killifish genomes that might be indicative of mutation accumulation. Indeed, annual killifish have much larger portions of the genome associated with relaxed selection compared to closely related species from permanent habitats, which also have longer lifespans (Figure \@ref(fig:delmu)B). The pronounced signatures of relaxed selection indicate that mutations with effects only after the habitats dry up and the fish die anyways have become selectively neutral and are retained in the annual species, while they are purged by purifying selection in the non-annual species.
+
+Finally, humans also offer circumstantial evidence for the accumulation of deleterious effects with late life impacts. Many late-onset genetic diseases are consistent with this hypothesis. For example, hereditary nonpolyposis colon cancer is caused by mutations in DNA repair genes. The median age of diagnosis for this type of cancer is 48 years. So most patients do not see the deleterious effects of such mutations until after the age at which reproduction begins---and in many cases has already ended. Other cancers, as well as Huntington's disease, have also been proposed to be manifestations of aging caused by late-acting deleterious mutations.
+
+```{r delmu, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.height=4, fig.width=9, fig.cap="A. Evolution of lifespan in houseflies (*Musca domestica*) whose reproductive was limited to the first five days of their lives. Since deleterious mutations that unfold their effect after the reproductive period become selectively neutral, lifespan decreases as a consequence of the accumulation of deleterious mutations in the populations. [Data](data/12_del_mut.csv) form Reed and Bryant (2000). B. Patterns of genome evolution in annual killifishes and their non-annual relatives. Annual killifish exhibit much stronger signatures of relaxed selection characteristic for mutation accumulation. Note that clade 1 consists of *Callopanchax* (annual) and *Scriotaphyosemion* (non-annual); clade 2 of *Nothobranchius* (annual) and *Aphyosemion* (non-annual). [Data](data/12_killifish.csv) form Cui et al. (2019)."}
+
+delmu <- read.csv("data/12_del_mut.csv")
+killi <- read.csv("data/12_killifish.csv")
+killi$label <- paste(killi$type, paste("(", killi$genus, ")"),sep='\n')
+killi2 <- gather(killi, mutation.type, percentage, 4:6)
+killi2$mutation.type <- factor(killi2$mutation.type, levels = c("Other","Purifying","Relaxed"))
+
+delmu.p1 <- ggplot(delmu, aes(x=generation, y=longevity, color=sex, shape=line, group=group))+
+    geom_point(position=position_dodge(width = .25))+
+    geom_line(position=position_dodge(width = .25))+
+    labs(x="Generations", y="Lifespan (days)", color="Sex", shape="Replicate")+
+    theme_classic()+
+    theme(legend.position = c(0.78,0.8),
+          legend.spacing.y = unit(-0.01, "cm"))+
+    scale_color_brewer(palette = "Set2")
+
+delmu.p2 <- ggplot(killi2, aes(x=type, y=percentage, fill=mutation.type))+
+    geom_bar(position="fill", stat="identity")+
+    theme_classic()+
+    coord_flip()+
+    labs(x="Ecotype", y="Percentage", fill="Type of selection")+
+    facet_grid(clade~.)+
+    scale_fill_manual(values=c("lightgray","#5DA5DA", "#F15854"))
+
+ggarrange(delmu.p1, delmu.p2, labels = c("A", "B"), ncol = 2, widths = c(1,1.75))
+```
+
+#### Antagonistic-Pleiotropy Hypothesis {.unnumbered}
+
+The antagonistic-pleiotropy hypothesis explains aging as a consequence of pleiotropic effects that increase reproduction early in life and reduce survivability later in life. Because natural selection weakens as the residual reproductive value decreases, alleles that cause early maturation or elevated reproductive output are favored---even if they simultaneously have deleterious effects later on. For example, a mutant allele might change the way organisms allocate energy to growth, maintenance, and reproduction. If energy is invested disproportionally into the production of offspring early in life, detrimental effects associated with a lack of investment into maintenance and repair can cause individuals to suffer from an earlier decline in function and increased mortality. In this case, aging might evolve not only due to low costs associated with late-acting mutations, but also because the costs are outweighed by fitness benefits early in life.
+
+Experiments with *Drosophila* and other model organisms provide evidence for the role of antagonistic pleiotropy in the evolution of aging. For example, Zwaan et al. (1995) established different lines of *D. melanogaster* that were either selected for short or for long lifespans. Similar to the experiment described in Figure \@ref(fig:sellong)A), both selection regimes caused lifespans to evolve in the predicted direction; they got shorter relative to the control in one treatment and longer relative to the control in the other (Figure \@ref(fig:antpleim)A). However, the change in lifespan did not occur in isolation. Particularly, the evolution of longer lifespans was accompanied by a severe reduction of fecundity (Figure \@ref(fig:antpleim)A), indicating that there is a cost to longevity, as predicted by the antagonistic-pleiotropy hypothesis. Competition experiments using flies with different lifespans have indicated that living longer is not necessarily beneficial, if long-living flies are out-reproduced by flies that might die earlier. This is an important reminder that fitness is not just a function of survival. In fact, a mutation conferring eternal life will always be selected against if it also reduces lifetime reproductive output to the extent that the contribution of a carrier to the next generation's gene pool is diminished.
+
+While the general evidence for antagonistic pleiotropy's role in the evolution of aging is mounting, evidence from humans remains scant. One possible candidate for antagonistic pleiotropy is hereditary haemochromatosis, an autosomal recessive disorder associated with iron uptake. While young individuals benefit from enhanced dietary iron absorption in terms of immune function, older individuals face costs associated with raised iron loads, which can cause cardiomyopathy and neurodegenerative diseases later in life (Rodríguez et al 2017). In addition, recent results from genome-wide association studies on diseases that appear at different periods in life also indicated that pleiotropic effects associated with aging may be common in the human genome (Rodríguez et al 2017).
+
+```{r antpleim, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.height=4, fig.width=8, fig.cap="A. Selection of either short or long lifespan  in *D. melanogaster* causes clear evolutionary responses in longevity. [Data](data/12_selection_longevity2.csv) form Zwaan et al. (1995). B. Evolution of longer lifespans coincides with drastic reductions in fecundity, indicating antaginistic pleiotropic effects. [Data](data/12_selection_longevity3.csv) form Zwaan et al. (1995)."}
+anpl <- read.csv("data/12_selection_longevity2.csv")
+anpl2 <- read.csv("data/12_selection_longevity3.csv")
+anpl2$treatment <- factor(anpl2$treatment, levels = c("Short life", "Control", "Long life"))
+
+anpl.p1 <- ggplot(anpl, aes(x=generation, y=response, color=treatment, shape=sex, group=group))+
+    geom_point()+
+    geom_line()+
+    labs(x="Generation", y="Response relative to control (days)", color="Treatment", shape="Sex")+
+    theme_classic()+
+    theme(legend.position = c(0.16,0.81),
+          legend.background = element_rect(colour = NA, fill = NA),
+          legend.spacing.y = unit(-0.05, "cm"))+
+    scale_color_brewer(palette = "Set2")
+
+
+anpl.p2 <- ggplot(anpl2, aes(x=treatment, y=fecundity))+
+    geom_point(alpha=0.5)+
+    labs(x="Treatment", y="Fecundity")+
+    theme_classic()+
+    theme_classic()
+
+ggarrange(anpl.p1, anpl.p2, labels = c("A", "B"), nrow=1)
+```
+
+#### Ecology and the Evolution of Aging {.unnumbered}
+
+Mutation accumulation and antagonistic pleiotropy can explain why nearly all organisms age. The core insight is that long life---perhaps contrary to our intuition---is not as important to fitness as making a substantial contribution to the gene pool of the next generation. However, these two hypotheses alone cannot explain why annual killifish die after just 3 months, but greenland sharks live up to 400 years. Clearly, investing into growth and maintenance is actually beneficial under some circumstances. So, what factors determine whether a "live fast and die young" or a "live slow and die old" strategy prevails?
+
+One of the key determinants shaping the evolution of aging is the rate of extrinsic mortality; *i.e.*, the likelihood that external factors like predation, disease, resource limitation, or exposure to environmental stress kill an organism. If the rate of extrinsic mortality is very high and individuals are unlikely to survive for long periods of time, there is little use in investing energy into maintenance and growth. Energy, in such a case, is best invested into reproduction while still alive. The annual killifishes discussed above are a perfect example. All members of the species will invariably die when their habitats dry at the onset of the dry season. Therefore, the best life history strategy is to grow fast and reproduce as much as possible before it is too late. Investment into repairing cellular damage that has accrued as a consequence of metabolic activity is simply not a priority when your habitat all but vanishes. In contrast, for species with a low rate of extrinsic mortality, fitness may be maximized by growing for a longer period of time, because larger bodies are associated with increasedcompetitiveness and higher fecundity.
+
+Evidence for the role of extrinsic mortality in aging can also be found in other study systems. For example, Shattuck and Williams (2010) compared the lifespan of arboreal and terrestrial mammals. Lifespan was positively correlated with body size, and arboreal species that are exposed to fewer predators exhibited significantly higher longevity than their terrestrial counterparts that are more vulnerable to predation (Figure \@ref(fig:natage)A). Similarly, populations of the Virginia opossum (*Didelphis virginiana*) age differently depending on their risk of extrinsic mortality. On the mainland, where opossums face a number of predators, extrinsic mortality is high and cumulative survival reaches zero after less than 30 months (Figure \@ref(fig:natage)B). In contrast, opossums on an island in the Gulf of Mexico, which is free of natural predators, have a much higher life expectancy (Figure \@ref(fig:natage)B). Accordingly, mainland and island opossums age differently and differentially allocate resources to maintenance and reproduction. Female opossums on the mainland make a substantial investment into reproduction in their first year after reaching maturity, but their investment declines in the second year---if they are still alive (Figure \@ref(fig:natage)C). This decline in investment is a consequence of aging and in stark contrast with reproductive investments on the island, where females are able to invest equally into their offspring in year 1 and year 2 of reproduction. Differences in the decline of physiological performance between populations also provides evidence for more rapid aging in mainland opossums.
+
+Along with extrinsic mortality, selection on other life history traits can also affect the evolution of aging in natural populations. For example, selection on body size, offspring number and size, and reproductive intervals may all have inadvertent consequences on the frequency of alleles that affect aging, whether it is through mutation accumulation or antagonistic pleiotropy. Ultimately, the optimal strategy in any ecological context is shaped by trade-offs in how limited time and energy are allocated to different needs (*i.e.*, growth, maintenance, repair, and reproduction).
+
+```{r natage, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.height=3, fig.width=9, fig.cap="A. Differences in lifespan between arboreal and terrestrial mammals. [Data](data/data/12_arboreal.csv) form Shattuck and Williams (2010). B. Cumulative survival in mainland and island populations of the Virginia opossum (*Didelphis virginiana*). [Data](data/12_possums.csv) form Austad (1993). C. Investment into reproduction of mainland and island opossums in their first and second year of reproduction. [Data](data/12_possrep.csv) form Austad (1993)."}
+arboreal <- read.csv("data/12_arboreal.csv")
+possum <- read.csv("data/12_possums.csv")
+possum2 <- read.csv("data/12_possrep.csv")
+possum2$population <- factor(possum2$population, levels = c("Mainland", "Island"))
+
+agenat.p1 <- ggplot(arboreal, aes(x=bodymass, y=lifespan, color=habitat))+
+    geom_smooth(method = "lm", se=FALSE)+
+    geom_point(alpha=0.5)+
+    labs(x="Log body mass", y="Log lifespan", color="Habitat")+
+    theme_classic()+
+    theme(legend.position = c(0.25,0.85),
+          legend.background = element_rect(colour = NA, fill = NA))+
+    scale_color_brewer(palette = "Set2")
+
+agenat.p2 <- ggplot(possum, aes(x=age, y=survival, color=habitat))+
+    geom_point()+
+    geom_line()+
+    labs(x="Age [months]", y="Cummulative survival", color="Habitat")+
+    theme_classic()+
+    theme(legend.position = c(0.75,0.85))+
+    scale_color_brewer(palette = "Set2")
+
+
+agenat.p3 <- ggplot(possum2, aes(x=age, y=mass, color=year))+
+    geom_smooth(method = "lm", se=FALSE)+
+    geom_point()+
+    labs(x="Litter age [days]", y="Litter mass", color="Year")+
+    theme_classic()+
+    facet_grid(population~.)+
+    theme(legend.position = c(0.25,0.85),
+          legend.background = element_rect(colour = NA, fill = NA))+
+    scale_color_brewer(palette = "Set2")
+
+ggarrange(agenat.p1, agenat.p2, agenat.p3, labels = c("A", "B", "C"), nrow=1)
+```
+
+## Case Study: Evolution of Aging
+
+The [R exercise associated with this chapter](exercises/BIOL520-ex11.zip) contains three components that further explore the evolution of aging. You will first learn how to use life tables to simulate the effects of deleterious mutations and antagonistic pleiotropy on the lifetime reproductive success of individuals in a population. These simulations will allow you to explore the fitness consequences associated with different mutations behind aging in natural populations. In the second part of the exercise, you will take a closer look at the result of two experimental studies. One of them manipulated the reproductive timing of flies and quantified the consequences for the evolution of lifespan. The other explores the fitness consequences of an allele at the Age-1 locus in *Caenorhabditis elegans*, which causes an 80 % increase in lifespan. Together, these problems should provide you will a deeper understanding of the evolutionary processes underlying the gradual decay of aging organisms.
+
+## Practical Skills: Life Table Analysis
+
+Life table analysis is a tool used in demography and biology to make inferences about age-structured populations. For evolutionary life history analyses, life tables include the probability that an average individual of a population reaches a certain age (survivorship, *l*~x~) and the average reproductive success of individuals in each age group (age-specific reproductive success, *m*~x~). Both of these variables are typically measured in natural populations; we can quantify the annual survivability of individuals in a particular population, we can determine the age at which individuals reach sexual maturity and start to reproduce, and we can quantify how many offspring are produced at any given age.
+
+Table 12.3 provides an example of a basic life table, summarizing the survivorship and age-specific reproductive success for a population with age classes from 0 to 50. In this particular example, individuals have a 90 % chance to survive each year; so the probability that an individual reaches age 1 is 0.9, age 2 is 0.81 (0.9^2^), age 3 is 0.729 (0.9^3^), and so on. It is important to note that the chance of survival from one year to the next may not be constant throughout life. Many species have relatively high mortality as juveniles, and survivability is much higher once individuals reach adulthood (think of the high mortality of ocean sunfish larvae, which are just 2.5 mm long, compared to the mortality of adults that are 3 m long and weigh up to 2.5 tons).
+
+Finally, Table 12.3 also provides an estimate of the age-specific reproductive success of individuals that have survived to that age. In our example, reproductive success is zero in the first 10 years before individuals reach sexual maturity. After that, individuals have a reproductive success of 1 each year for the rest of their lives. Again, in natural populations, age-specific fertility often varies. In longer-lived animals with parental care, for example, reproductive success starts out relatively low in young adults, increases as individuals gain more experience, and eventually declines as consequence of aging.
+
+```{r message=FALSE, warning=FALSE}
+age <- 0:50
+lx <- round(0.9^(-1+seq(1,51)),3)
+mx <- c(rep(0,11),rep(1,40))
+lt <- data.frame(age, lx, mx)
+```
+
+```{r echo=FALSE}
+kable(lt, caption = "Table 12.3: Life tables include the age-specific survival probability and reproductive success of an average individual in a population.", col.names = c("Age class", "Survivorship (lx)","Age-specific reproductive success (mx)"))  %>% kable_styling("striped", full_width = F) %>% scroll_box(height = "300px")
+```
+
+Based on the age-specific survivorship and reproductive success determined empirically in a natural population, we can now calculate the projected reproductive success (rs) of an individual as the product of survivorship (*l*~x~) and age-specific reproductive success (*m*~x~). This value represents the potential reproductive success of an average individual in a population at any given age. For example, the projected reproductive success at age 17 is dependent on the likelihood that an individual survived to that age (0.167) and the age-specific reproductive success (1).
+
+```{r message=FALSE, warning=FALSE}
+lt$rs <- round(lt$lx*lt$mx, 3)
+```
+
+```{r echo=FALSE}
+kable(lt, caption = "Measured components", col.names = c("Age class", "Survivorship (lx)","Age-specific reproductive success (mx)", "lx*mx"))  %>% kable_styling("striped", full_width = F) %>% scroll_box(height = "300px")
+```
+
+Finally, we can calculate the projected lifetime reproductive success of an individual as the sum of the projected reproductive success at each age:
+
+```{r}
+ltrs <- sum(lt$rs)
+print(ltrs)
+```
+
+This life table can also be visualized graphically. If we simultaneously plot the survivorship (*l*~x~; blue line in Figure \@ref(fig:ltgraph)) and age-specific reproductive success (*m*~x~; green line), then the lifetime reproductive success is the area below the intersection of the two curves (gray shaded area). As you can imagine, increasing survivorship (*i.e.*, lifting the blue line) will also increase lifetime reproductive success; decreasing survivorship will lower lifetime reproductive success. Similarly, shifting the time of sexual maturity can impact lifetime reproductive success as well.
+
+```{r ltgraph, message=FALSE, warning=FALSE, out.width='100%', fig.cap="xxx"}
+ggplot() +
+    geom_bar(data=lt, aes(x=age, y=rs), stat="identity", fill="lightgray") +
+    geom_line(data=lt, aes(x=age, y=lx), color="#8da0cb") +
+    geom_line(data=lt, aes(x=age, y=mx), color="#66c2a5") +
+    xlab("Age") +
+    ylab("Value") +
+    theme_classic()
+```
+
+Life tables are useful because we can now quantify the potential impacts that changing life events have on lifetime reproductive success, a proxy for fitness in many evolutionary analyses. For example, we can simulate the effects of a deleterious mutation that kills individuals at age 30 (*i.e.*, the blue line abruptly shifts to zero at the 30 mark) and calculate exactly how much lifetime reproductive success (*i.e.,* how much area under the curve) is lost as a consequence. Similarly, we can simulate the effects of a pleiotropic mutation that increases reproduction early in life (shifting the green line to the left) and reduces survival late in life (again pushing the blue line to zero) to examine potential fitness consequences. This is exactly what you will be doing in the R exercise associated with this chapter.
+
+## Reflection Questions
+
+1.  Can you develop testable hypotheses about the proximate and ultimate mechanisms that lead to different diseases of civilization?
+
+2.  How are evolutionary hypotheses of aging similar to the rate of living hypothesis, and how are they different?
+
+3.  Is natural selection an important component of evolutionary explanations for aging? Why or why not?
+
+4.  The antagonistic pleiotropy hypothesis assumes that mutations that are deleterious late in life can have a fitness benefit early in life. What about the opposite scenario? Could a mutation that imposes a cost early in life but provides a fitness advantage late in life also spread in a population?
+
+5.  How would you expect lifespan to evolve in a population of zoo animals?
+
+6.  "Most animals age, therefore aging must be an adaptation for something." What do you think about this statement?
+
+## References
+
+-   Austad SN (1993). [Retarded senescence in an insular population of Virginia opossums (*Didelphis virginiana*)](https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-7998.1993.tb02665.x). *Journal of Zoology* 229, 695--708.
+
+-   Cochran G, J Hardy, H Harpending (2006). [Natural history of Ashkenazi intelligence](https://www.cambridge.org/core/journals/journal-of-biosocial-science/article/abs/natural-history-of-ashkenazi-intelligence/170E96F5581A9F39524DAC717886D945). *Journal of Biosocial Science* 38, 659-693.
+
+-   Collaborative Group on Hormonal Factors in Breast Cancer (2012). [Menarche, menopause, and breast cancer risk: individual participant meta-analysis, including 118 964 women with breast cancer from 117 epidemiological studies](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70425-4/fulltext). *Lancet Oncology* 13, 1141--1151.
+
+-   Cordain L, RW Gotshall, SB Eaton (1997). Evolutionary aspects of exercise. [*World Review of Nutrition and Dietetics*](https://www.karger.com/Article/Abstract/59601) 81: 49-60
+
+-   Cui R, T Medeiros, D Willemsen, LNM Iasi, GE Collier, M Graef, ... DR Valenzano (2019). [Relaxed selection limits lifespan by increasing mutation load](https://www.cell.com/cell/fulltext/S0092-8674(19)30632-4). *Cell* 178, 385--399.e20.
+
+-   Eaton SB, SB Eaton III, MJ Konner (1997). [Paleolithic nutrition revisited: a twelve-year retrospective on its nature and implications](https://www.nature.com/articles/1600389). *European Journal of Clinical Nutrition* 51, 207--216.
+
+-   Grunspan DZ, RM Nesse, ME Barnes, SE Brownell (2018). [Core principles of evolutionary medicine: A Delphi study](https://academic.oup.com/emph/article/2018/1/13/4774983). *Evolution, Medicine, and Public Health* 2018, 13--23.
+
+-   Huttley GA, S Easteal, MC Southey, A Tesoriero, GG Giles, MR McCredie, ... DJ Venter (2000). [Adaptive evolution of the tumour suppressor BRCA1 in humans and chimpanzees](https://www.nature.com/articles/ng0800_410). *Nature Genetics* 25, 410--413.
+
+-   Jasieńska G, I Thune (2001). [Lifestyle, hormones, and risk of breast cancer](https://www.bmj.com/content/322/7286/586). *BMJ* 322, 586--587.
+
+-   Leonard WR (2002). [Food for thought](https://www.jstor.org/stable/26060086). *Scientific American* 287, 106--115.
+
+-   Luckinbill LS, MJ Clare (1985). [Selection for life span in *Drosophila melanogaster*](https://www.nature.com/articles/hdy198566). *Heredity* 55, 9--18.
+
+-   Morgan IG, AN French, RS Ashby, X Guo, X Ding, M He, KA Rose (2018). [The epidemics of myopia: aetiology and prevention](https://www.sciencedirect.com/science/article/abs/pii/S1350946217300393?via%3Dihub). *Progress in Retinal and Eye Research* 62, 134--149.
+
+-   Perry GH, NJ Dominy, KG Claw, AS Lee, H Fiegler, R Redon, ... AC Stone (2007). [Diet and the evolution of human amylase gene copy number variation](https://www.nature.com/articles/ng2123). *Nature Genetics* 39, 1256--1260.
+
+-   Reed, D. H., & Bryant, E. H. (2000). [The evolution of senescence under curtailed life span in laboratory populations of *Musca domestica* (the housefly](https://www.nature.com/articles/6887370)). *Heredity* 85, 115--121.
+
+-   Rees JS, S Castellano, AM Andrés (2020). [The genomics of human local adaptation](https://www.cell.com/trends/genetics/fulltext/S0168-9525(20)30070-6). *Trends in Genetics* 36, 415--428.
+
+-   Rodríguez JA, UM Marigorta, DA Hughes, N Spataro, E Bosch, A Navarro (2017). [Antagonistic pleiotropy and mutation accumulation influence human senescence and disease](Rodríguez,%20J.%20A.,%20Marigorta,%20U.%20M.,%20Hughes,%20D.%20A.,%20Spataro,%20N.,%20Bosch,%20E.,%20&%20Navarro,%20A.%20(2017).%20Antagonistic%20pleiotropy%20and%20mutation%20accumulation%20influence%20human%20senescence%20and%20disease.%20Nature%20Ecology%20&%20Evolution,%201(3),%2055.). *Nature Ecology & Evolution* 1, 55.
+
+-   Service PM (1987). [Physiological mechanisms of increased stress resistance in *Drosophila melanogaster* selected for postponed senescence](https://www.journals.uchicago.edu/doi/10.1086/physzool.60.3.30162285). *Physiological Zoology* 60, 321--326.
+
+-   Shattuck MR, Williams SA (2010). [Arboreality has allowed for the evolution of increased longevity in mammals](https://www.pnas.org/content/107/10/4635). *Proceedings of the National Academy of Sciences USA* 107, 4635--4639.
+
+-   Speakman JR (2005). [Body size, energy metabolism and lifespan](https://journals.biologists.com/jeb/article/208/9/1717/9377/Body-size-energy-metabolism-and-lifespan). *Journal of Experimental Biology* 208, 1717--1730.
+
+-   Speakman JR, C Selman, JS McLaren. EJ Harper (2002). [Living fast, dying when? The link between aging and energetics](https://academic.oup.com/jn/article/132/6/1583S/4687881). *Journal of Nutrition* 132, S1583--S1597.
+
+-   Stewart TH, RD Sage, AF Stewart, DW Cameron (2000). [Breast cancer incidence highest in the range of one species of house mouse, *Mus domesticus*](https://www.nature.com/articles/6690941). *British Journal of Cancer* 82, 446--451.
+
+-   Strassmann BI (1999). [Menstrual cycling and breast cancer: an evolutionary perspective](https://www.liebertpub.com/doi/10.1089/jwh.1999.8.193). *Journal of Women's Health* 8, 193--202.
+
+-   Zwaan B, R Bijlsma, RF Hoekstra (1995). [Direct selection on lifespan in *Drosophila melanogaster*](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1558-5646.1995.tb02301.x). *Evolution* 49, 649--659.

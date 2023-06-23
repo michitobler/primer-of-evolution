@@ -1,0 +1,159 @@
+# R Exercises
+
+To download \*.zip files associated with R exercises, right-click on the exercise link below to save the file on your computer. Each exercise contains an R Notebook (\*.Rmd). In addition, exercises may contain data sets (\*.csv), phylogenetic tree files (\*.nwk and \*.tre), and auxiliary images (\*.jpg or \*.png). For weekly assignments, download the necessary files from here, complete your R Notebook, export it as \*.HTML, and submit it through the proper channel on [Canvas](https://k-state.instructure.com/).
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| Exercise (Chapter)                                                                                                                            | File List                                |
++:==============================================================================================================================================+:=========================================+
+| [Exercise 1](exercises/BIOL520-ex1.zip) ([Chapter 2](evidence-for-evolution.html))                                                            | -   ex1_evidence_blank.Rmd               |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   finches.csv                          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   test_data.csv                        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   finch.jpg                            |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 2](exercises/BIOL520-ex2.zip) ([Chapter 3](a-mechanism-for-change.html))                                                            | -   ex2_darwins_logic_blank.csv          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   heritability.csv                     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   morphological_variation.csv          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   mollies.png                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 3](exercises/BIOL520-ex3.zip) ([Chapter 4](the-raw-materials-for-evolution.html))                                                   | -   ex3_HWE_blank.Rmd                    |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   eye_color.jpg                        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   HW_frequency.png                     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   wing_morphology.png                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 4](exercises/BIOL520-ex4.zip) ([Chapter 5](evolutionary-mechanisms-i-modeling-selection.html))                                      | -   ex4_simulating_selection_blank.Rmd   |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   dominant_additive.png                |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 5](exercises/BIOL520-ex5.zip) ([Chapter 6](evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html)) | -   ex5_simulating_otherforces_blank.Rmd |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   devilshole.jpg                       |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 6](exercises/BIOL520-ex6.zip) ([Chapter 7](molecular-evolution.html))                                                               | -   ex6_molecular_evolution_blank.Rmd    |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   coronaviruses_tree.nwk               |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   coronaviruses_tree_meta.csv          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ncov_diversity.csv                   |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ncov_dnds.csv                        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ncov_global_tree.nwk                 |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ncov_global_tree_meta.csv            |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ncov_mutations.csv                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 7](exercises/BIOL520-ex7.zip) ([Chapter 8](the-evolution-of-quantitative-traits.html))                                              | -   ex7_quantitative_genetics_blank.Rmd  |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   beach_mice2.csv                      |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   bug_eyes.csv                         |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   COVID19_genomescan_subset.csv        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   distribution.jpg                     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   mouse.jpg                            |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   traits.png                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 8](exercises/BIOL520-ex8.zip) ([Chapter 9](adaptation-and-phenotypic-plasticity.html))                                              | -   ex8_adaptation_blank.Rmd             |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   guppy_plasticity2.csv                |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   reciprocal_translocation.csv         |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   style_length.csv                     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   flowers.jpg                          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   guppies.png                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 9](exercises/BIOL520-ex9.zip) ([Chapter 10](intraspecific-interactions-social-behavior-and-sexual-selection.html))                  | -   ex9_social_behavior_blank.Rmd        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   female_reproduction.csv              |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   female_survival.csv                  |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   iguana_size.csv                      |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   iguana_survival.csv                  |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   male_effects.csv                     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   peacock_growth.csv                   |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   peacock_survival.csv                 |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   vampires.csv                         |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   iguana.jpg                           |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   peacock.jpg                          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   drosophila_exp_design.png            |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 10](exercises/BIOL520-ex10.zip) ([Chapter 11](speciation-1.html))                                                                   | -   ex10_speciation_blank.Rmd            |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   butterfly_mating.csv                 |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   butterfly_morphology.csv             |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   byproduct.csv                        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   pop_gen.csv                          |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   premating_isolation.csv              |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   tolerance.csv                        |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   translocation.csv                    |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   butterfly_phyloygeny.tre             |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   drosophila.jpg                       |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   experimentaldesign.png               |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   map.png                              |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   sulfidesprings.png                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 11](exercises/BIOL520-ex11.zip) ([Chapter 12](evolutionary-medicine-i-aging-and-diseases-of-civilization.html))                     | -   ex11_evolutionary_medicine_bland.Rmd |
+|                                                                                                                                               | -   fly_evolution.csv                    |
+|                                                                                                                                               | -   hx546.csv                            |
+|                                                                                                                                               | -   lt1.csv                              |
+|                                                                                                                                               | -   lt2.csv                              |
+|                                                                                                                                               | -   lt3.csv                              |
+|                                                                                                                                               | -   lifetable.png                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 12](exercises/BIOL520-ex12.zip) ([Chapter 13](evolutionary-medicine-ii-evolving-pathogens.html))                                    | -   ex12_evolving_diseases_blank.Rmd     |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   antibiotics.csv                      |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   ifr.csv                              |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   population_size.csv                  |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   genetic_manipulation.png             |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+| [Exercise 13](exercises/BIOL520-ex13.zip) ([Chapter 14](human-origins-and-human-mediated-evolution.html))                                     | -   ex13_human_evolution_blank.Rmd       |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   genetic_diversity.csv                |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   heterozygosity.csv                   |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   predictions.png                      |
+|                                                                                                                                               |                                          |
+|                                                                                                                                               | -   tree.png                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+

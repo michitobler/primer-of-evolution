@@ -1,0 +1,76 @@
+---
+title: "A Primer of Evolution"
+subtitle: "An Introduction to Evolutionary Thought: Theory, Evidence, and Practice"
+author: "Michi Tobler"
+date: "Updated on `r Sys.Date()`"
+documentclass: book
+description: "An Introduction to Evolutionary Thought: Theory, Evidence, and Practice"
+always_allow_html: true
+---
+
+# Preface {.unnumbered}
+
+## In the Light of Evolution {.unnumbered}
+
+> "There is grandeur in this view of life, with its several powers, having been originally breathed by the Creator into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been and are being evolved."
+>
+> ― Darwin, 1859
+
+The concluding sentence of Charles Darwin's paradigm-shifting book "The Origin of Species" has stuck with me ever since I first read it in my freshman year of college. Back then, I was passionate about two things: the wildflowers of the Alps in my home country of Switzerland, and the fishes I kept in my aquaria. They both offered an incredible diversity of forms to explore. On the one hand, there were bell flowers (*Campanula* sp.; Figure \@ref(fig:campanula)) and gentians (*Gentiana* sp.) with exuberantly large and colorful flowers, snowbells (*Soldanella* sp.) that pushed their flowers through a cover of snow, and willow (*Salix* sp.) brushes that barely managed to grow ankle-high in the many decades of exposure to the harsh mountain climates. On the other hand, there were the [cichlid fishes of Lake Malawi](https://malawicichlids.com/). Over 1,000 species in a single lake, all carrying their developing young in their mouths but otherwise so different in their body morphology, coloration, and [feeding habits](https://malawicichlids.com/mw01100.htm). Some species specialize on scraping off scales from the bodies of other fish, others adapted to prey exclusively on fish fry, ramming mouth-brooding females in the throat and gobbling up their offspring as they are released. It's so wild that it seemed made up! I could get lost in exploring all the magnificent and weird things in nature. I still do sometimes; whether it's by stomping around creeks, observing my fish, or browsing through books. And all along I have kept wondering: Why are there all of these forms? How do these critters function in their habitats? And how did they come about?
+
+```{r campanula, echo=FALSE, out.width='100%', fig.cap = "*Campanula scheuchzeri* (Scheuchzer's Bellflower) in the Swiss Alps. Photo: M. Tobler"}
+knitr::include_graphics('images/campanula.jpg')
+```
+
+Studying evolutionary biology has helped me to address these questions. As a scientific discipline, evolutionary biology fundamentally seeks to understand biodiversity and its origins. Evolution is the unifying theory of biology because it provides a simple explanation for the patterns of similarities and differences we can observe among all living things, which ultimately forms the framework in which researchers across disciplines address questions about the living world. It does so by addressing both proximate and ultimate causes of organismal function. Proximate questions primarily focus on explaining organismal function in terms of intrinsic and environmental factors (these are sometimes referred to *how* questions). For example, when we consider a peacocks magnificent tail feathers and coloration, how did environmental cues and changes in hormone levels initiate the development of these secondary sexual traits, and what genes might be involved in controlling there expression? In contrast, ultimate questions explain organismal function in terms of the evolutionary forces acting on them (sometimes referred to as why questions): why did the peacock evolve its exuberant traits, what are the traits' functions and how do they impact the fitness of its carrier?
+
+Understanding how organisms work, how their traits allow them to survive in the peculiar environments they find themselves in, and how those traits came to be did not take out the wonder out of my fascination with nature; rather, it filled me with a new level of appreciation for the intricacies of life. I think that is *the grandeur* Darwin was alluding to at the end of *The Origin of Species*. Or, as another famous evolutionary biologist put it:
+
+> "Nothing in biology makes sense except in the light of evolution. [...] Seen in the light of evolution, biology is, perhaps, intellectually the most satisfying and inspiring science. Without that light it becomes a pile of sundry facts, some of them interesting or curious, but making no meaningful picture as a whole."
+>
+> ― Dobzhansky, 1973
+
+## Beyond Understanding Biodiversity {.unnumbered}
+
+Simply put, evolution is the change in heritable traits of populations that occurs across successive generations. Today, we have a nuanced understanding of the mechanisms that contribute to the evolutionary process. We are disentangling the genomic basis of traits relevant for organismal function, we are identifying the evolutionary forces---like natural selection---that determine what traits are passed on from one generation to the next, and we try to link these mechanisms to observable evolutionary outcomes, like adaptation, cooperation, and speciation. Applying these approaches has allowed us to explore many aspects of biodiversity, including the reasons behind sexual dimorphism, puzzling social behaviors, variation in life history traits, and even our own human origins.
+
+The scientific reach of evolutionary biology, however, has long since eclipsed a basic understanding of the origins and function of biodiversity; the power of evolutionary analyses is now applied to address some of the major scientific challenges we face as a society: How will nature respond to the rapid environmental changes caused by human activities? How do we safeguard food production for a rapidly growing population? Why are there cancers and other diseases, and what can their origins tell us about prevention and treatment? How do we limit the spread of antibiotic-resistant pathogens? And how can we predict and limit the spread of emerging infectious diseases?
+
+During this semester, we will cover both basic and applied aspects of evolution. So whether you are a bit of a naturalist---like myself---who tries to better understand the world, or whether you aspire to address some of the major environmental and public health issues we face as a society, I hope you will find something to take away from this class.
+
+## An Overview of the Semester {.unnumbered}
+
+The semester, and accordingly this book, is structured into four parts, each with multiple chapters that build on each other. Each chapter corresponds to a weekly module.
+
+### Part 1: The Basics {.unnumbered}
+
+In the first part of our journey, we will establish the basics of evolutionary biology. [**Chapter 1**](what-evolution-is.html) introduces the concept of evolution and provides some historical context of how Darwin conceived his idea of "descent with modification" to describe the pattern of evolution. Treating the idea of evolution as a hypothesis, we will also develop testable predictions that can be verified through observation or experimentation. [**Chapter 2**](evidence-for-evolution.html) will take a closer look at those predictions, and we will explore different lines of evidence that evolution has been---and still is---happening. Finally, [**Chapter 3**](natural-selection-a-mechanism-for-change.html) will introduce Darwin's other big idea, natural selection, which describes a mechanism that can account for the tendency of organisms having traits well suited to the environments they live in.
+
+### Part 2: A Genetic Perspective on Evolution {.unnumbered}
+
+The second part takes a 21^st^ century perspective on evolution and closes a critical gap in Darwin's original ideas---namely, the mechanisms underlying heredity. We will integrate your knowledge of modern genetics with evolutionary principles to analyze changes in the genetic composition of populations through time. [**Chapter 4**](the-raw-materials-for-evolution.html) will explore how different types of mutations impact the expression of phenotypic traits and provide the raw material for evolutionary change. In addition, we will learn how evolutionary biologists quantify genetic variation in populations and use that data to infer whether or not evolutionary forces are acting on a population. In [**Chapter 5**](evolutionary-mechanisms-i-modeling-natural-selection.html) and [**Chapter 6**](evolutionary-mechanisms-ii-mutation-genetic-drift-and-migration.html), we will integrate evolution and genetics and use mathematical models to explore how natural selection interacts with other evolutionary forces (mutation, genetic drift, and migration) to shape the genetic composition of populations. In [**Chapter 7**](molecular-evolution.html), we will investigate the evolution of DNA sequences, explore the molecular signatures of selection, and see what we can uncover about historical processes simply by interpreting patterns of DNA sequence variation. And finally, in [**Chapter 8**](the-evolution-of-quantitative-traits.html), will learn about basic quantitative genetic approaches used to study the evolution of complex phenotypic traits controlled by many genes at once.
+
+### Part 3: Evolutionary Outcomes in the Real World {.unnumbered}
+
+The third part of the book explores the outcomes of natural selection and other evolutionary forces. [**Chapter 9**](adaptation-and-phenotypic-plasticity.html) focuses on how we can infer adaptation in natural populations. We will explore the concept of phenotypic plasticity, why it can complicate the inference of adaptation, and how plasticity itself can be the outcome of adaptive evolution. In [**Chapter 10**](intraspecific-interactions-social-behavior-and-sexual-selection.html), we will focus on how evolution has shaped the social interactions between individuals of the same species, learning about kin and sexual selection. Finally, [**Chapter 11**](speciation-1.html) investigates how new species arise. We will discuss speciation as a gradual process that is shaped by the same evolutionary forces that influence the evolution of phenotypic traits within species.
+
+### Part 4: Applied Evolutionary Biology {.unnumbered}
+
+The last part of the book focuses on the application of evolutionary theory in the context of human nature and human health. [**Chapters 12**](evolutionary-medicine-i-aging-and-diseases-of-civilization.html) and [**Chapter 13**](evolutionary-medicine-ii-evolving-pathogens.html) explore how evolutionary principles are applied in modern medicine. We will discuss why we age and how modern lifestyles are connected to the development of a wide variety of health conditions commonly named "diseases of civilization". In addition, we will explore how a better understanding of pathogen evolution allows for the development of concrete management strategies that can impact the spread of diseases. Finally, [**Chapter 14**](human-origins-and-human-mediated-evolution.html) includes an overview of human origins and discusses how the sequencing of ancient DNA has shed new light into our own history.
+
+## How to Use This Book {.unnumbered}
+
+This book is not designed to provide a comprehensive overview of current evolutionary biology. Rather, it is supposed to provide a succinct introduction to evolutionary thought revolving around theory, evidence, and practice:
+
+-   I will introduce some of the **theoretical cornerstones and core concepts** of modern evolutionary biology. The goal is for you to be able to apply these concepts and articulate testable hypotheses that explain natural phenomena from an evolutionary perspective.
+-   You will become familiar with the diversity of **empirical approaches and lines of evidence** that scientists use to address evolutionary hypotheses.
+-   You will practice approaching problems like scientists and evaluate data to address evolutionary hypotheses. To do so, you will learn how to program in R to **analyze and visualize data** and articulate your interpretations and conclusions.
+
+In accordance with these goals, each chapter will provide you with a conceptual introduction to the topic. There is not much emphasis on examples, as we will explore those together in our class meetings. Each chapter also includes additional resources that you can explore if you have difficulties understanding or if you want to explore a topic in more detail. To help you with the R exercises, each chapter also provides you with additional background on case studies and R programming tutorials that help you to develop the necessary skills. Finally, each chapter ends with a series of reflection questions that will prompt you to review your learning. For quick reference, Appendix A summarizes some of the key R code you will work with in the class, and Appendix B offers all exercises for quick download.
+
+Please note that this resource has been developed and optimized to be used as an HTML book that can be accessed with any web browser. Accessing the book this way allows you to make full use of the dynamical content and R components, which are more limited if you print. Plus, you can save a bunch of trees:)
+
+## References {.unnumbered}
+
+-   Darwin, C (1859): *On the origin of species based on natural selection, or the preservation of favoured races in the struggle of life.* London: John Murray.
+-   Dobzhansky, T (1973): Nothing in biology makes sense except in the light of evolution. *The American Biology Teacher* 35: 125--129.
