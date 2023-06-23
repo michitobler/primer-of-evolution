@@ -1,0 +1,13 @@
+treatment,sperm.conc,fertilized,sd
+Intra-population,1,0.965,0.029
+Intra-population,2,0.994,0.004
+Intra-population,4,0.999,0.006
+Intra-population,8,1,0
+Intra-population,16,1,0
+Intra-population,32,1,0
+Inter-population,1,0.019,0.021
+Inter-population,2,0.047,0.044
+Inter-population,4,0.064,0.066
+Inter-population,8,0.09,0.073
+Inter-population,16,0.074,0.037
+Inter-population,32,0.049,0.028

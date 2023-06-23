@@ -1,0 +1,24 @@
+metric,temperature,performance
+Endurance,15.1,0.081
+Endurance,19.8,0.253
+Endurance,24.7,0.538
+Endurance,29.8,0.823
+Endurance,35.4,1
+Endurance,39.7,0.966
+Endurance,44.6,0.888
+Burst speed,15.1,0.038
+Burst speed,19.9,0.293
+Burst speed,24.6,0.603
+Burst speed,30.3,0.736
+Burst speed,35.4,0.86
+Burst speed,39.6,1
+Burst speed,43.2,0.98
+Digestive efficiency,27.3,0.023
+Digestive efficiency,32.7,0.778
+Digestive efficiency,37.1,0.894
+Digestive efficiency,40.6,1
+Hearing efficiency,19.7,0.585
+Hearing efficiency,29.5,0.686
+Hearing efficiency,34.9,0.937
+Hearing efficiency,37.6,0.974
+Hearing efficiency,39.2,1

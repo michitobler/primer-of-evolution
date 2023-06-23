@@ -1,0 +1,16 @@
+individual,stage,response.rate
+A,Living in birth colony,100
+A,Moved to new colony,17
+A,Breeding in colony,100
+B,Living in birth colony,67
+B,Moved to new colony,0
+B,Breeding in colony,100
+C,Living in birth colony,45
+C,Moved to new colony,0
+C,Breeding in colony,61
+D,Living in birth colony,33
+D,Moved to new colony,0
+D,Breeding in colony,18
+E,Moved to new colony,0
+E,Breeding in colony,72
+E,Evicted,36

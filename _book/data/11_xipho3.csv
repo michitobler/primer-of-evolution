@@ -1,0 +1,11 @@
+chr5,chr21,group,invasion frequency
+mal,bir,observed,0.3775
+mal,het,observed,0.2975
+het,bir,observed,0.03875
+het,het,observed,0
+het,mal,observed,0
+bir,mal,observed,0
+bir,bir,observed,0
+bir,het,observed,0
+mal,mal,observed,0
+,,expected,0.1825

@@ -1,0 +1,5 @@
+habitat,population,number,proportion
+Lake,Lake,59,0.894
+Stream,Lake,7,0.106
+Lake,Stream,23,0.124
+Stream,Stream,163,0.876
