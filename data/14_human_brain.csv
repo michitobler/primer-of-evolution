@@ -1,0 +1,15 @@
+group,species,time,int.car.blood.flow
+hominins,Ar. ramidus,4.39,0.83
+hominins,Au. afarensis,3.18,2.32
+hominins,Au. africanus,2.63,1.6
+hominins,H. rudolfensis,1.88,2.41
+hominins,H. habilis,1.81,2.9
+hominins,H. georgicus,1.7,1.59
+hominins,Early H. erectus,1.55,4.61
+hominins,Late H. erectus,1.19,6.08
+hominins,H. heidelbergensis,0.3,6.07
+hominins,H. sapiens,0.09,7.78
+hominins,H. neanderthalensis,0.05,8.13
+apes,Gorilla,0.01,3.57
+apes,Chimpanzee,0.01,2.85
+apes,Orangutan,0.01,2.68
