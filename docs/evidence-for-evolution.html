@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Evidence for Evolution | A Primer of Evolution</title>
   <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
-  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Evidence for Evolution | A Primer of Evolution" />
   <meta property="og:type" content="book" />
@@ -75,7 +75,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -138,6 +138,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -1016,7 +1020,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <p>The first step of making any graph is to define the axes and establish the coordinate grid that allows for the plotting of the data. To do this, R first needs to know what data frame the data is stored in (in our case, the data frame is called <code>test.data</code>). The axes are then defined by specifying the aesthetics <code>aes()</code> within the <code>ggplot</code> function, as shown below.</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="evidence-for-evolution.html#cb43-1" tabindex="-1"></a><span class="co">#This line of code calls for the ggplot function (a plotting function) and makes a grid based on the test.data data frame, using length as the x axis and mass as the y axis</span></span>
 <span id="cb43-2"><a href="evidence-for-evolution.html#cb43-2" tabindex="-1"></a><span class="fu">ggplot</span>(test.data, <span class="fu">aes</span>(<span class="at">x=</span>length, <span class="at">y=</span>mass))</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/coord-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/coord-1.png" width="672" /></p>
 <p>The output is a simple coordinate system based on the data we provided, with length as the x-axis and mass as the y-axis.</p>
 </div>
 <div id="adding-a-layer-with-data-points" class="section level4 unnumbered hasAnchor">
@@ -1024,7 +1028,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <p>The second step is to draw the actual data into the established coordinate system. To do so, you just need to tell the program what kind of graph you want to draw. Different graph types in ggplot are referred to as geoms (geometries), and a scatter plot is designated as <code>geom_point()</code>. You can add that to your existing code describing the coordinate system with a plus sign.</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="evidence-for-evolution.html#cb44-1" tabindex="-1"></a><span class="fu">ggplot</span>(test.data, <span class="fu">aes</span>(<span class="at">x=</span>length, <span class="at">y=</span>mass)) <span class="sc">+</span></span>
 <span id="cb44-2"><a href="evidence-for-evolution.html#cb44-2" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/points-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/points-1.png" width="672" /></p>
 <p>For an overview of some of the graph types (geoms) ggplot offers, check <a href="https://www.r-graph-gallery.com/">here</a>. In the coming chapters, I will introduce you to a variety of geoms that you can use to visualize different types of data.</p>
 </div>
 <div id="adding-a-trendline" class="section level4 unnumbered hasAnchor">
@@ -1034,7 +1038,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb45-2"><a href="evidence-for-evolution.html#cb45-2" tabindex="-1"></a><span class="fu">ggplot</span>(test.data, <span class="fu">aes</span>(<span class="at">x=</span>length, <span class="at">y=</span>mass)) <span class="sc">+</span></span>
 <span id="cb45-3"><a href="evidence-for-evolution.html#cb45-3" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb45-4"><a href="evidence-for-evolution.html#cb45-4" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>, <span class="at">se=</span><span class="cn">FALSE</span>)</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/trend-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/trend-1.png" width="672" /></p>
 </div>
 <div id="changing-the-axes-labels" class="section level4 unnumbered hasAnchor">
 <h4>Changing the Axes Labels<a href="evidence-for-evolution.html#changing-the-axes-labels" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1045,7 +1049,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb46-4"><a href="evidence-for-evolution.html#cb46-4" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
 <span id="cb46-5"><a href="evidence-for-evolution.html#cb46-5" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Body length in cm&quot;</span>) <span class="sc">+</span></span>
 <span id="cb46-6"><a href="evidence-for-evolution.html#cb46-6" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Body mass in kg&quot;</span>)</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/labels-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/labels-1.png" width="672" /></p>
 <p>Note that an alternative way of changing the axes labels is to use the <code>labs()</code> function. Specifically, <code>labs(x="Body length in cm", y="Body mass in kg")</code> will provide the same result as the code used above.</p>
 </div>
 <div id="adding-additional-complexity" class="section level4 unnumbered hasAnchor">
@@ -1056,7 +1060,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb47-3"><a href="evidence-for-evolution.html#cb47-3" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">&quot;lm&quot;</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
 <span id="cb47-4"><a href="evidence-for-evolution.html#cb47-4" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Body length in cm&quot;</span>) <span class="sc">+</span></span>
 <span id="cb47-5"><a href="evidence-for-evolution.html#cb47-5" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Body mass in kg&quot;</span>)</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/groups-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/groups-1.png" width="672" /></p>
 <p>As you can see, this not only changes the color of individual points, but it also draws a separate regression line for males and females. If you want to change the legend title, you can do this again with the <code>labs()</code> function: <code>labs(x="Body length in cm", y="Body mass in kg", color="Sex")</code> .</p>
 </div>
 <div id="optional-changing-the-theme" class="section level4 unnumbered hasAnchor">
@@ -1068,7 +1072,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb48-4"><a href="evidence-for-evolution.html#cb48-4" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Body length in cm&quot;</span>) <span class="sc">+</span></span>
 <span id="cb48-5"><a href="evidence-for-evolution.html#cb48-5" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Body mass in kg&quot;</span>) <span class="sc">+</span></span>
 <span id="cb48-6"><a href="evidence-for-evolution.html#cb48-6" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/theme-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/theme-1.png" width="672" /></p>
 </div>
 <div id="optional-changing-to-a-colorblind-friendly-palette" class="section level4 unnumbered hasAnchor">
 <h4>Optional: Changing to a Colorblind-Friendly Palette<a href="evidence-for-evolution.html#optional-changing-to-a-colorblind-friendly-palette" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1077,7 +1081,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb49-2"><a href="evidence-for-evolution.html#cb49-2" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;RColorBrewer&quot;</span>)</span></code></pre></div>
 <p><code>RColorBrewer</code> includes several color palettes, including options that have been developed for people with color blindness. To see the different colorblind-friendly options, you can simply use the following function:</p>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="evidence-for-evolution.html#cb50-1" tabindex="-1"></a><span class="fu">display.brewer.all</span>(<span class="at">colorblindFriendly =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/RColBrew-1.png" width="576" /></p>
+<p><img src="Primer2Evolution_files/figure-html/RColBrew-1.png" width="576" /></p>
 <p>To change the color scheme of the graph generated with the <code>ggplot()</code>, you can simply use the <code>scale_color_brewer()</code> function to designate the desired palette:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="evidence-for-evolution.html#cb51-1" tabindex="-1"></a><span class="fu">ggplot</span>(test.data, <span class="fu">aes</span>(<span class="at">x=</span>length, <span class="at">y=</span>mass, <span class="at">color=</span>sex)) <span class="sc">+</span></span>
 <span id="cb51-2"><a href="evidence-for-evolution.html#cb51-2" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -1086,7 +1090,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb51-5"><a href="evidence-for-evolution.html#cb51-5" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Body mass in kg&quot;</span>) <span class="sc">+</span></span>
 <span id="cb51-6"><a href="evidence-for-evolution.html#cb51-6" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
 <span id="cb51-7"><a href="evidence-for-evolution.html#cb51-7" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette=</span><span class="st">&quot;Dark2&quot;</span>)</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/coltheme-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/coltheme-1.png" width="672" /></p>
 </div>
 <div id="generating-and-visualizing-aggregate-data" class="section level4 unnumbered hasAnchor">
 <h4>Generating and Visualizing Aggregate Data<a href="evidence-for-evolution.html#generating-and-visualizing-aggregate-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1107,7 +1111,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <span id="cb54-4"><a href="evidence-for-evolution.html#cb54-4" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Sex&quot;</span>) <span class="sc">+</span></span>
 <span id="cb54-5"><a href="evidence-for-evolution.html#cb54-5" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Mean length [mm]&quot;</span>) <span class="sc">+</span></span>
 <span id="cb54-6"><a href="evidence-for-evolution.html#cb54-6" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
-<p><img src="Primer-to-Evolution_files/figure-html/meanplot-1.png" width="672" /></p>
+<p><img src="Primer2Evolution_files/figure-html/meanplot-1.png" width="672" /></p>
 </div>
 </div>
 </div>
@@ -1117,7 +1121,7 @@ Figure 2.15: Medium Ground Finch (<em>Geospiza fortis</em>), Santa Cruz, Galapag
 <li>There is phenomenal variation in human height. The graph below shows variation among over 80 human populations (countries; in different colors) and across time (from 1897 to 1996). As you can see, there is a spread of about 20 cm in mean height among populations that has persisted through time. In addition, mean height has increased by an average of ~8 cm over 100 years (black line). Do you think the variation in height among the populations and the change through time are the product of evolution? Why? If you want to explore these data further, you can download them <a href="data/human_height.csv">here</a>. Data was originally retrieved from <a href="https://ourworldindata.org/human-height"><em>Our World in Data</em></a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).</li>
 </ol>
 <div class="figure"><span style="display:block;" id="fig:humansize"></span>
-<img src="Primer-to-Evolution_files/figure-html/humansize-1.png" alt="Mean height of male humans in different countries (by color) and across years." width="672" />
+<img src="Primer2Evolution_files/figure-html/humansize-1.png" alt="Mean height of male humans in different countries (by color) and across years." width="672" />
 <p class="caption">
 Figure 2.16: Mean height of male humans in different countries (by color) and across years.
 </p>
