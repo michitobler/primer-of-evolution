@@ -1,0 +1,9 @@
+trait,population,test.environment,response,se
+Swimming performance,Brackish water,Freshwater,392.4050633,28.24367089
+Swimming performance,Brackish water,Brackish water,541.4556962,29.19303797
+Swimming performance,Freshwater,Freshwater,443.6708861,46.28164557
+Swimming performance,Freshwater,Brackish water,462.4208861,20.88607595
+Metabolic scope,Brackish water,Freshwater,1.886695279,0.138197425
+Metabolic scope,Brackish water,Brackish water,2.173390558,0.135622318
+Metabolic scope,Freshwater,Freshwater,1.912446352,0.15193133
+Metabolic scope,Freshwater,Brackish water,2.227467811,0.141630901

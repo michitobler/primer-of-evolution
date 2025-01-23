@@ -27,7 +27,7 @@ We have been able to quantify genetic variation directly for several decades, fi
 
 ## DNA Alignment and Genome Assembly
 
-The output of any DNA-sequencing method is the actual order of As, Ts, Gs, and Cs of the DNA in a particular sample. Some sequencing methods, like Sanger sequencing, target very specific regions of the genome (typically a gene of interest). Resulting sequences can then be directly aligned for analysis. Sequence alignment arranges DNA fragments by similarity, matching up homologous nucleotides across samples. Aligned sequences are arranged in a matrix, where sequences from different samples are organized in rows and homologous nucleotides in columns (Figure \@ref(fig:alignment)). Once aligned, DNA sequences can be used to quantify similarities among different samples, or to identify single nucleotide polymorphisms (SNPs; [Chapter 4](https://www.k-state.edu/biology/p2e/the-raw-materials-for-evolution.html#quantifying-genetic-variation)) that underlie many population genetic analyses.
+The output of any DNA-sequencing method is the actual order of As, Ts, Gs, and Cs of the DNA in a particular sample. Some sequencing methods, like Sanger sequencing, target very specific regions of the genome (typically a gene of interest). Resulting sequences can then be directly aligned for analysis. Sequence alignment arranges DNA fragments by similarity, matching up homologous nucleotides across samples. Aligned sequences are arranged in a matrix, where sequences from different samples are organized in rows and homologous nucleotides in columns (Figure \@ref(fig:alignment)). Once aligned, DNA sequences can be used to quantify similarities among different samples, or to identify single nucleotide polymorphisms (SNPs) that underlie many population genetic analyses.
 
 ```{r alignment, echo=FALSE, fig.height=3.5, fig.width=8, message=FALSE, warning=FALSE, fig.cap="An example of a nucleotide alignment, where sequences from different samples are organized in rows and homologous nucleotides are organized in columns. Visual inspection of the alignment reveals regions that are relatively conserved across samples (*e.g.*, positions 18-25) as well as highly variable regions (*e.g.*, poistions 42-50)."}
 nt_sequences <- system.file("extdata", "LeaderRepeat_All.fa", package = "ggmsa")
@@ -107,7 +107,7 @@ While phylogenetic trees inferred from distance matrices are relatively simple t
 ::: {.alert .alert-block .alert-info}
 <b>Learn More: Reconstructing Phylogenies</b>
 
-If you are interested in learning more about reconstructing phylogenies, I recommend "*Phylogenetic Inference*" by Mark Holder, Chapter 12 in the [*Princeton Guide to Evolution*](https://k-state.primo.exlibrisgroup.com/permalink/01KSU_INST/1177os2/alma9942417312002401) that you can access for free through the K-State Library. The chapter briefly introduces parsimony, likelihood-based approaches, and Bayesian inference in more detail.
+If you are interested in learning more about reconstructing phylogenies, I recommend "*Phylogenetic Inference*" by Mark Holder, Chapter 12 in the [*Princeton Guide to Evolution*](https://www.jstor.org/stable/j.ctt4cgc5m.11) that you can access for free through most university libraries. The chapter briefly introduces parsimony, likelihood-based approaches, and Bayesian inference in more detail. 
 :::
 
 ### Molecular Phylogenies in Real Life

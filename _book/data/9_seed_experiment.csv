@@ -1,0 +1,15 @@
+treatment,time,egg.size,sd
+A. greggi to C. floridum,0,0.0258,0.0007
+A. greggi to C. floridum,12,0.0248,0.0009
+A. greggi to C. floridum,24,0.0255,0.0007
+A. greggi to C. floridum,36,0.0245,0.0008
+A. greggi to C. floridum,48,0.0239,0.0006
+A. greggi to C. floridum,60,0.0231,0.001
+A. greggi to C. floridum,72,0.02,0.0025
+C. floridum to A. greggi,0,0.0199,0.0005
+C. floridum to A. greggi,12,0.0195,0.0006
+C. floridum to A. greggi,24,0.0208,0.0005
+C. floridum to A. greggi,36,0.0222,0.0007
+C. floridum to A. greggi,48,0.0236,0.0008
+C. floridum to A. greggi,60,0.0243,0.0012
+C. floridum to A. greggi,72,0.0245,0.001
