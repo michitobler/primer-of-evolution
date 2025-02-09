@@ -1,20 +1,18 @@
-# (PART) Interactive Simulations  {.unnumbered}
+# Simulating Frequency-Dependent Selection {.unnumbered}
 
-# Simulating Selection {-}
-
-This app allows you to simulate the effects of natural selection on the frequency of an allele *A* (*p*). Critical parameters include:
+This app allows you to simulate negative frequency-dependent selection, where the fitness of each genotype is dependent on its frequency in the population. Critical parameters include:
 
 -   The starting allele frequency, *p*0. This parameter can vary between 0 and 1.
 
 -   The number of generations you want to run the simulation for (maximum: 1000).
 
--   The relative fitness of each genotype (*AA*, *Aa*, and *aa*). Fitness values can vary between 0 and 2.
+-   The strength of selection against heterozygotes when they are common, which can vary between 0 and 2.
 
 Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.
 
 To access the app directly, [click here](https://michitobler.shinyapps.io/selection/). This app is based on the [learnPopGen package](https://cran.r-project.org/web/packages/learnPopGen/index.html) by Liam Revell.
 
 ```{r, echo=FALSE}
-knitr::include_app("https://michitobler.shinyapps.io/selection/",
+knitr::include_app("https://michitobler.shinyapps.io/freqdep/",
   height = "1200px")
 ```

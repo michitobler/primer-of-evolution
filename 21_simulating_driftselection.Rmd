@@ -14,7 +14,7 @@ This app allows you to simulate the combined effects of genetic drift and natura
 
 Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary. Be careful with simulations that use a high number of generations and replicates, as they can take a long time to run.
 
-To access the app directly, [click here](https://michitobler.shinyapps.io/driftselection/).
+To access the app directly, [click here](https://michitobler.shinyapps.io/driftselection/). This app is based on the [learnPopGen package](https://cran.r-project.org/web/packages/learnPopGen/index.html) by Liam Revell.
 
 ```{r, echo=FALSE}
 knitr::include_app("https://michitobler.shinyapps.io/driftselection/",

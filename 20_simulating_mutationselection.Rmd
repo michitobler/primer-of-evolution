@@ -12,7 +12,7 @@ This app allows you to simulate the combined effects of mutation and natural sel
 
 Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.
 
-To access the app directly, [click here](https://michitobler.shinyapps.io/mutationselection/).
+To access the app directly, [click here](https://michitobler.shinyapps.io/mutationselection/). This app is based on the [learnPopGen package](https://cran.r-project.org/web/packages/learnPopGen/index.html) by Liam Revell.
 
 ```{r, echo=FALSE}
 knitr::include_app("https://michitobler.shinyapps.io/mutationselection/",

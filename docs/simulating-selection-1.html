@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Front Matters | A Primer of Evolution</title>
+  <title>Simulating Selection | A Primer of Evolution</title>
   <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Front Matters | A Primer of Evolution" />
+  <meta property="og:title" content="Simulating Selection | A Primer of Evolution" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Front Matters | A Primer of Evolution" />
+  <meta name="twitter:title" content="Simulating Selection | A Primer of Evolution" />
   
   <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="what-evolution-is.html"/>
+<link rel="prev" href="simulating-selection.html"/>
+<link rel="next" href="simulating-genetic-drift.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -543,7 +543,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="part"><span><b>V Interactive Simulations</b></span></li>
 <li class="chapter" data-level="" data-path="simulating-selection.html"><a href="simulating-selection.html"><i class="fa fa-check"></i>Simulating Selection</a></li>
-<li class="chapter" data-level="" data-path="simulating-frequency-dependent-selection.html"><a href="simulating-frequency-dependent-selection.html"><i class="fa fa-check"></i>Simulating Frequency-Dependent Selection</a></li>
+<li class="chapter" data-level="" data-path="simulating-selection-1.html"><a href="simulating-selection-1.html"><i class="fa fa-check"></i>Simulating Selection</a></li>
 <li class="chapter" data-level="" data-path="simulating-genetic-drift.html"><a href="simulating-genetic-drift.html"><i class="fa fa-check"></i>Simulating Genetic Drift</a></li>
 <li class="chapter" data-level="" data-path="simulating-mutation-and-selection.html"><a href="simulating-mutation-and-selection.html"><i class="fa fa-check"></i>Simulating Mutation and Selection</a></li>
 <li class="chapter" data-level="" data-path="simulating-genetic-drift-and-selection.html"><a href="simulating-genetic-drift-and-selection.html"><i class="fa fa-check"></i>Simulating Genetic Drift and Selection</a></li>
@@ -604,37 +604,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="front-matters" class="section level1 unnumbered hasAnchor">
-<h1>Front Matters<a href="front-matters.html#front-matters" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="acknowledgments" class="section level2 unnumbered hasAnchor">
-<h2>Acknowledgments<a href="front-matters.html#acknowledgments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This Open Educational Resource (OER) was made possible with the support of a grant from the The Open/Alternative Textbook Initiative at Kansas State University and is archived at the <a href="https://irl.umsl.edu/oer/36/">Institutional Repository Library of the University of Missouri-St. Louis</a>.</p>
-<p>I thank Tom Platt, John Coffin, Ryan Greenway, Madison Nobrega, and Libby Wilson, who have all made immeasurable contributions to the development of the learning materials included here. I especially thank Madison Nobrega for her relentless editing; her input has greatly improved this text. Last but not least, many thanks to the past students in Evolution courses at Kansas State University and the University of Missouri-St. Louis. It was your input that lead to this resource and that helps me to continuously improve it. Especially, the following people have graciously provided feedback on writing and content: Shaun Baughman, Caroline Gatschet, Aaron George, Karisa Leonard, Kate Odgers, and Andy Su.</p>
-</div>
-<div id="copyright" class="section level2 unnumbered hasAnchor">
-<h2>Copyright<a href="front-matters.html#copyright" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>© 2021-2025 by Michi Tobler</p>
-<p><img src="images/cc.png" width="44" /></p>
-<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. You are free to copy and redistribute the material in any medium or format, and to remix, transform, and build upon the material provided you give the original author credit (attribution), you are not using the material for commercial purposes (NonCommerical), and you distribute your work under the same license as the original (ShareAlike).</p>
-<p>If you would like to adopt and use this resource in any way, feel free to contact <a href="mailto:tobler@umsl.edu">Michi Tobler</a> to obtain a copy of all source files.</p>
-</div>
-<div id="about-the-author" class="section level2 unnumbered hasAnchor">
-<h2>About the Author<a href="front-matters.html#about-the-author" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Michi Tobler is the E. Desmond Lee Professor in Zoological Studies in the <a href="https://www.umsl.edu/biology/index.html">Department of Biology</a> at the University of Missouri-St. Louis and a Senior Scientist at the <a href="https://stlzoo.org/conservation/in-action/saint-louis-wildcare-institute">WildCare Institute</a> of the Saint Louis Zoo. His research focuses on mechanisms of adaptation and speciation, primarily using extremophile fishes as study systems. You can learn more about our research on his lab website: <a href="https://sulfide-life.info/" class="uri">https://sulfide-life.info/</a></p>
-<p><img src="images/fieldlab.jpg" width="100%" /></p>
+<div id="simulating-selection-1" class="section level1 unnumbered hasAnchor">
+<h1>Simulating Selection<a href="simulating-selection-1.html#simulating-selection-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This app allows you to simulate negative frequency-dependent selection, where the fitness of each genotype is dependent on its frequency in the population. Critical parameters include:</p>
+<ul>
+<li><p>The starting allele frequency, <em>p</em>0. This parameter can vary between 0 and 1.</p></li>
+<li><p>The number of generations you want to run the simulation for (maximum: 1000).</p></li>
+<li><p>The strength of selection against heterozygotes when they are common, which can vary between 0 and 2.</p></li>
+</ul>
+<p>Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.</p>
+<p>To access the app directly, <a href="https://michitobler.shinyapps.io/selection/">click here</a>. This app is based on the <a href="https://cran.r-project.org/web/packages/learnPopGen/index.html">learnPopGen package</a> by Liam Revell.</p>
+<iframe src="https://michitobler.shinyapps.io/freqdep/?showcase=0" width="672" height="1200px" data-external="1">
+</iframe>
 
 </div>
-</div>
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="what-evolution-is.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="simulating-selection.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simulating-genetic-drift.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
