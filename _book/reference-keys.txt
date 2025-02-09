@@ -520,4 +520,3 @@ combining-multiple-plots
 working-with-color-palettes
 color-palettes-in-rcolorbrewer
 combining-rcolorbrewer-palettes-with-ggplot
-simulating-selection-1
