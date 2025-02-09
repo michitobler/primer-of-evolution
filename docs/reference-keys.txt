@@ -495,7 +495,6 @@ what-makes-us-human
 case-study-modern-human-origins
 reflection-questions-13
 references-14
-graph-library
 sample-data
 loading-dependencies
 one-variable-continuous
@@ -521,4 +520,3 @@ combining-multiple-plots
 working-with-color-palettes
 color-palettes-in-rcolorbrewer
 combining-rcolorbrewer-palettes-with-ggplot
-r-exercises

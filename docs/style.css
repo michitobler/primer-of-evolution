@@ -50,3 +50,7 @@ pre code {
 code {
   white-space : pre-wrap !important;
 }
+
+iframe {
+  width: 100%;
+}

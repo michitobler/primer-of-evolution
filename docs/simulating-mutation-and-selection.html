@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>R Exercises | A Primer of Evolution</title>
+  <title>Simulating Mutation and Selection | A Primer of Evolution</title>
   <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="R Exercises | A Primer of Evolution" />
+  <meta property="og:title" content="Simulating Mutation and Selection | A Primer of Evolution" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="R Exercises | A Primer of Evolution" />
+  <meta name="twitter:title" content="Simulating Mutation and Selection | A Primer of Evolution" />
   
   <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="graph-library.html"/>
-
+<link rel="prev" href="simulating-genetic-drift.html"/>
+<link rel="next" href="simulating-genetic-drift-and-selection.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -603,167 +603,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="r-exercises" class="section level1 unnumbered hasAnchor">
-<h1>R Exercises<a href="r-exercises.html#r-exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>To download *.zip files associated with R exercises, right-click on the exercise link below to save the file on your computer. Each exercise contains an R Notebook (*.Rmd). In addition, exercises may contain data sets (*.csv), phylogenetic tree files (*.nwk and *.tre), and auxiliary images (*.jpg or *.png). For weekly assignments, download the necessary files from here, complete your R Notebook, export it as *.HTML, and submit it through the proper channel on <a href="https://canvas.umsystem.edu/">Canvas</a>.</p>
-<table>
-<colgroup>
-<col width="77%" />
-<col width="22%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Exercise (Chapter)</th>
-<th align="left">File List</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex1.zip">Exercise 1</a> (<a href="evidence-for-evolution.html">Chapter 2</a>)</td>
-<td align="left"><ul>
-<li><p>ex1_evidence_blank.Rmd</p></li>
-<li><p>finches.csv</p></li>
-<li><p>test_data.csv</p></li>
-<li><p>finch.jpg</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex2.zip">Exercise 2</a> (<a href="a-mechanism-for-change.html">Chapter 3</a>)</td>
-<td align="left"><ul>
-<li><p>ex2_darwins_logic_blank.csv</p></li>
-<li><p>heritability.csv</p></li>
-<li><p>morphological_variation.csv</p></li>
-<li><p>mollies.png</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex3.zip">Exercise 3</a> (<a href="the-raw-materials-for-evolution.html">Chapter 4</a>)</td>
-<td align="left"><ul>
-<li><p>ex3_HWE_blank.Rmd</p></li>
-<li><p>eye_color.jpg</p></li>
-<li><p>HW_frequency.png</p></li>
-<li><p>wing_morphology.png</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex4.zip">Exercise 4</a> (<a href="evolutionary-mechanisms-i-modeling-selection.html">Chapter 5</a>)</td>
-<td align="left"><ul>
-<li><p>ex4_simulating_selection_blank.Rmd</p></li>
-<li><p>dominant_additive.png</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex5.zip">Exercise 5</a> (<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html">Chapter 6</a>)</td>
-<td align="left"><ul>
-<li><p>ex5_simulating_otherforces_blank.Rmd</p></li>
-<li><p>devilshole.jpg</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex6.zip">Exercise 6</a> (<a href="molecular-evolution.html">Chapter 7</a>)</td>
-<td align="left"><ul>
-<li><p>ex6_molecular_evolution_blank.Rmd</p></li>
-<li><p>coronaviruses_tree.nwk</p></li>
-<li><p>coronaviruses_tree_meta.csv</p></li>
-<li><p>ncov_diversity.csv</p></li>
-<li><p>ncov_dnds.csv</p></li>
-<li><p>ncov_global_tree.nwk</p></li>
-<li><p>ncov_global_tree_meta.csv</p></li>
-<li><p>ncov_mutations.csv</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex7.zip">Exercise 7</a> (<a href="the-evolution-of-quantitative-traits.html">Chapter 8</a>)</td>
-<td align="left"><ul>
-<li><p>ex7_quantitative_genetics_blank.Rmd</p></li>
-<li><p>beach_mice2.csv</p></li>
-<li><p>bug_eyes.csv</p></li>
-<li><p>COVID19_genomescan_subset.csv</p></li>
-<li><p>distribution.jpg</p></li>
-<li><p>mouse.jpg</p></li>
-<li><p>traits.png</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex8.zip">Exercise 8</a> (<a href="adaptation-and-phenotypic-plasticity.html">Chapter 9</a>)</td>
-<td align="left"><ul>
-<li><p>ex8_adaptation_blank.Rmd</p></li>
-<li><p>guppy_plasticity2.csv</p></li>
-<li><p>reciprocal_translocation.csv</p></li>
-<li><p>style_length.csv</p></li>
-<li><p>flowers.jpg</p></li>
-<li><p>guppies.png</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex9.zip">Exercise 9</a> (<a href="intraspecific-interactions-social-behavior-and-sexual-selection.html">Chapter 10</a>)</td>
-<td align="left"><ul>
-<li><p>ex9_social_behavior_blank.Rmd</p></li>
-<li><p>female_reproduction.csv</p></li>
-<li><p>female_survival.csv</p></li>
-<li><p>iguana_size.csv</p></li>
-<li><p>iguana_survival.csv</p></li>
-<li><p>male_effects.csv</p></li>
-<li><p>peacock_growth.csv</p></li>
-<li><p>peacock_survival.csv</p></li>
-<li><p>vampires.csv</p></li>
-<li><p>iguana.jpg</p></li>
-<li><p>peacock.jpg</p></li>
-<li><p>drosophila_exp_design.png</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex10.zip">Exercise 10</a> (<a href="speciation-1.html">Chapter 11</a>)</td>
-<td align="left"><ul>
-<li><p>ex10_speciation_blank.Rmd</p></li>
-<li><p>butterfly_mating.csv</p></li>
-<li><p>butterfly_morphology.csv</p></li>
-<li><p>byproduct.csv</p></li>
-<li><p>pop_gen.csv</p></li>
-<li><p>premating_isolation.csv</p></li>
-<li><p>tolerance.csv</p></li>
-<li><p>translocation.csv</p></li>
-<li><p>butterfly_phyloygeny.tre</p></li>
-<li><p>drosophila.jpg</p></li>
-<li><p>experimentaldesign.png</p></li>
-<li><p>map.png</p></li>
-<li><p>sulfidesprings.png</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex11.zip">Exercise 11</a> (<a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html">Chapter 12</a>)</td>
-<td align="left"><ul>
-<li>ex11_evolutionary_medicine_bland.Rmd</li>
-<li>fly_evolution.csv</li>
-<li>hx546.csv</li>
-<li>lt1.csv</li>
-<li>lt2.csv</li>
-<li>lt3.csv</li>
-<li>lifetable.png</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="exercises/BIOL520-ex12.zip">Exercise 12</a> (<a href="evolutionary-medicine-ii-evolving-pathogens.html">Chapter 13</a>)</td>
-<td align="left"><ul>
-<li><p>ex12_evolving_diseases_blank.Rmd</p></li>
-<li><p>antibiotics.csv</p></li>
-<li><p>ifr.csv</p></li>
-<li><p>population_size.csv</p></li>
-<li><p>genetic_manipulation.png</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="exercises/BIOL520-ex13.zip">Exercise 13</a> (<a href="human-origins-and-human-mediated-evolution.html">Chapter 14</a>)</td>
-<td align="left"><ul>
-<li><p>ex13_human_evolution_blank.Rmd</p></li>
-<li><p>genetic_diversity.csv</p></li>
-<li><p>heterozygosity.csv</p></li>
-<li><p>predictions.png</p></li>
-<li><p>tree.png</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<div id="simulating-mutation-and-selection" class="section level1 unnumbered hasAnchor">
+<h1>Simulating Mutation and Selection<a href="simulating-mutation-and-selection.html#simulating-mutation-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This app allows you to simulate the combined effects of mutation and natural selection on the frequency of an allele <em>A</em> (<em>p</em>). Critical parameters include:</p>
+<ul>
+<li><p>The starting allele frequency, <em>p</em>0. This parameter can vary between 0 and 1.</p></li>
+<li><p>The relative fitness of genotypes <em>Aa</em> and <em>aa</em> (note that the fitness of <em>AA</em> is fixed at 1). Fitness values can vary between 0 and 2.</p></li>
+<li><p>The mutation rate from A to a, which can vary from 0.00001 to 1.</p></li>
+<li><p>The number of generations you want to run the simulation for (maximum: 1000).</p></li>
+</ul>
+<p>Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.</p>
+<p>To access the app directly, <a href="https://michitobler.shinyapps.io/mutationselection/">click here</a>.</p>
+<iframe src="https://michitobler.shinyapps.io/mutationselection/?showcase=0" width="672" height="1200px" data-external="1">
+</iframe>
 
 </div>
             </section>
@@ -771,8 +623,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="graph-library.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="simulating-genetic-drift.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simulating-genetic-drift-and-selection.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
