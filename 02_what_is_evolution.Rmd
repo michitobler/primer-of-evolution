@@ -32,7 +32,7 @@ If all the species were created with traits that fit the environments in which t
 knitr::include_graphics('images/Darwin_finches.jpg')
 ```
 
-Upon his return to England in 1836, Darwin settled near London and never traveled abroad again. Nonetheless, he remained a prolific scholar writing monographs about various topics, from geology to barnacles. Darwin was also a passionate pigeon breeder, and it was this unlikely hobby that provided additional insights for the formulation of his ideas. It led him to think about the forces that could drive the modification of species from one common ancestor to different descendants:
+Upon his return to England in 1836, Darwin settled near London and never traveled abroad again. Nonetheless, he remained a prolific scholar writing monographs about various topics, from geology to barnacles. Darwin was also a passionate pigeon breeder, and it was this unlikely hobby that provided additional insights for the formulation of his ideas. It led him to think about the forces that could drive the modification of species from one common ancestor to different descendants: 
 
 > "It is, therefore, of the highest importance to gain a clear insight into the means of modification. [...] At the commencement of my observations it seemed to me probable that a careful study of domesticated animals and of cultivated plants would offer the best chance of making out this obscure problem."
 >
@@ -316,7 +316,7 @@ If you would like more in-depth reading materials about evolution, there are a n
 
 -   Herron JC, S Freeman (2014): [*Evolutionary Analysis*](https://www.pearson.com/us/higher-education/program/Herron-Evolutionary-Analysis-5th-Edition/PGM296285.html). Pearson.
 
--   Losos JB, DA Baum, DJ Futuyma, HE Hoekstra, RE Lenski, AJ Moore, CL Peichel, D Schluter, MC Whitlock (editors) (2014): [*The Princeton Guide to Evolution*](https://k-state-primo.hosted.exlibrisgroup.com/permalink/f/1aco38j/01KSU_ALMA51277244700002401). Princeton University Press.
+-   Losos JB, DA Baum, DJ Futuyma, HE Hoekstra, RE Lenski, AJ Moore, CL Peichel, D Schluter, MC Whitlock (editors) (2014): [*The Princeton Guide to Evolution*](https://press.princeton.edu/books/hardcover/9780691149776/the-princeton-guide-to-evolution). Princeton University Press.
 
 ### Evolution in the Primary Literature and the News
 

@@ -832,10 +832,10 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 <div id="loading-some-data" class="section level4 unnumbered hasAnchor">
 <h4>Loading Some Data<a href="evolutionary-medicine-ii-evolving-pathogens.html#loading-some-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To explain the different subsetting possibilities and merging of data frames, I will use the <a href="data/test_data2.csv">test_data2.csv</a> data set that we have used on other sections of this book. I will also use the <code>summary()</code> function to show how the structure of a data frame changes as a consequence of subsetting.</p>
-<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-1" tabindex="-1"></a><span class="co">#Using the test_data2.csv previously used in this book</span></span>
-<span id="cb143-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-2" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/test_data2.csv&quot;</span>)</span>
-<span id="cb143-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-3" tabindex="-1"></a><span class="co">#Use summary to look at data set structure</span></span>
-<span id="cb143-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-4" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div>
+<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb141-1" tabindex="-1"></a><span class="co">#Using the test_data2.csv previously used in this book</span></span>
+<span id="cb141-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb141-2" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/test_data2.csv&quot;</span>)</span>
+<span id="cb141-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb141-3" tabindex="-1"></a><span class="co">#Use summary to look at data set structure</span></span>
+<span id="cb141-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb141-4" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div>
 <pre><code>##        id            sex             population            length     
 ##  Min.   : 1.00   Length:60          Length:60          Min.   : 81.0  
 ##  1st Qu.:15.75   Class :character   Class :character   1st Qu.: 98.0  
@@ -855,9 +855,9 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 <h4>Selecting Cases<a href="evolutionary-medicine-ii-evolving-pathogens.html#selecting-cases" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To select specific cases (rows) from a data frame, you can use the <code>which()</code> function from base R and use logical operators to define subsets based on specific criteria. Logical operators include <code>==</code> (equal to), <code>!=</code> (not equal to), <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code> (less than or equal to), <code>&gt;=</code> (greater than or equal to), and <code>!x</code> (not x).</p>
 <p>For example, if you want to select samples from the “lake” population from your test data set, you can designate the subset using <code>which(data$population=='lake')</code>. As you can see, only 30 of the original 60 cases are retained in the new data frame:</p>
-<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb145-1" tabindex="-1"></a><span class="co">#Selecting individuals that are from the &quot;lake&quot; population</span></span>
-<span id="cb145-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb145-2" tabindex="-1"></a>data.lake <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>population<span class="sc">==</span><span class="st">&#39;lake&#39;</span>),]</span>
-<span id="cb145-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb145-3" tabindex="-1"></a><span class="fu">summary</span>(data.lake)</span></code></pre></div>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-1" tabindex="-1"></a><span class="co">#Selecting individuals that are from the &quot;lake&quot; population</span></span>
+<span id="cb143-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-2" tabindex="-1"></a>data.lake <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>population<span class="sc">==</span><span class="st">&#39;lake&#39;</span>),]</span>
+<span id="cb143-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb143-3" tabindex="-1"></a><span class="fu">summary</span>(data.lake)</span></code></pre></div>
 <pre><code>##        id            sex             population            length     
 ##  Min.   : 1.00   Length:30          Length:30          Min.   : 81.0  
 ##  1st Qu.: 8.25   Class :character   Class :character   1st Qu.: 94.0  
@@ -873,12 +873,12 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.: 8.197  
 ##  Max.   :11.485</code></pre>
 <p>Alternatively, you can choose to drop all the samples from the stream population using <code>which(data$population!='stream'</code> to obtain exactly the same result:</p>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb147-1" tabindex="-1"></a><span class="co">#Selecting individuals that are not from the &quot;stream&quot; population</span></span>
-<span id="cb147-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb147-2" tabindex="-1"></a>data.lake <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>population<span class="sc">!=</span><span class="st">&#39;stream&#39;</span>), ]</span></code></pre></div>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb145-1" tabindex="-1"></a><span class="co">#Selecting individuals that are not from the &quot;stream&quot; population</span></span>
+<span id="cb145-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb145-2" tabindex="-1"></a>data.lake <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>population<span class="sc">!=</span><span class="st">&#39;stream&#39;</span>), ]</span></code></pre></div>
 <p>Selecting cases works the same way for continuous variables. In this example, we are selecting all cases with a length smaller than or equal to 100 using <code>which(data$length&lt;=100)</code>:</p>
-<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-1" tabindex="-1"></a><span class="co">#Selecting individuals that are have a length smaller than or equal to 100</span></span>
-<span id="cb148-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-2" tabindex="-1"></a>data.small <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>length<span class="sc">&lt;=</span><span class="dv">100</span>), ]</span>
-<span id="cb148-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-3" tabindex="-1"></a><span class="fu">summary</span>(data.small)</span></code></pre></div>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb146-1" tabindex="-1"></a><span class="co">#Selecting individuals that are have a length smaller than or equal to 100</span></span>
+<span id="cb146-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb146-2" tabindex="-1"></a>data.small <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>length<span class="sc">&lt;=</span><span class="dv">100</span>), ]</span>
+<span id="cb146-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb146-3" tabindex="-1"></a><span class="fu">summary</span>(data.small)</span></code></pre></div>
 <pre><code>##        id            sex             population            length     
 ##  Min.   : 1.00   Length:18          Length:18          Min.   :81.00  
 ##  1st Qu.: 9.25   Class :character   Class :character   1st Qu.:87.50  
@@ -894,9 +894,9 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.:5.247  
 ##  Max.   :6.202</code></pre>
 <p>Finally, you can also combine multiple logical statements with <code>&amp;</code> (AND) or <code>|</code> (OR). This allows you to define subsets based on multiple criteria. For example, you can select data from females that are also shorter than 100 using <code>which(data$sex=='female' &amp; data$length&lt;=100)</code>:</p>
-<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-1" tabindex="-1"></a><span class="co">#Selecting individuals that are female AND have a length smaller than or equal to 100</span></span>
-<span id="cb150-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-2" tabindex="-1"></a>data.smallfemales <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>sex<span class="sc">==</span><span class="st">&#39;female&#39;</span> <span class="sc">&amp;</span> data<span class="sc">$</span>length<span class="sc">&lt;=</span><span class="dv">100</span>), ]</span>
-<span id="cb150-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-3" tabindex="-1"></a><span class="fu">summary</span>(data.smallfemales)</span></code></pre></div>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-1" tabindex="-1"></a><span class="co">#Selecting individuals that are female AND have a length smaller than or equal to 100</span></span>
+<span id="cb148-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-2" tabindex="-1"></a>data.smallfemales <span class="ot">&lt;-</span> data[<span class="fu">which</span>(data<span class="sc">$</span>sex<span class="sc">==</span><span class="st">&#39;female&#39;</span> <span class="sc">&amp;</span> data<span class="sc">$</span>length<span class="sc">&lt;=</span><span class="dv">100</span>), ]</span>
+<span id="cb148-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb148-3" tabindex="-1"></a><span class="fu">summary</span>(data.smallfemales)</span></code></pre></div>
 <pre><code>##        id            sex             population            length     
 ##  Min.   : 1.00   Length:13          Length:13          Min.   :81.00  
 ##  1st Qu.: 4.00   Class :character   Class :character   1st Qu.:85.00  
@@ -915,9 +915,9 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 <div id="selecting-variables" class="section level4 unnumbered hasAnchor">
 <h4>Selecting Variables<a href="evolutionary-medicine-ii-evolving-pathogens.html#selecting-variables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Although not part of this exercise, sometime it is useful to create new data frames with a subset of variables from an original. You can select specific columns in a data frame by just referring to their number, including the colon (<code>:</code>) to designate ranges. For example, the following code chunk simply selects columns 1, 4, and 5 of our sample dataset to make a new one:</p>
-<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-1" tabindex="-1"></a><span class="co">#Selecting variables 1 and 4-5</span></span>
-<span id="cb152-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-2" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> data[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span><span class="sc">:</span><span class="dv">5</span>)]</span>
-<span id="cb152-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-3" tabindex="-1"></a><span class="fu">summary</span>(newdata)</span></code></pre></div>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-1" tabindex="-1"></a><span class="co">#Selecting variables 1 and 4-5</span></span>
+<span id="cb150-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-2" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> data[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span><span class="sc">:</span><span class="dv">5</span>)]</span>
+<span id="cb150-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb150-3" tabindex="-1"></a><span class="fu">summary</span>(newdata)</span></code></pre></div>
 <pre><code>##        id            length           mass       
 ##  Min.   : 1.00   Min.   : 81.0   Min.   : 3.189  
 ##  1st Qu.:15.75   1st Qu.: 98.0   1st Qu.: 5.138  
@@ -926,10 +926,10 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.:45.25   3rd Qu.:120.2   3rd Qu.: 8.358  
 ##  Max.   :60.00   Max.   :145.0   Max.   :13.133</code></pre>
 <p>Alternatively, you can first define a vector with the names of the desired variables you want to keep and then filter an existing data frame based on that:</p>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-1" tabindex="-1"></a><span class="co">#Selecting id, length, and mass</span></span>
-<span id="cb154-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-2" tabindex="-1"></a>myvars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;id&quot;</span>, <span class="st">&quot;length&quot;</span>, <span class="st">&quot;mass&quot;</span>)</span>
-<span id="cb154-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-3" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> data[myvars]</span>
-<span id="cb154-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-4" tabindex="-1"></a><span class="fu">summary</span>(newdata)</span></code></pre></div>
+<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-1" tabindex="-1"></a><span class="co">#Selecting id, length, and mass</span></span>
+<span id="cb152-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-2" tabindex="-1"></a>myvars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;id&quot;</span>, <span class="st">&quot;length&quot;</span>, <span class="st">&quot;mass&quot;</span>)</span>
+<span id="cb152-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-3" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> data[myvars]</span>
+<span id="cb152-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb152-4" tabindex="-1"></a><span class="fu">summary</span>(newdata)</span></code></pre></div>
 <pre><code>##        id            length           mass       
 ##  Min.   : 1.00   Min.   : 81.0   Min.   : 3.189  
 ##  1st Qu.:15.75   1st Qu.: 98.0   1st Qu.: 5.138  
@@ -938,9 +938,9 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.:45.25   3rd Qu.:120.2   3rd Qu.: 8.358  
 ##  Max.   :60.00   Max.   :145.0   Max.   :13.133</code></pre>
 <p>Dropping variables based on column numbers works just like selecting them, except that you include <code>-</code> before the number vector:</p>
-<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-1" tabindex="-1"></a><span class="co">#Dropping variables 4-5</span></span>
-<span id="cb156-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-2" tabindex="-1"></a>newdata2 <span class="ot">&lt;-</span> data[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">5</span>)]</span>
-<span id="cb156-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-3" tabindex="-1"></a><span class="fu">summary</span>(newdata2)</span></code></pre></div>
+<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-1" tabindex="-1"></a><span class="co">#Dropping variables 4-5</span></span>
+<span id="cb154-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-2" tabindex="-1"></a>newdata2 <span class="ot">&lt;-</span> data[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">5</span>)]</span>
+<span id="cb154-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb154-3" tabindex="-1"></a><span class="fu">summary</span>(newdata2)</span></code></pre></div>
 <pre><code>##        id            sex             population       
 ##  Min.   : 1.00   Length:60          Length:60         
 ##  1st Qu.:15.75   Class :character   Class :character  
@@ -949,11 +949,11 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.:45.25                                        
 ##  Max.   :60.00</code></pre>
 <p>Finally, you can also drop variables based on their name. To do so, you first have to create a logical vector that indicates what variables to retain. Then you can combine that vector with <code>!</code> to generate a new data frame with the subset of desired variables:</p>
-<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-1" tabindex="-1"></a><span class="co">#Create logical vector including length, and mass</span></span>
-<span id="cb158-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-2" tabindex="-1"></a>myvars <span class="ot">&lt;-</span> <span class="fu">names</span>(data) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;length&quot;</span>, <span class="st">&quot;mass&quot;</span>)</span>
-<span id="cb158-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-3" tabindex="-1"></a><span class="co">#Dropping variables based on logical vector</span></span>
-<span id="cb158-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-4" tabindex="-1"></a>newdata2 <span class="ot">&lt;-</span> data[<span class="sc">!</span>myvars]</span>
-<span id="cb158-5"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-5" tabindex="-1"></a><span class="fu">summary</span>(newdata2)</span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-1" tabindex="-1"></a><span class="co">#Create logical vector including length, and mass</span></span>
+<span id="cb156-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-2" tabindex="-1"></a>myvars <span class="ot">&lt;-</span> <span class="fu">names</span>(data) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;length&quot;</span>, <span class="st">&quot;mass&quot;</span>)</span>
+<span id="cb156-3"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-3" tabindex="-1"></a><span class="co">#Dropping variables based on logical vector</span></span>
+<span id="cb156-4"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-4" tabindex="-1"></a>newdata2 <span class="ot">&lt;-</span> data[<span class="sc">!</span>myvars]</span>
+<span id="cb156-5"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb156-5" tabindex="-1"></a><span class="fu">summary</span>(newdata2)</span></code></pre></div>
 <pre><code>##        id            sex             population       
 ##  Min.   : 1.00   Length:60          Length:60         
 ##  1st Qu.:15.75   Class :character   Class :character  
@@ -965,8 +965,8 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 <div id="merging-data-frames" class="section level4 unnumbered hasAnchor">
 <h4>Merging Data Frames<a href="evolutionary-medicine-ii-evolving-pathogens.html#merging-data-frames" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Sometime it is important to merge different data frames so you can perform combined analyses of different data sets or concatenate the results from different analyses. If you want to merge together data frames that contain the same variables but different observations, you can use the <code>rbind()</code> function. For example, the following code creates a new dataset that combines the <code>data.lake</code> and the <code>data.smallfemales</code> data frames we created above:</p>
-<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb160-1" tabindex="-1"></a>comb.data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(data.lake,data.smallfemales)</span>
-<span id="cb160-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb160-2" tabindex="-1"></a><span class="fu">summary</span>(comb.data)</span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-1" tabindex="-1"></a>comb.data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(data.lake,data.smallfemales)</span>
+<span id="cb158-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb158-2" tabindex="-1"></a><span class="fu">summary</span>(comb.data)</span></code></pre></div>
 <pre><code>##        id            sex             population            length     
 ##  Min.   : 1.00   Length:43          Length:43          Min.   : 81.0  
 ##  1st Qu.: 7.50   Class :character   Class :character   1st Qu.: 89.5  
@@ -982,8 +982,8 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##  3rd Qu.: 6.384  
 ##  Max.   :11.485</code></pre>
 <p>Similarly, we can use the <code>cbind()</code>function to combine data frames that contain different variables of the same observations. For example, you can combine the newdata and newdata2 data frames we created above with the following code:</p>
-<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb162-1" tabindex="-1"></a>comb.data2 <span class="ot">&lt;-</span> <span class="fu">cbind</span>(newdata,newdata2)</span>
-<span id="cb162-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb162-2" tabindex="-1"></a><span class="fu">summary</span>(comb.data2)</span></code></pre></div>
+<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb160-1" tabindex="-1"></a>comb.data2 <span class="ot">&lt;-</span> <span class="fu">cbind</span>(newdata,newdata2)</span>
+<span id="cb160-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb160-2" tabindex="-1"></a><span class="fu">summary</span>(comb.data2)</span></code></pre></div>
 <pre><code>##        id            length           mass              id       
 ##  Min.   : 1.00   Min.   : 81.0   Min.   : 3.189   Min.   : 1.00  
 ##  1st Qu.:15.75   1st Qu.: 98.0   1st Qu.: 5.138   1st Qu.:15.75  
@@ -999,8 +999,8 @@ Figure 13.11: Prevalence of antibiotic resistant <em>Streptococcus</em> species 
 ##                                       
 ## </code></pre>
 <p>It is important to note, however, that the <code>cbind()</code> function only works properly when the cases in each data frame are ordered in the exact same way. If not, or if not every case has a reciprocal match in each of the data frames, we can instead use the <code>merge()</code> function. Using, the <code>by</code> argument, we can make sure the cases in the different data sets are matched up properly even when they are sorted in a different way:</p>
-<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb164-1" tabindex="-1"></a>final.data <span class="ot">&lt;-</span> <span class="fu">merge</span>(newdata,newdata2, <span class="at">by=</span><span class="st">&quot;id&quot;</span>)</span>
-<span id="cb164-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb164-2" tabindex="-1"></a><span class="fu">summary</span>(final.data)</span></code></pre></div>
+<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb162-1" tabindex="-1"></a>final.data <span class="ot">&lt;-</span> <span class="fu">merge</span>(newdata,newdata2, <span class="at">by=</span><span class="st">&quot;id&quot;</span>)</span>
+<span id="cb162-2"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cb162-2" tabindex="-1"></a><span class="fu">summary</span>(final.data)</span></code></pre></div>
 <pre><code>##        id            length           mass            sex           
 ##  Min.   : 1.00   Min.   : 81.0   Min.   : 3.189   Length:60         
 ##  1st Qu.:15.75   1st Qu.: 98.0   1st Qu.: 5.138   Class :character  

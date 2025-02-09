@@ -2,7 +2,7 @@
 
 ## Acknowledgments {.unnumbered}
 
-This Open Educational Resource (OER) was made possible with the support of a grant from the [The Open/Alternative Textbook Initiative at Kansas State University](https://www.lib.k-state.edu/open-textbook) and is archived at the [Institutional Repository Library of the University of Missouri-St. Louis](https://irl.umsl.edu/oer/36/).
+This Open Educational Resource (OER) was made possible with the support of a grant from the The Open/Alternative Textbook Initiative at Kansas State University and is archived at the [Institutional Repository Library of the University of Missouri-St. Louis](https://irl.umsl.edu/oer/36/).
 
 I thank Tom Platt, John Coffin, Ryan Greenway, Madison Nobrega, and Libby Wilson, who have all made immeasurable contributions to the development of the learning materials included here. I especially thank Madison Nobrega for her relentless editing; her input has greatly improved this text. Last but not least, many thanks to the past students in Evolution courses at Kansas State University and the University of Missouri-St. Louis. It was your input that lead to this resource and that helps me to continuously improve it. Especially, the following people have graciously provided feedback on writing and content: Shaun Baughman, Caroline Gatschet, Aaron George, Karisa Leonard, Kate Odgers, and Andy Su.
 

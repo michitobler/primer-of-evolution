@@ -23,7 +23,7 @@ Species are a basic evolutionary unit. Species typically consist of multiple pop
 >
 > Charles Darwin
 
-I will say, however, that the biological species concept is the only species concept that recognizes and treats species as real natural entities. Classifications based on other species concepts are inevitably proxies, and as such, human constructs. This is not necessarily bad, because it provides the practicality needed for working with organisms---whether that is in biomedical research, argiculture, wildlife management, or conservation. It is just important to remember that species classifications do not always correspond precisely to actual biological species, a point we will return to later in this chapter.
+I will say, however, that the biological species concept is the only species concept that recognizes and treats species as real natural entities. Classifications based on other species concepts are inevitably proxies, and as such, human constructs. This is not necessarily bad, because it provides the practicality needed for working with organisms---whether that is in biomedical research, argiculture, wildlife management, or conservation. It is just important to remember that species classifications do not always correspond precisely to actual biological species, a point we will return to later in this chapter. 
 
 I will briefly provide more background information on the biological species concept. As the only species concept that recognizes species as real natural entities, the biological species is critical if we want to understand the speciation process; it sets the criteria for when the process is completed and a single lineage has split into two.
 

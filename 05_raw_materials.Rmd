@@ -166,7 +166,7 @@ knitr::include_graphics('images/SNP.png')
 ::: {.alert .alert-block .alert-info}
 <b>Explore More</b>
 
-If you are interested in learning more about modern DNA sequencing technologies, check out the review paper by Sara Goodwin and colleagues: [*Coming of age: ten years of next-generation sequencing technologies*](https://www-nature-com.er.lib.k-state.edu/articles/nrg.2016.49).
+If you are interested in learning more about modern DNA sequencing technologies, check out the review paper by Sara Goodwin and colleagues: [*Coming of age: ten years of next-generation sequencing technologies*](https://www.nature.com/articles/nrg.2016.49).
 :::
 
 For population genetic analyses, researchers typically sample dozens to hundreds of individuals from one or many populations for genotyping by sequencing. Based on the sequencing data, we can then determine the genotype of each individual. Assuming a bi-allelic locus, there are three possible genotypes: *AA*, *Aa*, and *aa*. At a population level, we can then describe genetic variation with two metrics: the relative genotype frequency and the relative allele frequency.
