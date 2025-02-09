@@ -1,0 +1,20 @@
+# (PART) Interactive Simulations  {.unnumbered}
+
+# Simulating Selection {-}
+
+This app allows you to simulate the effects of natural selection on the frequency of an allele *A* (*p*). Critical parameters include:
+
+-   The starting allele frequency, *p*0. This parameter can vary between 0 and 1.
+
+-   The number of generations you want to run the simulation for (maximum: 1000).
+
+-   The relative fitness of each genotype (*AA*, *Aa*, and *aa*). Fitness values can vary between 0 and 2.
+
+Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.
+
+To access the app directly, [click here](https://michitobler.shinyapps.io/selection/).
+
+```{r, echo=FALSE}
+knitr::include_app("https://michitobler.shinyapps.io/selection/",
+  height = "1200px")
+```

@@ -1,0 +1,20 @@
+# Simulating Genetic Drift {-}
+
+This app allows you to simulate the effects of genetic drift on the frequency of an allele *A* (*p*). Critical parameters include:
+
+-   The starting allele frequency, *p*0. This parameter can vary between 0 and 1.
+
+-   The number of generations you want to run the simulation for (maximum: 1000).
+
+-   The size of the population, which can vary between 2 and 1000.
+
+-   The number of replicate simulations, which can vary between 1 and 50.
+
+Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary. Be careful with simulations that use a high number of generations and replicates, as they can take a long time to run.
+
+To access the app directly, [click here](https://michitobler.shinyapps.io/drift/).
+
+```{r, echo=FALSE}
+knitr::include_app("https://michitobler.shinyapps.io/drift/",
+  height = "1200px")
+```

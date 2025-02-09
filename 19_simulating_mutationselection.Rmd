@@ -1,0 +1,20 @@
+# Simulating Mutation and Selection {-}
+
+This app allows you to simulate the combined effects of mutation and natural selection on the frequency of an allele *A* (*p*). Critical parameters include:
+
+-   The starting allele frequency, *p*0. This parameter can vary between 0 and 1.
+
+-   The relative fitness of genotypes *Aa* and *aa* (note that the fitness of *AA* is fixed at 1). Fitness values can vary between 0 and 2.
+
+-   The mutation rate from A to a, which can vary from 0.00001 to 1.
+
+-   The number of generations you want to run the simulation for (maximum: 1000).
+
+Try to play with different scenarios. Change one parameter at a time to explore how outcomes vary.
+
+To access the app directly, [click here](https://michitobler.shinyapps.io/mutationselection/).
+
+```{r, echo=FALSE}
+knitr::include_app("https://michitobler.shinyapps.io/mutationselection/",
+  height = "1200px")
+```

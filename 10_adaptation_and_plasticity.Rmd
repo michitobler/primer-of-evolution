@@ -43,8 +43,8 @@ d1 <- as.data.frame(1:15)
 names(d1) <- "node"
 d1$color <- c("steelblue", "steelblue", "steelblue", "steelblue", "steelblue", "darkgreen", "darkgreen", "darkgreen", "darkgreen", "steelblue", "steelblue", "steelblue", "steelblue", "darkgreen","darkgreen")
 d1$color2 <- c("steelblue", "steelblue", "darkgreen", "steelblue", "darkgreen", "steelblue", "steelblue", "darkgreen", "steelblue", "steelblue", "steelblue", "steelblue", "steelblue", "steelblue","steelblue")
-sc1 <- ggtree(tr) %<+% d1 + aes(color=I(color)) + geom_tiplab() + xlim(0,3)
-sc2 <- ggtree(tr) %<+% d1 + aes(color=I(color2)) + geom_tiplab() + xlim(0,3)
+sc1 <- ggtree(tr) %<+% d1 + aes(color=I(color)) + geom_tiplab(align=TRUE) + xlim(0,3)
+sc2 <- ggtree(tr) %<+% d1 + aes(color=I(color2)) + geom_tiplab(align=TRUE) + xlim(0,3)
 
 d2 <- as.data.frame(c("species_1", "species_2", "species_3", "species_4", "species_5", "species_6", "species_7", "species_8"))
 names(d2) <- "species"
@@ -85,7 +85,7 @@ Multi-species comparative analyses consequently must account for the fact that s
 ```{r sunfishes, echo=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, fig.cap="Gape width variation of centrarchid fishes as a function of their dietary habits. Species with higher than average gape with have positive scores, species with lower than average gaoe width have negative scores. The phylogenetic tree in the left panel indicates that piscivory has evolved independently multiple times within the family. [Phylogeny](data/9_centrarchidae.tre) from Near et al. (2005); [gape width data](data/9_centrarchidae.csv) from Collar et al. (2009)."}
 sunfish.data <- read.csv("data/9_centrarchidae.csv")
 sunfish.tree <- read.tree("data/9_centrarchidae.tre")
-suntree <- ggtree(sunfish.tree) + geom_tiplab() + xlim_tree(.5)
+suntree <- ggtree(sunfish.tree) + geom_tiplab(align=TRUE) + xlim_tree(.5)
 suntree + geom_facet(panel="Relative gape width", data = sunfish.data, 
                                  geom = ggstance::geom_barh, 
                                  mapping = aes(x = gape.width, fill=feeding.mode), 

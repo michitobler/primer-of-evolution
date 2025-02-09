@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 The Evolution of Quantitative Traits | A Primer of Evolution</title>
+  <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 The Evolution of Quantitative Traits | A Primer of Evolution" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 The Evolution of Quantitative Traits | A Primer of Evolution" />
+  
+  <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+<meta name="author" content="Michi Tobler" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="evolution-of-dna-sequences.html"/>
+<link rel="next" href="adaptation-and-phenotypic-plasticity.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F33BYJVTN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F33BYJVTN7');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCY5ZWLVNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NCY5ZWLVNZ');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#in-the-light-of-evolution"><i class="fa fa-check"></i>In the Light of Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#beyond-understanding-biodiversity"><i class="fa fa-check"></i>Beyond Understanding Biodiversity</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#an-overview-of-the-semester"><i class="fa fa-check"></i>An Overview of the Semester</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-1-the-basics"><i class="fa fa-check"></i>Part 1: The Basics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-2-a-genetic-perspective-on-evolution"><i class="fa fa-check"></i>Part 2: A Genetic Perspective on Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-3-evolutionary-outcomes-in-the-real-world"><i class="fa fa-check"></i>Part 3: Evolutionary Outcomes in the Real World</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-4-applied-evolutionary-biology"><i class="fa fa-check"></i>Part 4: Applied Evolutionary Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to Use This Book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html"><i class="fa fa-check"></i>Front Matters</a>
+<ul>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#copyright"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+</ul></li>
+<li class="part"><span><b>I Basic Concepts</b></span></li>
+<li class="chapter" data-level="1" data-path="what-evolution-is.html"><a href="what-evolution-is.html"><i class="fa fa-check"></i><b>1</b> What Evolution Is</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#darwin-and-the-conception-of-a-new-idea"><i class="fa fa-check"></i><b>1.1</b> Darwin and the Conception of a New Idea</a></li>
+<li class="chapter" data-level="1.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#two-fundamental-insights"><i class="fa fa-check"></i><b>1.2</b> Two Fundamental Insights</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#predictions"><i class="fa fa-check"></i><b>1.2.1</b> The Pattern: Evolution is Descent with Modification</a></li>
+<li class="chapter" data-level="1.2.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#the-process-natural-selection-is-a-mechanism-of-evolution"><i class="fa fa-check"></i><b>1.2.2</b> The Process: Natural Selection is a Mechanism of Evolution</a></li>
+<li class="chapter" data-level="1.2.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#distinguishing-between-pattern-and-process"><i class="fa fa-check"></i><b>1.2.3</b> Distinguishing between Pattern and Process</a></li>
+<li class="chapter" data-level="1.2.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#population-thinking"><i class="fa fa-check"></i><b>1.2.4</b> Population Thinking</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#practical-skills-getting-started-with-r"><i class="fa fa-check"></i><b>1.3</b> Practical Skills: Getting Started with R</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#what-are-r-and-rstudio"><i class="fa fa-check"></i><b>1.3.1</b> What are R and RStudio?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-r"><i class="fa fa-check"></i><b>1.3.2</b> Installing R</a></li>
+<li class="chapter" data-level="1.3.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.3</b> Installing RStudio</a></li>
+<li class="chapter" data-level="1.3.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#checking-the-successful-installation"><i class="fa fa-check"></i><b>1.3.4</b> Checking the Successful Installation</a></li>
+<li class="chapter" data-level="1.3.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#some-r-and-rstudio-basics"><i class="fa fa-check"></i><b>1.3.5</b> Some R and RStudio Basics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#additional-resources"><i class="fa fa-check"></i><b>1.4</b> Additional Resources</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#alternative-evolution-textbooks"><i class="fa fa-check"></i><b>1.4.1</b> Alternative Evolution Textbooks</a></li>
+<li class="chapter" data-level="1.4.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#evolution-in-the-primary-literature-and-the-news"><i class="fa fa-check"></i><b>1.4.2</b> Evolution in the Primary Literature and the News</a></li>
+<li class="chapter" data-level="1.4.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#r-and-rstudio-resources"><i class="fa fa-check"></i><b>1.4.3</b> R and RStudio Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#reflection-questions"><i class="fa fa-check"></i><b>1.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="1.6" data-path="what-evolution-is.html"><a href="what-evolution-is.html#references-1"><i class="fa fa-check"></i><b>1.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html"><i class="fa fa-check"></i><b>2</b> Evidence for Evolution</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#microevolution"><i class="fa fa-check"></i><b>2.1</b> Microevolution</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#the-case-of-threespine-stickleback"><i class="fa fa-check"></i><b>2.1.1</b> The Case of Threespine Stickleback</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#speciation"><i class="fa fa-check"></i><b>2.2</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#ring-species"><i class="fa fa-check"></i><b>2.2.1</b> Ring Species</a></li>
+<li class="chapter" data-level="2.2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#catching-speciation-in-action"><i class="fa fa-check"></i><b>2.2.2</b> Catching Speciation in Action</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#macroevolution"><i class="fa fa-check"></i><b>2.3</b> Macroevolution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#geographic-and-temporal-patterns-of-succession"><i class="fa fa-check"></i><b>2.3.1</b> Geographic and Temporal Patterns of Succession</a></li>
+<li class="chapter" data-level="2.3.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#transitional-fossils"><i class="fa fa-check"></i><b>2.3.2</b> Transitional Fossils</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#common-ancestry-and-homology"><i class="fa fa-check"></i><b>2.4</b> Common Ancestry and Homology</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#shared-flaws"><i class="fa fa-check"></i><b>2.4.1</b> Shared Flaws</a></li>
+<li class="chapter" data-level="2.4.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#why-homologies-matter"><i class="fa fa-check"></i><b>2.4.2</b> Why Homologies Matter</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#deep-time"><i class="fa fa-check"></i><b>2.5</b> Deep Time</a></li>
+<li class="chapter" data-level="2.6" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#tiktaalik"><i class="fa fa-check"></i><b>2.6</b> Correspondence of Different Lines of Evidence</a></li>
+<li class="chapter" data-level="2.7" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#absence-of-evidence"><i class="fa fa-check"></i><b>2.7</b> Absence of Evidence…</a></li>
+<li class="chapter" data-level="2.8" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#case-study-darwins-finches"><i class="fa fa-check"></i><b>2.8</b> Case Study: Darwin’s Finches</a></li>
+<li class="chapter" data-level="2.9" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#practical-skills-r-notebooks-and-plotting-with-ggplot"><i class="fa fa-check"></i><b>2.9</b> Practical Skills: R Notebooks and Plotting with ggplot</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#r-notebooks"><i class="fa fa-check"></i><b>2.9.1</b> R Notebooks</a></li>
+<li class="chapter" data-level="2.9.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#libraries"><i class="fa fa-check"></i><b>2.9.2</b> Using Libraries</a></li>
+<li class="chapter" data-level="2.9.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#import-data"><i class="fa fa-check"></i><b>2.9.3</b> Importing Data</a></li>
+<li class="chapter" data-level="2.9.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#graphing-data"><i class="fa fa-check"></i><b>2.9.4</b> Graphing Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#reflection-questions-1"><i class="fa fa-check"></i><b>2.10</b> Reflection Questions</a></li>
+<li class="chapter" data-level="2.11" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#references-2"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html"><i class="fa fa-check"></i><b>3</b> A Mechanism for Change</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#darwins-logic"><i class="fa fa-check"></i><b>3.1</b> Darwin’s Logic</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#variation"><i class="fa fa-check"></i><b>3.1.1</b> Variation</a></li>
+<li class="chapter" data-level="3.1.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#heritability"><i class="fa fa-check"></i><b>3.1.2</b> Heritability</a></li>
+<li class="chapter" data-level="3.1.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-struggle-for-existence"><i class="fa fa-check"></i><b>3.1.3</b> The Struggle for Existence</a></li>
+<li class="chapter" data-level="3.1.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#non-random-survival-and-reproduction"><i class="fa fa-check"></i><b>3.1.4</b> Non-Random Survival and Reproduction</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#putting-darwins-logic-to-the-test"><i class="fa fa-check"></i><b>3.2</b> Putting Darwin’s Logic to the Test</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-variation-in-beak-size"><i class="fa fa-check"></i><b>3.2.1</b> Is there Variation in Beak Size?</a></li>
+<li class="chapter" data-level="3.2.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-variation-in-beak-size-heritable"><i class="fa fa-check"></i><b>3.2.2</b> Is Variation in Beak Size Heritable?</a></li>
+<li class="chapter" data-level="3.2.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-a-struggle-for-existence"><i class="fa fa-check"></i><b>3.2.3</b> Is there a Struggle for Existence?</a></li>
+<li class="chapter" data-level="3.2.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-survival-non-random"><i class="fa fa-check"></i><b>3.2.4</b> Is Survival Non-Random?</a></li>
+<li class="chapter" data-level="3.2.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#did-non-random-survival-lead-to-evolution"><i class="fa fa-check"></i><b>3.2.5</b> Did Non-Random Survival Lead to Evolution?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#case-study-exploring-among-population-variation"><i class="fa fa-check"></i><b>3.3</b> Case Study: Exploring Among-Population Variation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-cave-molly-and-its-ancestors"><i class="fa fa-check"></i><b>3.3.1</b> The Cave Molly and its Ancestors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#practical-skills-number-sequences-allometry-and-histograms"><i class="fa fa-check"></i><b>3.4</b> Practical Skills: Number Sequences, Allometry, and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#number-sequences"><i class="fa fa-check"></i><b>3.4.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="3.4.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#allometry-residuals"><i class="fa fa-check"></i><b>3.4.2</b> Allometry &amp; Residuals</a></li>
+<li class="chapter" data-level="3.4.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#histograms-and-density-functions"><i class="fa fa-check"></i><b>3.4.3</b> Histograms and Density Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#reflection-questions-2"><i class="fa fa-check"></i><b>3.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="3.6" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#references-3"><i class="fa fa-check"></i><b>3.6</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>II A Genetic Perspective on Evolution</b></span></li>
+<li class="chapter" data-level="4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html"><i class="fa fa-check"></i><b>4</b> The Raw Materials for Evolution</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#the-genotype-phenotype-gap"><i class="fa fa-check"></i><b>4.1</b> The Genotype-Phenotype Gap</a></li>
+<li class="chapter" data-level="4.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-the-fundamental-source-of-novelty"><i class="fa fa-check"></i><b>4.2</b> Mutation: The Fundamental Source of Novelty</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#point-mutations"><i class="fa fa-check"></i><b>4.2.1</b> Point Mutations</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#inversions"><i class="fa fa-check"></i><b>4.2.2</b> Inversions</a></li>
+<li class="chapter" data-level="4.2.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#gene-duplication"><i class="fa fa-check"></i><b>4.2.3</b> Gene Duplication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#genome-duplication"><i class="fa fa-check"></i><b>4.2.4</b> Genome Duplication</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-rates"><i class="fa fa-check"></i><b>4.3</b> Mutation Rates</a></li>
+<li class="chapter" data-level="4.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#quantifying-genetic-variation"><i class="fa fa-check"></i><b>4.4</b> Quantifying Genetic Variation</a></li>
+<li class="chapter" data-level="4.5" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#a-null-model-for-evolution"><i class="fa fa-check"></i><b>4.5</b> A Null Model for Evolution</a></li>
+<li class="chapter" data-level="4.6" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#case-study-hardy-weinberg-equilirbium"><i class="fa fa-check"></i><b>4.6</b> Case Study: Hardy-Weinberg Equilirbium</a></li>
+<li class="chapter" data-level="4.7" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#practical-skills-number-sequences-2.0-and-complex-graphs"><i class="fa fa-check"></i><b>4.7</b> Practical Skills: Number Sequences 2.0 and Complex Graphs</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#number-sequences-1"><i class="fa fa-check"></i><b>4.7.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="4.7.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#layering-data-sets"><i class="fa fa-check"></i><b>4.7.2</b> Layering Data Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#reflection-questions-3"><i class="fa fa-check"></i><b>4.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="4.9" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#references-4"><i class="fa fa-check"></i><b>4.9</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html"><i class="fa fa-check"></i><b>5</b> Evolutionary Mechanisms I: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#the-effects-of-selection"><i class="fa fa-check"></i><b>5.1</b> The Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection"><i class="fa fa-check"></i><b>5.1.1</b> Frequency-Dependent Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-the-effects-of-selection"><i class="fa fa-check"></i><b>5.2</b> Modeling the Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#relative-fitness"><i class="fa fa-check"></i><b>5.2.1</b> Relative Fitness</a></li>
+<li class="chapter" data-level="5.2.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#calculating-allele-frequency-changes"><i class="fa fa-check"></i><b>5.2.2</b> Calculating Allele Frequency Changes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#case-study-modeling-selection"><i class="fa fa-check"></i><b>5.3</b> Case Study: Modeling Selection</a></li>
+<li class="chapter" data-level="5.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#practical-skills"><i class="fa fa-check"></i><b>5.4</b> Practical Skills: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-selection"><i class="fa fa-check"></i><b>5.4.1</b> Modeling Selection</a></li>
+<li class="chapter" data-level="5.4.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#running-multiple-selection-models"><i class="fa fa-check"></i><b>5.4.2</b> Running Multiple Selection Models</a></li>
+<li class="chapter" data-level="5.4.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection-1"><i class="fa fa-check"></i><b>5.4.3</b> Frequency-Dependent Selection</a></li>
+<li class="chapter" data-level="5.4.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#understanding-equilibria"><i class="fa fa-check"></i><b>5.4.4</b> Understanding Equilibria</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#reflection-questions-4"><i class="fa fa-check"></i><b>5.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="5.6" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#references-5"><i class="fa fa-check"></i><b>5.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><i class="fa fa-check"></i><b>6</b> Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#mutation-the-force-creating-novelty"><i class="fa fa-check"></i><b>6.1</b> Mutation: The Force Creating Novelty</a></li>
+<li class="chapter" data-level="6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force"><i class="fa fa-check"></i><b>6.2</b> Genetic Drift: The Random Force</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-drift-and-selection"><i class="fa fa-check"></i><b>6.2.1</b> Interactions Between Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#migration-the-homogenizing-force"><i class="fa fa-check"></i><b>6.3</b> Migration: The Homogenizing Force</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-migration-and-selection"><i class="fa fa-check"></i><b>6.3.1</b> Interactions Between Migration and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#non-random-mating-not-much-of-a-force"><i class="fa fa-check"></i><b>6.4</b> Non-Random Mating: Not Much of a Force</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-inbreeding-and-selection"><i class="fa fa-check"></i><b>6.4.1</b> Interactions between Inbreeding and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#case-study-background-beyond-selection"><i class="fa fa-check"></i><b>6.5</b> Case Study Background: Beyond Selection</a></li>
+<li class="chapter" data-level="6.6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#practical-skills-modeling-mutation-drift-and-selection"><i class="fa fa-check"></i><b>6.6</b> Practical Skills: Modeling Mutation, Drift, and Selection</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-mutation-and-selection"><i class="fa fa-check"></i><b>6.6.1</b> Modeling Mutation and Selection</a></li>
+<li class="chapter" data-level="6.6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift"><i class="fa fa-check"></i><b>6.6.2</b> Modeling Genetic Drift</a></li>
+<li class="chapter" data-level="6.6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift-and-selection"><i class="fa fa-check"></i><b>6.6.3</b> Modeling Genetic Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions-5"><i class="fa fa-check"></i><b>6.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="6.8" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#references-6"><i class="fa fa-check"></i><b>6.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html"><i class="fa fa-check"></i><b>7</b> Evolution of DNA Sequences</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#dna-alignment-and-genome-assembly"><i class="fa fa-check"></i><b>7.1</b> DNA Alignment and Genome Assembly</a></li>
+<li class="chapter" data-level="7.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reconstructing-history-phylogenetic-trees"><i class="fa fa-check"></i><b>7.2</b> Reconstructing History: Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies"><i class="fa fa-check"></i><b>7.2.1</b> Molecular Phylogenies</a></li>
+<li class="chapter" data-level="7.2.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies-in-real-life"><i class="fa fa-check"></i><b>7.2.2</b> Molecular Phylogenies in Real Life</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-neutral-theory"><i class="fa fa-check"></i><b>7.3</b> The Neutral Theory</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-clocks"><i class="fa fa-check"></i><b>7.3.1</b> Molecular Clocks</a></li>
+<li class="chapter" data-level="7.3.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#detecting-signatures-of-selection"><i class="fa fa-check"></i><b>7.3.2</b> Detecting Signatures of Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#case-study-sars-cov-2"><i class="fa fa-check"></i><b>7.4</b> Case Study: SARS-CoV-2</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#host-pathogen-coevolution"><i class="fa fa-check"></i><b>7.4.1</b> Host-Pathogen Coevolution</a></li>
+<li class="chapter" data-level="7.4.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-evolution-of-the-seasonal-flu"><i class="fa fa-check"></i><b>7.4.2</b> The Evolution of the Seasonal Flu</a></li>
+<li class="chapter" data-level="7.4.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#high-virulence-flu-strains"><i class="fa fa-check"></i><b>7.4.3</b> High-Virulence Flu Strains</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#practical-skills-working-with-phylogenetic-trees"><i class="fa fa-check"></i><b>7.5</b> Practical Skills: Working with Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#installing-dependencies"><i class="fa fa-check"></i><b>7.5.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="7.5.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-pipe-operator"><i class="fa fa-check"></i><b>7.5.2</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="7.5.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#importing-a-tree"><i class="fa fa-check"></i><b>7.5.3</b> Importing a Tree</a></li>
+<li class="chapter" data-level="7.5.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#plotting-a-tree"><i class="fa fa-check"></i><b>7.5.4</b> Plotting a Tree</a></li>
+<li class="chapter" data-level="7.5.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#annotating-a-tree"><i class="fa fa-check"></i><b>7.5.5</b> Annotating a Tree</a></li>
+<li class="chapter" data-level="7.5.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#calculating-the-distance-to-root"><i class="fa fa-check"></i><b>7.5.6</b> Calculating the Distance to Root</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reflection-questions-6"><i class="fa fa-check"></i><b>7.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="7.7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#references-7"><i class="fa fa-check"></i><b>7.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html"><i class="fa fa-check"></i><b>8</b> The Evolution of Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qualitative-traits-and-epistasis"><i class="fa fa-check"></i><b>8.1</b> Qualitative Traits and Epistasis</a></li>
+<li class="chapter" data-level="8.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment"><i class="fa fa-check"></i><b>8.2</b> Quantitative Traits: a Product of Genes and Environment</a></li>
+<li class="chapter" data-level="8.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-trait-evolution"><i class="fa fa-check"></i><b>8.3</b> Quantitative Trait Evolution</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability"><i class="fa fa-check"></i><b>8.3.1</b> Quantifying Trait Heritability</a></li>
+<li class="chapter" data-level="8.3.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-the-strength-of-selection"><i class="fa fa-check"></i><b>8.3.2</b> Quantifying the Strength of Selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#calculating-the-response-to-selection"><i class="fa fa-check"></i><b>8.3.3</b> Calculating the Response to Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#modes-of-selection-on-quantitative-traits"><i class="fa fa-check"></i><b>8.4</b> Modes of Selection on Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#directional-selection"><i class="fa fa-check"></i><b>8.4.1</b> Directional Selection</a></li>
+<li class="chapter" data-level="8.4.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#stabilizing-selection"><i class="fa fa-check"></i><b>8.4.2</b> Stabilizing Selection</a></li>
+<li class="chapter" data-level="8.4.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#disruptive-selection"><i class="fa fa-check"></i><b>8.4.3</b> Disruptive Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#identifying-genes-underlying-quantitative-traits"><i class="fa fa-check"></i><b>8.5</b> Identifying Genes Underlying Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-mapping"><i class="fa fa-check"></i><b>8.5.1</b> QTL Mapping</a></li>
+<li class="chapter" data-level="8.5.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#gwas"><i class="fa fa-check"></i><b>8.5.2</b> GWAS</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#case-study-quantitative-genetics"><i class="fa fa-check"></i><b>8.6</b> Case Study: Quantitative Genetics</a></li>
+<li class="chapter" data-level="8.7" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#practical-skills-qtl-mapping"><i class="fa fa-check"></i><b>8.7</b> Practical Skills: QTL Mapping</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#installing-dependencies-1"><i class="fa fa-check"></i><b>8.7.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="8.7.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#read-qtl-data"><i class="fa fa-check"></i><b>8.7.2</b> Read QTL Data</a></li>
+<li class="chapter" data-level="8.7.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-genotypes-loci-linkage-map"><i class="fa fa-check"></i><b>8.7.3</b> Explore the Data: Genotypes, Loci &amp; Linkage Map</a></li>
+<li class="chapter" data-level="8.7.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-phenotypes"><i class="fa fa-check"></i><b>8.7.4</b> Explore the Data: Phenotypes</a></li>
+<li class="chapter" data-level="8.7.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-scan"><i class="fa fa-check"></i><b>8.7.5</b> QTL Scan</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#reflection-questions-7"><i class="fa fa-check"></i><b>8.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="8.9" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#references-8"><i class="fa fa-check"></i><b>8.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>III Evolution in the Real World</b></span></li>
+<li class="chapter" data-level="9" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html"><i class="fa fa-check"></i><b>9</b> Adaptation and Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#inferring-adaptation"><i class="fa fa-check"></i><b>9.1</b> Inferring Adaptation</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#interspecific-comparisons"><i class="fa fa-check"></i><b>9.1.1</b> Interspecific Comparisons</a></li>
+<li class="chapter" data-level="9.1.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#intraspecific-studies"><i class="fa fa-check"></i><b>9.1.2</b> Intraspecific Studies</a></li>
+<li class="chapter" data-level="9.1.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#local-adaptation-within-species"><i class="fa fa-check"></i><b>9.1.3</b> Local Adaptation within Species</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2</b> Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#types-of-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.1</b> Types of Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.2.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reaction-norms-and-the-evolution-of-plasticity"><i class="fa fa-check"></i><b>9.2.2</b> Reaction Norms and the Evolution of Plasticity</a></li>
+<li class="chapter" data-level="9.2.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#adaptive-and-maladaptive-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.3</b> Adaptive and Maladaptive Phenotypic Plasticity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#case-study-local-adaptation-and-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.3</b> Case Study: Local Adaptation and Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.4" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#practical-skills-more-variables-more-graphs"><i class="fa fa-check"></i><b>9.4</b> Practical Skills: More Variables, More Graphs</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-1-many-independent-variables"><i class="fa fa-check"></i><b>9.4.1</b> Example 1: Many Independent Variables</a></li>
+<li class="chapter" data-level="9.4.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-2-many-dependent-variables"><i class="fa fa-check"></i><b>9.4.2</b> Example 2: Many Dependent Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reflection-questions-8"><i class="fa fa-check"></i><b>9.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="9.6" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#references-9"><i class="fa fa-check"></i><b>9.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html"><i class="fa fa-check"></i><b>10</b> Social Behavior and Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#social-behavior"><i class="fa fa-check"></i><b>10.1</b> Social Behavior</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#kin-selection"><i class="fa fa-check"></i><b>10.1.1</b> Kin Selection</a></li>
+<li class="chapter" data-level="10.1.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reciprocal-altruism"><i class="fa fa-check"></i><b>10.1.2</b> Reciprocal Altruism</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-selection"><i class="fa fa-check"></i><b>10.2</b> Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#causes-of-sexual-selection"><i class="fa fa-check"></i><b>10.2.1</b> Causes of Sexual Selection</a></li>
+<li class="chapter" data-level="10.2.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intrasexual-selection-male-male-competition"><i class="fa fa-check"></i><b>10.2.2</b> Intrasexual Selection: Male-Male Competition</a></li>
+<li class="chapter" data-level="10.2.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-conflict"><i class="fa fa-check"></i><b>10.2.3</b> Sexual Conflict</a></li>
+<li class="chapter" data-level="10.2.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intersexual-selection-female-mate-choice"><i class="fa fa-check"></i><b>10.2.4</b> Intersexual Selection: Female Mate Choice</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#case-study-altruism-and-sexual-selection"><i class="fa fa-check"></i><b>10.3</b> Case Study: Altruism and Sexual Selection</a></li>
+<li class="chapter" data-level="10.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reflection-questions-9"><i class="fa fa-check"></i><b>10.4</b> Reflection Questions</a></li>
+<li class="chapter" data-level="10.5" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#references-10"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="speciation-1.html"><a href="speciation-1.html"><i class="fa fa-check"></i><b>11</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="speciation-1.html"><a href="speciation-1.html#species-and-species-concepts"><i class="fa fa-check"></i><b>11.1</b> Species and Species Concepts</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="speciation-1.html"><a href="speciation-1.html#the-biological-species-concept"><i class="fa fa-check"></i><b>11.1.1</b> The Biological Species Concept</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="speciation-1.html"><a href="speciation-1.html#speciation-as-a-gradual-process"><i class="fa fa-check"></i><b>11.2</b> Speciation as a Gradual Process</a></li>
+<li class="chapter" data-level="11.3" data-path="speciation-1.html"><a href="speciation-1.html#mechanisms-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.3</b> Mechanisms of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="speciation-1.html"><a href="speciation-1.html#pre-mating-isolation"><i class="fa fa-check"></i><b>11.3.1</b> Pre-Mating Isolation</a></li>
+<li class="chapter" data-level="11.3.2" data-path="speciation-1.html"><a href="speciation-1.html#post-mating-pre-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.2</b> Post-Mating, Pre-zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.3" data-path="speciation-1.html"><a href="speciation-1.html#post-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.3</b> Post-Zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.4" data-path="speciation-1.html"><a href="speciation-1.html#reproductive-isolation-as-a-complex-trait"><i class="fa fa-check"></i><b>11.3.4</b> Reproductive Isolation as a Complex Trait</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="speciation-1.html"><a href="speciation-1.html#the-evolution-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.4</b> The Evolution of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="speciation-1.html"><a href="speciation-1.html#polyploidization-and-instantaneous-speciation"><i class="fa fa-check"></i><b>11.4.1</b> Polyploidization and Instantaneous Speciation</a></li>
+<li class="chapter" data-level="11.4.2" data-path="speciation-1.html"><a href="speciation-1.html#allopatric-speciation-and-hybridization"><i class="fa fa-check"></i><b>11.4.2</b> Allopatric Speciation and Hybridization</a></li>
+<li class="chapter" data-level="11.4.3" data-path="speciation-1.html"><a href="speciation-1.html#ecological-speciation"><i class="fa fa-check"></i><b>11.4.3</b> Ecological Speciation</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="speciation-1.html"><a href="speciation-1.html#adaptive-radiation"><i class="fa fa-check"></i><b>11.5</b> Adaptive Radiation</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="speciation-1.html"><a href="speciation-1.html#african-cichlid-fishes"><i class="fa fa-check"></i><b>11.5.1</b> African Cichlid Fishes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="speciation-1.html"><a href="speciation-1.html#case-study-speciation"><i class="fa fa-check"></i><b>11.6</b> Case Study: Speciation</a></li>
+<li class="chapter" data-level="11.7" data-path="speciation-1.html"><a href="speciation-1.html#practical-skills-interpreting-structure-plots"><i class="fa fa-check"></i><b>11.7</b> Practical Skills: Interpreting Structure Plots</a></li>
+<li class="chapter" data-level="11.8" data-path="speciation-1.html"><a href="speciation-1.html#reflection-questions-10"><i class="fa fa-check"></i><b>11.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="11.9" data-path="speciation-1.html"><a href="speciation-1.html#references-11"><i class="fa fa-check"></i><b>11.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>IV Applied Evolutionary Biology</b></span></li>
+<li class="chapter" data-level="12" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><i class="fa fa-check"></i><b>12</b> Evolutionary Medicine I: Aging and Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#darwinian-medicine"><i class="fa fa-check"></i><b>12.1</b> Darwinian Medicine</a></li>
+<li class="chapter" data-level="12.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#diseases-of-civilization"><i class="fa fa-check"></i><b>12.2</b> Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#modern-hunter-gatherers-and-urbanites"><i class="fa fa-check"></i><b>12.2.1</b> Modern Hunter-Gatherers and Urbanites</a></li>
+<li class="chapter" data-level="12.2.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#old-adaptations-in-a-modern-world"><i class="fa fa-check"></i><b>12.2.2</b> Old Adaptations in a Modern World</a></li>
+<li class="chapter" data-level="12.2.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#an-example-breast-cancer"><i class="fa fa-check"></i><b>12.2.3</b> An Example: Breast Cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#why-we-age-and-die"><i class="fa fa-check"></i><b>12.3</b> Why We Age… and Die</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#rate-of-living-hypothesis"><i class="fa fa-check"></i><b>12.3.1</b> Rate of Living Hypothesis</a></li>
+<li class="chapter" data-level="12.3.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#evolutionary-theories-of-aging"><i class="fa fa-check"></i><b>12.3.2</b> Evolutionary Theories of Aging</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#case-study-evolution-of-aging"><i class="fa fa-check"></i><b>12.4</b> Case Study: Evolution of Aging</a></li>
+<li class="chapter" data-level="12.5" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#practical-skills-life-table-analysis"><i class="fa fa-check"></i><b>12.5</b> Practical Skills: Life Table Analysis</a></li>
+<li class="chapter" data-level="12.6" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#reflection-questions-11"><i class="fa fa-check"></i><b>12.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="12.7" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#references-12"><i class="fa fa-check"></i><b>12.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html"><i class="fa fa-check"></i><b>13</b> Evolutionary Medicine II: Evolving Pathogens</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#epidemiology-and-pathogen-fitness"><i class="fa fa-check"></i><b>13.1</b> Epidemiology and Pathogen Fitness</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#a-basic-epidemiological-model"><i class="fa fa-check"></i><b>13.1.1</b> A Basic Epidemiological model</a></li>
+<li class="chapter" data-level="13.1.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#r0-a-measure-of-pathogen-fitness"><i class="fa fa-check"></i><b>13.1.2</b> <em>R</em><sub>0</sub>: A Measure of Pathogen Fitness</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#the-evolution-of-virulence"><i class="fa fa-check"></i><b>13.2</b> The Evolution of Virulence</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#trade-offs-and-modes-of-transmission"><i class="fa fa-check"></i><b>13.2.1</b> Trade-Offs and Modes of Transmission</a></li>
+<li class="chapter" data-level="13.2.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#short-sighted-and-coincidental-evolution-hypotheses"><i class="fa fa-check"></i><b>13.2.2</b> Short-Sighted and Coincidental Evolution Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cultural-practices-disease-spread-and-evolution"><i class="fa fa-check"></i><b>13.3</b> Cultural Practices, Disease Spread, and Evolution</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#disrupting-pathogen-transmission"><i class="fa fa-check"></i><b>13.3.1</b> Disrupting Pathogen Transmission</a></li>
+<li class="chapter" data-level="13.3.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#vaccination-and-herd-immunity"><i class="fa fa-check"></i><b>13.3.2</b> Vaccination and Herd Immunity</a></li>
+<li class="chapter" data-level="13.3.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#pathogen-responses"><i class="fa fa-check"></i><b>13.3.3</b> Pathogen Responses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#antibiotic-resistance"><i class="fa fa-check"></i><b>13.4</b> Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.5" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#case-study-covid-19-epidemiology-and-the-cost-of-antibiotic-resistance"><i class="fa fa-check"></i><b>13.5</b> Case Study: COVID-19 Epidemiology and the Cost of Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.6" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#practical-skills-data-wrangling-and-log-scales"><i class="fa fa-check"></i><b>13.6</b> Practical Skills: Data Wrangling and Log-Scales</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#data-wrangling"><i class="fa fa-check"></i><b>13.6.1</b> Data Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#reflection-questions-12"><i class="fa fa-check"></i><b>13.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="13.8" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#references-13"><i class="fa fa-check"></i><b>13.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="human-evolution.html"><a href="human-evolution.html"><i class="fa fa-check"></i><b>14</b> Human Evolution</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="human-evolution.html"><a href="human-evolution.html#phylogenetic-position"><i class="fa fa-check"></i><b>14.1</b> Phylogenetic Position</a></li>
+<li class="chapter" data-level="14.2" data-path="human-evolution.html"><a href="human-evolution.html#what-the-fossils-say"><i class="fa fa-check"></i><b>14.2</b> What the Fossils Say</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="human-evolution.html"><a href="human-evolution.html#an-abridged-timeline"><i class="fa fa-check"></i><b>14.2.1</b> An Abridged Timeline</a></li>
+<li class="chapter" data-level="14.2.2" data-path="human-evolution.html"><a href="human-evolution.html#evolutionary-trends"><i class="fa fa-check"></i><b>14.2.2</b> Evolutionary Trends</a></li>
+<li class="chapter" data-level="14.2.3" data-path="human-evolution.html"><a href="human-evolution.html#a-lone-survivor-of-an-extinct-radiation"><i class="fa fa-check"></i><b>14.2.3</b> A Lone Survivor of an Extinct Radiation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="human-evolution.html"><a href="human-evolution.html#modern-human-origins"><i class="fa fa-check"></i><b>14.3</b> Modern Human Origins</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="human-evolution.html"><a href="human-evolution.html#hypotheses"><i class="fa fa-check"></i><b>14.3.1</b> Hypotheses</a></li>
+<li class="chapter" data-level="14.3.2" data-path="human-evolution.html"><a href="human-evolution.html#multiregional-evolution-vs.-out-of-africa"><i class="fa fa-check"></i><b>14.3.2</b> Multiregional Evolution <em>vs</em>. Out-Of-Africa</a></li>
+<li class="chapter" data-level="14.3.3" data-path="human-evolution.html"><a href="human-evolution.html#out-of-africa-vs.-hybridization-and-assimilation"><i class="fa fa-check"></i><b>14.3.3</b> Out-of-Africa <em>vs</em>. Hybridization-and-Assimilation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="human-evolution.html"><a href="human-evolution.html#what-makes-us-human"><i class="fa fa-check"></i><b>14.4</b> What Makes Us Human?</a></li>
+<li class="chapter" data-level="14.5" data-path="human-evolution.html"><a href="human-evolution.html#case-study-modern-human-origins"><i class="fa fa-check"></i><b>14.5</b> Case Study: Modern Human Origins</a></li>
+<li class="chapter" data-level="14.6" data-path="human-evolution.html"><a href="human-evolution.html#reflection-questions-13"><i class="fa fa-check"></i><b>14.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="14.7" data-path="human-evolution.html"><a href="human-evolution.html#references-14"><i class="fa fa-check"></i><b>14.7</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>V Interactive Simulations</b></span></li>
+<li class="chapter" data-level="" data-path="simulating-selection.html"><a href="simulating-selection.html"><i class="fa fa-check"></i>Simulating Selection</a></li>
+<li class="chapter" data-level="" data-path="simulating-genetic-drift.html"><a href="simulating-genetic-drift.html"><i class="fa fa-check"></i>Simulating Genetic Drift</a></li>
+<li class="chapter" data-level="" data-path="simulating-mutation-and-selection.html"><a href="simulating-mutation-and-selection.html"><i class="fa fa-check"></i>Simulating Mutation and Selection</a></li>
+<li class="chapter" data-level="" data-path="simulating-genetic-drift-and-selection.html"><a href="simulating-genetic-drift-and-selection.html"><i class="fa fa-check"></i>Simulating Genetic Drift and Selection</a></li>
+<li class="appendix"><span><b>Appendix I</b></span></li>
+<li class="chapter" data-level="" data-path="graph-library.html"><a href="graph-library.html"><i class="fa fa-check"></i>Graph Library</a>
+<ul>
+<li class="chapter" data-level="8" data-path="graph-library.html"><a href="graph-library.html#sample-data"><i class="fa fa-check"></i><b>8</b> Sample Data</a></li>
+<li class="chapter" data-level="9" data-path="graph-library.html"><a href="graph-library.html#loading-dependencies"><i class="fa fa-check"></i><b>9</b> Loading Dependencies</a></li>
+<li class="chapter" data-level="10" data-path="graph-library.html"><a href="graph-library.html#one-variable-continuous"><i class="fa fa-check"></i><b>10</b> One Variable: Continuous</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram"><i class="fa fa-check"></i><b>10.1</b> Frequency Histogram</a></li>
+<li class="chapter" data-level="10.2" data-path="graph-library.html"><a href="graph-library.html#density-plot"><i class="fa fa-check"></i><b>10.2</b> Density Plot</a></li>
+<li class="chapter" data-level="10.3" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram-with-density"><i class="fa fa-check"></i><b>10.3</b> Frequency Histogram with Density</a></li>
+<li class="chapter" data-level="10.4" data-path="graph-library.html"><a href="graph-library.html#adding-a-discrete-variable"><i class="fa fa-check"></i><b>10.4</b> Adding a Discrete Variable</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="graph-library.html"><a href="graph-library.html#two-variables-continuous-x-and-y"><i class="fa fa-check"></i><b>11</b> Two Variables: Continuous X and Y</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="graph-library.html"><a href="graph-library.html#scatter-plot"><i class="fa fa-check"></i><b>11.1</b> Scatter Plot</a></li>
+<li class="chapter" data-level="11.2" data-path="graph-library.html"><a href="graph-library.html#regression-line"><i class="fa fa-check"></i><b>11.2</b> Regression Line</a></li>
+<li class="chapter" data-level="11.3" data-path="graph-library.html"><a href="graph-library.html#scatter-plot-with-regression"><i class="fa fa-check"></i><b>11.3</b> Scatter Plot with Regression</a></li>
+<li class="chapter" data-level="11.4" data-path="graph-library.html"><a href="graph-library.html#adding-discrete-variables"><i class="fa fa-check"></i><b>11.4</b> Adding Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="graph-library.html"><a href="graph-library.html#two-variables-discrete-x-continuous-y"><i class="fa fa-check"></i><b>12</b> Two Variables: Discrete X, Continuous Y</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="graph-library.html"><a href="graph-library.html#box-plot"><i class="fa fa-check"></i><b>12.1</b> Box Plot</a></li>
+<li class="chapter" data-level="12.2" data-path="graph-library.html"><a href="graph-library.html#dot-plot"><i class="fa fa-check"></i><b>12.2</b> Dot Plot</a></li>
+<li class="chapter" data-level="12.3" data-path="graph-library.html"><a href="graph-library.html#violin-plot"><i class="fa fa-check"></i><b>12.3</b> Violin Plot</a></li>
+<li class="chapter" data-level="12.4" data-path="graph-library.html"><a href="graph-library.html#adding-raw-data"><i class="fa fa-check"></i><b>12.4</b> Adding Raw data</a></li>
+<li class="chapter" data-level="12.5" data-path="graph-library.html"><a href="graph-library.html#adding-additional-discrete-variables"><i class="fa fa-check"></i><b>12.5</b> Adding Additional Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="graph-library.html"><a href="graph-library.html#aggregate-data"><i class="fa fa-check"></i><b>13</b> Aggregate Data</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="graph-library.html"><a href="graph-library.html#calculating-mean-and-standard-deviation"><i class="fa fa-check"></i><b>13.1</b> Calculating Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="13.2" data-path="graph-library.html"><a href="graph-library.html#visualizing-means-and-variation"><i class="fa fa-check"></i><b>13.2</b> Visualizing Means and Variation</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="graph-library.html"><a href="graph-library.html#combining-multiple-plots"><i class="fa fa-check"></i><b>14</b> Combining Multiple plots</a></li>
+<li class="chapter" data-level="15" data-path="graph-library.html"><a href="graph-library.html#working-with-color-palettes"><i class="fa fa-check"></i><b>15</b> Working with Color Palettes</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="graph-library.html"><a href="graph-library.html#color-palettes-in-rcolorbrewer"><i class="fa fa-check"></i><b>15.1</b> Color Palettes in RColorBrewer</a></li>
+<li class="chapter" data-level="15.2" data-path="graph-library.html"><a href="graph-library.html#combining-rcolorbrewer-palettes-with-ggplot"><i class="fa fa-check"></i><b>15.2</b> Combining RColorBrewer Palettes with ggplot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="r-exercises.html"><a href="r-exercises.html"><i class="fa fa-check"></i>R Exercises</a></li>
+<li class="chapter" data-level="A" data-path="simulating-selection-1.html"><a href="simulating-selection-1.html"><i class="fa fa-check"></i><b>A</b> Simulating Selection</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Primer of Evolution</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-evolution-of-quantitative-traits" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> The Evolution of Quantitative Traits<a href="the-evolution-of-quantitative-traits.html#the-evolution-of-quantitative-traits" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>So far, our evolutionary analyses have assumed that variation at one locus translates to variation in one trait. This, in turn, causes environmentally-dependent variation in fitness. As discussed in <a href="the-raw-materials-for-evolution.html#the-genotype-phenotype-gap">Chapter 4</a>, however, the relationships between genotype, phenotype, and fitness are much more complex. Single genes can affect the expression of multiple, apparently unrelated phenotypic traits (pleiotropy), which can impose evolutionary trade-offs, because different traits cannot be optimized independently. Similarly, the expression of a single trait can be controlled by multiple loci. This chapter explores basic quantitative genetic approaches used to study the evolution of complex traits controlled by multiple genes.</p>
+<div id="qualitative-traits-and-epistasis" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Qualitative Traits and Epistasis<a href="the-evolution-of-quantitative-traits.html#qualitative-traits-and-epistasis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Qualitative traits have alternative phenotypes that fit into discrete categories. The spotted vs. melanistic forms of leopards, the round vs. wrinkled skin in peas, and the ABO blood groups in humans are all examples of qualitative traits. Many qualitative traits are controlled by variation at a single locus, but multiple loci can be involved when there are epistatic interactions. Epistasis describes the phenomenon where the effect of a gene is dependent on the effect of one or more modifier genes. For example, coat color variation in many mammals (including yellow, chocolate, and black Labrador retrievers) is dependent on both the ability of an individual to produce a particular color pigment (controlled by the <em>B</em> locus in Figure <a href="the-evolution-of-quantitative-traits.html#fig:epistasis">8.1</a>) and the ability of an individual to deposit pigments in relevant tissues (controlled by the <em>A</em> locus). Variation at the <em>B</em> locus that determines brown vs. black phenotype has no effect on coat color unless an individual also inherits the ability to deposit pigment; otherwise the coat color is just white. Epistatic interactions can profoundly impact evolutionary dynamics at single loci and cause deviations from the predictions of the simple inhertance models that we have used so far.</p>
+<div class="figure"><span style="display:block;" id="fig:epistasis"></span>
+<img src="images/epistasis.png" alt="Example of epistasis in coat color genetics: If no pigments can be deposited, the other coat color genes have no effect on color expression, no matter if they would be dominant or recessive, and no matter if the individual is homozygous." width="100%" />
+<p class="caption">
+Figure 8.1: Example of epistasis in coat color genetics: If no pigments can be deposited, the other coat color genes have no effect on color expression, no matter if they would be dominant or recessive, and no matter if the individual is homozygous.
+</p>
+</div>
+</div>
+<div id="quantitative-traits-a-product-of-genes-and-environment" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Quantitative Traits: a Product of Genes and Environment<a href="the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Quantitative traits vary continuously among individuals—for example, body size, thermal tolerance, and skin coloration in humans. The expression of quantitative traits depends on the cumulative action of many genes, which is why they are also referred to as polygenic traits. Quantitative traits are normally distributed within a population; most individuals exhibit an intermediate phenotype, and individuals with extreme trait values are more rare.</p>
+<p>The normal distribution of quantitative traits is caused by the joint action of many genes with additive genetic effects. The continuous variation can be revealed using a simple F2-crossing experiment that is frequently used in quantitative genetics analyses (see QTL mapping below). If we cross two individuals from either extreme of a distribution (<em>i.e.</em>, the shortest and the tallest, the lightest and the darkest, or the slowest and the fastest), the resulting F1 offspring should be phenotypically homogenous and intermediate to their parents, because the F1 individuals will be heterozygous at all loci involved in the expression of the quantitative trait. If we then cross two F1 individuals to produce an F2 generation, we not only recover the extremes of the distribution (<em>i.e.</em>, the parental phenotypes), but the entire spectrum of phenotypic variants in between. The gradation of intermediate phenotypes is dependent on the number of loci controlling a quantitative trait. If a trait is controlled by a single locus with additive alleles, there are three phenotypic categories (<em>e.g.</em>, short, medium, and tall; Figure <span class="citation">@ref</span>(fig:qualquan), left panel). If two loci are involved, trait expression is the sum of the effects of all individual alleles across both loci. In other words, how tall an individual grows is simply a function of the number of “tall” alleles it inherits across all loci. An intermediate size can be achieved by having two “tall” alleles at one locus (<em>AAbb</em> or <em>aaBB</em>) or one “tall” allele at each of the loci (<em>AaBb</em>). As a consequence, there are more offspring of intermediate size than small or large ones (Figure <span class="citation">@ref</span>(fig:qualquan), central panel). The more genes are involved in the expression of a particular phenotype, the narrower phenotypic categories become, and the more continuously distributed a trait is (Figure <span class="citation">@ref</span>(fig:qualquan), right panel).</p>
+<div class="figure"><span style="display:block;" id="fig:qualquan"></span>
+<img src="Primer2Evolution_files/figure-html/qualquan-1.png" alt="Phenotypes in F2 crosses are normally distributed if all alleles have additive effects. These three graphs show how the number of phenotypic categories increases as a function of the number genes involved in the expression of a particular trait." width="768" />
+<p class="caption">
+Figure 8.2: Phenotypes in F2 crosses are normally distributed if all alleles have additive effects. These three graphs show how the number of phenotypic categories increases as a function of the number genes involved in the expression of a particular trait.
+</p>
+</div>
+<p>The expression of quantitative traits can also be affected by the environment an individual finds itself in. The ability of a genotype tp produce multiple phenotypes depending on the environment is called phenotypic plasticity. In some species, phenotypic traits show phenomenal malleability in response to specific environmental cues that shape organismal development. For example, some anuran tadpoles develop alternative morphological traits depending on their exposure to predator cues early in development (Figure <a href="the-evolution-of-quantitative-traits.html#fig:rana">8.3</a>). Therefore, population differences in phenotypic traits are not always a consequence of evolutionary divergence and adaptation. Rather, individuals in different populations may express different traits simply due to different environmental exposure. For example, the Alpine plant <em>Arabis alpina</em> is distributed across a broad elevational gradient, ranging from 800 to 3,000+ meters above sea level. Individuals from high elevation populations tend to be smaller and produce less fruit. However, common garden experiments—where families were split and raised at different elevations—revealed that population differences in most traits were largely due to phenotypic plasticity (Figure <a href="the-evolution-of-quantitative-traits.html#fig:plastarabis">8.4</a>; de Villemereuil et al. 2018). Hence, the expression of quantitative traits can be more dependent on the environmental context than the genetic information inherited from the parents.</p>
+<div class="alert alert-block alert-info">
+<p><b>Definition: Phenotypic Plasticity</b></p>
+<p>Phenotypic plasticity is the ability of a genotype to express different phenotypes. It can result in organisms changing their traits in response to stimuli or input from the environment.</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:rana"></span>
+<img src="images/rana.jpg" alt="Phenotypic plasticity in *Rana pirica* tadpoles when under predation from salamander larvae: normal (left) and defended (right) morphs. Mori et al. (2009), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0), via Wikimedia Commons." width="100%" />
+<p class="caption">
+Figure 8.3: Phenotypic plasticity in <em>Rana pirica</em> tadpoles when under predation from salamander larvae: normal (left) and defended (right) morphs. Mori et al. (2009), <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:plastarabis"></span>
+<img src="Primer2Evolution_files/figure-html/plastarabis-1.png" alt="Phenotypic plasticity in *Arabis alpina*. The graph shows mean trait values for different populations (in different colors) that were either grown at low or high elevation. Each population was composed of multiple families that were represented at both locations. Differences between locations are more pronounced than differences among populations, indicating the influence of environmentally-dependent phenotypic plasticity. [Data](data/8_plasticity.csv) from de Villemereuil et al. (2018)." width="768" />
+<p class="caption">
+Figure 8.4: Phenotypic plasticity in <em>Arabis alpina</em>. The graph shows mean trait values for different populations (in different colors) that were either grown at low or high elevation. Each population was composed of multiple families that were represented at both locations. Differences between locations are more pronounced than differences among populations, indicating the influence of environmentally-dependent phenotypic plasticity. <a href="data/8_plasticity.csv">Data</a> from de Villemereuil et al. (2018).
+</p>
+</div>
+<p>The evolutionary analysis of quantitative traits has two complications: (1) Since many genes are involved in the expression of quantitative traits, it is not usually practical to follow changes in allele frequencies at relevant loci. Even worse, due to the large number of loci that often have small individual effects, even the identification of genes contributing to the expression of quantitative traits can be challenging. (2) We must be able to account for the potential effects of environmental variation on individual trait expression. Trait heritability is a key requirement for evolution by natural selection, but expressed traits may not be heritable if they were shaped by environmental effects. In the following section, we will explore two general approaches used to study the evolution of quantitative traits. One approach is agnostic about the genetic basis of quantitative traits but focuses on predicting the effects of selection on them. The other approach allows for the identification of the genetic basis of quantitative traits involved in adaptation.</p>
+</div>
+<div id="quantitative-trait-evolution" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Quantitative Trait Evolution<a href="the-evolution-of-quantitative-traits.html#quantitative-trait-evolution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A key complication in the analysis of quantitative traits is the difficulty of identifying the genes involved in phenotypic expression. However, we can conduct meaningful analyses of quantitative trait evolution without diving into the details of the underlying genetics. We can predict the evolutionary response of a quantitative trait as a function of its heritability and the strength of selection. In this section, we will discuss how to quantify trait heritability and the strength of selection, and then how to apply the breeder’s equation to predict evolutionary change.</p>
+<div id="quantifying-trait-heritability" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Quantifying Trait Heritability<a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Generally, heritability measures the degree to which variation in a phenotypic trait in a population is due to genetic variation among individuals, rather than non-heritable factors like phenotypic plasticity. Specifically, broad sense heritability is defined as:</p>
+<span class="math display" id="eq:38">\[\begin{align}
+\frac{V_G}{V_P} \tag{8.1}
+\end{align}\]</span>
+<p>where <em>V</em><sub>G</sub> is genetic variation and <em>V</em><sub>P</sub> is phenotypic variation. Since phenotypic variation among individuals is a consequence of genetic and environmental variation (<em>V</em><sub>E</sub>), broad sense heritability can also be defined as:</p>
+<span class="math display" id="eq:39">\[\begin{align}
+\frac{V_G}{V_G+V_E} \tag{8.2}
+\end{align}\]</span>
+<p>Broad-sense heritability describes the degree of genetic determination in the variation of a trait, and it can range from 0 (no genetic effects) to 1 (no environmental effects). It is important to note that measures of heritability are a population-level metric. We cannot disentangle the degree to which genes and environmental influences have shaped trait expression in a particular individual. Rather, we have to consider populations of individuals to determine what proportion of variation is shaped by genetic variation and what proportion is shaped by environmental variation.</p>
+<p>As you learned in <a href="a-mechanism-for-change.html#heritability">Chapter 3</a>, heritability can be estimated by the slope of a regression between parental and offspring traits. If the slope of that regression is close to zero, parental trait expression is a poor predictor of offspring trait expression; hence, variation in the trait is primarily due to environmental and not genetic variation (Figure <a href="the-evolution-of-quantitative-traits.html#fig:herito">8.5</a>A). If, on the other hand, the slope of the parent-offspring regression is close to 1, the parental trait strongly predicts offspring trait expression, and variation in the traits is primarily driven by genetic variation (Figure <a href="the-evolution-of-quantitative-traits.html#fig:herito">8.5</a>C). Slopes between 0 and 1 describe the relative contribution of genetic and environmental variation to phenotypic variation in a population (Figure <a href="the-evolution-of-quantitative-traits.html#fig:herito">8.5</a>B).</p>
+<div class="figure"><span style="display:block;" id="fig:herito"></span>
+<img src="Primer2Evolution_files/figure-html/herito-1.png" alt="Parent-offspring regressions reveal the degree of heritability in quantitative traits. A slope of zero indicates no heritability; a slope of 1 indicates perfect heritability. Slopes in between those values describe the relative contributions of genetic and environmental variation on phenotypic variation." width="768" />
+<p class="caption">
+Figure 8.5: Parent-offspring regressions reveal the degree of heritability in quantitative traits. A slope of zero indicates no heritability; a slope of 1 indicates perfect heritability. Slopes in between those values describe the relative contributions of genetic and environmental variation on phenotypic variation.
+</p>
+</div>
+<p>It is important to note that estimating heritability through parent-offspring regression represents narrow-sense heritability (<em>h</em><sup>2</sup>), not broad-sense heritability . Broad- and narrow-sense heritability consider different aspects of genetic variation. Genetic variation (<em>V</em><sub>G</sub>) is a composite of additive genetic variation (<em>V</em><sub>A</sub>) and genetic variation caused by gene interactions, such as dominance (<em>V</em><sub>D</sub>) and epistasis (<em>V</em><sub>I</sub>). The slope of a parent-offspring correlation specifically quantifies the contribution of additive genetic variation to the observed phenotypic variation, such that narrow sense heritability is defined as:</p>
+<span class="math display" id="eq:40">\[\begin{align}
+h^2 = \frac{V_A}{V_P}=\frac{V_A}{V_A+V_D+V_I+V_E} \tag{8.3}
+\end{align}\]</span>
+<p>Hence, narrow-sense heritability only considers the additive portion of adaptive variation; genetic variation associated with dominance and epistasis are ignored. This is useful because the phenotypic response to selection on a quantitative trait depends on <em>V</em><sub>A</sub> and not <em>V</em><sub>D</sub>. In addition, non-additive genetic effects are comparatively rare, and <em>V</em><sub>A</sub> is much larger than <em>V</em><sub>D</sub> and <em>V</em><sub>I</sub> for most quantitative traits (Hill et al. 2008).</p>
+</div>
+<div id="quantifying-the-strength-of-selection" class="section level3 hasAnchor" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Quantifying the Strength of Selection<a href="the-evolution-of-quantitative-traits.html#quantifying-the-strength-of-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The second step in quantitative genetic analyses is to infer the strength of selection on a focal trait, which can be measured as either the selection differential (<em>S</em>) or the selection gradient (<em>m</em>). The selection differential is the difference between the mean trait value of the selected (successful) individuals (<em>T</em>*) and the mean trait value of all individuals in a population (<em>T</em>’). Imagine a population of individuals that vary in a particular trait, as described in Figure <a href="the-evolution-of-quantitative-traits.html#fig:seldiffgrad">8.6</a>A. Some individuals survive to adulthood and reproduce (depicted in green), some perish early and have no reproductive success (depicted in red). The difference between the average trait value of the successful individuals and the average of all individuals is the selection differential. Note that if more individuals with smaller trait values were successful, the selection differential would shrink. If only individuals with smaller trait values were successful, the selection differential would become negative. Also note that the unit of the selection differential for a particular trait is the same as the unit used to quantify variation in that trait.</p>
+<p>The second measure of the strength of selection on quantitative traits—the selection gradient—is more complicated, but has broader applicability, especially when fitness is measured quantitatively rather than qualitatively. The first step is to convert measurements of absolute fitness to measures of relative fitness. This can be accomplished by dividing every individual’s absolute fitness by the average fitness of the population. Using the same example as in Figure <a href="the-evolution-of-quantitative-traits.html#fig:seldiffgrad">8.6</a>, we had 27 successful individuals (fitness of 1) and 73 unsuccessful individuals (fitness of zero). Hence, the average fitness in the population is 0.27 [27/(27+73)], which means that the relative fitness of successful individuals is ~3.7 (1/0.27). The relative fitness of unsuccessful individuals is of course still 0 (0/0.27). We can now plot relative fitness as a function of individual trait values. The selection gradient is the slope of the regression line between trait value and relative fitness (Figure <a href="the-evolution-of-quantitative-traits.html#fig:seldiffgrad">8.6</a>B).</p>
+<p>While the selection differential and the selection gradient may seem unrelated to each other, the two measures can actually be converted:</p>
+<span class="math display" id="eq:41">\[\begin{align}
+m=\frac{S}{var(T)} \iff S=m*var(T) \tag{8.4}
+\end{align}\]</span>
+<p>whereas <em>var(T)</em> is the variance in the trait under consideration. In practice, if the strength of selection in quantitative genetic analyses is quantified using the selection gradient, it has to be converted to the selection differential, because the response to selection is proportional to <em>S</em>.</p>
+<div class="figure"><span style="display:block;" id="fig:seldiffgrad"></span>
+<img src="Primer2Evolution_files/figure-html/seldiffgrad-1.png" alt="A. Graphical representation of the selection differential (*S*), which is the difference between the selected individuals (*T**) and all individuals in the population (*T'*). The gray triangle represents the average trait value of all individuals, and the green triangle the average of all the successful individuals. The distance between the two is the selection differential. B. Graphical representation of the selection gradient (*m*). The selection gradient is the slope of the best-fit line between individual trait values and relative fitness." width="768" />
+<p class="caption">
+Figure 8.6: A. Graphical representation of the selection differential (<em>S</em>), which is the difference between the selected individuals (*T**) and all individuals in the population (<em>T’</em>). The gray triangle represents the average trait value of all individuals, and the green triangle the average of all the successful individuals. The distance between the two is the selection differential. B. Graphical representation of the selection gradient (<em>m</em>). The selection gradient is the slope of the best-fit line between individual trait values and relative fitness.
+</p>
+</div>
+</div>
+<div id="calculating-the-response-to-selection" class="section level3 hasAnchor" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Calculating the Response to Selection<a href="the-evolution-of-quantitative-traits.html#calculating-the-response-to-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The final step in quantitative genetic analyses is to calculate the response to selection (<em>R</em>) as a function of narrow-sense heritability (<em>h</em><sup>2</sup>) and the selection differential (<em>S</em>) using the breeder’s equation:</p>
+<span class="math display" id="eq:42">\[\begin{align}
+R=h^2*S \tag{8.5}
+\end{align}\]</span>
+<p>As you can see, the response to selection is dependent equally on the strength of selection and the degree to which a particular trait is heritable. If selection is weak, the evolutionary response will be small even when trait heritability is very high. Similarly, when heritability is low, the evolutionary response will be small even when selection is very strong. The principle of the breeder’s equation is also depicted in Figure <a href="the-evolution-of-quantitative-traits.html#fig:breeder">8.7</a>, a modified version of a parent-offspring regression. In this graph, successful parents are represented in green, and unsuccessful ones in red. As in Figure <a href="the-evolution-of-quantitative-traits.html#fig:seldiffgrad">8.6</a>A, the selection differential (<em>S</em>) is the difference between the average trait of the successful parents and the average trait of all parents in the population. The response to selection (<em>R</em>) is the difference between the average trait of the successful offspring and the average trait of all offspring in the population. Or, expressed mathematically:</p>
+<span class="math display" id="eq:43">\[\begin{align}
+h^2=\frac{R}{S}=\frac{O^*-\overline{O}}{P^*-\overline{P}} \tag{8.6}
+\end{align}\]</span>
+<p>You can imagine how <em>R</em> will increase in this example as the slope of the best-fit line increases, reaching <em>S</em> when <em>h</em><sup>2</sup> equals 1. Similarly, <em>R</em> will decrease as you imagine the slope of the regression line decreasing, eventually reaching 0 when <em>h</em><sup>2</sup> equals 0.</p>
+<p>Ultimately, the response to selection represents the per generation change in the average value of a population’s quantitative trait. Like the selection differential, it is measured in the same unit used to quantify trait variation. Together, the quantification of narrow-sense heritability, the selection differential, and the application of the breeder’s equation provide a critical tool for studying the evolution of polygenic traits, without the need to identify genes underlying phenotypic trait expression.</p>
+<div class="figure"><span style="display:block;" id="fig:breeder"></span>
+<img src="Primer2Evolution_files/figure-html/breeder-1.png" alt="The response to selection (*R*) is proportional to the product of th selection differential (*S*) and narrow-sense heritability (as indicated by the slope of the best-fit line)." width="100%" />
+<p class="caption">
+Figure 8.7: The response to selection (<em>R</em>) is proportional to the product of th selection differential (<em>S</em>) and narrow-sense heritability (as indicated by the slope of the best-fit line).
+</p>
+</div>
+</div>
+</div>
+<div id="modes-of-selection-on-quantitative-traits" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Modes of Selection on Quantitative Traits<a href="the-evolution-of-quantitative-traits.html#modes-of-selection-on-quantitative-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In our consideration of quantitative trait evolution, we have assumed that individuals at one end of the phenotypic spectrum exhibit a fitness advantage over individuals at the other end of the phenotypic spectrum. However, fitness functions can have any shape. In this section, we discuss three modes of selection on quantitative traits and contrast their impact on phenotypic variation across generations.</p>
+<div id="directional-selection" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> Directional Selection<a href="the-evolution-of-quantitative-traits.html#directional-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Under directional selection, fitness continuously increases (or decreases) with the value of a trait; hence, extreme phenotypes at one end of the spectrum have a fitness advantage over individuals at the other end of the spectrum. Fitness functions describing directional selection are often assumed to be linear (Figure <a href="the-evolution-of-quantitative-traits.html#fig:dirsel">8.8</a>), but in practice, nonlinear relationships (<em>i.e.</em>, accelerating or decelerating curves) can also describe fitness variation under directional selection. The consequence of directional selection is an increase (or decrease) in the average trait value of the population (Figure <a href="the-evolution-of-quantitative-traits.html#fig:dirsel">8.8</a>). In addition, directional selection leads to a slight decrease in trait variation across generations. We have already learned about many examples of directional selection throughout the semester. The change in beak size of Darwin’s finches during the drought was a consequence of directional selection, just as decrease in eye size in some cave fish populations.</p>
+<div class="figure"><span style="display:block;" id="fig:dirsel"></span>
+<img src="Primer2Evolution_files/figure-html/dirsel-1.png" alt="Under directional selection, individuals at one end of the phenotypic spectrum have a fitness advantage over individuals at the other end of the phenotypic spectrum. As a consequence, trait distributions after selection exhibit a higher mean (red triange) and slightly reduced variation (red bar)." width="768" />
+<p class="caption">
+Figure 8.8: Under directional selection, individuals at one end of the phenotypic spectrum have a fitness advantage over individuals at the other end of the phenotypic spectrum. As a consequence, trait distributions after selection exhibit a higher mean (red triange) and slightly reduced variation (red bar).
+</p>
+</div>
+</div>
+<div id="stabilizing-selection" class="section level3 hasAnchor" number="8.4.2">
+<h3><span class="header-section-number">8.4.2</span> Stabilizing Selection<a href="the-evolution-of-quantitative-traits.html#stabilizing-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Under stabilizing selection, individuals with intermediate traits have the highest fitness, while individuals with extreme trait values have a selective disadvantage. Consequently, fitness functions under stabilizing selection have some sort of a hump-shaped curve (Figure <a href="the-evolution-of-quantitative-traits.html#fig:stabsel">8.9</a>). Unlike directional selection, stabilizing selection does not lead to changes in the average trait value in a population. However, it reduces trait variation across generations, because extreme phenotypes counter-selected. In natural populations, most traits are probably under stabilizing selection. Once a trait has reached an optimum in a population, selection will keep that trait at said optimum, removing variants that deviate from it.</p>
+<div class="figure"><span style="display:block;" id="fig:stabsel"></span>
+<img src="Primer2Evolution_files/figure-html/stabsel-1.png" alt="Under stabilizing selection, intermediate individuals exhibit a fitness advantage, which does not change the population trait average (red triangle), but it causes a decrease in trait variation across generations (represented by the red bar)." width="768" />
+<p class="caption">
+Figure 8.9: Under stabilizing selection, intermediate individuals exhibit a fitness advantage, which does not change the population trait average (red triangle), but it causes a decrease in trait variation across generations (represented by the red bar).
+</p>
+</div>
+</div>
+<div id="disruptive-selection" class="section level3 hasAnchor" number="8.4.3">
+<h3><span class="header-section-number">8.4.3</span> Disruptive Selection<a href="the-evolution-of-quantitative-traits.html#disruptive-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Under disruptive selection, intermediate individuals have a fitness disadvantage over extreme phenotypes at either end of the spectrum. Hence, fitness functions under disruptive selection have a u-shaped curve (Figure <a href="the-evolution-of-quantitative-traits.html#fig:dissel">8.10</a>). Disruptive selection does not change the average trait value in a population, but it increases trait variation across generations and is an important mechanism for the maintenance of genetic variation. If disruptive selection persists for multiple generations, populations can exhibit bimodal trait distributions.</p>
+<p>Disruptive selection underlies many intraspecific polymorphisms where individuals of the same species are adapted to different habitats or resources. For example, the light and dark forms of the peppered moth that are well-camouflaged on either light or dark backgrounds, or the different beak morphs in seedcrackers that exploit different food resources, are a consequence of disruptive selection. In addition, disruptive selection can cause speciation; the stark beak size differences among species of Darwin’s finches are caused by disruptive selection.</p>
+<div class="figure"><span style="display:block;" id="fig:dissel"></span>
+<img src="Primer2Evolution_files/figure-html/dissel-1.png" alt="Under disruptive selection, intermediate individuals have a fitness disadvantage. As a consequence, trait variation is increased across generations (red bars) but the mean trait value (red triangle) does not change." width="768" />
+<p class="caption">
+Figure 8.10: Under disruptive selection, intermediate individuals have a fitness disadvantage. As a consequence, trait variation is increased across generations (red bars) but the mean trait value (red triangle) does not change.
+</p>
+</div>
+</div>
+</div>
+<div id="identifying-genes-underlying-quantitative-traits" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Identifying Genes Underlying Quantitative Traits<a href="the-evolution-of-quantitative-traits.html#identifying-genes-underlying-quantitative-traits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>While basic quantitative genetic analyses can ignore the genes underlying adaptation, a key goal in evolutionary biology is to bridge the genotype-phenotype gap. We aim to identify adaptive genetic variation and link it to the expression of phenotypic traits. Hence, identifying the genetic basis of quantitative traits involved in adaptation is a key objective of many evolutionary studies. Detecting genes that contribute to the expression of quantitative traits can be challenging—especially when there are many genes that impact a particular trait, when the average effect of individual loci is small, and when sample sizes for quantitative analyses are low. Here, I will briefly introduce two general approaches that can be used to identify the genes associated with quantitative traits: quantitative trait locus (QTL) mapping and genome-wide association studies (GWAS).</p>
+<div id="qtl-mapping" class="section level3 hasAnchor" number="8.5.1">
+<h3><span class="header-section-number">8.5.1</span> QTL Mapping<a href="the-evolution-of-quantitative-traits.html#qtl-mapping" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Quantitative trait loci (QTLs) are stretches of DNA that are correlated with variation in a phenotypic trait. QTLs are linked to specific genes that contribute to variation in a particular phenotypic trait. They can be identified through QTL mapping, which hinges on genotyping and phenotyping large numbers of individuals derived from experimental crosses (also called a mapping population). To generate a mapping population for a trait of interest, two individuals from the opposite extremes of a phenotypic spectrum are chosen. Let’s assume we are studying a species of fish with populations living under different environmental conditions. The fish are blue in some habitats and orange in others, and we want to identify the genetic basis of this color variation. In this case, we would cross a blue and an orange individual to produce an F1 generation. Individuals in the F1 generation are phenotypically intermediate between the two parents, because they are heterozygous at loci relevant for the expression of the quantitative trait (Figure <a href="the-evolution-of-quantitative-traits.html#fig:qtl1">8.11</a>). To create a mapping population for QTL analysis, we need to produce at least an F2 cross by mating two F1 individuals with each other. Thanks to recombination, F2 individuals inherit a varying mixture of genetic material from either parental individual of the initial cross, and accordingly, some individuals will be entirely blue, some entirely orange, and others may exhibit any color mixture in between. With each generation of crossing (F3, F4, F5, etc.), genomic segments are reshuffled and the size of linkage blocks (contiguous stretches of DNA that come from one parental individual) gets smaller and smaller (Figure <a href="the-evolution-of-quantitative-traits.html#fig:qtl1">8.11</a>). We can then use this mapping population to ask which genomic regions are correlated with the phenotype of interest: at what loci do the genotypes match the observed phenotypic expression? To address this question, we need to quantify the phenotype of individuals in our mapping population, and we need to identify the genotypes of the same individuals at as many loci in the genome as feasible.</p>
+<div class="figure"><span style="display:block;" id="fig:qtl1"></span>
+<img src="images/qtl.png" alt="General approach for the creation of a mapping population for QTL analysis. Individuals from opposite ends of the phenotypic spectrum are crossed to obtain an F1 generation, which is then crossed with itself to produce F2 and later (Fx) crosses. Repeated crossing reshuffles genomic segments, which allows for the identification of correlations between genotype and phenotype. For example, the genomic region highlighted with the arrow shows a clear match between genotype and phenotype for each individual; i.e., this locus would be a QTL." width="100%" />
+<p class="caption">
+Figure 8.11: General approach for the creation of a mapping population for QTL analysis. Individuals from opposite ends of the phenotypic spectrum are crossed to obtain an F1 generation, which is then crossed with itself to produce F2 and later (Fx) crosses. Repeated crossing reshuffles genomic segments, which allows for the identification of correlations between genotype and phenotype. For example, the genomic region highlighted with the arrow shows a clear match between genotype and phenotype for each individual; i.e., this locus would be a QTL.
+</p>
+</div>
+<p>Genotypic and phenotypic analyses create a data matrix where information for different individuals is organized in rows, and information about phenotypic traits and the genotype at particular loci is organized in columns (Figure <a href="the-evolution-of-quantitative-traits.html#fig:qtl2">8.12</a>). This allows us to directly compare the phenotypic traits of individuals with their genotypes across loci. As you can see in the example in Figure <a href="the-evolution-of-quantitative-traits.html#fig:qtl2">8.12</a>, there is no congruence between phenotype and genotype at loci <em>A</em>, <em>B</em>, and <em>C</em>. However, there is a clear correlation between phenotype and the genotype at locus <em>D</em>: all blue individuals have the <em>DD</em> genotype, all orange individuals have the <em>dd</em> genotype, and all brown individuals are heterozygous. Hence, locus D would be a QTL for the color variation observed in our mapping population.</p>
+<p>In practice, correlations between phenotypes and genotypes are evaluated for all loci in the dataset, and the degree of association between a phenotype and the genotype at a particular locus is quantified with an LOD score (LOD stands for logarithm of odds). The statistical details are not that important at this stage, but a higher LOD score indicates a stronger association between a particular locus and the phenotype of interest. An LOD score of 3 is equivalent to a <em>p</em>-value of 0.05; so we consider LOD scores greater than 3 as significant associations between a locus and a phenotype. Graphically, LOD scores are plotted as function of the location of the loci on a chromosome. You can imagine the chromosomes with their loci lined up along the x-axis, and LOD-score peaks above 3 are indicative of genomic regions containing a QTL (Figure <a href="the-evolution-of-quantitative-traits.html#fig:qtl2">8.12</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:qtl2"></span>
+<img src="images/qtl2.png" alt="Conceptual illustration of the results from a QTL experiment. The gray box shows the data structure, with information from different individuals organized in rows and phenotypic measurements and genotypes at different loci in columns. The graph above shows a qualitative representation of the correlations between genotype and phenotype in the matrix below." width="100%" />
+<p class="caption">
+Figure 8.12: Conceptual illustration of the results from a QTL experiment. The gray box shows the data structure, with information from different individuals organized in rows and phenotypic measurements and genotypes at different loci in columns. The graph above shows a qualitative representation of the correlations between genotype and phenotype in the matrix below.
+</p>
+</div>
+</div>
+<div id="gwas" class="section level3 hasAnchor" number="8.5.2">
+<h3><span class="header-section-number">8.5.2</span> GWAS<a href="the-evolution-of-quantitative-traits.html#gwas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>QTL mapping is a powerful approach for identifying genomic regions that are associated with quantitative traits. However, the approach also comes with obvious limitations: large-scale crossing experiments are not possible in many species for which we may want to investigate the genetic basis of adaptive trait variation. This is especially true if we want to better understand genotype-phenotype relationships in humans. Understanding the association between genetic variation and phenotypic traits in humans not only teaches us about our nature, but has profound implication for the prediction and treatment of infectious and noncommunicable diseases.</p>
+<p>GWAS (genome-wide association study) is an approach to identify loci underlying complex traits that does not hinge on the availability of crosses between contrasting phenotypes. Rather than looking for correlations between trait expression and the genotypes at specific loci, GWAS contrasts allele frequencies between different groups of individuals. Imagine, for example, that we want to identify genes associated with the susceptibility to a particular disease. In this case, we would compare allele frequencies in individuals that have contracted that disease (cases) with allele frequencies of a random sample of individuals from the general population (controls). For loci that do not impact disease susceptibility, we do not expect significant differences in allele frequencies between cases and controls; the likelihood that a case or a control has a particular allele is equal to the allele frequency in the population. However, if there is a significant difference in the allele frequencies at a particular locus, it indicates that genetic variation at that locus is potentially associated with becoming a case (<em>i.e.</em>, contracting the disease). Like QTL mapping, GWAS requires extensive genotyping, both in terms of the number of loci in the genome and the number of individuals in the case and control groups. GWAS results are plotted similarly to QTL results, with the location of the genetic marker on the x-axis. Instead of LOD scores, GWAS plot the -log<sub>10</sub> of the <em>p</em>-value associated with allele frequency differences at each locus, leading to peaks at loci showing significant associations with the trait of interest.</p>
+</div>
+</div>
+<div id="case-study-quantitative-genetics" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Case Study: Quantitative Genetics<a href="the-evolution-of-quantitative-traits.html#case-study-quantitative-genetics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="exercises/BIOL520-ex7.zip">case study associated with this chapter</a> has three components that explore different approaches in quantitative genetics:</p>
+<ol style="list-style-type: decimal">
+<li><p>You will apply the breeder’s equation to predict the evolutionary response in a quantitative trait based on phenotypic and fitness data from beetles adapting to dark environments.</p></li>
+<li><p>You will explore coat color variation in beach mice and their relatives, a classic study system in evolutionary genetics. Beach mice exhibit much lighter coat colors than their relatives in inland habitats (Figure <a href="the-evolution-of-quantitative-traits.html#fig:beachmouse">8.13</a>), and the light coloration increases crypsis against the background of white sand. But what genes are involved in the adaptive modification of coat color? To identify genes associated with coat color, you will learn how to conduct QTL mapping in R, working with a dataset provided by <a href="https://hoekstra.oeb.harvard.edu/">Hopi Hoekstra</a> and her students, who conducted crosses between beach mice and their dark-colored relatives.</p></li>
+<li><p>You will explore the genetic underpinnings associated with susceptibility to severe COVID-19. To do so, you will plot the results from a GWAS that includes whole-genome sequences of 2,972 patients with very severe, confirmed SARS-CoV-2 infections and sequences from a random sample of the population (284,472 individuals total).</p></li>
+</ol>
+<p>For objectives 1 and 3, you will be able to rely on basic R skills that you have already learned in previous exercises. For objective 2, you can find a detailed tutorial on how to conduct QTL mapping in R below.</p>
+<div class="figure"><span style="display:block;" id="fig:beachmouse"></span>
+<img src="images/beachmouse.jpg" alt="Beach mice exhibit much lighter coat colors than relatives in grassland and forest habitats. Photo by USFWS, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)" width="100%" />
+<p class="caption">
+Figure 8.13: Beach mice exhibit much lighter coat colors than relatives in grassland and forest habitats. Photo by USFWS, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+</p>
+</div>
+</div>
+<div id="practical-skills-qtl-mapping" class="section level2 hasAnchor" number="8.7">
+<h2><span class="header-section-number">8.7</span> Practical Skills: QTL Mapping<a href="the-evolution-of-quantitative-traits.html#practical-skills-qtl-mapping" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="installing-dependencies-1" class="section level3 hasAnchor" number="8.7.1">
+<h3><span class="header-section-number">8.7.1</span> Installing Dependencies<a href="the-evolution-of-quantitative-traits.html#installing-dependencies-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this week’s exercise, you will need to install the <code>qtl</code> package, which is available through CRAN. You can install this package by using the <code>install.packages()</code> function or by clicking Tools&gt;Install Packages…</p>
+<div class="sourceCode" id="cb118"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb118-1"><a href="the-evolution-of-quantitative-traits.html#cb118-1" tabindex="-1"></a>install<span class="at">.packages</span>(<span class="st">&quot;qtl&quot;</span>)</span></code></pre></div>
+<p>As always, make sure to either delete the installation code or silence the code with hashtags to avoid problems when knitting the document to an *.html file.</p>
+</div>
+<div id="read-qtl-data" class="section level3 hasAnchor" number="8.7.2">
+<h3><span class="header-section-number">8.7.2</span> Read QTL Data<a href="the-evolution-of-quantitative-traits.html#read-qtl-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>QTL mapping data includes information on the phenotype and genotype of individuals in the mapping population. Both types of information are typically stored in the same file, which requires a special function to parse out different subsets of the data correctly. The <code>read.cross()</code> function of the <code>qtl</code> package does this automatically. The different arguments within the function specify the file format (<code>format="csv"</code>), the file path (<code>file="path"</code>), and the genotype codes (in our case there are two alleles—A and B—at each locus: <code>genotypes = c("AA","AB","BB")</code>).</p>
+<p>The tutorial here is based on a QTL mapping study of bed bugs (<em>Cimex lectularius</em>) conducted by Fountain et al. (2016), who measured the insect’s tolerance to a pesticide (pyrethroid). If you want to work along with the tutorial, you can download the data <a href="data/8_bedbugs_cross_data.csv">here</a>.</p>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="the-evolution-of-quantitative-traits.html#cb119-1" tabindex="-1"></a>bedbugs <span class="ot">&lt;-</span> <span class="fu">read.cross</span>(<span class="at">format =</span> <span class="st">&quot;csv&quot;</span>, <span class="at">file =</span> <span class="st">&quot;data/8_bedbugs_cross_data.csv&quot;</span>, <span class="at">genotypes =</span> <span class="fu">c</span>(<span class="st">&quot;AA&quot;</span>, <span class="st">&quot;AB&quot;</span>, <span class="st">&quot;BB&quot;</span>))</span></code></pre></div>
+<pre><code>##  --Read the following data:
+##   71  individuals
+##   334  markers
+##   4  phenotypes
+##  --Cross type: f2</code></pre>
+<p>As you can see, successfully importing the data does not only create a new object in your global environment, but it also outputs summary statistics about the number of individuals in the dataset, the number of loci (markers) for which genotype data is available, and the number of phenotypic traits that were measured.</p>
+</div>
+<div id="explore-the-data-genotypes-loci-linkage-map" class="section level3 hasAnchor" number="8.7.3">
+<h3><span class="header-section-number">8.7.3</span> Explore the Data: Genotypes, Loci &amp; Linkage Map<a href="the-evolution-of-quantitative-traits.html#explore-the-data-genotypes-loci-linkage-map" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before we actually take a stab at QTL mapping, let’s explore the raw data. The <code>plotMap()</code> function graphs a genetic (or linkage) map, which shows the position of loci (markers) relative to each other. In well-assembled genomes, linkage blocks correspond to the actual chromosomes, and the linkage map shows the chromosomal location of each marker with a horizontal dash. The dataset we are looking at contains genotype information for each marker present in our genetic map. As you can see in the case of the bed bugs, some chromosomes are larger than others, and some chromosomal regions vary in marker density.</p>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="the-evolution-of-quantitative-traits.html#cb121-1" tabindex="-1"></a><span class="fu">plotMap</span>(bedbugs, <span class="at">show.marker.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<img src="Primer2Evolution_files/figure-html/unnamed-chunk-18-1.png" alt="Genetic map of markers included in the `bedbug` data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicated with horizontal dashes along the y-axis." width="100%" />
+<p class="caption">
+Figure 8.14: Genetic map of markers included in the <code>bedbug</code> data frame. Different chomosomes are aligned along the x-axis, and the relative positions of markers on each chromosome are indicated with horizontal dashes along the y-axis.
+</p>
+</div>
+<p>Note that changing the <code>show.marker.names</code> argument to <code>TRUE</code> will plot the name of each gene onto the genetic map. Since there is a large number of loci that make for one confusing graph, I set it to <code>FALSE</code>.</p>
+</div>
+<div id="explore-the-data-phenotypes" class="section level3 hasAnchor" number="8.7.4">
+<h3><span class="header-section-number">8.7.4</span> Explore the Data: Phenotypes<a href="the-evolution-of-quantitative-traits.html#explore-the-data-phenotypes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We can also look at the phenotypes associated with our QTL experiment. To see the data table with the phenotype information, you can simply call the data frame of your QTL object (<code>bedbugs</code>, in our case) and add <code>$pheno</code> to it:</p>
+<div class="sourceCode" id="cb122"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb122-1"><a href="the-evolution-of-quantitative-traits.html#cb122-1" tabindex="-1"></a>bedbugs<span class="va">$pheno</span></span></code></pre></div>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:100%; ">
+<table class="table table table-striped" style="font-size: 9px; color: black; margin-left: auto; margin-right: auto; color: black; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-19">Table 8.1: </span><span id="tab:unnamed-chunk-19">Table 8.2: </span>Phenotypes scores included in the <code>bedbug</code> data frame.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+id
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+res
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+res1
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+res2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+F2PR05
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR07
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR13
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR15
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR16
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR17
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR18
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR19
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2PR20
+</td>
+<td style="text-align:left;">
+PR
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R01
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R03
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R04
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R05
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R06
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R07
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R08
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R09
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R10
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R11
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R12
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R13
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R14
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R15
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R16
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R17
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R18
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R19
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R20
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R21
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2R22
+</td>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S01
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S02
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S03
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S04
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S05
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S06
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S07
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S08
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S09
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S10
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S11
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S12
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S15
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S16
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S19
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S21
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S22
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S23
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S24
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S25
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S26
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S27
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S28
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S29
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S30
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S31
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S33
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S34
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S35
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S36
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S37
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S38
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S39
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S40
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S41
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S42
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S43
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S44
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S45
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S46
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F2S48
+</td>
+<td style="text-align:left;">
+S
+</td>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:left;">
+TM
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In this case, the “res” phenotype (resistance) is of particular interest, as it describes the tolerance of the bed bugs to the pesticide pyrethroid. Individuals are either susceptible (S), partially resistant (PR), or resistant (R).</p>
+<p>Rather than looking at a long table, it is more straightforward to just plot the phenotypic data using a histogram. To do so, we first make a new data frame (<code>phenotype</code>) using the <code>as_tibble()</code> function, specifically extracting the <code>res</code> variable in the <code>pheno</code> table of the <code>bedbugs</code> data frame (<code>bedbugs$pheno$res</code>). We can also add a new variable name (<code>tolerance</code>) and order the tolerance categories sequentially (low, medium, high) rather than alphabetically (high, low, medium). Once the data frame is ready, we can use the <code>ggplot()</code> function to make a histogram as in previous exercises.</p>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="the-evolution-of-quantitative-traits.html#cb123-1" tabindex="-1"></a><span class="co">#Create a new data frame containing a single trait</span></span>
+<span id="cb123-2"><a href="the-evolution-of-quantitative-traits.html#cb123-2" tabindex="-1"></a>phenotype <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">data.frame</span>(bedbugs<span class="sc">$</span>pheno<span class="sc">$</span>res))</span>
+<span id="cb123-3"><a href="the-evolution-of-quantitative-traits.html#cb123-3" tabindex="-1"></a><span class="co">#Add a column name</span></span>
+<span id="cb123-4"><a href="the-evolution-of-quantitative-traits.html#cb123-4" tabindex="-1"></a><span class="fu">colnames</span>(phenotype) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;tolerance&quot;</span>)</span>
+<span id="cb123-5"><a href="the-evolution-of-quantitative-traits.html#cb123-5" tabindex="-1"></a><span class="co">#Order factor levels</span></span>
+<span id="cb123-6"><a href="the-evolution-of-quantitative-traits.html#cb123-6" tabindex="-1"></a>phenotype<span class="sc">$</span>tolerance <span class="ot">&lt;-</span> <span class="fu">factor</span>(phenotype<span class="sc">$</span>tolerance, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;S&quot;</span>, <span class="st">&quot;PR&quot;</span>, <span class="st">&quot;R&quot;</span>))</span>
+<span id="cb123-7"><a href="the-evolution-of-quantitative-traits.html#cb123-7" tabindex="-1"></a><span class="co">#Plot data from the new data frame</span></span>
+<span id="cb123-8"><a href="the-evolution-of-quantitative-traits.html#cb123-8" tabindex="-1"></a><span class="fu">ggplot</span>(phenotype, <span class="fu">aes</span>(<span class="at">x=</span>tolerance)) <span class="sc">+</span> </span>
+<span id="cb123-9"><a href="the-evolution-of-quantitative-traits.html#cb123-9" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">stat=</span><span class="st">&quot;count&quot;</span>) <span class="sc">+</span> <span class="co">#stat=&quot;count&quot; is needed because we are plotting a categorial rather than a continuous variable</span></span>
+<span id="cb123-10"><a href="the-evolution-of-quantitative-traits.html#cb123-10" tabindex="-1"></a>    <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb123-11"><a href="the-evolution-of-quantitative-traits.html#cb123-11" tabindex="-1"></a>    <span class="fu">xlab</span>(<span class="st">&quot;Tolerance&quot;</span>) <span class="sc">+</span></span>
+<span id="cb123-12"><a href="the-evolution-of-quantitative-traits.html#cb123-12" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="st">&quot;Frequency&quot;</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-20"></span>
+<img src="Primer2Evolution_files/figure-html/unnamed-chunk-20-1.png" alt="Frequency of different pesticide tolerance phenotypes included in the `bedbug` data frame." width="100%" />
+<p class="caption">
+Figure 8.15: Frequency of different pesticide tolerance phenotypes included in the <code>bedbug</code> data frame.
+</p>
+</div>
+<p>As you can see, the majority of bedbugs are susceptible to the pesticide, although there are some individuals with intermediate and high resistance. The important question is whether there any loci at which genotypes are correlated with variation in tolerance.</p>
+</div>
+<div id="qtl-scan" class="section level3 hasAnchor" number="8.7.5">
+<h3><span class="header-section-number">8.7.5</span> QTL Scan<a href="the-evolution-of-quantitative-traits.html#qtl-scan" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To test for associations between pesticide tolerance (or any other phenotypic trait) and genotypes at specific loci in our marker set, we can use the <code>scanone()</code> function from the <code>qtl</code> package. Note that this function requires that phenotype information is encoded numerically, and we can convert non-numeric strings to numbers with the <code>as.numeric()</code> function. Make sure to specify the data frame (<code>bedbugs</code> in our case), the phenotype of interest (<code>pheno.col = c("res")</code>), and store the results in a new object (I used <code>scan</code>).</p>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="the-evolution-of-quantitative-traits.html#cb124-1" tabindex="-1"></a><span class="co">#Convert phenotype to a numeric variable</span></span>
+<span id="cb124-2"><a href="the-evolution-of-quantitative-traits.html#cb124-2" tabindex="-1"></a>bedbugs<span class="sc">$</span>pheno<span class="sc">$</span>res <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(bedbugs<span class="sc">$</span>pheno<span class="sc">$</span>res)</span>
+<span id="cb124-3"><a href="the-evolution-of-quantitative-traits.html#cb124-3" tabindex="-1"></a></span>
+<span id="cb124-4"><a href="the-evolution-of-quantitative-traits.html#cb124-4" tabindex="-1"></a><span class="co">#Conduct the QTL analysis</span></span>
+<span id="cb124-5"><a href="the-evolution-of-quantitative-traits.html#cb124-5" tabindex="-1"></a>scan <span class="ot">&lt;-</span> <span class="fu">scanone</span>(bedbugs, <span class="at">pheno.col =</span> <span class="fu">c</span>(<span class="st">&quot;res&quot;</span>))</span></code></pre></div>
+<p>Once the scan is complete, you can display the results using the <code>summary()</code> function, calling the object containing the results (<code>scan</code>) and specifying the LOD threshold above which you consider an association between trait and a particular locus to be significant (<code>threshold = 3</code>).</p>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="the-evolution-of-quantitative-traits.html#cb125-1" tabindex="-1"></a><span class="fu">summary</span>(scan, <span class="at">threshold =</span> <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>##                   chr  pos  lod
+## r428_NW_014465016  12 21.9 6.84</code></pre>
+<p>As you can see, our QTL scan found one locus (r428_NW_014465016) with a significant association to pesticide tolerance. That locus is located on chromosome (chr) 12 at position (pos) 21.9. The LOD score (lod) is 6.84.</p>
+<p>Finally, we can also ploy the results in a manner typical for QTL mapping. Using the <code>plot()</code> function and calling on the object containing the results of the scan produces a graph with the chromosomes (and their markers) along the x-axis and the corresponding LOD scores on the y-axis. Note the peak on chromosome 12 that corresponds to locus r428_NW_014465016.</p>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="the-evolution-of-quantitative-traits.html#cb127-1" tabindex="-1"></a><span class="fu">plot</span>(scan)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-23"></span>
+<img src="Primer2Evolution_files/figure-html/unnamed-chunk-23-1.png" alt="Visualization of the QTL scan results. The marker location is plotted along the x-axis, while the corresponding LOD score is plotted on y." width="100%" />
+<p class="caption">
+Figure 8.16: Visualization of the QTL scan results. The marker location is plotted along the x-axis, while the corresponding LOD score is plotted on y.
+</p>
+</div>
+</div>
+</div>
+<div id="reflection-questions-7" class="section level2 hasAnchor" number="8.8">
+<h2><span class="header-section-number">8.8</span> Reflection Questions<a href="the-evolution-of-quantitative-traits.html#reflection-questions-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Quantification of narrow-sense heritability using parent-offspring correlations in natural systems is not without complications, because in many species, parents do not only provide genetic material to their offspring, but they also manipulate the environmental conditions that the offspring experience. For example, a finch with a big beak might provide its offspring bigger food items, which could stimulate beak growth in the developing nestlings. In that case, a correlation between parental and offspring traits may not actually have a genetic basis. What experiment could you conduct to exclude the possibility that parent-offspring correlations arise from parents manipulating their offspring’s environment?</p></li>
+<li><p>Selection is often assumed to eliminate genetic variation; however, population genetic studies invariably uncover an inordinate amount of genetic variation in natural populations. Why is genetic variation not eroded over time? Based on what you have learned in the past modules—from the basic mechanisms of evolution to quantitative genetics—reflect on the diversity of mechanisms that can explain why genetic variation is maintained in populations.</p></li>
+<li><p>What are the key parameters that limit your ability to identify genes underlying variation in adaptive traits using QTL mapping?</p></li>
+</ol>
+</div>
+<div id="references-8" class="section level2 hasAnchor" number="8.9">
+<h2><span class="header-section-number">8.9</span> References<a href="the-evolution-of-quantitative-traits.html#references-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>de Villemereuil P, M Mouterde, OE Gaggiotti, I Till-Bottraud (2018). <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.12955">Patterns of phenotypic plasticity and local adaptation in the wide elevation range of the alpine plant <em>Arabis alpina</em></a>. <em>The Journal of Ecology</em> 106, 1952–1971.</li>
+<li>Fountain T, M Ravinet, R Naylor, K Reinhardt, RK Butlin (2016). <a href="https://www.g3journal.org/content/6/12/4059">A linkage map and QTL analysis for pyrethroid resistance in the bed bug <em>Cimex lectularius</em></a>. <em>G3</em> 6, 4059–4066.</li>
+<li>Hill WG, ME Goddard, PM Visscher (2008). <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000008">Data and theory point to mainly additive genetic variance for complex traits</a>. <em>PLoS Genetics</em> 4, e1000008.</li>
+<li>Mori T, H Kawachi, C Imai, M Sugiyama, Y Kurata, O Kishida, K Nishimura (2009). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005936">Identification of a novel uromodulin-like gene related to predator-induced bulgy morph in anuran tadpoles by functional microarray analysis</a>. <em>PloS One</em> 4, e5936.</li>
+</ul>
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="evolution-of-dna-sequences.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="adaptation-and-phenotypic-plasticity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": "nullnull",
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

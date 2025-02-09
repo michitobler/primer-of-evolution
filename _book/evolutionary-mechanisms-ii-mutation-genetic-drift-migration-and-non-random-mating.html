@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating | A Primer of Evolution</title>
+  <meta name="description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating | A Primer of Evolution" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating | A Primer of Evolution" />
+  
+  <meta name="twitter:description" content="An Introduction to Evolutionary Thought: Theory, Evidence, and Practice" />
+  
+
+<meta name="author" content="Michi Tobler" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="evolutionary-mechanisms-i-modeling-selection.html"/>
+<link rel="next" href="evolution-of-dna-sequences.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F33BYJVTN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F33BYJVTN7');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCY5ZWLVNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NCY5ZWLVNZ');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#in-the-light-of-evolution"><i class="fa fa-check"></i>In the Light of Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#beyond-understanding-biodiversity"><i class="fa fa-check"></i>Beyond Understanding Biodiversity</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#an-overview-of-the-semester"><i class="fa fa-check"></i>An Overview of the Semester</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-1-the-basics"><i class="fa fa-check"></i>Part 1: The Basics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-2-a-genetic-perspective-on-evolution"><i class="fa fa-check"></i>Part 2: A Genetic Perspective on Evolution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-3-evolutionary-outcomes-in-the-real-world"><i class="fa fa-check"></i>Part 3: Evolutionary Outcomes in the Real World</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-4-applied-evolutionary-biology"><i class="fa fa-check"></i>Part 4: Applied Evolutionary Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to Use This Book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html"><i class="fa fa-check"></i>Front Matters</a>
+<ul>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#copyright"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="front-matters.html"><a href="front-matters.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+</ul></li>
+<li class="part"><span><b>I Basic Concepts</b></span></li>
+<li class="chapter" data-level="1" data-path="what-evolution-is.html"><a href="what-evolution-is.html"><i class="fa fa-check"></i><b>1</b> What Evolution Is</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#darwin-and-the-conception-of-a-new-idea"><i class="fa fa-check"></i><b>1.1</b> Darwin and the Conception of a New Idea</a></li>
+<li class="chapter" data-level="1.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#two-fundamental-insights"><i class="fa fa-check"></i><b>1.2</b> Two Fundamental Insights</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#predictions"><i class="fa fa-check"></i><b>1.2.1</b> The Pattern: Evolution is Descent with Modification</a></li>
+<li class="chapter" data-level="1.2.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#the-process-natural-selection-is-a-mechanism-of-evolution"><i class="fa fa-check"></i><b>1.2.2</b> The Process: Natural Selection is a Mechanism of Evolution</a></li>
+<li class="chapter" data-level="1.2.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#distinguishing-between-pattern-and-process"><i class="fa fa-check"></i><b>1.2.3</b> Distinguishing between Pattern and Process</a></li>
+<li class="chapter" data-level="1.2.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#population-thinking"><i class="fa fa-check"></i><b>1.2.4</b> Population Thinking</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#practical-skills-getting-started-with-r"><i class="fa fa-check"></i><b>1.3</b> Practical Skills: Getting Started with R</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#what-are-r-and-rstudio"><i class="fa fa-check"></i><b>1.3.1</b> What are R and RStudio?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-r"><i class="fa fa-check"></i><b>1.3.2</b> Installing R</a></li>
+<li class="chapter" data-level="1.3.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.3</b> Installing RStudio</a></li>
+<li class="chapter" data-level="1.3.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#checking-the-successful-installation"><i class="fa fa-check"></i><b>1.3.4</b> Checking the Successful Installation</a></li>
+<li class="chapter" data-level="1.3.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#some-r-and-rstudio-basics"><i class="fa fa-check"></i><b>1.3.5</b> Some R and RStudio Basics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="what-evolution-is.html"><a href="what-evolution-is.html#additional-resources"><i class="fa fa-check"></i><b>1.4</b> Additional Resources</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="what-evolution-is.html"><a href="what-evolution-is.html#alternative-evolution-textbooks"><i class="fa fa-check"></i><b>1.4.1</b> Alternative Evolution Textbooks</a></li>
+<li class="chapter" data-level="1.4.2" data-path="what-evolution-is.html"><a href="what-evolution-is.html#evolution-in-the-primary-literature-and-the-news"><i class="fa fa-check"></i><b>1.4.2</b> Evolution in the Primary Literature and the News</a></li>
+<li class="chapter" data-level="1.4.3" data-path="what-evolution-is.html"><a href="what-evolution-is.html#r-and-rstudio-resources"><i class="fa fa-check"></i><b>1.4.3</b> R and RStudio Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="what-evolution-is.html"><a href="what-evolution-is.html#reflection-questions"><i class="fa fa-check"></i><b>1.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="1.6" data-path="what-evolution-is.html"><a href="what-evolution-is.html#references-1"><i class="fa fa-check"></i><b>1.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html"><i class="fa fa-check"></i><b>2</b> Evidence for Evolution</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#microevolution"><i class="fa fa-check"></i><b>2.1</b> Microevolution</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#the-case-of-threespine-stickleback"><i class="fa fa-check"></i><b>2.1.1</b> The Case of Threespine Stickleback</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#speciation"><i class="fa fa-check"></i><b>2.2</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#ring-species"><i class="fa fa-check"></i><b>2.2.1</b> Ring Species</a></li>
+<li class="chapter" data-level="2.2.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#catching-speciation-in-action"><i class="fa fa-check"></i><b>2.2.2</b> Catching Speciation in Action</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#macroevolution"><i class="fa fa-check"></i><b>2.3</b> Macroevolution</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#geographic-and-temporal-patterns-of-succession"><i class="fa fa-check"></i><b>2.3.1</b> Geographic and Temporal Patterns of Succession</a></li>
+<li class="chapter" data-level="2.3.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#transitional-fossils"><i class="fa fa-check"></i><b>2.3.2</b> Transitional Fossils</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#common-ancestry-and-homology"><i class="fa fa-check"></i><b>2.4</b> Common Ancestry and Homology</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#shared-flaws"><i class="fa fa-check"></i><b>2.4.1</b> Shared Flaws</a></li>
+<li class="chapter" data-level="2.4.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#why-homologies-matter"><i class="fa fa-check"></i><b>2.4.2</b> Why Homologies Matter</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#deep-time"><i class="fa fa-check"></i><b>2.5</b> Deep Time</a></li>
+<li class="chapter" data-level="2.6" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#tiktaalik"><i class="fa fa-check"></i><b>2.6</b> Correspondence of Different Lines of Evidence</a></li>
+<li class="chapter" data-level="2.7" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#absence-of-evidence"><i class="fa fa-check"></i><b>2.7</b> Absence of Evidence…</a></li>
+<li class="chapter" data-level="2.8" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#case-study-darwins-finches"><i class="fa fa-check"></i><b>2.8</b> Case Study: Darwin’s Finches</a></li>
+<li class="chapter" data-level="2.9" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#practical-skills-r-notebooks-and-plotting-with-ggplot"><i class="fa fa-check"></i><b>2.9</b> Practical Skills: R Notebooks and Plotting with ggplot</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#r-notebooks"><i class="fa fa-check"></i><b>2.9.1</b> R Notebooks</a></li>
+<li class="chapter" data-level="2.9.2" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#libraries"><i class="fa fa-check"></i><b>2.9.2</b> Using Libraries</a></li>
+<li class="chapter" data-level="2.9.3" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#import-data"><i class="fa fa-check"></i><b>2.9.3</b> Importing Data</a></li>
+<li class="chapter" data-level="2.9.4" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#graphing-data"><i class="fa fa-check"></i><b>2.9.4</b> Graphing Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#reflection-questions-1"><i class="fa fa-check"></i><b>2.10</b> Reflection Questions</a></li>
+<li class="chapter" data-level="2.11" data-path="evidence-for-evolution.html"><a href="evidence-for-evolution.html#references-2"><i class="fa fa-check"></i><b>2.11</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html"><i class="fa fa-check"></i><b>3</b> A Mechanism for Change</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#darwins-logic"><i class="fa fa-check"></i><b>3.1</b> Darwin’s Logic</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#variation"><i class="fa fa-check"></i><b>3.1.1</b> Variation</a></li>
+<li class="chapter" data-level="3.1.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#heritability"><i class="fa fa-check"></i><b>3.1.2</b> Heritability</a></li>
+<li class="chapter" data-level="3.1.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-struggle-for-existence"><i class="fa fa-check"></i><b>3.1.3</b> The Struggle for Existence</a></li>
+<li class="chapter" data-level="3.1.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#non-random-survival-and-reproduction"><i class="fa fa-check"></i><b>3.1.4</b> Non-Random Survival and Reproduction</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#putting-darwins-logic-to-the-test"><i class="fa fa-check"></i><b>3.2</b> Putting Darwin’s Logic to the Test</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-variation-in-beak-size"><i class="fa fa-check"></i><b>3.2.1</b> Is there Variation in Beak Size?</a></li>
+<li class="chapter" data-level="3.2.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-variation-in-beak-size-heritable"><i class="fa fa-check"></i><b>3.2.2</b> Is Variation in Beak Size Heritable?</a></li>
+<li class="chapter" data-level="3.2.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-there-a-struggle-for-existence"><i class="fa fa-check"></i><b>3.2.3</b> Is there a Struggle for Existence?</a></li>
+<li class="chapter" data-level="3.2.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#is-survival-non-random"><i class="fa fa-check"></i><b>3.2.4</b> Is Survival Non-Random?</a></li>
+<li class="chapter" data-level="3.2.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#did-non-random-survival-lead-to-evolution"><i class="fa fa-check"></i><b>3.2.5</b> Did Non-Random Survival Lead to Evolution?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#case-study-exploring-among-population-variation"><i class="fa fa-check"></i><b>3.3</b> Case Study: Exploring Among-Population Variation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#the-cave-molly-and-its-ancestors"><i class="fa fa-check"></i><b>3.3.1</b> The Cave Molly and its Ancestors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#practical-skills-number-sequences-allometry-and-histograms"><i class="fa fa-check"></i><b>3.4</b> Practical Skills: Number Sequences, Allometry, and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#number-sequences"><i class="fa fa-check"></i><b>3.4.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="3.4.2" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#allometry-residuals"><i class="fa fa-check"></i><b>3.4.2</b> Allometry &amp; Residuals</a></li>
+<li class="chapter" data-level="3.4.3" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#histograms-and-density-functions"><i class="fa fa-check"></i><b>3.4.3</b> Histograms and Density Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#reflection-questions-2"><i class="fa fa-check"></i><b>3.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="3.6" data-path="a-mechanism-for-change.html"><a href="a-mechanism-for-change.html#references-3"><i class="fa fa-check"></i><b>3.6</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>II A Genetic Perspective on Evolution</b></span></li>
+<li class="chapter" data-level="4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html"><i class="fa fa-check"></i><b>4</b> The Raw Materials for Evolution</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#the-genotype-phenotype-gap"><i class="fa fa-check"></i><b>4.1</b> The Genotype-Phenotype Gap</a></li>
+<li class="chapter" data-level="4.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-the-fundamental-source-of-novelty"><i class="fa fa-check"></i><b>4.2</b> Mutation: The Fundamental Source of Novelty</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#point-mutations"><i class="fa fa-check"></i><b>4.2.1</b> Point Mutations</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#inversions"><i class="fa fa-check"></i><b>4.2.2</b> Inversions</a></li>
+<li class="chapter" data-level="4.2.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#gene-duplication"><i class="fa fa-check"></i><b>4.2.3</b> Gene Duplication</a></li>
+<li class="chapter" data-level="4.2.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#genome-duplication"><i class="fa fa-check"></i><b>4.2.4</b> Genome Duplication</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#mutation-rates"><i class="fa fa-check"></i><b>4.3</b> Mutation Rates</a></li>
+<li class="chapter" data-level="4.4" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#quantifying-genetic-variation"><i class="fa fa-check"></i><b>4.4</b> Quantifying Genetic Variation</a></li>
+<li class="chapter" data-level="4.5" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#a-null-model-for-evolution"><i class="fa fa-check"></i><b>4.5</b> A Null Model for Evolution</a></li>
+<li class="chapter" data-level="4.6" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#case-study-hardy-weinberg-equilirbium"><i class="fa fa-check"></i><b>4.6</b> Case Study: Hardy-Weinberg Equilirbium</a></li>
+<li class="chapter" data-level="4.7" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#practical-skills-number-sequences-2.0-and-complex-graphs"><i class="fa fa-check"></i><b>4.7</b> Practical Skills: Number Sequences 2.0 and Complex Graphs</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#number-sequences-1"><i class="fa fa-check"></i><b>4.7.1</b> Number Sequences</a></li>
+<li class="chapter" data-level="4.7.2" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#layering-data-sets"><i class="fa fa-check"></i><b>4.7.2</b> Layering Data Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#reflection-questions-3"><i class="fa fa-check"></i><b>4.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="4.9" data-path="the-raw-materials-for-evolution.html"><a href="the-raw-materials-for-evolution.html#references-4"><i class="fa fa-check"></i><b>4.9</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html"><i class="fa fa-check"></i><b>5</b> Evolutionary Mechanisms I: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#the-effects-of-selection"><i class="fa fa-check"></i><b>5.1</b> The Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection"><i class="fa fa-check"></i><b>5.1.1</b> Frequency-Dependent Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-the-effects-of-selection"><i class="fa fa-check"></i><b>5.2</b> Modeling the Effects of Selection</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#relative-fitness"><i class="fa fa-check"></i><b>5.2.1</b> Relative Fitness</a></li>
+<li class="chapter" data-level="5.2.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#calculating-allele-frequency-changes"><i class="fa fa-check"></i><b>5.2.2</b> Calculating Allele Frequency Changes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#case-study-modeling-selection"><i class="fa fa-check"></i><b>5.3</b> Case Study: Modeling Selection</a></li>
+<li class="chapter" data-level="5.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#practical-skills"><i class="fa fa-check"></i><b>5.4</b> Practical Skills: Modeling Selection</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#modeling-selection"><i class="fa fa-check"></i><b>5.4.1</b> Modeling Selection</a></li>
+<li class="chapter" data-level="5.4.2" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#running-multiple-selection-models"><i class="fa fa-check"></i><b>5.4.2</b> Running Multiple Selection Models</a></li>
+<li class="chapter" data-level="5.4.3" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#frequency-dependent-selection-1"><i class="fa fa-check"></i><b>5.4.3</b> Frequency-Dependent Selection</a></li>
+<li class="chapter" data-level="5.4.4" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#understanding-equilibria"><i class="fa fa-check"></i><b>5.4.4</b> Understanding Equilibria</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#reflection-questions-4"><i class="fa fa-check"></i><b>5.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="5.6" data-path="evolutionary-mechanisms-i-modeling-selection.html"><a href="evolutionary-mechanisms-i-modeling-selection.html#references-5"><i class="fa fa-check"></i><b>5.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><i class="fa fa-check"></i><b>6</b> Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#mutation-the-force-creating-novelty"><i class="fa fa-check"></i><b>6.1</b> Mutation: The Force Creating Novelty</a></li>
+<li class="chapter" data-level="6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force"><i class="fa fa-check"></i><b>6.2</b> Genetic Drift: The Random Force</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-drift-and-selection"><i class="fa fa-check"></i><b>6.2.1</b> Interactions Between Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#migration-the-homogenizing-force"><i class="fa fa-check"></i><b>6.3</b> Migration: The Homogenizing Force</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-migration-and-selection"><i class="fa fa-check"></i><b>6.3.1</b> Interactions Between Migration and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#non-random-mating-not-much-of-a-force"><i class="fa fa-check"></i><b>6.4</b> Non-Random Mating: Not Much of a Force</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-inbreeding-and-selection"><i class="fa fa-check"></i><b>6.4.1</b> Interactions between Inbreeding and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#case-study-background-beyond-selection"><i class="fa fa-check"></i><b>6.5</b> Case Study Background: Beyond Selection</a></li>
+<li class="chapter" data-level="6.6" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#practical-skills-modeling-mutation-drift-and-selection"><i class="fa fa-check"></i><b>6.6</b> Practical Skills: Modeling Mutation, Drift, and Selection</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-mutation-and-selection"><i class="fa fa-check"></i><b>6.6.1</b> Modeling Mutation and Selection</a></li>
+<li class="chapter" data-level="6.6.2" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift"><i class="fa fa-check"></i><b>6.6.2</b> Modeling Genetic Drift</a></li>
+<li class="chapter" data-level="6.6.3" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift-and-selection"><i class="fa fa-check"></i><b>6.6.3</b> Modeling Genetic Drift and Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions-5"><i class="fa fa-check"></i><b>6.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="6.8" data-path="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#references-6"><i class="fa fa-check"></i><b>6.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html"><i class="fa fa-check"></i><b>7</b> Evolution of DNA Sequences</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#dna-alignment-and-genome-assembly"><i class="fa fa-check"></i><b>7.1</b> DNA Alignment and Genome Assembly</a></li>
+<li class="chapter" data-level="7.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reconstructing-history-phylogenetic-trees"><i class="fa fa-check"></i><b>7.2</b> Reconstructing History: Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies"><i class="fa fa-check"></i><b>7.2.1</b> Molecular Phylogenies</a></li>
+<li class="chapter" data-level="7.2.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-phylogenies-in-real-life"><i class="fa fa-check"></i><b>7.2.2</b> Molecular Phylogenies in Real Life</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-neutral-theory"><i class="fa fa-check"></i><b>7.3</b> The Neutral Theory</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#molecular-clocks"><i class="fa fa-check"></i><b>7.3.1</b> Molecular Clocks</a></li>
+<li class="chapter" data-level="7.3.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#detecting-signatures-of-selection"><i class="fa fa-check"></i><b>7.3.2</b> Detecting Signatures of Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#case-study-sars-cov-2"><i class="fa fa-check"></i><b>7.4</b> Case Study: SARS-CoV-2</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#host-pathogen-coevolution"><i class="fa fa-check"></i><b>7.4.1</b> Host-Pathogen Coevolution</a></li>
+<li class="chapter" data-level="7.4.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-evolution-of-the-seasonal-flu"><i class="fa fa-check"></i><b>7.4.2</b> The Evolution of the Seasonal Flu</a></li>
+<li class="chapter" data-level="7.4.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#high-virulence-flu-strains"><i class="fa fa-check"></i><b>7.4.3</b> High-Virulence Flu Strains</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#practical-skills-working-with-phylogenetic-trees"><i class="fa fa-check"></i><b>7.5</b> Practical Skills: Working with Phylogenetic Trees</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#installing-dependencies"><i class="fa fa-check"></i><b>7.5.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="7.5.2" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#the-pipe-operator"><i class="fa fa-check"></i><b>7.5.2</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="7.5.3" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#importing-a-tree"><i class="fa fa-check"></i><b>7.5.3</b> Importing a Tree</a></li>
+<li class="chapter" data-level="7.5.4" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#plotting-a-tree"><i class="fa fa-check"></i><b>7.5.4</b> Plotting a Tree</a></li>
+<li class="chapter" data-level="7.5.5" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#annotating-a-tree"><i class="fa fa-check"></i><b>7.5.5</b> Annotating a Tree</a></li>
+<li class="chapter" data-level="7.5.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#calculating-the-distance-to-root"><i class="fa fa-check"></i><b>7.5.6</b> Calculating the Distance to Root</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#reflection-questions-6"><i class="fa fa-check"></i><b>7.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="7.7" data-path="evolution-of-dna-sequences.html"><a href="evolution-of-dna-sequences.html#references-7"><i class="fa fa-check"></i><b>7.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html"><i class="fa fa-check"></i><b>8</b> The Evolution of Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qualitative-traits-and-epistasis"><i class="fa fa-check"></i><b>8.1</b> Qualitative Traits and Epistasis</a></li>
+<li class="chapter" data-level="8.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-traits-a-product-of-genes-and-environment"><i class="fa fa-check"></i><b>8.2</b> Quantitative Traits: a Product of Genes and Environment</a></li>
+<li class="chapter" data-level="8.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantitative-trait-evolution"><i class="fa fa-check"></i><b>8.3</b> Quantitative Trait Evolution</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-trait-heritability"><i class="fa fa-check"></i><b>8.3.1</b> Quantifying Trait Heritability</a></li>
+<li class="chapter" data-level="8.3.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#quantifying-the-strength-of-selection"><i class="fa fa-check"></i><b>8.3.2</b> Quantifying the Strength of Selection</a></li>
+<li class="chapter" data-level="8.3.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#calculating-the-response-to-selection"><i class="fa fa-check"></i><b>8.3.3</b> Calculating the Response to Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#modes-of-selection-on-quantitative-traits"><i class="fa fa-check"></i><b>8.4</b> Modes of Selection on Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#directional-selection"><i class="fa fa-check"></i><b>8.4.1</b> Directional Selection</a></li>
+<li class="chapter" data-level="8.4.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#stabilizing-selection"><i class="fa fa-check"></i><b>8.4.2</b> Stabilizing Selection</a></li>
+<li class="chapter" data-level="8.4.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#disruptive-selection"><i class="fa fa-check"></i><b>8.4.3</b> Disruptive Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#identifying-genes-underlying-quantitative-traits"><i class="fa fa-check"></i><b>8.5</b> Identifying Genes Underlying Quantitative Traits</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-mapping"><i class="fa fa-check"></i><b>8.5.1</b> QTL Mapping</a></li>
+<li class="chapter" data-level="8.5.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#gwas"><i class="fa fa-check"></i><b>8.5.2</b> GWAS</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#case-study-quantitative-genetics"><i class="fa fa-check"></i><b>8.6</b> Case Study: Quantitative Genetics</a></li>
+<li class="chapter" data-level="8.7" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#practical-skills-qtl-mapping"><i class="fa fa-check"></i><b>8.7</b> Practical Skills: QTL Mapping</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#installing-dependencies-1"><i class="fa fa-check"></i><b>8.7.1</b> Installing Dependencies</a></li>
+<li class="chapter" data-level="8.7.2" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#read-qtl-data"><i class="fa fa-check"></i><b>8.7.2</b> Read QTL Data</a></li>
+<li class="chapter" data-level="8.7.3" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-genotypes-loci-linkage-map"><i class="fa fa-check"></i><b>8.7.3</b> Explore the Data: Genotypes, Loci &amp; Linkage Map</a></li>
+<li class="chapter" data-level="8.7.4" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#explore-the-data-phenotypes"><i class="fa fa-check"></i><b>8.7.4</b> Explore the Data: Phenotypes</a></li>
+<li class="chapter" data-level="8.7.5" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#qtl-scan"><i class="fa fa-check"></i><b>8.7.5</b> QTL Scan</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#reflection-questions-7"><i class="fa fa-check"></i><b>8.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="8.9" data-path="the-evolution-of-quantitative-traits.html"><a href="the-evolution-of-quantitative-traits.html#references-8"><i class="fa fa-check"></i><b>8.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>III Evolution in the Real World</b></span></li>
+<li class="chapter" data-level="9" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html"><i class="fa fa-check"></i><b>9</b> Adaptation and Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#inferring-adaptation"><i class="fa fa-check"></i><b>9.1</b> Inferring Adaptation</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#interspecific-comparisons"><i class="fa fa-check"></i><b>9.1.1</b> Interspecific Comparisons</a></li>
+<li class="chapter" data-level="9.1.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#intraspecific-studies"><i class="fa fa-check"></i><b>9.1.2</b> Intraspecific Studies</a></li>
+<li class="chapter" data-level="9.1.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#local-adaptation-within-species"><i class="fa fa-check"></i><b>9.1.3</b> Local Adaptation within Species</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2</b> Phenotypic Plasticity</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#types-of-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.1</b> Types of Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.2.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reaction-norms-and-the-evolution-of-plasticity"><i class="fa fa-check"></i><b>9.2.2</b> Reaction Norms and the Evolution of Plasticity</a></li>
+<li class="chapter" data-level="9.2.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#adaptive-and-maladaptive-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.2.3</b> Adaptive and Maladaptive Phenotypic Plasticity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#case-study-local-adaptation-and-phenotypic-plasticity"><i class="fa fa-check"></i><b>9.3</b> Case Study: Local Adaptation and Phenotypic Plasticity</a></li>
+<li class="chapter" data-level="9.4" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#practical-skills-more-variables-more-graphs"><i class="fa fa-check"></i><b>9.4</b> Practical Skills: More Variables, More Graphs</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-1-many-independent-variables"><i class="fa fa-check"></i><b>9.4.1</b> Example 1: Many Independent Variables</a></li>
+<li class="chapter" data-level="9.4.2" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#example-2-many-dependent-variables"><i class="fa fa-check"></i><b>9.4.2</b> Example 2: Many Dependent Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#reflection-questions-8"><i class="fa fa-check"></i><b>9.5</b> Reflection Questions</a></li>
+<li class="chapter" data-level="9.6" data-path="adaptation-and-phenotypic-plasticity.html"><a href="adaptation-and-phenotypic-plasticity.html#references-9"><i class="fa fa-check"></i><b>9.6</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html"><i class="fa fa-check"></i><b>10</b> Social Behavior and Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#social-behavior"><i class="fa fa-check"></i><b>10.1</b> Social Behavior</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#kin-selection"><i class="fa fa-check"></i><b>10.1.1</b> Kin Selection</a></li>
+<li class="chapter" data-level="10.1.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reciprocal-altruism"><i class="fa fa-check"></i><b>10.1.2</b> Reciprocal Altruism</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-selection"><i class="fa fa-check"></i><b>10.2</b> Sexual Selection</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#causes-of-sexual-selection"><i class="fa fa-check"></i><b>10.2.1</b> Causes of Sexual Selection</a></li>
+<li class="chapter" data-level="10.2.2" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intrasexual-selection-male-male-competition"><i class="fa fa-check"></i><b>10.2.2</b> Intrasexual Selection: Male-Male Competition</a></li>
+<li class="chapter" data-level="10.2.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#sexual-conflict"><i class="fa fa-check"></i><b>10.2.3</b> Sexual Conflict</a></li>
+<li class="chapter" data-level="10.2.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#intersexual-selection-female-mate-choice"><i class="fa fa-check"></i><b>10.2.4</b> Intersexual Selection: Female Mate Choice</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#case-study-altruism-and-sexual-selection"><i class="fa fa-check"></i><b>10.3</b> Case Study: Altruism and Sexual Selection</a></li>
+<li class="chapter" data-level="10.4" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#reflection-questions-9"><i class="fa fa-check"></i><b>10.4</b> Reflection Questions</a></li>
+<li class="chapter" data-level="10.5" data-path="social-behavior-and-sexual-selection.html"><a href="social-behavior-and-sexual-selection.html#references-10"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="speciation-1.html"><a href="speciation-1.html"><i class="fa fa-check"></i><b>11</b> Speciation</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="speciation-1.html"><a href="speciation-1.html#species-and-species-concepts"><i class="fa fa-check"></i><b>11.1</b> Species and Species Concepts</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="speciation-1.html"><a href="speciation-1.html#the-biological-species-concept"><i class="fa fa-check"></i><b>11.1.1</b> The Biological Species Concept</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="speciation-1.html"><a href="speciation-1.html#speciation-as-a-gradual-process"><i class="fa fa-check"></i><b>11.2</b> Speciation as a Gradual Process</a></li>
+<li class="chapter" data-level="11.3" data-path="speciation-1.html"><a href="speciation-1.html#mechanisms-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.3</b> Mechanisms of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="speciation-1.html"><a href="speciation-1.html#pre-mating-isolation"><i class="fa fa-check"></i><b>11.3.1</b> Pre-Mating Isolation</a></li>
+<li class="chapter" data-level="11.3.2" data-path="speciation-1.html"><a href="speciation-1.html#post-mating-pre-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.2</b> Post-Mating, Pre-zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.3" data-path="speciation-1.html"><a href="speciation-1.html#post-zygotic-isolation"><i class="fa fa-check"></i><b>11.3.3</b> Post-Zygotic Isolation</a></li>
+<li class="chapter" data-level="11.3.4" data-path="speciation-1.html"><a href="speciation-1.html#reproductive-isolation-as-a-complex-trait"><i class="fa fa-check"></i><b>11.3.4</b> Reproductive Isolation as a Complex Trait</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="speciation-1.html"><a href="speciation-1.html#the-evolution-of-reproductive-isolation"><i class="fa fa-check"></i><b>11.4</b> The Evolution of Reproductive Isolation</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="speciation-1.html"><a href="speciation-1.html#polyploidization-and-instantaneous-speciation"><i class="fa fa-check"></i><b>11.4.1</b> Polyploidization and Instantaneous Speciation</a></li>
+<li class="chapter" data-level="11.4.2" data-path="speciation-1.html"><a href="speciation-1.html#allopatric-speciation-and-hybridization"><i class="fa fa-check"></i><b>11.4.2</b> Allopatric Speciation and Hybridization</a></li>
+<li class="chapter" data-level="11.4.3" data-path="speciation-1.html"><a href="speciation-1.html#ecological-speciation"><i class="fa fa-check"></i><b>11.4.3</b> Ecological Speciation</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="speciation-1.html"><a href="speciation-1.html#adaptive-radiation"><i class="fa fa-check"></i><b>11.5</b> Adaptive Radiation</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="speciation-1.html"><a href="speciation-1.html#african-cichlid-fishes"><i class="fa fa-check"></i><b>11.5.1</b> African Cichlid Fishes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="speciation-1.html"><a href="speciation-1.html#case-study-speciation"><i class="fa fa-check"></i><b>11.6</b> Case Study: Speciation</a></li>
+<li class="chapter" data-level="11.7" data-path="speciation-1.html"><a href="speciation-1.html#practical-skills-interpreting-structure-plots"><i class="fa fa-check"></i><b>11.7</b> Practical Skills: Interpreting Structure Plots</a></li>
+<li class="chapter" data-level="11.8" data-path="speciation-1.html"><a href="speciation-1.html#reflection-questions-10"><i class="fa fa-check"></i><b>11.8</b> Reflection Questions</a></li>
+<li class="chapter" data-level="11.9" data-path="speciation-1.html"><a href="speciation-1.html#references-11"><i class="fa fa-check"></i><b>11.9</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>IV Applied Evolutionary Biology</b></span></li>
+<li class="chapter" data-level="12" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><i class="fa fa-check"></i><b>12</b> Evolutionary Medicine I: Aging and Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#darwinian-medicine"><i class="fa fa-check"></i><b>12.1</b> Darwinian Medicine</a></li>
+<li class="chapter" data-level="12.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#diseases-of-civilization"><i class="fa fa-check"></i><b>12.2</b> Diseases of Civilization</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#modern-hunter-gatherers-and-urbanites"><i class="fa fa-check"></i><b>12.2.1</b> Modern Hunter-Gatherers and Urbanites</a></li>
+<li class="chapter" data-level="12.2.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#old-adaptations-in-a-modern-world"><i class="fa fa-check"></i><b>12.2.2</b> Old Adaptations in a Modern World</a></li>
+<li class="chapter" data-level="12.2.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#an-example-breast-cancer"><i class="fa fa-check"></i><b>12.2.3</b> An Example: Breast Cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#why-we-age-and-die"><i class="fa fa-check"></i><b>12.3</b> Why We Age… and Die</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#rate-of-living-hypothesis"><i class="fa fa-check"></i><b>12.3.1</b> Rate of Living Hypothesis</a></li>
+<li class="chapter" data-level="12.3.2" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#evolutionary-theories-of-aging"><i class="fa fa-check"></i><b>12.3.2</b> Evolutionary Theories of Aging</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#case-study-evolution-of-aging"><i class="fa fa-check"></i><b>12.4</b> Case Study: Evolution of Aging</a></li>
+<li class="chapter" data-level="12.5" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#practical-skills-life-table-analysis"><i class="fa fa-check"></i><b>12.5</b> Practical Skills: Life Table Analysis</a></li>
+<li class="chapter" data-level="12.6" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#reflection-questions-11"><i class="fa fa-check"></i><b>12.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="12.7" data-path="evolutionary-medicine-i-aging-and-diseases-of-civilization.html"><a href="evolutionary-medicine-i-aging-and-diseases-of-civilization.html#references-12"><i class="fa fa-check"></i><b>12.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html"><i class="fa fa-check"></i><b>13</b> Evolutionary Medicine II: Evolving Pathogens</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#epidemiology-and-pathogen-fitness"><i class="fa fa-check"></i><b>13.1</b> Epidemiology and Pathogen Fitness</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#a-basic-epidemiological-model"><i class="fa fa-check"></i><b>13.1.1</b> A Basic Epidemiological model</a></li>
+<li class="chapter" data-level="13.1.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#r0-a-measure-of-pathogen-fitness"><i class="fa fa-check"></i><b>13.1.2</b> <em>R</em><sub>0</sub>: A Measure of Pathogen Fitness</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#the-evolution-of-virulence"><i class="fa fa-check"></i><b>13.2</b> The Evolution of Virulence</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#trade-offs-and-modes-of-transmission"><i class="fa fa-check"></i><b>13.2.1</b> Trade-Offs and Modes of Transmission</a></li>
+<li class="chapter" data-level="13.2.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#short-sighted-and-coincidental-evolution-hypotheses"><i class="fa fa-check"></i><b>13.2.2</b> Short-Sighted and Coincidental Evolution Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#cultural-practices-disease-spread-and-evolution"><i class="fa fa-check"></i><b>13.3</b> Cultural Practices, Disease Spread, and Evolution</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#disrupting-pathogen-transmission"><i class="fa fa-check"></i><b>13.3.1</b> Disrupting Pathogen Transmission</a></li>
+<li class="chapter" data-level="13.3.2" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#vaccination-and-herd-immunity"><i class="fa fa-check"></i><b>13.3.2</b> Vaccination and Herd Immunity</a></li>
+<li class="chapter" data-level="13.3.3" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#pathogen-responses"><i class="fa fa-check"></i><b>13.3.3</b> Pathogen Responses</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#antibiotic-resistance"><i class="fa fa-check"></i><b>13.4</b> Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.5" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#case-study-covid-19-epidemiology-and-the-cost-of-antibiotic-resistance"><i class="fa fa-check"></i><b>13.5</b> Case Study: COVID-19 Epidemiology and the Cost of Antibiotic Resistance</a></li>
+<li class="chapter" data-level="13.6" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#practical-skills-data-wrangling-and-log-scales"><i class="fa fa-check"></i><b>13.6</b> Practical Skills: Data Wrangling and Log-Scales</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#data-wrangling"><i class="fa fa-check"></i><b>13.6.1</b> Data Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#reflection-questions-12"><i class="fa fa-check"></i><b>13.7</b> Reflection Questions</a></li>
+<li class="chapter" data-level="13.8" data-path="evolutionary-medicine-ii-evolving-pathogens.html"><a href="evolutionary-medicine-ii-evolving-pathogens.html#references-13"><i class="fa fa-check"></i><b>13.8</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="human-evolution.html"><a href="human-evolution.html"><i class="fa fa-check"></i><b>14</b> Human Evolution</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="human-evolution.html"><a href="human-evolution.html#phylogenetic-position"><i class="fa fa-check"></i><b>14.1</b> Phylogenetic Position</a></li>
+<li class="chapter" data-level="14.2" data-path="human-evolution.html"><a href="human-evolution.html#what-the-fossils-say"><i class="fa fa-check"></i><b>14.2</b> What the Fossils Say</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="human-evolution.html"><a href="human-evolution.html#an-abridged-timeline"><i class="fa fa-check"></i><b>14.2.1</b> An Abridged Timeline</a></li>
+<li class="chapter" data-level="14.2.2" data-path="human-evolution.html"><a href="human-evolution.html#evolutionary-trends"><i class="fa fa-check"></i><b>14.2.2</b> Evolutionary Trends</a></li>
+<li class="chapter" data-level="14.2.3" data-path="human-evolution.html"><a href="human-evolution.html#a-lone-survivor-of-an-extinct-radiation"><i class="fa fa-check"></i><b>14.2.3</b> A Lone Survivor of an Extinct Radiation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="human-evolution.html"><a href="human-evolution.html#modern-human-origins"><i class="fa fa-check"></i><b>14.3</b> Modern Human Origins</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="human-evolution.html"><a href="human-evolution.html#hypotheses"><i class="fa fa-check"></i><b>14.3.1</b> Hypotheses</a></li>
+<li class="chapter" data-level="14.3.2" data-path="human-evolution.html"><a href="human-evolution.html#multiregional-evolution-vs.-out-of-africa"><i class="fa fa-check"></i><b>14.3.2</b> Multiregional Evolution <em>vs</em>. Out-Of-Africa</a></li>
+<li class="chapter" data-level="14.3.3" data-path="human-evolution.html"><a href="human-evolution.html#out-of-africa-vs.-hybridization-and-assimilation"><i class="fa fa-check"></i><b>14.3.3</b> Out-of-Africa <em>vs</em>. Hybridization-and-Assimilation</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="human-evolution.html"><a href="human-evolution.html#what-makes-us-human"><i class="fa fa-check"></i><b>14.4</b> What Makes Us Human?</a></li>
+<li class="chapter" data-level="14.5" data-path="human-evolution.html"><a href="human-evolution.html#case-study-modern-human-origins"><i class="fa fa-check"></i><b>14.5</b> Case Study: Modern Human Origins</a></li>
+<li class="chapter" data-level="14.6" data-path="human-evolution.html"><a href="human-evolution.html#reflection-questions-13"><i class="fa fa-check"></i><b>14.6</b> Reflection Questions</a></li>
+<li class="chapter" data-level="14.7" data-path="human-evolution.html"><a href="human-evolution.html#references-14"><i class="fa fa-check"></i><b>14.7</b> References</a></li>
+</ul></li>
+<li class="part"><span><b>V Interactive Simulations</b></span></li>
+<li class="chapter" data-level="" data-path="simulating-selection.html"><a href="simulating-selection.html"><i class="fa fa-check"></i>Simulating Selection</a></li>
+<li class="chapter" data-level="" data-path="simulating-genetic-drift.html"><a href="simulating-genetic-drift.html"><i class="fa fa-check"></i>Simulating Genetic Drift</a></li>
+<li class="chapter" data-level="" data-path="simulating-mutation-and-selection.html"><a href="simulating-mutation-and-selection.html"><i class="fa fa-check"></i>Simulating Mutation and Selection</a></li>
+<li class="chapter" data-level="" data-path="simulating-genetic-drift-and-selection.html"><a href="simulating-genetic-drift-and-selection.html"><i class="fa fa-check"></i>Simulating Genetic Drift and Selection</a></li>
+<li class="appendix"><span><b>Appendix I</b></span></li>
+<li class="chapter" data-level="" data-path="graph-library.html"><a href="graph-library.html"><i class="fa fa-check"></i>Graph Library</a>
+<ul>
+<li class="chapter" data-level="8" data-path="graph-library.html"><a href="graph-library.html#sample-data"><i class="fa fa-check"></i><b>8</b> Sample Data</a></li>
+<li class="chapter" data-level="9" data-path="graph-library.html"><a href="graph-library.html#loading-dependencies"><i class="fa fa-check"></i><b>9</b> Loading Dependencies</a></li>
+<li class="chapter" data-level="10" data-path="graph-library.html"><a href="graph-library.html#one-variable-continuous"><i class="fa fa-check"></i><b>10</b> One Variable: Continuous</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram"><i class="fa fa-check"></i><b>10.1</b> Frequency Histogram</a></li>
+<li class="chapter" data-level="10.2" data-path="graph-library.html"><a href="graph-library.html#density-plot"><i class="fa fa-check"></i><b>10.2</b> Density Plot</a></li>
+<li class="chapter" data-level="10.3" data-path="graph-library.html"><a href="graph-library.html#frequency-histogram-with-density"><i class="fa fa-check"></i><b>10.3</b> Frequency Histogram with Density</a></li>
+<li class="chapter" data-level="10.4" data-path="graph-library.html"><a href="graph-library.html#adding-a-discrete-variable"><i class="fa fa-check"></i><b>10.4</b> Adding a Discrete Variable</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="graph-library.html"><a href="graph-library.html#two-variables-continuous-x-and-y"><i class="fa fa-check"></i><b>11</b> Two Variables: Continuous X and Y</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="graph-library.html"><a href="graph-library.html#scatter-plot"><i class="fa fa-check"></i><b>11.1</b> Scatter Plot</a></li>
+<li class="chapter" data-level="11.2" data-path="graph-library.html"><a href="graph-library.html#regression-line"><i class="fa fa-check"></i><b>11.2</b> Regression Line</a></li>
+<li class="chapter" data-level="11.3" data-path="graph-library.html"><a href="graph-library.html#scatter-plot-with-regression"><i class="fa fa-check"></i><b>11.3</b> Scatter Plot with Regression</a></li>
+<li class="chapter" data-level="11.4" data-path="graph-library.html"><a href="graph-library.html#adding-discrete-variables"><i class="fa fa-check"></i><b>11.4</b> Adding Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="graph-library.html"><a href="graph-library.html#two-variables-discrete-x-continuous-y"><i class="fa fa-check"></i><b>12</b> Two Variables: Discrete X, Continuous Y</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="graph-library.html"><a href="graph-library.html#box-plot"><i class="fa fa-check"></i><b>12.1</b> Box Plot</a></li>
+<li class="chapter" data-level="12.2" data-path="graph-library.html"><a href="graph-library.html#dot-plot"><i class="fa fa-check"></i><b>12.2</b> Dot Plot</a></li>
+<li class="chapter" data-level="12.3" data-path="graph-library.html"><a href="graph-library.html#violin-plot"><i class="fa fa-check"></i><b>12.3</b> Violin Plot</a></li>
+<li class="chapter" data-level="12.4" data-path="graph-library.html"><a href="graph-library.html#adding-raw-data"><i class="fa fa-check"></i><b>12.4</b> Adding Raw data</a></li>
+<li class="chapter" data-level="12.5" data-path="graph-library.html"><a href="graph-library.html#adding-additional-discrete-variables"><i class="fa fa-check"></i><b>12.5</b> Adding Additional Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="graph-library.html"><a href="graph-library.html#aggregate-data"><i class="fa fa-check"></i><b>13</b> Aggregate Data</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="graph-library.html"><a href="graph-library.html#calculating-mean-and-standard-deviation"><i class="fa fa-check"></i><b>13.1</b> Calculating Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="13.2" data-path="graph-library.html"><a href="graph-library.html#visualizing-means-and-variation"><i class="fa fa-check"></i><b>13.2</b> Visualizing Means and Variation</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="graph-library.html"><a href="graph-library.html#combining-multiple-plots"><i class="fa fa-check"></i><b>14</b> Combining Multiple plots</a></li>
+<li class="chapter" data-level="15" data-path="graph-library.html"><a href="graph-library.html#working-with-color-palettes"><i class="fa fa-check"></i><b>15</b> Working with Color Palettes</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="graph-library.html"><a href="graph-library.html#color-palettes-in-rcolorbrewer"><i class="fa fa-check"></i><b>15.1</b> Color Palettes in RColorBrewer</a></li>
+<li class="chapter" data-level="15.2" data-path="graph-library.html"><a href="graph-library.html#combining-rcolorbrewer-palettes-with-ggplot"><i class="fa fa-check"></i><b>15.2</b> Combining RColorBrewer Palettes with ggplot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="r-exercises.html"><a href="r-exercises.html"><i class="fa fa-check"></i>R Exercises</a></li>
+<li class="chapter" data-level="A" data-path="simulating-selection-1.html"><a href="simulating-selection-1.html"><i class="fa fa-check"></i><b>A</b> Simulating Selection</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Primer of Evolution</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Evolutionary Mechanisms II: Mutation, Genetic Drift, Migration, and Non-Random Mating<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Simulations in the previous chapter revealed complex evolutionary responses to selection. Contrary to common beliefs, selection does not always drive beneficial alleles to fixation; selection can maintain allele frequencies at intermediate equilibria, or even cause fixation of alleles that confer a fitness cost. While the outcomes of simulations align well with empirical studies of selection, the mathematical models employed in <a href="evolutionary-mechanisms-i-modeling-selection.html">Chapter 5</a> made some critical assumptions that may not hold up in natural populations: we assumed that there was no mutation, an infinite population size, a single population that is not connected to others, and random mating among all genotypes. All of these assumptions relate to other evolutionary forces that can bias the frequency of particular genotypes and skew allele frequencies across generations. In this chapter, we explore how the different evolutionary forces impact allele frequencies in populations, and how they interact with selection in natural settings.</p>
+<div id="mutation-the-force-creating-novelty" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Mutation: The Force Creating Novelty<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#mutation-the-force-creating-novelty" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Mutations provide the raw material upon which selection can act (<a href="the-raw-materials-for-evolution.html">Chapter 4</a>). At any given locus, mutation can cause transitions between alleles (<em>A</em><sub>1</sub> to <em>A</em><sub>2</sub>, or vice versa), or introduce a new allele (<em>A</em><sub>3</sub>). Despite the critical importance of mutation to evolutionary processes, mutation by itself is a weak evolutionary force. Because mutations rates are low, mutation at any locus only causes minute changes in allele frequency across generations.</p>
+<p>Nonetheless, there are important interactions between mutation and selection—especially in terms of the persistence of deleterious alleles in a population. In absence of mutation, selection keeps a recessive deleterious gene at a very low frequency (black line in Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:mutsel">6.1</a>). But as selection removes deleterious alleles in every generation, mutation continuously reintroduces them. When the rate of elimination of deleterious alleles is equal to the rate of mutation, the frequency of an allele is at an equilibrium, called the mutation-selection balance. Assuming a dominant-recessive mode of inheritance (<em>w</em><sub>AA</sub> = <em>w</em><sub>Aa</sub>), the frequency of a deleterious allele at equilibrium is given by the mutation rate (𝜇) and the strength of selection (<em>s</em>):</p>
+<span class="math display" id="eq:23">\[\begin{align}
+q=\sqrt{𝜇/s} \tag{6.1}
+\end{align}\]</span>
+<p>Consequently, the frequency of a deleterious allele depends on its mutation rate and the strength of selection against it. The equilibrium frequency of a deleterious allele increases with increasing mutation rate or with decreasing strength of selection, as illustrated in Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:mutsel">6.1</a>.</p>
+<div class="figure"><span style="display:block;" id="fig:mutsel"></span>
+<img src="Primer2Evolution_files/figure-html/mutsel-1.png" alt="In absence of mutation, selection maintains a recessive deleterious allele at low frequency (black line). As mutation rate increases, the equilibrium frequency of the deleterious allele increases (blue: mu=0.001; green: mu=0.01; orange: mu=0.1). The strength of selection was 0.5 for all simulations." width="672" />
+<p class="caption">
+Figure 6.1: In absence of mutation, selection maintains a recessive deleterious allele at low frequency (black line). As mutation rate increases, the equilibrium frequency of the deleterious allele increases (blue: mu=0.001; green: mu=0.01; orange: mu=0.1). The strength of selection was 0.5 for all simulations.
+</p>
+</div>
+<p>Note that Equation <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#eq:23">(6.1)</a> can be used to make inferences about mutation rates, when equilibrium allele frequencies and the strength of selection are known (because 𝜇=<em>q</em><sup>2</sup>*<em>s</em>). Accordingly, the principle of mutation-selection balance is an important null model that describes the relationship between selection, mutation, and allele frequencies, and it can be applied to study the prevalence of heritable diseases (see <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions">Reflection Questions</a> for a case study on cystic fibrosis).</p>
+</div>
+<div id="genetic-drift-the-random-force" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Genetic Drift: The Random Force<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#genetic-drift-the-random-force" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Models of selection are completely deterministic because they assume infinite population sizes. No matter how many times you run a simulation with the same parameters, you will always get exactly the same result. In reality, however, population sizes are finite. While many species on the planet do indeed have very large populations (in the order of millions and billions and even trillions), others are comparatively rare. Some rare species have naturally low populations sizes with historically restricted distributions (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:devilshole">6.2</a>); others have declined in recent decades due to anthropogenic environmental change. Species with small or declining population sizes are the focus of conservation biology, which applies evolutionary principles to develop strategies for population management.</p>
+<div class="figure"><span style="display:block;" id="fig:devilshole"></span>
+<img src="images/devilshole.jpg" alt="The Devils Hole pupfish (*Cyprinodon diabolis*) is one of the rarest vertebrates on the planet. The species is endemic to the tiny Devil's Hole well, which is located within the Ash Meadows National Wildlife Refuge, Nevada. Since the start of population surveys, the maximum population size recorded was 553, and the lowest population size was just 38 individuals in 2006. Photo by Olin Feuerbacher, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)." width="100%" />
+<p class="caption">
+Figure 6.2: The Devils Hole pupfish (<em>Cyprinodon diabolis</em>) is one of the rarest vertebrates on the planet. The species is endemic to the tiny Devil’s Hole well, which is located within the Ash Meadows National Wildlife Refuge, Nevada. Since the start of population surveys, the maximum population size recorded was 553, and the lowest population size was just 38 individuals in 2006. Photo by Olin Feuerbacher, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+</p>
+</div>
+<p>When population sizes are finite—and especially when they are small—random chance affects evolutionary dynamics. These changes in allele frequencies across generations caused by random events are called genetic drift. While selection is differential reproductive success caused by differential performance of variants, genetic drift is differential reproductive success that just happens. In contrast to selection, which tends to increase average fitness across generations, genetic drift does not lead to adaptation. Due to the random nature of genetic drift, populations subject to it evolve on distinct trajectories. So, if you re-run simulations allowing for drift with the same parameters, you will get a unique evolutionary path every single time. The random nature of drift assures that no evolutionary trajectory is like another.</p>
+<p>At the most basic level, evolution by genetic drift happens as a consequence of sampling error across generations. If you imagine a locus with two alleles (<em>A</em> and <em>a</em>) of equal frequency, the theoretically predicted allele frequencies under Hardy-Weinberg conditions in the next generation are of course <em>p</em>=<em>q</em>=0.5. However, chance might cause significant deviations from theoretical expectations in reality. Every individual in the population essentially has a 50 % chance to inherit the <em>A</em>-allele on its first chromosome, and a 50% chance to inherit the <em>A</em>-allele on its second chromosome. In other words, the genotype an individual inherits in absence of selection is equivalent to two coin tosses (one for each allele inherited), where the probability for receiving a particular genotype is dependent on the allele frequencies in the population. We can simulate this in R using the <code>rbinom()</code> function, with the allele frequency (<em>p</em>) and the population size (<em>N</em>) as input variables. So for the Devil’s Hole pupfish (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:devilshole">6.2</a>), with its low-bound population size of 38, the simulated allele frequency in the next generation is:</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb90-1" tabindex="-1"></a>N<span class="ot">=</span><span class="dv">38</span></span>
+<span id="cb90-2"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb90-2" tabindex="-1"></a>p<span class="ot">=</span><span class="fl">0.5</span></span>
+<span id="cb90-3"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb90-3" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">1</span>, <span class="at">size=</span><span class="dv">2</span><span class="sc">*</span>N, <span class="at">prob=</span>p)<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>N)</span></code></pre></div>
+<pre><code>## [1] 0.5394737</code></pre>
+<p>If we repeat this simulation 1,000 times, you can see that there can be substantial deviations from the predicted allele frequency of <em>p</em>=0.5 (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:random">6.3</a>). Only about 10 % of observations fall within the predicted 0.5-bin, and the frequency of <em>A</em> can be as low as 0.3 and as high as 0.7 just because of random chance. That is a massive shift in allele frequency across a single generation.</p>
+<p>As you know from experience, the number of coin tosses impacts how close a result matches the theoretical predictions. If you toss your coin ten times, you may get tails eight times, which represents a 60 % deviation from the theoretical prediction. However, the more often you toss your coin, the closer your overall frequency of tails will get to the predicted 50 %. The same principle applies to the effects of genetic drift as a function of population size. When population sizes are small, genetic drift can induce substantial deviations from theoretical predictions, but the effects of drift get smaller as populations size increases. Using the same simulation as above—but with a population size of 1,000—reveals that observed allele frequencies align much better with theoretical predictions, with a spread of observed allele frequencies of <em>A</em> between 0.46 and 0.54 (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:random">6.3</a>).</p>
+<p>So how exactly does population size impact the strength of genetic drift? If a new mutation arises in a population of diploid organisms with a population size of <em>N</em>, the frequency of the new allele is 1/2<em>N</em>. Each neutral allele has the same chance of drifting to fixation, which is equal to the allele frequency. Hence, the likelihood that the a new allele gets fixed in a population is 1/2<em>N</em>. Correspondingly, novel alleles are more likely to get fixed by chance in small populations.</p>
+<div class="figure"><span style="display:block;" id="fig:random"></span>
+<img src="Primer2Evolution_files/figure-html/random-1.png" alt="Observed distributions of allele frequencies by randomly selecting alleles (*A* or *a*) from a pool with equal allele  frequencies (*p*=0.5). The deviation from theoretical expectations are much larger for the small population (*N*=38) than for the larger population (*N*=1,000). This illustrates how the strenth of genetic drift declines as a function of population size." width="672" />
+<p class="caption">
+Figure 6.3: Observed distributions of allele frequencies by randomly selecting alleles (<em>A</em> or <em>a</em>) from a pool with equal allele frequencies (<em>p</em>=0.5). The deviation from theoretical expectations are much larger for the small population (<em>N</em>=38) than for the larger population (<em>N</em>=1,000). This illustrates how the strenth of genetic drift declines as a function of population size.
+</p>
+</div>
+<div class="alert alert-block alert-info">
+<p><b>Effective Population Size</b></p>
+<p>The total population size (census population size) in natural populations is not the same as the effective population size (<em>N</em><sub>e</sub>), which is the size of the breeding population. Effective population size takes into consideration that many individuals that reach adulthood never breed in natural populations. Consequently, effective population size is almost always smaller than the census population size. Effective population size is particularly impacted by deviations from 1:1 sex ratios. In such cases, effective population size can be estimated as</p>
+<span class="math display" id="eq:24">\[\begin{align}
+N_e = \frac{4N_mN_f}{N_m+N_f} \tag{6.2}
+\end{align}\]</span>
+<p>where <em>N</em><sub>m</sub> is the number of males and <em>N</em><sub>f</sub> the number of females. If you assume census population of 100 with equal sex ratio, <em>N</em><sub>e</sub> is 100. If you assume a sex ratio of 1:9, <em>N</em><sub>e</sub> drops to just 36. Distinguishing between <em>N</em> and <em>N</em><sub>e</sub> is important for conservation biology and many population genetic analyses related to genetic drift and inbreeding. For example, when <em>N</em><sub>e</sub> is significantly smaller than <em>N,</em> the probability of fixation of an allele in response to drift can be much higher than estimated by census population sizes.</p>
+</div>
+<p>Besides sampling error, genetic drift can also have profound impacts on allele frequencies when there are rapid reductions in population size. In general, we distinguish between two scenarios: (1) <em>Population bottlenecks</em> occur when catastrophic events (large-scale wild fires, floods, <em>etc</em>.) drastically reduce the size of a population. In such instances, survival is less dependent on individuals’ traits (that would be selection) than individuals being in the right place at the right time. Hence, the allelic composition of the generation after a bottleneck largely reflects a random subsample of the original population. (2) <em>Founder effects</em> occur when a small subset of a population disperses into a new area and founds a new population. In that case, only a random subset of alleles travels along with the founding individuals. Founder effects are particularly important in island populations, where species expand their range in a step-wise fashion along island chains. This can lead to serial founder effects with continuous loss of genetic diversity (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:founder">6.4</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:founder"></span>
+<img src="Primer2Evolution_files/figure-html/founder-1.png" alt="Allelic richness in populations of monarch butterflies (*Danaus plexippus*). The original population from the United States exhibits the highest levels of allelic richness. Allelic richness declined in a step-wise fashion as butterflies first colonized Hawaii and then other islands throughout the Pacific. [Data](data/6_serial_founder.csv) from Pierce et al. (2014)." width="672" />
+<p class="caption">
+Figure 6.4: Allelic richness in populations of monarch butterflies (<em>Danaus plexippus</em>). The original population from the United States exhibits the highest levels of allelic richness. Allelic richness declined in a step-wise fashion as butterflies first colonized Hawaii and then other islands throughout the Pacific. <a href="data/6_serial_founder.csv">Data</a> from Pierce et al. (2014).
+</p>
+</div>
+<div id="interactions-between-drift-and-selection" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Interactions Between Drift and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-drift-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In small populations, genetic drift affects the fate of alleles under selection. Drift can cause deleterious mutations to be more common than expected by selection alone, and it can cause beneficial alleles to disappear from the population. The fate of alleles subject to selection and drift is dependent on the product of 2<em>N</em><sub>e</sub><em>s</em>, as depicted in Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>. If a new mutation is neutral (<em>s</em>=0), the probability of fixation is 1/2<em>N</em><sub>e</sub> (𝛌=1; dotted line), as described above. If the new mutation is deleterious (<em>s</em>&lt;0), then the likelihood of fixation becomes smaller than what is expected by chance, approaching zero for higher values of |2<em>N</em><sub>e</sub><em>s</em>| (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>). In contrast, if the new mutation provides a fitness advantage (<em>s</em>&gt;1), then the likelihood of fixation become greater than what is expected by chance. For example, for 2<em>N</em><sub>e</sub><em>s</em>=5, the likelihood of fixation for the new mutation is 5 times higher than what would be expected by chance.</p>
+<p>The important point here is that the likelihood of fixation is dependent on both the strength of selection and the effective population size. 2<em>N</em><sub>e</sub><em>s</em> can be large when selection is strong or when populations are large. When populations are small, selection on novel alleles needs to be comparatively strong for them to have a high likelihood of fixation. If a mutation only provides a minor fitness benefit, drift might cause its loss from the population before it ever has a chance to become common. Conversely, when population sizes are very large, novel alleles with minute fitness benefits can have a high likelihood of fixation. As a rule of thumb, evolution of novel alleles is primarily governed by genetic drift for 2<em>N</em><sub>e</sub><em>s</em>-values between -1 and 1 (gray shaded area in <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>). Beyond that range, selection has the upper hand.</p>
+<div class="figure"><span style="display:block;" id="fig:driftsel"></span>
+<img src="Primer2Evolution_files/figure-html/driftsel-1.png" alt="The likelihood for fixation of a novel allele increases with increasing values for *N*~e~ * *s* (Charlesworth 2009). The dotted line indicates perfect neutrality; the gray-shaded area corresponds to *N*~e~ * *s* values for which novel mutations evolve largely by genetic drift. Note that the relationship depicted assumes *N* = *N*~e~." width="672" />
+<p class="caption">
+Figure 6.5: The likelihood for fixation of a novel allele increases with increasing values for <em>N</em><sub>e</sub> * <em>s</em> (Charlesworth 2009). The dotted line indicates perfect neutrality; the gray-shaded area corresponds to <em>N</em><sub>e</sub> * <em>s</em> values for which novel mutations evolve largely by genetic drift. Note that the relationship depicted assumes <em>N</em> = <em>N</em><sub>e</sub>.
+</p>
+</div>
+<p>In case you are interested in the math underlying Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:driftsel">6.5</a>: The probability (<em>Q</em>) that a new mutation spreads in a population and eventually becomes fixed is dependent on the effective population size (<em>N</em><sub>e</sub>), the census population size (<em>N</em>), and the selection coefficient (<em>s</em>). 𝛌 is the fixation probability relative to neutral evolution (1/2<em>N</em><sub>e</sub>).</p>
+<span class="math display" id="eq:26" id="eq:25">\[\begin{align}
+Q = \frac{N_es}{N} \frac{1}{1-exp(-2N_es)} \tag{6.3} \\
+𝛌 = \frac{Q}{1/(2N_e)} \tag{6.4}
+\end{align}\]</span>
+<p>Note that this relationship assumes that the fitness of the heterozygotes is intermediate between the two homozygotes:</p>
+<span class="math display" id="eq:27">\[\begin{align}
+w_{Aa} = \frac{w_{AA}+w_{aa}}{2} \tag{6.5}
+\end{align}\]</span>
+</div>
+</div>
+<div id="migration-the-homogenizing-force" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Migration: The Homogenizing Force<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#migration-the-homogenizing-force" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Our view of evolutionary processes so far has assumed that populations are relatively homogenous, with random mating among all individuals contained within (<em>i.e.</em>, panmixia). More often than not, however, species consist of many populations that inhabit suitable habitat patches and are separated by less favorable environmental conditions (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:popstructure">6.6</a>A-B). Such partial isolation can cause differentiation among populations, either because genetic drift impacts allele frequencies differently across populations, or because variation in environmental conditions among populations favors different genotypes. But despite some degree of isolation, populations within a species are typically connected through migration. Migration can be unidirectional or bidirectional, and can vary in strength (<em>i.e.</em>, the number of migrating individuals relative to the population size). Migration rates are typically higher between proximate populations than between populations that are far apart—a phenomenon known as isolation by distance.</p>
+<div class="alert alert-block alert-info">
+<p><b>Definition: Gene Flow</b></p>
+<p>Population geneticists usually refer to migration as “gene flow”. Gene flow is simply the transfer of genetic material among populations.</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:popstructure"></span>
+<img src="images/popstructure.png" alt="A. Species are often assumed to be relatively homogenous units with panmixia. B. However, species  can also consist of structured populations that are somewhat differentiated but still connected by migration. Variation in color indicates population differentiation; arrows represent patterns of migration among populations. C. Schematic of the one-island migration model." width="100%" />
+<p class="caption">
+Figure 6.6: A. Species are often assumed to be relatively homogenous units with panmixia. B. However, species can also consist of structured populations that are somewhat differentiated but still connected by migration. Variation in color indicates population differentiation; arrows represent patterns of migration among populations. C. Schematic of the one-island migration model.
+</p>
+</div>
+<p>Migration is an evolutionary force because it can impact the genetic composition of populations. Migrants may carry novel alleles from one population to another, acting similar to mutation in terms of introducing new genetic variation. Even in absence of novel alleles, migration between differentiated population causes changes in allele frequencies. In the absence of other evolutionary forces, it homogenizes the genetic composition of different populations. To illustrate this, let’s consider a simple scenario known as the one-island migration model (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:popstructure">6.6</a>C). The model assumes two populations: a large mainland population and a small island population. Even if the number of individuals migrating in either direction is the same, the input of island individuals arriving in the mainland population is negligible because of its large size. In contrast, because of the small island population, individuals from the mainland arriving on the island can significantly impact allele frequencies, if allele frequencies differ between populations. In this case, island allele frequencies after a migration event (<em>p</em><sub>i</sub>’) can be described as a function of island allele frequencies before a migration event (<em>p</em><sub>i</sub>), mainland allele frequencies (<em>p</em><sub>m</sub>), and the migration rate (<em>m</em>):</p>
+<span class="math display" id="eq:29" id="eq:28">\[\begin{align}
+p_i&#39; = (1-m)p_i+mp_m \tag{6.6} \\
+𝚫p_i=p_i&#39;-p_i=m(p_m-p_i) \tag{6.7}
+\end{align}\]</span>
+<p>Applying Equation <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#eq:28">(6.6)</a> and calculating island allele frequencies across multiple generations reveals the genetic effect of migration (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:migfig">6.7</a>): migration from the mainland to the island changes <em>p</em><sub>i</sub> until it is equal to <em>p</em><sub>m</sub>, and the rate of migration dictates the speed at which this conversion happens. In other words, migration homogenizes the allele frequencies across populations.</p>
+<div class="alert alert-block alert-info">
+<p><b>One-Island Migration Model</b></p>
+<p>If you want to conduct your own simulations of migration using the one-island model, you can use the code adopted from Dyer (2017) displayed below. You can vary migration rates (<code>migration_rates</code>; numbers between 0 and 1) as well as the starting allele frequencies on the mainland (<code>pm0</code>) and the island (<code>pi0</code>).</p>
+<pre><code>migration_rates &lt;- c(0.010,0.025,0.100,0.500)
+pm0 = 0.05
+pi0 = 0.95
+
+results &lt;- data.frame(m=rep(migration_rates,each=100), generation=rep(1:100,times=length(migration_rates)), p=NA)
+for(m in migration_rates) {
+  pm &lt;- pm0
+  pi &lt;- pi0
+  results$p[results$m==m] &lt;- pi
+  for( t in 2:100){
+    p.0 &lt;- results$p[results$m==m &amp; results$generation == (t-1)]
+    p.1 &lt;- (1-m)*p.0 + pm*m
+    results$p[results$m==m &amp; results$generation== t] &lt;- p.1
+  }
+}
+results$m &lt;- factor(results$m)</code></pre>
+</div>
+<pre><code>## Warning in geom_text(aes(0, pm, label = &quot;p (mainland)&quot;), vjust = 1.5, hjust = 0): All aesthetics have length 1, but the data has 400 rows.
+## ℹ Please consider using `annotate()` or provide this layer with data containing a
+##   single row.</code></pre>
+<div class="figure"><span style="display:block;" id="fig:migfig"></span>
+<img src="Primer2Evolution_files/figure-html/migfig-1.png" alt="Migration between a mainland and an island population homogenizes allele frequencies over time. The higher the migration rate, the faster the rate of homogenization. The simulations above were based on the starting allele frequencies of `pm0=0.05` and `pi0=0.95`, and a range of migration rates (m). Simulation adopted from Dyer (2017)." width="672" />
+<p class="caption">
+Figure 6.7: Migration between a mainland and an island population homogenizes allele frequencies over time. The higher the migration rate, the faster the rate of homogenization. The simulations above were based on the starting allele frequencies of <code>pm0=0.05</code> and <code>pi0=0.95</code>, and a range of migration rates (m). Simulation adopted from Dyer (2017).
+</p>
+</div>
+<div id="interactions-between-migration-and-selection" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Interactions Between Migration and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-migration-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Similar to mutation, migration can introduce new genetic variants into a population upon which selection can act. Hence, human-facilitated migration is sometimes used as a tool in conservation biology, where new individuals are introduced into populations of endangered species suffering from low genetic diversity and inbreeding. This practice is also known as genetic rescue. In many instances, however, migration actually counteracts the effects of selection. Imagine two adjacent populations that are exposed to different environmental conditions. In every generation, selection favors alleles that mediate adaptation to the local conditions. But if there is migration between the two populations, new maladaptive alleles are continuously introduced from the other population. Hence, migration can prevent local adaptation of populations. Adaptive divergence between populations is only possible if the effect of divergent selection is stronger than the homogenizing force of migration (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:migsel">6.8</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:migsel"></span>
+<img src="Primer2Evolution_files/figure-html/migsel-1.png" alt="Results of a combined simulation of drift, selection, and migration. The optimal allele frequency for population 1 (red) is *p*=1, and the optimal frequency for population 2 (blue) is *p*=0. The two models ran were identical except for the migration rate between the two populations. As you can see, populations approach their respective optimal allele frequencies when migration rates are low (left graph). In contrast, higher migration rates continuously homogenize allele frequencies across the populations, and accordingly allele frequencies hover around *p*=0.5 (right graph)." width="672" />
+<p class="caption">
+Figure 6.8: Results of a combined simulation of drift, selection, and migration. The optimal allele frequency for population 1 (red) is <em>p</em>=1, and the optimal frequency for population 2 (blue) is <em>p</em>=0. The two models ran were identical except for the migration rate between the two populations. As you can see, populations approach their respective optimal allele frequencies when migration rates are low (left graph). In contrast, higher migration rates continuously homogenize allele frequencies across the populations, and accordingly allele frequencies hover around <em>p</em>=0.5 (right graph).
+</p>
+</div>
+<p>Evidence for the tension between selection and migration is also observed in natural populations. Remember the stick insects of the genus <em>Timema</em> that we got to know in <a href="evidence-for-evolution.html#catching-speciation-in-action">Chapter 2</a>? As you might recall, different populations of <em>T. cristinae</em> are adapting to different host plants—either broad-leafed species of the genus <em>Ceanothus</em> or needle-leafed species of the genus <em>Adenostoma</em>. Populations adapted to <em>Ceanothus</em> are uniformly colored for optimal camouflage; those adapted to <em>Adenostoma</em> exhibit a dorsal stripe to mimic the needle-like leaves (see <a href="evidence-for-evolution.html#catching-speciation-in-action">Figure 2.4</a>). If selection was the only evolutionary force, we would expect the optimal phenotype to eventually become fixed in each population. However, both color forms tend to be present in many <em>T. cristinae</em> populations, and the maladaptive morph can even be more common than the adaptive one. Bolnick and Nosil (2007) were able to show that the high frequency of maladaptive morphs is likely a consequence of migration. If neighboring populations adapted to the opposite host are relatively small, with few migrants arriving in a population, selection is able to keep maladaptive morphs at a low frequency (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:timema2">6.9</a>). However, when neighboring populations are large and provide a source of many migrating individuals, the frequency of maladaptive morphs can be very high due to continuous reintroduction (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:timema2">6.9</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:timema2"></span>
+<img src="Primer2Evolution_files/figure-html/timema2-1.png" alt="The frequency of maladaptive morphs in *Timema* stick insects adapted to different plant hosts (*Ceanothus* and *Adenostoma*) is directly related to the size of neighboring populations that are a source of migrating individuals. [Data](data/6_timema_migration.csv) from Bolnick &amp; Nosil (2007)." width="672" />
+<p class="caption">
+Figure 6.9: The frequency of maladaptive morphs in <em>Timema</em> stick insects adapted to different plant hosts (<em>Ceanothus</em> and <em>Adenostoma</em>) is directly related to the size of neighboring populations that are a source of migrating individuals. <a href="data/6_timema_migration.csv">Data</a> from Bolnick &amp; Nosil (2007).
+</p>
+</div>
+</div>
+</div>
+<div id="non-random-mating-not-much-of-a-force" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Non-Random Mating: Not Much of a Force<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#non-random-mating-not-much-of-a-force" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The last evolutionary force that we need to discuss is non-random mating. Non-random mating occurs when the probability that two individuals in a population will mate is not the same for all possible combinations of genotypes. Non-random mating can be assortative, when individuals are more likely to mate with similar individuals (<em>e.g.</em>, individuals having the same genotype or phenotype), or it can be disassortative, when individuals prefer to mate with dissimilar individuals. Technically speaking, non-random mating is not an evolutionary force, because—unlike mutation, selection, drift, and migration—it does not actually cause any change in allele frequencies across generations. It does, however, cause deviations from Hardy-Weinberg assumptions, because the frequency of genotypes do not match Hardy-Weinberg predictions when non-random mating is present. Therefore, non-random mating can have some indirect consequences for evolution.</p>
+<p>One of the most common forms of non-random mating is inbreeding, where offspring are produced by individuals that are closely related. The epitome of inbreeding is selfing (self-fertilization), which essentially represents strict genotype-specific assortative mating and is particularly common in plants. If we assume a single, biallelic locus <em>A</em>, possible matings during selfing include <em>AA</em> x <em>AA</em>, <em>Aa</em> x <em>Aa</em>, and <em>aa</em> x <em>aa</em>. The consequences of selfing on the genotype frequencies across generations are depicted in Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:selfing">6.10</a>. As you can see, the frequency of heterozygotes declines rapidly until they are virtually gone after just 10 generations. This is because neither the self-crosses of <em>AA</em> and <em>aa</em> yield any heterozygotes, and self-crosses of Aa yield 50 % homozygotes. Accordingly, the frequency of heterozygotes is halved in every generation.</p>
+<div class="figure"><span style="display:block;" id="fig:selfing"></span>
+<img src="Primer2Evolution_files/figure-html/selfing-1.png" alt="Changes in genotype frequencies across generations when all individuals in a population self-fertilize." width="672" />
+<p class="caption">
+Figure 6.10: Changes in genotype frequencies across generations when all individuals in a population self-fertilize.
+</p>
+</div>
+<p>The degree of inbreeding can be described by the coefficient of inbreeding (<em>F</em>), which calculates the probability that two copies of an allele have been inherited from an ancestor common to both the mother and the father. You can find some examples for inbreeding coefficients in Table 6.1. Once we know <em>F</em> for a population, we can account for the effects of inbreeding on genotype frequencies by modifying the original Hardy-Weinberg formulas:</p>
+<span class="math display" id="eq:32" id="eq:31" id="eq:30">\[\begin{align}
+f_{AA} = p^2(1-F)+pF \tag{6.8} \\
+f_{Aa} = 2pq(1-F) \tag{6.9} \\
+f_{aa} = q^2(1-F)+qF \tag{6.10}
+\end{align}\]</span>
+<p>Similarly, we can calculate the heterozygosity after inbreeding (<em>H</em>’) based on <em>F</em> and the heterozygosity under Hardy-Weinberg assumptions (<em>H</em><sub>0</sub>):</p>
+<span class="math display" id="eq:33">\[\begin{align}
+H&#39; = H_0(1-F) \tag{6.11}
+\end{align}\]</span>
+<div class="alert alert-block alert-info">
+<p><b>Expected and Observed Heterozygosity</b></p>
+<p>Heterozygosity is a measure of genetic variability in a population. While there are multiple metrics of heterozygosity, the most commonly used one is expected heterozygosity <em>H</em><sub>E</sub> (also known as gene diversity, <em>D</em>). For a single locus with <em>k</em> alleles, expected heterozygosity is defined as:</p>
+<span class="math display" id="eq:34">\[\begin{align}
+H_E = 1-\sum_{i=1}^k p_i^2 \tag{6.12}
+\end{align}\]</span>
+<p>Hence, for a bi-allelic locus with allele frequencies p and q, expected heterozygosity is:</p>
+<span class="math display" id="eq:35">\[\begin{align}
+H_E = 1-(p^2 + q^2) \tag{6.13}
+\end{align}\]</span>
+<p><em>H</em><sub>E</sub> can range from zero (when a population is fixed for a single allele) to almost 1 (when a locus has a large number of alleles with the same frequency). In practice, we can apply expected heterozygosity as a null model for inbreeding. Based on population level genotype data, we can calculate observed heterozygosity (<em>H</em><sub>O</sub>) and allele frequencies, which allow us to also calculate expected heterozygosity (<em>H</em><sub>E</sub>). If <em>H</em><sub>E</sub>=<em>H</em><sub>O</sub>, the observed heterozygosity matches the theoretical predictions, meaning that all Hardy-Weinberg assumptions are met. If <em>H</em><sub>E</sub>≠<em>H</em><sub>O</sub>, some evolutionary force must be acting on the particular locus. Most commonly, <em>H</em><sub>E</sub>&gt;&gt;<em>H</em><sub>O</sub> can be an indicator of inbreeding in a population.</p>
+<p>The degree of inbreeding is often quantified based on many loci in the genome, not just one. For <em>m</em> loci, genome-wide heterozygosity (<em>F</em>) is:</p>
+<span class="math display" id="eq:36">\[\begin{align}
+F = 1-\frac{1}{m} \sum_{l=1}^m \sum_{i=1}^k p_i^2 \tag{6.14}
+\end{align}\]</span>
+</div>
+<p>Equation <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#eq:33">(6.11)</a> allows us to simulate the effects of different levels of inbreeding on the observed heterozygosity across successive generations. As you can see in Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:hetsim">6.11</a>, the rate of decline in heterozygosity across generations is dependent on <em>F</em>, and declines can be rapid when inbreeding is common. Declines in heterozygosity are particularly common in small populations where the pool of potential partners is limited, inadvertently leading to mating between related individuals. This is also the case for many managed populations, including those associated with captive breeding programs for endangered species. Hence, many species maintenance programs strategically share individuals for breeding across institutions to avoid inbreeding.</p>
+<div class="figure"><span style="display:block;" id="fig:hetsim"></span>
+<img src="Primer2Evolution_files/figure-html/hetsim-1.png" alt="Rates of decline in heterozygosity for different levels of inbreeding described by *F* (also see Table 6.1)." width="672" />
+<p class="caption">
+Figure 6.11: Rates of decline in heterozygosity for different levels of inbreeding described by <em>F</em> (also see Table 6.1).
+</p>
+</div>
+<div id="interactions-between-inbreeding-and-selection" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Interactions between Inbreeding and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#interactions-between-inbreeding-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If inbreeding is not really an evolutionary force, why is it important? Why is problematic for conservation and animal breeding? The excess of homozygotes generated by inbreeding increases the probability that individuals are homozygous for recessive deleterious alleles. As you know from simulations of selection, recessive deleterious alleles are usually rare; hence, matings that lead to individuals with two copies of recessive deleterious alleles are very unlikely <em>(q</em><sup>2</sup>). That changes when inbreeding becomes common in a population. Along with negative fitness consequences for the individual, the increased probability of combining deleterious recessive alleles also reduces the average fitness in a population, which can be problematic for endangered species. Due to the costs associated with inbreeding, many species have evolved mechanisms for inbreeding avoidance, including disassortative mate choice or matrilineal group-living where male offspring are ostracized before they reach sexual maturity.</p>
+<p>Evidence for the negative consequences of inbreeding comes from humans as well as natural populations of plants and animals. In humans, the centuries-long practice of royal intermarriage in Europe—with frequent marriages even between first cousins—led to a high prevalence of hemophilia in royal families. In addition, the health issues of Spain’s King Charles II are widely thought to be the consequence of inbreeding.</p>
+<div class="alert alert-block alert-info">
+<p><b>Explore More</b></p>
+<p>If you are interested in learning more about inbreeding in the royal families of Europe, check out the article “<a href="https://www.historyanswers.co.uk/kings-queens/the-dangers-of-royal-inbreeding/"><em>The Dangers of Royal Inbreeding</em></a>” by Charlie Evans.</p>
+</div>
+<p>In natural populations, evidence for inbreeding comes from feral sheep on the island of Soay, off the coast of Scotland (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:soay">6.12</a>). The island is about 250 acres, and over the years the sheep population has fluctuated between 290 and 680 individuals. Extensive ecological and genetic studies of the Soay sheep population have shown interactions between inbreeding and selection. Survival of sheep on the island is density-dependent, with reduced survivorship at higher densities (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:inreedingsheep">6.13</a>). In addition, there is evidence for low to moderate rates of inbreeding the sheep population (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:inreedingsheep">6.13</a>). Putting together the data on density-dependent survivorship and inbreeding reveals an interesting pattern: at low densities (when competition is comparatively low), the impact of inbreeding on survival is relatively low. However, at medium and high densities, inbred individuals have reduced survivorship (Figure <a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#fig:inreedingsheep">6.13</a>). This data shows how even relatively low rates of inbreeding can impact individual fitness, although the consequences are dependent on environmental context.</p>
+<div class="figure"><span style="display:block;" id="fig:soay"></span>
+<img src="images/soay.jpg" alt="A male Soay sheep (*Ovis aries*). Photo by [Owen Jones](https://www.flickr.com/photos/jonesor/), [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)." width="100%" />
+<p class="caption">
+Figure 6.12: A male Soay sheep (<em>Ovis aries</em>). Photo by <a href="https://www.flickr.com/photos/jonesor/">Owen Jones</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:inreedingsheep"></span>
+<img src="Primer2Evolution_files/figure-html/inreedingsheep-1.png" alt="Relationship between inbreeding and survival in a feral population of Soay sheep. Survival of sheep is strongly density dependent, as indicated by the lower average survival of individuals at medium and high densities (right graph). Genetic analyses also revealed low to moderate levels of inbreeding, as estimated by a multi-locus coefficient of inbreeding [see Equation (6.14)] (top graph). Finally, survival at medium and high densities depends on the degree of inbreeding (left graph).  [Data](data/6_inbreeding.csv) from Pemberton et al. (2017)." width="672" />
+<p class="caption">
+Figure 6.13: Relationship between inbreeding and survival in a feral population of Soay sheep. Survival of sheep is strongly density dependent, as indicated by the lower average survival of individuals at medium and high densities (right graph). Genetic analyses also revealed low to moderate levels of inbreeding, as estimated by a multi-locus coefficient of inbreeding [see Equation (6.14)] (top graph). Finally, survival at medium and high densities depends on the degree of inbreeding (left graph). <a href="data/6_inbreeding.csv">Data</a> from Pemberton et al. (2017).
+</p>
+</div>
+<table>
+<caption>Table 6.1: Examples for coefficients of inbreeding for different matings.</caption>
+<thead>
+<tr class="header">
+<th align="left">Relationship between mates</th>
+<th align="right">Coefficient of inbreeding</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Self</td>
+<td align="right">0.500</td>
+</tr>
+<tr class="even">
+<td align="left">Parent-offspring</td>
+<td align="right">0.250</td>
+</tr>
+<tr class="odd">
+<td align="left">Full sibs</td>
+<td align="right">0.250</td>
+</tr>
+<tr class="even">
+<td align="left">Half sibs</td>
+<td align="right">0.125</td>
+</tr>
+<tr class="odd">
+<td align="left">First cousins</td>
+<td align="right">0.063</td>
+</tr>
+<tr class="even">
+<td align="left">Second cousins</td>
+<td align="right">0.016</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="case-study-background-beyond-selection" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Case Study Background: Beyond Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#case-study-background-beyond-selection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="exercises/BIOL520-ex5.zip">case study</a> in this chapter will teach you how to model evolutionary forces beyond selection, with particular emphasis on mutation and genetic drift. You will build on your knowledge of the <code>learnPopGen</code> package to work through a number of scenarios that look at the effects of evolutionary forces, both in isolation and in conjunction with selection:</p>
+<ol style="list-style-type: decimal">
+<li><p>We will explore how variation in mutation rates and the strength of selection impact equilibrium allele frequencies at the mutation-selection balance.</p></li>
+<li><p>We will explore the effects of genetic drift across differently sized populations.</p></li>
+<li><p>We will explore how selection and genetic drift interact in small populations when beneficial or deleterious mutations arise.</p></li>
+</ol>
+</div>
+<div id="practical-skills-modeling-mutation-drift-and-selection" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Practical Skills: Modeling Mutation, Drift, and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#practical-skills-modeling-mutation-drift-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We will continue using the <code>learnPopGen</code> R package to simulate the effects of different evolutionary forces. You do not have to re-install this package, but make sure you load it before you start working through the exercise by using <code>library(learnPopGen)</code>.</p>
+<div id="modeling-mutation-and-selection" class="section level3 hasAnchor" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Modeling Mutation and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-mutation-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We can simulate the joint effects of mutation and selection using the <code>mutation.selection()</code> function, which requires three input variables:</p>
+<ul>
+<li><p>You need to designate a starting allele frequency (<code>p0</code>), like in other evolutionary simulations you are already familiar with. Note that you can actually choose zero and one in this model; since the model allows for mutation, you are not bound to values in between.</p></li>
+<li><p>You need to designate how many generations you want a simulation to run (<code>time</code> argument).</p></li>
+<li><p>You need to define the fitness (<code>w</code>) of the different genotypes. Note that this is done differently than in the selection models of the past chapter, since the <code>mutation.selection()</code> function automatically uses the <em>AA</em> genotype as the reference (<em>w</em><sub>AA</sub>=1). Hence, you only need to generate a vector with two numbers, designating the fitness of <em>w</em><sub>Aa</sub> and <em>w</em><sub>aa</sub>: <code>fitness &lt;- c(1+s1, 1+s2)</code>.</p></li>
+<li><p>You also need to designate a mutation rate (<code>u</code>) for each model. This can be any positive number (including zero), but you should choose values &lt;1 in order to get realistic outcomes.</p></li>
+</ul>
+<p>In practice, you can first define input parameters:</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-1" tabindex="-1"></a><span class="co">#Define a starting allele frequency p0</span></span>
+<span id="cb94-2"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-2" tabindex="-1"></a>start.freq <span class="ot">=</span> <span class="dv">1</span></span>
+<span id="cb94-3"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-3" tabindex="-1"></a></span>
+<span id="cb94-4"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-4" tabindex="-1"></a><span class="co">#Define the fitness of the genotypes relative to AA</span></span>
+<span id="cb94-5"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-5" tabindex="-1"></a>fitness <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">1.0</span>,<span class="fl">0.5</span>)</span>
+<span id="cb94-6"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-6" tabindex="-1"></a></span>
+<span id="cb94-7"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-7" tabindex="-1"></a><span class="co">#Define the mutation rate</span></span>
+<span id="cb94-8"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-8" tabindex="-1"></a>mutation.rate <span class="ot">=</span> <span class="fl">0.01</span></span>
+<span id="cb94-9"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-9" tabindex="-1"></a></span>
+<span id="cb94-10"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-10" tabindex="-1"></a><span class="co">#Define how many generations you want to simulate</span></span>
+<span id="cb94-11"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb94-11" tabindex="-1"></a>generations <span class="ot">=</span> <span class="dv">50</span></span></code></pre></div>
+<p>You can then run the <code>mutation.selection()</code> function by calling on the input variables:</p>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb95-1" tabindex="-1"></a>r1 <span class="ot">&lt;-</span> <span class="fu">mutation.selection</span>(<span class="at">p0=</span>start.freq, <span class="at">w=</span>fitness, <span class="at">u=</span>mutation.rate, <span class="at">time=</span>generations, <span class="at">show=</span><span class="st">&quot;q&quot;</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:mutselmod"></span>
+<img src="Primer2Evolution_files/figure-html/mutselmod-1.png" alt="Output of the `mutation.selection()` function." width="672" />
+<p class="caption">
+Figure 6.14: Output of the <code>mutation.selection()</code> function.
+</p>
+</div>
+<p>When modeling mutation-selection balance, we are typically interested in the frequency of the deleterious allele (<em>a</em>), and you can plot <em>q</em> directly by using <code>show="q"</code>. Note that the <code>mutation.selection()</code> function does not support the <code>add</code> argument, and you will need to generate multiple plots to compare the outcomes of different models.</p>
+</div>
+<div id="modeling-genetic-drift" class="section level3 hasAnchor" number="6.6.2">
+<h3><span class="header-section-number">6.6.2</span> Modeling Genetic Drift<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You can use the <code>genetic.drift()</code> function to model the effects of drift as a function of population size. As in other models, you will need to designate a starting allele frequency (<code>p0</code>; between 0 and 1) and the number of generations you want to run the model for (<code>time</code>). In addition, models of genetic drift require two additional inputs:</p>
+<ul>
+<li><p><strong><em>Effective population size (N<sub>e</sub>):</em></strong> The effective population size is designated with the <code>Ne</code> argument. This can be any positive integer.</p></li>
+<li><p><strong><em>Number of replicates (nrep):</em></strong> Since genetic drift causes random changes in allele frequencies, the outcome of every simulation will be different (even for the same parameter set). So if you want to detect general patters, you will need to run multiple simulations for each set of input variables. The number of replicates is designated with the <code>nrep</code> argument. Again, this can be any positive integer. Note that the output of all replicates will be automatically combined into a single graph.</p></li>
+</ul>
+<p>Running the simulations works the same way as the previous functions you used. First you designate the input variables:</p>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-1" tabindex="-1"></a><span class="co">#Define a starting allele frequency p0</span></span>
+<span id="cb96-2"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-2" tabindex="-1"></a>start.freq <span class="ot">=</span> <span class="fl">0.5</span></span>
+<span id="cb96-3"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-3" tabindex="-1"></a></span>
+<span id="cb96-4"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-4" tabindex="-1"></a><span class="co">#Define how many generations you want to simulate</span></span>
+<span id="cb96-5"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-5" tabindex="-1"></a>generations <span class="ot">=</span> <span class="dv">50</span></span>
+<span id="cb96-6"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-6" tabindex="-1"></a></span>
+<span id="cb96-7"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-7" tabindex="-1"></a><span class="co">#Define the effective population size</span></span>
+<span id="cb96-8"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-8" tabindex="-1"></a>popsize <span class="ot">=</span> <span class="dv">20</span></span>
+<span id="cb96-9"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-9" tabindex="-1"></a></span>
+<span id="cb96-10"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-10" tabindex="-1"></a><span class="co">#Define the number of replicates</span></span>
+<span id="cb96-11"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb96-11" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">5</span></span></code></pre></div>
+<p>You can then run the <code>genetic.drift()</code> function by calling the input variables:</p>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb97-1" tabindex="-1"></a>r2 <span class="ot">&lt;-</span> <span class="fu">genetic.drift</span>(<span class="at">p0=</span>start.freq, <span class="at">time=</span>generations, <span class="at">Ne=</span>popsize, <span class="at">nrep =</span> n)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:gd"></span>
+<img src="Primer2Evolution_files/figure-html/gd-1.png" alt="Output of the `genetic.drift()` function." width="672" />
+<p class="caption">
+Figure 6.15: Output of the <code>genetic.drift()</code> function.
+</p>
+</div>
+<div class="alert alert-block alert-warning">
+<p><img src="images/important.png" width="20" /> <strong>Important Note</strong></p>
+<p>Unless you have a decent computer and some patience, I caution you from using large numbers for <code>Ne</code>, <code>time</code> and <code>nrep</code> in this simulation. Simulations of genetic drift are computationally intensive, and running this function has the reputation of crashing R on occasion, especially if you have an older computer. I would stay away from values above 1,000 for <code>Ne</code> and <code>time</code>, and values above 50 for <code>nrep</code>. If you are not getting any output within a few minutes, I suggest you stop R and try reducing the values of your input parameters.</p>
+</div>
+</div>
+<div id="modeling-genetic-drift-and-selection" class="section level3 hasAnchor" number="6.6.3">
+<h3><span class="header-section-number">6.6.3</span> Modeling Genetic Drift and Selection<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#modeling-genetic-drift-and-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Finally, we want to simulate the combined effects of genetic drift and selection using the <code>drift.selection()</code> function, which combines a number of input parameters that you are now already familiar with:</p>
+<ul>
+<li><p>Starting allele frequency (<code>p0</code>)</p></li>
+<li><p>Effective population size (<code>Ne</code>)</p></li>
+<li><p>The fitness of the different genotypes (<code>w</code>). Note that this requires a vector with three numbers, as in the <code>selection()</code> function.</p></li>
+<li><p>The number of generations that you want to run the simulation for. Note that in the drift.selection() function, this parameter is called <code>ngen</code> and not <code>time</code>.</p></li>
+<li><p>The number of replicates (<code>nrep</code>)</p></li>
+</ul>
+<p>In practice, simulating the combined effects of genetic drift and fitness looks like this:</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-1" tabindex="-1"></a>start.freq <span class="ot">=</span> <span class="fl">0.001</span></span>
+<span id="cb98-2"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-2" tabindex="-1"></a>fitness<span class="ot">=</span><span class="fu">c</span>(<span class="fl">1.8</span>,<span class="fl">1.5</span>,<span class="dv">1</span>)</span>
+<span id="cb98-3"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-3" tabindex="-1"></a>generations <span class="ot">=</span> <span class="dv">50</span></span>
+<span id="cb98-4"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-4" tabindex="-1"></a>popsize <span class="ot">=</span> <span class="dv">200</span></span>
+<span id="cb98-5"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-5" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb98-6"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-6" tabindex="-1"></a></span>
+<span id="cb98-7"><a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#cb98-7" tabindex="-1"></a>r3 <span class="ot">&lt;-</span> <span class="fu">drift.selection</span>(<span class="at">p0=</span>start.freq,<span class="at">Ne=</span>popsize,<span class="at">w=</span>fitness,<span class="at">ngen=</span>generations,<span class="at">nrep=</span>n)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:gdsel"></span>
+<img src="Primer2Evolution_files/figure-html/gdsel-1.png" alt="Output of the `drift.selection()` function." width="672" />
+<p class="caption">
+Figure 6.16: Output of the <code>drift.selection()</code> function.
+</p>
+</div>
+</div>
+</div>
+<div id="reflection-questions-5" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Reflection Questions<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#reflection-questions-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Now that you have learned about and modeled the effects of the different evolutionary forces, how would you rank the different forces in terms of their importance for the evolution of biodiversity? Justify your responses.</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Cystic_fibrosis">Cystic fibrosis</a> is a heritable disease caused by a recessive deleterious mutation. Especially prior to the advent of modern medicine, homozygous carriers of the deleterious mutation had a poor prognosis, with few patients reaching adulthood. Hence, we can assume a selection coefficient of s=1. Based on the frequency of the deleterious mutation in Caucasian population (<em>q</em>=0.02), what do you think is the mutation rate in the human genome? How does this compare to the mutation rate measured by DNA sequencing (𝜇=6.7E-7)? What could explain the discrepancy?</p></li>
+<li><p>What are some benefits of inbreeding that may lead to the evolution of assortative mating? What are some of the costs of inbreeding that may have prompted the evolution of inbreeding avoidance (disassortative mating)?</p></li>
+<li><p>Water snakes in and around Lake Erie exhibit a striking polymorphism. Mainland snakes primarily exhibit a striped phenotype (morph A) that camouflages them in the leaf litter of forest streams. In contrast, water snakes living on the islands in Lake Erie exhibit reduced striping (morphs B &amp; C), with some individuals exhibiting a stripeless gray color (morphs D). The stripeless phenotype is considered adaptive on the islands, where snakes are primarily associated with large, monotonously colored slaps of rock. The data below shows the frequency of different phenotypes of two different mainland populations (Ontario and Peninsular mainland, Ohio) as well as three different island populations (Kelleys Island, Bass complex islands, and Middle and Pelee Islands). How do you interpret the observed phenotype distributions? If morph A is adaptive on the mainland, and morph D is adaptive on islands, why are most populations polymorphic?</p>
+<p><img src="Primer2Evolution_files/figure-html/watersnakes-1.png" width="672" /></p></li>
+</ol>
+</div>
+<div id="references-6" class="section level2 hasAnchor" number="6.8">
+<h2><span class="header-section-number">6.8</span> References<a href="evolutionary-mechanisms-ii-mutation-genetic-drift-migration-and-non-random-mating.html#references-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Bolnick DI, P Nosil (2007). <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1558-5646.2007.00179.x">Natural selection in populations subject to a migration load</a>. <em>Evolution</em> 61, 2229–2243.</p></li>
+<li><p>Charlesworth B (2009). <a href="https://www.nature.com/articles/nrg2526">Fundamental concepts in genetics: effective population size and patterns of molecular evolution and variation</a>. <em>Nature Reviews Genetics</em> 10, 195–205.</p></li>
+<li><p>Dyer RJ (2017). <a href="https://dyerlab.github.io/applied_population_genetics/">Applied Population Genetics</a>.</p></li>
+<li><p>Pemberton JM, PE Ellis, JG Pilkington, C Bérénos (2017). <a href="https://www.nature.com/articles/hdy2016100">Inbreeding depression by environment interactions in a free-living mammal population</a>. <em>Heredity</em> 118, 64–77.</p></li>
+<li><p>Pierce AA, MP Zalucki,M Bangura, M Udawatta, MR Kronforst, S Altizer … JC de Roode (2014). <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2014.2230">Serial founder effects and genetic differentiation during worldwide range expansion of monarch butterflies</a>. <em>Proceedings of the Royal Society B</em> 281, 20142230.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="evolutionary-mechanisms-i-modeling-selection.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="evolution-of-dna-sequences.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": "nullnull",
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # (APPENDIX) Appendix I {.unnumbered}
 
-# Graph Library
+# Graph Library {-}
 
 This appendix provides an overview of graphs used in R exercises. This is not meant to be a comprehensive tutorial but rather a quick reference guide.
 

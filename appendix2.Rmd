@@ -1,4 +1,4 @@
-# R Exercises
+# R Exercises {-}
 
 To download \*.zip files associated with R exercises, right-click on the exercise link below to save the file on your computer. Each exercise contains an R Notebook (\*.Rmd). In addition, exercises may contain data sets (\*.csv), phylogenetic tree files (\*.nwk and \*.tre), and auxiliary images (\*.jpg or \*.png). For weekly assignments, download the necessary files from here, complete your R Notebook, export it as \*.HTML, and submit it through the proper channel on [Canvas](https://k-state.instructure.com/).
 
