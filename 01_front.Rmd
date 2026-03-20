@@ -14,7 +14,7 @@ I thank Tom Platt, John Coffin, Ryan Greenway, Madison Nobrega, and Libby Wilson
 knitr::include_graphics('images/cc.png')
 ```
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to copy and redistribute the material in any medium or format, and to remix, transform, and build upon the material provided you give the original author credit (attribution), you are not using the material for commercial purposes (NonCommerical), and you distribute your work under the same license as the original (ShareAlike).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to copy and redistribute the material in any medium or format, and to remix, transform, and build upon the material provided you give the original author credit (attribution), you are not using the material for commercial purposes (NonCommercial), and you distribute your work under the same license as the original (ShareAlike).
 
 If you would like to adopt and use this resource in any way, feel free to contact [Michi Tobler](mailto:tobler@umsl.edu) to obtain a copy of all source files.
 

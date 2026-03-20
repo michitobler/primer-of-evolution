@@ -1,4 +1,4 @@
-group,pathogen,antibiotic,year,resistent
+group,pathogen,antibiotic,year,resistant
 A,Streptococcus pneumoniae,Tetracycline,1985,15.9
 A,Streptococcus pneumoniae,Tetracycline,1986,16.5
 A,Streptococcus pneumoniae,Tetracycline,1987,16.8

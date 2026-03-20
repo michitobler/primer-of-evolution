@@ -69,7 +69,7 @@ To contrast distributions between different groups, overlapping histograms can b
 
 ```{r histdensgroup, message=FALSE, warning=FALSE}
 ggplot(dat, aes(length, color=sex, fill=sex)) + #color is for the edges (lines), fill is for the areas
-    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparancy
+    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparency
     geom_density(alpha=.2) + 
     xlab("Length") +
     ylab("Frequency (count)")+
@@ -237,14 +237,14 @@ In some instances, you may want to combine multiple plots into a single output. 
 
 ```{r mp1, message=FALSE}
 p1 <- ggplot(dat, aes(length, color=sex, fill=sex)) + #color is for the edges (lines), fill is for the areas
-    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparancy
+    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparency
     geom_density(alpha=.2) + 
     xlab("Length") +
     ylab("Frequency (count)")+
     theme_classic()
 
 p2 <- ggplot(dat, aes(mass, color=sex, fill=sex)) + #color is for the edges (lines), fill is for the areas
-    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparancy
+    geom_histogram(aes(y=..density..), alpha=.5) + #alpha designates the transparency
     geom_density(alpha=.2) + 
     xlab("Length") +
     ylab("Frequency (count)")+

@@ -227,7 +227,7 @@ Friedberg and Rhoads (2000) put this hypothesis to the test (Table 2.1). The old
 | 36 Myr                 |            |         |           |         |          |          |
 +------------------------+------------+---------+-----------+---------+----------+----------+
 
-: Table 2.1: Pseudogenes that Friedberg and Rhoads (2000) detected in different primates (with hamsters as an outgroup). Individual pseudogenes identified in the human genome, along with their age estimates, are listed in rows. Different species with their estimated divergence times from humans are in columns. Symbols indicat the presence (+) or absence (-) of specific pseudogenes in a particular species.
+: Table 2.1: Pseudogenes that Friedberg and Rhoads (2000) detected in different primates (with hamsters as an outgroup). Individual pseudogenes identified in the human genome, along with their age estimates, are listed in rows. Different species with their estimated divergence times from humans are in columns. Symbols indicate the presence (+) or absence (-) of specific pseudogenes in a particular species.
 
 ### Why Homologies Matter
 

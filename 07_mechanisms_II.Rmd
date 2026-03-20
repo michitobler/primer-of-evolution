@@ -79,7 +79,7 @@ p1 <- as.data.frame(replicate(1000,rbinom(1, size=2*N1, prob=p)/(2*N1)))
 p2 <- as.data.frame(replicate(1000,rbinom(1, size=2*N2, prob=p)/(2*N2)))
 ```
 
-```{r random, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Observed distributions of allele frequencies by randomly selecting alleles (*A* or *a*) from a pool with equal allele  frequencies (*p*=0.5). The deviation from theoretical expectations are much larger for the small population (*N*=38) than for the larger population (*N*=1,000). This illustrates how the strenth of genetic drift declines as a function of population size."}
+```{r random, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Observed distributions of allele frequencies by randomly selecting alleles (*A* or *a*) from a pool with equal allele  frequencies (*p*=0.5). The deviation from theoretical expectations are much larger for the small population (*N*=38) than for the larger population (*N*=1,000). This illustrates how the strength of genetic drift declines as a function of population size."}
 
 pres <- cbind(p1,p2)
 names(pres) <- c("p1", "p2")
@@ -150,7 +150,7 @@ ggplot(res, aes(x=Nes, y=Q))+
     scale_x_continuous(breaks=c(-5,-2.5,-1,0,1,2.5,5))+
     scale_y_continuous(breaks=c(0,0.5,1,1.5,2.5,5))+ 
     xlab("2*Ne*s")+
-    ylab("Probability of fixation, lamda (*1/2Ne)")+
+    ylab("Probability of fixation, lambda (*1/2Ne)")+
     theme_classic()
 ```
 
